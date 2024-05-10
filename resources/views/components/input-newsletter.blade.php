@@ -7,13 +7,13 @@
 @php
     switch($format) {
         case 'minimal':
-            $inputClasses = 'text-gray-100 bg-smoke border-gray-500 rounded-r-none hover:placeholder-woodsmoke-400 placeholder-woodsmoke-200 rounded-md focus:ring-woodsmoke-500 dark:focus:ring-woodsmoke-500 focus:border-woodsmoke-500 dark:focus:border-woodsmoke-500';
+            $inputClasses = 'p-3 text-gray-100 bg-smoke border-gray-500 rounded-r-none hover:placeholder-woodsmoke-400 placeholder-woodsmoke-200 rounded-md focus:ring-woodsmoke-500 dark:focus:ring-woodsmoke-500 focus:border-woodsmoke-500 dark:focus:border-woodsmoke-500';
             $buttonClasses = 'bg-woodsmoke-200 text-sm text-smoke2 rounded-r-md';
             break;
     }
 @endphp
 
-<form class="w-[355px] sm:w-s-610 lg:w-s-610">
+<form class="sm:w-s-610 lg:w-s-610">
     <label
         for="submitNewsletter"
         class="mb-2 text-sm font-medium text-gray-900 sr-only dark:text-white"
@@ -29,7 +29,7 @@
         <input
             type="email"
             id="submitNewsletter"
-            class="ps-9 text-sm md:text-base border border-gray-300 dark:border-gray-600 transition-colors ease-in-out duration-300 {{ $inputClasses }}"
+            class="ps-9 text-sm md:text-base border border-gray-300 outline-none focus:ring-2 dark:border-gray-600 transition-colors ease-in-out duration-300 {{ $inputClasses }}"
             placeholder="Email"
             required />
         <button

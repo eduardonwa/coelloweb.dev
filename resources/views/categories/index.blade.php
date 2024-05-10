@@ -1,7 +1,7 @@
 <x-blog-layout>
     <div class="mx-auto container">
         <h1 class="text-2xl leading-tight text-smoke dark:text-woodsmoke-200 mt-6 mb-8 px-10 text-center">
-            Explora mi contenido a través del tema que más te interese
+            Navega por mi contenido seleccionando el tema que más te atraiga
         </h1>
 
         <x-categories-menu :categories="$categories" />

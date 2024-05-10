@@ -1,11 +1,11 @@
+@if ($categories->isEmpty())
+    <div class="text-center w-full p-3 border-black text-xl">
+        <p class="text-woodsmoke-900 dark:text-woodsmoke-400">
+            Parece que no hay entradas, vuelve pronto 👋
+        </p>
+    </div>
+@endif
 <div class="flex">
-    @if ($categories->isEmpty())
-        <div class="flex justify-center w-full text-xl">
-            <p class="text-woodsmoke-900 dark:text-woodsmoke-400">
-                Parece que no hay entradas, vuelve pronto
-            </p> <span class="pl-1">👋</span>
-        </div>
-    @endif
     <div class="hide-scrollbar mx-auto mb-3 mt-8 grid grid-flow-col justify-start gap-x-4 gap-y-5 overflow-auto px-[30px] md:mt-[65px]"
         style="grid-template-rows: repeat(1, 1fr); grid-auto-columns: 225px;"
     >

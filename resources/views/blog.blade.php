@@ -3,7 +3,7 @@
     <div class="overflow-hidden max-w-7xl mx-auto mt-8 pb-16 space-y-12 p-3 text-gray-900 dark:text-gray-100 lg:px-8 lg:grid lg:grid-cols-2">
         <!-- contratame -->
         <div class="text-center lg:px-8 py-8 lg:col-span-2">
-            <p class=" text-lg pb-8 dark:text-monster-50 text-smoke">
+            <p class="font-semibold text-lg pb-8 dark:text-woodsmoke-50 text-smoke">
                 Lorem ipsum dolor sit amet consectetur, adipisicing elit. Est dicta esse voluptas hic eum autem eligendi ea qui laboriosam et quis.
             </p>
             <button class="outline-none focus:ring-4 focus:ring-monster-200 transition-colors ease-in-out duration-300 text-gray-50 bg-zinc-900 hover:bg-zinc-700 dark:hover:bg-monster-700 dark:bg-monster-600 p-4 text-lg rounded-xl font-semibold"
