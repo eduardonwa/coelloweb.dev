@@ -78,7 +78,3 @@
         @livewireScriptConfig
     </body>
 </html>
-
-
-porkbun: aaW@$>J7a'5y4M3
-aol: Vj;D]&@b%v^c8NB
