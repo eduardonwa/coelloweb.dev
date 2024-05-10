@@ -13,7 +13,7 @@
     }
 @endphp
 
-<form class="sm:w-s-610 lg:w-s-610">
+<form class="w-full sm:w-s-610 lg:w-s-610">
     <label
         for="submitNewsletter"
         class="mb-2 text-sm font-medium text-gray-900 sr-only dark:text-white"
