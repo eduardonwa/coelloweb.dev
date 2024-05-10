@@ -1,7 +1,8 @@
 @props([
     'format' => 'regular',
     'inputClasses' => 'p-3 block w-full rounded-lg bg-woodsmoke-200 hover:bg-woodsmoke-100 dark:text-woodsmoke-800 focus:ring-monster-500 dark:focus:ring-monster-500 focus:border-monster-500 dark:focus:border-monster-500 dark:placeholder-gray-400',
-    'buttonClasses' => 'end-0 top-0 uppercase text-monster-50 text-sm bg-woodsmoke-400 hover:bg-monster-600 focus:ring-4 focus:outline-none focus:ring-monster-300 rounded-r-lg dark:bg-smoke dark:hover:bg-monster-600 dark:focus:ring-monster-800'
+    'buttonClasses' => 'end-0 top-0 uppercase text-monster-50 text-sm bg-woodsmoke-400 hover:bg-monster-600 focus:ring-4 focus:outline-none focus:ring-monster-300 rounded-r-lg dark:bg-smoke dark:hover:bg-monster-600 dark:focus:ring-monster-800',
+    'padding' => ''
 ])
 
 @php
@@ -9,11 +10,12 @@
         case 'minimal':
             $inputClasses = 'p-3 text-gray-100 bg-smoke border-gray-500 rounded-r-none hover:placeholder-woodsmoke-400 placeholder-woodsmoke-200 rounded-md focus:ring-woodsmoke-500 dark:focus:ring-woodsmoke-500 focus:border-woodsmoke-500 dark:focus:border-woodsmoke-500';
             $buttonClasses = 'bg-woodsmoke-200 text-sm text-smoke2 rounded-r-md';
+            $padding = 'pl-6';
             break;
     }
 @endphp
 
-<form class="w-full sm:w-s-610 lg:w-s-610">
+<form class="{{ $padding }} w-full sm:w-s-610 lg:w-s-610">
     <label
         for="submitNewsletter"
         class="mb-2 text-sm font-medium text-gray-900 sr-only dark:text-white"
@@ -34,7 +36,7 @@
             required />
         <button
             type="submit"
-            class="absolute px-2 sm:px-4 h-full transition-colors ease-in-out duration-300 {{ $buttonClasses }}"
+            class="absolute px-2 sm:px-4 w-24 h-full transition-colors ease-in-out duration-300 {{ $buttonClasses }}"
                 > Suscríbete
         </button>
     </div>
