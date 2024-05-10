@@ -36,7 +36,7 @@
             required />
         <button
             type="submit"
-            class="absolute px-2 sm:px-4 w-24 h-full transition-colors ease-in-out duration-300 {{ $buttonClasses }}"
+            class="absolute px-2 sm:px-4 h-full transition-colors ease-in-out duration-300 {{ $buttonClasses }}"
                 > Suscríbete
         </button>
     </div>
