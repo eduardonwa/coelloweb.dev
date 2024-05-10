@@ -10,7 +10,7 @@
         case 'minimal':
             $inputClasses = 'p-3 text-gray-100 bg-smoke border-gray-500 rounded-r-none hover:placeholder-woodsmoke-400 placeholder-woodsmoke-200 rounded-md focus:ring-woodsmoke-500 dark:focus:ring-woodsmoke-500 focus:border-woodsmoke-500 dark:focus:border-woodsmoke-500';
             $buttonClasses = 'bg-woodsmoke-200 text-sm text-smoke2 rounded-r-md';
-            $padding = 'pl-6';
+            $padding = 'pl-6 sm:pl-0';
             break;
     }
 @endphp
