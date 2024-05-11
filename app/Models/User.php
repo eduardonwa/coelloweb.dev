@@ -5,10 +5,11 @@ namespace App\Models;
 // use Illuminate\Contracts\Auth\MustVerifyEmail;
 use App\Models\Post;
 use Illuminate\Notifications\Notifiable;
+use Filament\Models\Contracts\FilamentUser;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Foundation\Auth\User as Authenticatable;
 
-class User extends Authenticatable
+abstract class User extends Authenticatable implements FilamentUser
 {
     use HasFactory, Notifiable;
 
@@ -49,5 +50,10 @@ class User extends Authenticatable
     public function posts()
     {
         return $this->hasMany(Post::class);
+    }
+
+    public function canAccessFilament(): bool
+    {
+        return str_ends_with($this->email, '@hotmail.com') && $this->hasVerifiedEmail();
     }
 }
