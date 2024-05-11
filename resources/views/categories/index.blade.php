@@ -1,7 +1,7 @@
-<x-blog-layout>
+<x-blog-layout meta-title="Eduardo Coello - Categorías" meta-description="¿Aún no tienes tu pagina? ¡Yo te ayudo! Desde 500 pesos en adelante. Hablemos de ideas.">
     <div class="mx-auto container">
         <h1 class="text-2xl leading-tight text-smoke dark:text-woodsmoke-200 mt-6 mb-8 px-10 text-center">
-            Navega por mi contenido seleccionando el tema que más te atraiga
+            Navega mi contenido y selecciona el tema que más te atraiga
         </h1>
 
         <x-categories-menu :categories="$categories" />

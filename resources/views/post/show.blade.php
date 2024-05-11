@@ -1,4 +1,4 @@
-<x-blog-layout>
+<x-blog-layout :meta-title="$post->meta_title ?: $post->title" :meta-description="$post->meta_description">
     <div class="py-12">
         <div class="max-w-7xl mx-auto sm:px-6">
             <div class="overflow-hidden lg:w-2/3 lg:container lg:mx-auto">

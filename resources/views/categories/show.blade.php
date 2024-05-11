@@ -1,4 +1,4 @@
-<x-blog-layout>
+<x-blog-layout :meta-title="'Eduardo Coello -' . ' ' . $category->name" :meta-description="$category->description">
     <div class="mx-auto container px-0 lg:px-[30px]">
         <div class="flex justify-center items-center space-x-2 mt-6 mb-8 px-10 text-center">
             <a

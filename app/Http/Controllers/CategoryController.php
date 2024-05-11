@@ -10,10 +10,13 @@ class CategoryController extends Controller
 {
     public function index()
     {
+        // eager load categories with posts
         $categories = Category::with(['posts' => function ($query) {
         // closure limits the number of posts to 3 and returns distinct values
             $query->distinct()->limit(3);
         }])->get();
+
+        $metaName = Category::where('name');
 
         return view('categories.index', compact('categories'));
     }

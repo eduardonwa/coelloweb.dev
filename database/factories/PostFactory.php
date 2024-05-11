@@ -23,6 +23,8 @@ class PostFactory extends Factory
             'thumbnail' => fake()->imageUrl(),
             'slug' => fake()->slug(),
             'caption' => fake()->sentence(5),
+            'meta_title' => fake()->sentence(),
+            'meta_description' => fake()->paragraph(),
             'active' => fake()->boolean,
             'published_at' => fake()->dateTime,
             'category_id' => fake()->numberBetween(1, 4),

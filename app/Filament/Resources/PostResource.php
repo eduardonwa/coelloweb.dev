@@ -33,13 +33,13 @@ class PostResource extends Resource
                     Forms\Components\Grid::make(2)
                     ->schema([
                         Forms\Components\TextInput::make('title')
-                        ->required()
-                        ->maxLength(2048)
-                        ->reactive()
-                        ->afterStateUpdated(fn (Set $set, ?string $state) => $set('slug', Str::slug($state))),
-                    Forms\Components\TextInput::make('slug')
-                        ->required()
-                        ->maxLength(2048),
+                            ->live(onBlur: true)
+                            ->required()
+                            ->maxLength(2048)
+                            ->afterStateUpdated(fn (Set $set, ?string $state) => $set('slug', Str::slug($state))),
+                        Forms\Components\TextInput::make('slug')
+                            ->required()
+                            ->maxLength(2048),
                     Forms\Components\TextInput::make('caption'),
                     ]),
                     TiptapEditor::make('body')

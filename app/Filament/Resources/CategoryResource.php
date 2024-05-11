@@ -27,17 +27,30 @@ class CategoryResource extends Resource
     {
         return $form
             ->schema([
-                Forms\Components\TextInput::make('name')
-                    ->required()
-                    ->maxLength(2048)
-                    ->reactive()
-                    ->afterStateUpdated(fn (Set $set, ?string $state) => $set('slug', Str::slug($state))),
-                Forms\Components\TextInput::make('slug')
-                    ->required()
-                    ->maxLength(2048),
-                FileUpload::make('icon')
-                        ->required()
-            ]);
+                Forms\Components\Card::make()
+                ->schema([
+                    Forms\Components\Grid::make(2)
+                    ->schema([
+                        Forms\Components\TextInput::make('name')
+                            ->required()
+                            ->maxLength(2048)
+                            ->reactive()
+                            ->afterStateUpdated(fn (Set $set, ?string $state) => $set('slug', Str::slug($state))),
+                        Forms\Components\TextInput::make('slug')
+                            ->required()
+                            ->maxLength(2048),
+                        Forms\Components\Textarea::make('description')
+                            ->autosize()
+                            ->cols(14)
+                            ->maxLength(280),
+                    ]),
+                ])->columnSpan(8),
+                    Forms\Components\Card::make()
+                    ->schema([
+                        FileUpload::make('icon')
+                            ->required()
+                    ])->columnSpan(4)
+            ])->columns(12);
     }
 
     public static function table(Table $table): Table

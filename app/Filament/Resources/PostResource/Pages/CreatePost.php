@@ -3,6 +3,7 @@
 namespace App\Filament\Resources\PostResource\Pages;
 
 use Filament\Actions;
+use Filament\Support\Enums\Alignment;
 use App\Filament\Resources\PostResource;
 use Filament\Resources\Pages\CreateRecord;
 use Pboivin\FilamentPeek\Pages\Actions\PreviewAction;
@@ -20,7 +21,7 @@ class CreatePost extends CreateRecord
 
         return $data;
     }
-
+    public static string | Alignment $formActionsAlignment = Alignment::Right;
     protected function getActions(): array
     {
         return [
