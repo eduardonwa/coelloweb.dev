@@ -18,7 +18,7 @@ class CategoryFactory extends Factory
     {
         return [
             'name' => fake()->words(1, true),
-            'description' => fake()->paragraph(),
+            'description' => fake()->sentence(),
             'slug' => fake()->slug(),
             'icon' => fake()->imageUrl()
         ];

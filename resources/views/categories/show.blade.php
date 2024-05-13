@@ -20,13 +20,13 @@
                         style="max-width: 443px;"
                     >
                         <a href="{{ route('posts.show', $post->slug) }}"
-                            class="flex flex-col justify-between"
+                            class="flex flex-col justify-between items-center text-center"
                         >
                             <header class="pb-4">
                                 <p class="pb-3 font-semibold text-2xl">
                                     {{ $post->title }}
                                 </p>
-                                <div class="flex items-center space-x-2">
+                                <div class="flex justify-center items-center space-x-2">
                                     <p class="text-sm text-woodsmoke-700">
                                         @if ($post->published_at->diffInWeeks(now()) >= 1)
                                             {{ $post->getFormattedDate() }}

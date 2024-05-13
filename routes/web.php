@@ -19,3 +19,7 @@ Route::get('posts/{post:slug}', [PostController::class, 'show'])->name('posts.sh
 
 Route::get('categories', [CategoryController::class, 'index'])->name('categories.index');
 Route::get('categories/{category:slug}', [CategoryController::class, 'show'])->name('categories.show');
+
+Route::get("sitemap.xml" , function () {
+    return \Illuminate\Support\Facades\Redirect::to('sitemap.xml');
+});
