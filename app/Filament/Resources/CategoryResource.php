@@ -32,9 +32,9 @@ class CategoryResource extends Resource
                     Forms\Components\Grid::make(2)
                     ->schema([
                         Forms\Components\TextInput::make('name')
+                            ->live(onBlur: true)
                             ->required()
                             ->maxLength(2048)
-                            ->reactive()
                             ->afterStateUpdated(fn (Set $set, ?string $state) => $set('slug', Str::slug($state))),
                         Forms\Components\TextInput::make('slug')
                             ->required()
@@ -57,13 +57,13 @@ class CategoryResource extends Resource
     {
         return $table
             ->columns([
+                Tables\Columns\ImageColumn::make('icon'),
                 Tables\Columns\TextColumn::make('name')
                     ->searchable()
                     ->sortable(),
                 Tables\Columns\TextColumn::make('updated_at')
                     ->sortable()
                     ->dateTime(),
-                Tables\Columns\ImageColumn::make('icon'),
             ])
             ->filters([
                 //

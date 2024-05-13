@@ -36,10 +36,11 @@
                         <img
                             src="{{ Storage::disk('public')->exists($post->thumbnail) ? Storage::url($post->thumbnail) : asset($post->thumbnail) }}"
                             alt="{{ $post->title }}"
-                            class="w-full"
+                            class="w-full rounded-lg shadow-lg"
                         >
                     </header>
-                    <div class="prose prose-lg max-w-full p-3 shadow-sm rounded-lg rounded-t-none bg-white dark:bg-woodsmoke-700 dark:text-woodsmoke-100 text-gray-900">
+
+                    <div class="prose prose-lg max-w-full p-3 dark:text-woodsmoke-100 text-gray-900">
                         <p class="pt-2">
                             {{ $post->caption }}
                         </p>

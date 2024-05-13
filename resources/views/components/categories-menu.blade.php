@@ -12,7 +12,7 @@
         @foreach ($categories as $category)
         <div class="flex flex-1 justify-center text-center md:max-w-[225px]">
             @if ($category->posts->where('active', 1)->isNotEmpty())
-                <a class="relative transition-colors duration-300 bg-woodsmoke-200 hover:bg-woodsmoke-600/30 dark:bg-woodsmoke-950 dark:text-woodsmoke-200 dark:hover:bg-woodsmoke-900/50 flex h-full w-full flex-shrink-0 cursor-pointer flex-col justify-between rounded-2xl px-3 py-1 bg-blue/7 hover:bg-blue/13"
+                <a class="relative transition-colors duration-300 bg-woodsmoke-200 hover:bg-woodsmoke-600/30 dark:bg-woodsmoke-900 dark:text-woodsmoke-200 dark:hover:bg-woodsmoke-900/50 flex h-full w-full flex-shrink-0 cursor-pointer flex-col justify-between rounded-2xl px-3 py-1 bg-blue/7 hover:bg-blue/13"
                     style="height: 84px; min-width: 192px;"
                     href="{{ route('categories.show', $category->slug) }}"
                 >

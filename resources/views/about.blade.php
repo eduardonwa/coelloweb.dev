@@ -1,2 +1,2 @@
-<!-- incluir meta title y meta description-->
+<!-- incluir google script, meta title, meta description-->
 about
