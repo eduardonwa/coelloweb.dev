@@ -18,6 +18,16 @@
     </head>
     <body class="bg-gray-200 dark:bg-smoke font-sans antialiased"
     >
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-MPL9EF0DLQ"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'G-MPL9EF0DLQ');
+    </script>
+
         <x-bottom-nav>
             <x-slot name="content">
                 <a class="font-semibold flex flex-col items-center justify-center"
