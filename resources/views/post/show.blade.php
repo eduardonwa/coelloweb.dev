@@ -27,7 +27,7 @@
                         </div>
 
                         <div class="flex flex-wrap items-baseline justify-start gap-2">
-                            @foreach ($tags as $tag)
+                            @foreach ($post->tags as $tag)
                                 <span class="text-sm border rounded-md border-woodsmoke-200/30 p-1 dark:hover:bg-woodsmoke-900 cursor-pointer transition-colors">
                                     #{{ $tag->name }}
                                 </span>
