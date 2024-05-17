@@ -40,10 +40,6 @@
         @apply dark:text-woodsmoke-100;
     }
 
-    p {
-        font-size: 20px;
-    }
-
     ul > li {
         list-style-type: '✔️';
     }
