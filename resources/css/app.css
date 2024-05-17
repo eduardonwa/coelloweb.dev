@@ -15,4 +15,29 @@
         -ms-overflow-style: none;  /* IE and Edge */
         scrollbar-width: none;  /* Firefox */
     }
+
+    /* tip-tap styles */
+    a {
+        @apply hover:text-monster-600;
+    }
+
+    a[data-as-button="true"] {
+        text-decoration: none;
+        display: inline-block;
+        @apply bg-monster-400 py-2 leading-relaxed px-5;
+
+        &[data-as-button-theme="primary"] {
+            color: black;
+        }
+    }
+
+    .filament-tiptap-grid-builder {
+        display: block;
+    }
+
+    @media (min-width: 640px) {
+        .filament-tiptap-grid-builder {
+            display: grid;
+        }
+     }
 }
