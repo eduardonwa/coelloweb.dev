@@ -33,6 +33,7 @@
             @media (min-width: 640px) {
                 .filament-tiptap-grid-builder {
                     display: grid;
+                    place-items: center;
                 }
             }
         </style>
