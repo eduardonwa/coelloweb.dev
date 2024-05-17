@@ -10,7 +10,32 @@
         <!-- Fonts -->
         <link rel="preconnect" href="https://fonts.bunny.net">
         <link href="https://fonts.bunny.net/css?family=albert-sans:300,400,500,600,700" rel="stylesheet" />
+        <style>
+            /* tip-tap styles */
+            a {
+                @apply hover:text-monster-600;
+            }
 
+            a[data-as-button="true"] {
+                text-decoration: none;
+                display: inline-block;
+                @apply bg-monster-400 py-2 leading-relaxed px-5;
+
+                &[data-as-button-theme="primary"] {
+                    color: black;
+                }
+            }
+
+            .filament-tiptap-grid-builder {
+                display: block;
+            }
+
+            @media (min-width: 640px) {
+                .filament-tiptap-grid-builder {
+                    display: grid;
+                }
+            }
+        </style>
         <!-- Scripts -->
         @vite(['resources/css/app.css', 'resources/js/app.js'])
         @livewireStyles

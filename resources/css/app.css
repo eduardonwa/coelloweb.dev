@@ -31,13 +31,7 @@
         }
     }
 
-    .filament-tiptap-grid-builder {
-        display: block;
+    strong {
+        @apply dark:text-woodsmoke-100;
     }
-
-    @media (min-width: 640px) {
-        .filament-tiptap-grid-builder {
-            display: grid;
-        }
-     }
 }
