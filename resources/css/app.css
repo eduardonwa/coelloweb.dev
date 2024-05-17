@@ -18,7 +18,7 @@
 
     /* tip-tap styles */
     a {
-        @apply hover:text-monster-600;
+        @apply dark:text-woodsmoke-400 hover:text-monster-600 dark:hover:text-monster-600 transition-colors ease-in-out duration-300;
     }
 
     a[data-as-button="true"] {
@@ -29,6 +29,15 @@
         &[data-as-button-theme="primary"] {
             color: black;
         }
+    }
+
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6 {
+        @apply dark:text-woodsmoke-100;
     }
 
     strong {
