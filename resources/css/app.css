@@ -40,7 +40,31 @@
         @apply dark:text-woodsmoke-100;
     }
 
+    ul > li {
+        list-style-type: '✔️';
+    }
+
     strong {
         @apply dark:text-woodsmoke-100;
+    }
+
+    details {
+        /* border-radius: 4px; */
+        cursor: pointer;
+        @apply border-l-8 border-monster-400 bg-woodsmoke-200 dark:bg-woodsmoke-900 open:bg-woodsmoke-50 dark:open:bg-woodsmoke-950 open:ring-1 open:ring-black/5 dark:open:ring-white/10 open:shadow-md p-6 rounded-lg transition-colors ease-in-out duration-300;
+    }
+
+    details > summary {
+        list-style-type: '👉 ';
+    }
+
+    details[open] > summary {
+        list-style-type: '👇 ';
+    }
+
+    summary {
+        font-weight: bold;
+        margin: -0.5em -0.5em 0;
+        padding: 0.5em;
     }
 }
