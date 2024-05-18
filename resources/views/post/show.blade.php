@@ -44,7 +44,7 @@
                         <p class="pt-2">
                             {{ $post->caption }}
                         </p>
-                        <p class="leading-relaxed">
+                        <p class="leading-relaxed text-[20px]">
                             {!! $post->body !!}
                         </p>
                     </div>
