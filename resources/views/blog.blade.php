@@ -58,7 +58,7 @@
                                 {{ $recent->category->name }}
                             </span>
                             <p class="text-base sm:pb-2 text-smoke dark:text-monster-50">
-                                {!! Str::limit($recent->body, 89, '...') !!}
+                                {!! $recent->caption !!}
                             </p>
                         </div>
                         <!-- card -->
@@ -95,7 +95,7 @@
                                 {{ $popular->category->name }}
                             </span>
                             <p class="text-base sm:pb-2 text-smoke dark:text-monster-50">
-                                {!! Str::limit($popular->body, 89, '...') !!}
+                                {!! $popular->caption !!}
                             </p>
                         </div>
                         <!-- card -->
@@ -178,7 +178,7 @@
                     </div>
                 </div>
                 <p class="text-2xl dark:text-woodsmoke-200">
-                    {{ Str::limit($post->body, 89, '...') }}
+                    {{ $post->caption }}
                 </p>
             </div>
             <hr class="border border-gray-500/30 ">

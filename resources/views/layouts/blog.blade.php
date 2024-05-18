@@ -22,10 +22,6 @@
                 }
             }
 
-            p {
-                font-size: 20px;
-            }
-
             .filament-tiptap-grid-builder {
                 display: block;
             }
