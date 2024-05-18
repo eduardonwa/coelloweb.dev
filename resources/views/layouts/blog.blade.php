@@ -12,10 +12,6 @@
         <link href="https://fonts.bunny.net/css?family=albert-sans:300,400,500,600,700" rel="stylesheet" />
         <style>
             /* tip-tap styles */
-            a {
-                @apply hover:text-monster-600;
-            }
-
             a[data-as-button="true"] {
                 text-decoration: none;
                 display: inline-block;
