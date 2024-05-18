@@ -58,7 +58,7 @@
                                 {{ $recent->category->name }}
                             </span>
                             <p class="text-base sm:pb-2 text-smoke dark:text-monster-50">
-                                {!! Str::limit($recent->caption, 80, '...') !!}
+                                {!! Str::limit($recent->caption, 160, '...') !!}
                             </p>
                         </div>
                         <!-- card -->
@@ -95,7 +95,7 @@
                                 {{ $popular->category->name }}
                             </span>
                             <p class="text-base sm:pb-2 text-smoke dark:text-monster-50">
-                                {!! Str::limit($popular->caption, 80, '...') !!}
+                                {!! Str::limit($popular->caption, 160, '...') !!}
                             </p>
                         </div>
                         <!-- card -->
@@ -165,7 +165,7 @@
             <div class="p-4">
                 <div class="flex flex-col justify-between pb-8">
                     <a href="{{ route('posts.show', $post->slug) }}"
-                        class="text-3xl pb-4 text-monster-600 hover:underline dark:text-monster-400">
+                        class="text-2xl pb-4 text-monster-600 hover:underline dark:text-monster-400">
                         {{ $post->title }}
                     </a>
                     <div class="flex items-end space-x-4">
@@ -173,12 +173,12 @@
                             >{{ $post->category->name }}
                         </span>
                         <span class="dark:text-gray-400 text-woodsmoke-900 sm:pr-4">
-                            fecha
+                            {{ $post->getFormattedDate() }}
                         </span>
                     </div>
                 </div>
-                <p class="text-2xl dark:text-woodsmoke-200">
-                    {!! Str::limit($post->caption, 80, '...') !!}
+                <p class="text-xl dark:text-woodsmoke-200">
+                    {!! Str::limit($post->caption, 160, '...') !!}
                 </p>
             </div>
             <hr class="border border-gray-500/30 ">
