@@ -40,11 +40,11 @@
                         >
                     </header>
 
-                    <div class="prose prose-lg max-w-full p-3 dark:text-woodsmoke-100 text-gray-900">
+                    <div class="prose prose-lg max-w-full text-[20px] p-3 dark:text-woodsmoke-100 text-gray-900">
                         <p class="pt-2">
                             {{ $post->caption }}
                         </p>
-                        <p class="leading-relaxed text-[20px]">
+                        <p class="leading-relaxed">
                             {!! $post->body !!}
                         </p>
                     </div>
