@@ -54,11 +54,8 @@
                             >
                                 {{ $recent->title }}
                             </a>
-                            <span class="text-sm text-woodsmoke-600 dark:text-monster-50">
-                                {{ $recent->category->name }}
-                            </span>
-                            <p class="text-base sm:pb-2 text-smoke dark:text-monster-50">
-                                {!! Str::limit($recent->caption, 160, '...') !!}
+                            <p class="pt-2 text-base sm:pb-2 text-smoke dark:text-monster-50">
+                                {!! Str::limit($recent->caption, 140, '...') !!}
                             </p>
                         </div>
                         <!-- card -->
@@ -91,9 +88,6 @@
                             >
                                 {{ $popular->title }}
                             </a>
-                            <span class="text-sm text-woodsmoke-600 dark:text-monster-50">
-                                {{ $popular->category->name }}
-                            </span>
                             <p class="text-base sm:pb-2 text-smoke dark:text-monster-50">
                                 {!! Str::limit($popular->caption, 160, '...') !!}
                             </p>
