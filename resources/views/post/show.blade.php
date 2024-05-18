@@ -18,7 +18,7 @@
                         </div>
 
                         <div>
-                            <h1 class="pb-5 text-monster-600 text-4xl">
+                            <h1 class="pb-5 text-monster-600 dark:text-monster-400 text-4xl">
                                 {{ $post->title }}
                             </h1>
                             <span class="opacity-60 text-sm rounded-full">

@@ -27,7 +27,7 @@
                             >
                         </div>
                         <div class="w-full lg:w-auto flex justify-between md:block">
-                            <h2 class="text-left text-base font-semibold leading-tight">
+                            <h2 class="text-left text-base font-semibold leading-tight text-black">
                                 {{ $category->name }}
                             </h2>
                         </div>

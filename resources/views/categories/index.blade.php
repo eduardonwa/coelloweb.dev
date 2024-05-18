@@ -27,7 +27,7 @@
                                     class="flex flex-col justify-between items-center text-center"
                                 >
                                     <header class="pb-4">
-                                        <p class="pb-3 font-semibold text-2xl">
+                                        <p class="dark:text-woodsmoke-100 pb-3 font-semibold text-2xl">
                                             {{ $post->title }}
                                         </p>
                                         <div class="flex justify-center items-center space-x-2">

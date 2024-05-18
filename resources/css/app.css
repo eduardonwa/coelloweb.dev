@@ -17,10 +17,6 @@
     }
 
     /* tip-tap styles */
-    a {
-        @apply dark:text-woodsmoke-400 hover:text-monster-600 dark:hover:text-monster-600 transition-colors ease-in-out duration-300;
-    }
-
     a[data-as-button="true"] {
         text-decoration: none;
         display: inline-block;
@@ -29,6 +25,10 @@
         &[data-as-button-theme="primary"] {
             color: black;
         }
+    }
+
+    a[data-as-button="false"] {
+        @apply text-monster-600 dark:text-monster-400;
     }
 
     h1,
