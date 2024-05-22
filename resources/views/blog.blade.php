@@ -3,12 +3,14 @@
     <div class="overflow-hidden max-w-7xl mx-auto mt-8 pb-16 space-y-12 p-3 text-gray-900 dark:text-gray-100 lg:px-8 lg:grid lg:grid-cols-2">
         <!-- contratame -->
         <div class="text-center lg:px-8 py-8 lg:col-span-2">
-            <p class="font-semibold text-lg pb-8 dark:text-woodsmoke-50 text-smoke">
-                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Est dicta esse voluptas hic eum autem eligendi ea qui laboriosam et quis.
+            <p class="text-lg pb-8 dark:text-woodsmoke-50 text-smoke">
+                Blog <span class="italic">(en proceso de ser completado)</span> de un diseñador gráfico apasionado por el desarrollo web.
+                Mi enfoque es aplicar todo lo que he aprendido desde que empecé a realizar proyectos web para empresarios como tú.
+                <span class="font-bold">Mi objetivo es crear interfaces web con significado.</span>
             </p>
-            <button class="outline-none focus:ring-4 focus:ring-monster-200 transition-colors ease-in-out duration-300 text-gray-50 bg-zinc-900 hover:bg-zinc-700 dark:hover:bg-monster-700 dark:bg-monster-600 p-4 text-lg rounded-xl font-semibold"
+            <a href="mailto:coelloweb@aol.com" class="outline-none focus:ring-4 focus:ring-monster-200 transition-colors ease-in-out duration-300 text-gray-50 bg-zinc-900 hover:bg-zinc-700 dark:hover:bg-monster-700 dark:bg-monster-600 p-4 text-lg rounded-xl font-semibold"
                 > Contrátame
-            </button>
+            </a>
         </div>
 
         @if ($lastPost->isEmpty())
@@ -137,8 +139,8 @@
             <h1 class="text-5xl lg:text-6xl font-bold text-woodsmoke-950">
                 NEWSLETTER
             </h1>
-            <p class="text-smoke text-center sm:text-xl  tracking-wide">Qui itaque asperiores fugiat aut quia et sit.
-                Non hic sit optio nemo ullam.
+            <p class="text-smoke text-center sm:text-xl  tracking-wide">
+                Muy pronto
             </p>
         </div>
         <x-input-newsletter />
