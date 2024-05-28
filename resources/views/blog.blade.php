@@ -40,7 +40,7 @@
             @endforeach
         </div>
 
-        <div class="md:w-full md:flex md:flex-col sm:space-y-6">
+        <div class="md:w-full md:flex md:flex-col sm:space-y-6 space-y-20">
             @foreach ($recentPosts as $recent)
                 <div class="group sm:border sm:border-gray-300 sm:dark:border-woodsmoke-800 sm:p-3 sm:rounded-md sm:bg-white sm:shadow-lg
                             sm:dark:bg-zinc-900 sm:w-4/6 lg:w-auto lg:h-auto lg:col-start-1 lg:row-start-2 hover:rotate-3 transition ease-in-out duration-150
@@ -74,7 +74,7 @@
             @endforeach
         </div>
 
-        <div class="md:w-full md:flex md:flex-col sm:space-y-6">
+        <div class="md:w-full md:flex md:flex-col sm:space-y-6 space-y-20">
             @foreach ($popularPosts as $popular)
                 <div class="group sm:border sm:border-gray-300 sm:dark:border-woodsmoke-800 sm:p-3 sm:rounded-md sm:bg-white sm:shadow-lg
                             sm:dark:bg-zinc-900 sm:w-4/6 lg:w-auto lg:h-auto lg:col-start-2 lg:row-start-4 hover:-rotate-3 transition ease-in-out duration-150

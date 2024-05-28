@@ -2,7 +2,7 @@
     <div class="flex-col items-center justify-center mx-auto container mt-10 my-8 space-y-10 sm:w-56">
         <x-logo-application class="fill-white w-80 sm:w-96"/>
         <p class="text-center sm:text-start text-woodsmoke-200 sm:w-96">
-            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Est dicta esse voluptas hic eum autem eligendi ea qui laboriosam et quis.
+            Muy pronto estaré compartiendo tips y estrategias directo a tu buzón.
         </p>
         <x-input-newsletter format="minimal"/>
     </div>
