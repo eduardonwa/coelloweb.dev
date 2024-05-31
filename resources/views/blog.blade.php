@@ -3,7 +3,7 @@
     <div class="overflow-hidden max-w-7xl mx-auto mt-8 pb-16 space-y-12 p-3 text-gray-900 dark:text-gray-100 lg:px-8 lg:grid lg:grid-cols-2">
         <div class="text-center lg:px-8 py-8 lg:col-span-2">
             <p class="text-lg pb-8 dark:text-woodsmoke-50 text-smoke">
-                <span class="font-bold">Mi objetivo es crear interfaces web con significado.</span>
+                <span>Mi objetivo es crear interfaces web con significado.</span>
             </p>
             <a href="mailto:coelloweb@aol.com" class="outline-none focus:ring-4 focus:ring-monster-200 transition-colors ease-in-out duration-300 text-gray-50 bg-zinc-900 hover:bg-zinc-700 dark:hover:bg-monster-700 dark:bg-monster-600 p-4 text-lg rounded-xl font-semibold"
                 > Contrátame
