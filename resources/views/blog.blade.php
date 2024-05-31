@@ -3,6 +3,7 @@
     <div class="overflow-hidden max-w-7xl mx-auto mt-8 pb-16 space-y-12 p-3 text-gray-900 dark:text-gray-100 lg:px-8 lg:grid lg:grid-cols-2">
         <div class="text-center lg:px-8 py-8 lg:col-span-2">
             <p class="text-lg pb-8 dark:text-woodsmoke-50 text-smoke">
+
                 <span class="font-bold">Mi objetivo es crear interfaces web con significado.</span>
             </p>
             <a href="mailto:coelloweb@aol.com" class="outline-none focus:ring-4 focus:ring-monster-200 transition-colors ease-in-out duration-300 text-gray-50 bg-zinc-900 hover:bg-zinc-700 dark:hover:bg-monster-700 dark:bg-monster-600 p-4 text-lg rounded-xl font-semibold"
@@ -45,18 +46,29 @@
                             sm:dark:bg-zinc-900 sm:w-4/6 lg:w-auto lg:h-auto lg:col-start-1 lg:row-start-2 hover:rotate-3 transition ease-in-out duration-150
                             {{ $loop->iteration % 2 == 0 ? 'md:self-end lg:self-auto' : 'even' }}"
                 >
-                    <div>
-                        <a href="">
-                            {{ $recent->title }}
-                        </a>
-                        <p>
-                            {!! Str::limit($recent->caption, 140, '...') !!}
-                        </p>
-
-                        <div>
-                            <img src="{{ Storage::disk('public')->exists($recent->thumbnail) ? Storage::url($recent->thumbnail) : asset($recent->thumbnail) }}" alt="">
+                    <div class="relative grid grid-rows-cards sm:flex sm:items-start sm:justify-center md:items-center sm:gap-x-4">
+                        <div class="z-0 p-4 pt-10 absolute h-auto w-full -top-5 row-start-2 border border-gray-300 dark:border-woodsmoke-800 rounded-md bg-white shadow-lg dark:bg-zinc-900
+                                    sm:relative sm:border-none sm:shadow-none sm:pl-4 sm:pt-4 sm:top-0 sm:rounded-none sm:bg-transparent md:p-2"
+                        >
+                            <a
+                                href="{{ route('posts.show', $recent->slug) }}"
+                                class="font-semibold text-xl text-woodsmoke-950 group-hover:text-monster-500 dark:text-monster-50 dark:group-hover:text-monster-400 transition ease-in-out duration-300"
+                            >
+                                {{ $recent->title }}
+                            </a>
+                            <p class="pt-2 text-base sm:pb-2 text-smoke dark:text-monster-50">
+                                {!! Str::limit($recent->caption, 140, '...') !!}
+                            </p>
                         </div>
+                        <!-- card -->
 
+                        <div class="row-start-1 z-10 h-full">
+                            <img
+                                src="{{ Storage::disk('public')->exists($recent->thumbnail) ? Storage::url($recent->thumbnail) : asset($recent->thumbnail) }}"
+                                alt="{{ $recent->title }}"
+                                class="container mx-auto w-72 h-full sm:w-s-233 rounded-md">
+                        </div>
+                        <!-- img -->
                     </div>
                 </div>
             @endforeach
