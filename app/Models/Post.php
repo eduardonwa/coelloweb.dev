@@ -79,10 +79,10 @@ class Post extends Model
         );
     }
 
-    public function scopePostedWithinDays($query, $days)
-    {
-        $query->where('created_at', '>', now()->subDays($days));
-    }
+    // public function scopePostedWithinDays($query, $days)
+    // {
+    //     $query->where('created_at', '>', now()->subDays($days));
+    // }
 
     public function getFormattedDate()
     {
