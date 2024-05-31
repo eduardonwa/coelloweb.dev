@@ -22,23 +22,20 @@ class BlogController extends Controller
             ->skip(1)
             ->get();
 
-        $recentPosts = Post::postedWithinDays(14)
-            ->latest()
+        $recentPosts = Post::latest()
             ->where('active', '=', 1)
             ->take(2)
             ->skip(2)
             ->get();
 
-        $popularPosts = Post::postedWithinDays(30)
-            ->latest()
+        $popularPosts = Post::latest()
             ->where('active', '=', 1)
             ->take(2)
             ->skip(4)
             ->with('category')
             ->get();
 
-        $morePosts = Post::postedWithinDays(30)
-            ->latest()
+        $morePosts = Post::latest()
             ->where('active', '=', 1)
             ->take(2)
             ->skip(6)

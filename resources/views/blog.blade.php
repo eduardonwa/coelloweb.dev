@@ -1,5 +1,4 @@
 <x-blog-layout meta-description="¿Aún no tienes tu página web? ¡Yo te ayudo! Desde 500 pesos en adelante. Hablemos de ideas.">
-
     <div class="overflow-hidden max-w-7xl mx-auto mt-8 pb-16 space-y-12 p-3 text-gray-900 dark:text-gray-100 lg:px-8 lg:grid lg:grid-cols-2">
         <div class="text-center lg:px-8 py-8 lg:col-span-2">
             <p class="text-lg pb-8 dark:text-woodsmoke-50 text-smoke">
