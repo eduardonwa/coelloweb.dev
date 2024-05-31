@@ -16,6 +16,7 @@ class BlogController extends Controller
             ->get();
 
         $secondLast = Post::with('category')
+            ->latest()
             ->where('active', '=', 1)
             ->take(1)
             ->skip(1)
