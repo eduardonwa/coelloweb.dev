@@ -40,7 +40,7 @@
         </div>
         <!-- post 1 sin caption end -->
 
-        <div class="md:w-full md:flex md:flex-col sm:space-y-6">
+        <div>
             @foreach ($recentPosts as $recent)
                 <a href="">
                     {{ $recent->title }}
