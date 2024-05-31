@@ -7,6 +7,7 @@
         <meta name="description" content="{{ $metaDescription }}">
         <meta name="msvalidate.01" content="64EB583AF6E921E1270E6F29A784A037" />
         <title>{{ $metaTitle ?? 'Eduardo Coello' }}</title>
+        <link rel="stylesheet" href="{{ asset('/css/styles/styles.css') }}">
         <!-- Fonts -->
         <link rel="preconnect" href="https://fonts.bunny.net">
         <link href="https://fonts.bunny.net/css?family=albert-sans:300,400,500,600,700" rel="stylesheet" />

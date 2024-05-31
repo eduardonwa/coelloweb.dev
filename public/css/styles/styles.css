@@ -1,0 +1,16 @@
+header {
+    padding: 13px;
+    text-align: center;
+}
+
+.post-img-container {
+    position: relative;
+}
+
+.post-info {
+    color: white;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    padding: 5px;
+}
