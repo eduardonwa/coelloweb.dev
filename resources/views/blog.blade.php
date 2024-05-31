@@ -40,11 +40,37 @@
         </div>
         <!-- post 1 sin caption end -->
 
-        <div>
+        <div class="md:w-full md:flex md:flex-col sm:space-y-6">
             @foreach ($recentPosts as $recent)
-                <a href="">
-                    {{ $recent->title }}
-                </a>
+                <div class="group sm:border sm:border-gray-300 sm:dark:border-woodsmoke-800 sm:p-3 sm:rounded-md sm:bg-white sm:shadow-lg
+                            sm:dark:bg-zinc-900 sm:w-4/6 lg:w-auto lg:h-auto lg:col-start-1 lg:row-start-2 hover:rotate-3 transition ease-in-out duration-150
+                            {{ $loop->iteration % 2 == 0 ? 'md:self-end lg:self-auto' : 'even' }}"
+                >
+                    <div class="relative grid grid-rows-cards sm:flex sm:items-start sm:justify-center md:items-center sm:gap-x-4">
+                        <div class="z-0 p-4 pt-10 absolute h-auto w-full -top-5 row-start-2 border border-gray-300 dark:border-woodsmoke-800 rounded-md bg-white shadow-lg dark:bg-zinc-900
+                                    sm:relative sm:border-none sm:shadow-none sm:pl-4 sm:pt-4 sm:top-0 sm:rounded-none sm:bg-transparent md:p-2"
+                        >
+                            <a
+                                href="{{ route('posts.show', $recent->slug) }}"
+                                class="font-semibold text-xl text-woodsmoke-950 group-hover:text-monster-500 dark:text-monster-50 dark:group-hover:text-monster-400 transition ease-in-out duration-300"
+                            >
+                                {{ $recent->title }}
+                            </a>
+                            <p class="pt-2 text-base sm:pb-2 text-smoke dark:text-monster-50">
+                                {!! Str::limit($recent->caption, 140, '...') !!}
+                            </p>
+                        </div>
+                        <!-- card -->
+
+                        <div class="row-start-1 z-10 h-full">
+                            <img
+                                src="{{ Storage::disk('public')->exists($recent->thumbnail) ? Storage::url($recent->thumbnail) : asset($recent->thumbnail) }}"
+                                alt="{{ $recent->title }}"
+                                class="container mx-auto w-72 h-full sm:w-s-233 rounded-md">
+                        </div>
+                        <!-- img -->
+                    </div>
+                </div>
             @endforeach
         </div>
 
