@@ -18,7 +18,7 @@
                         </div>
 
                         <div>
-                            <h1 class="pb-5 text-monster-600 dark:text-monster-400 text-4xl font-bold">
+                            <h1 class="pb-5 text-monster-600 dark:text-monster-400 text-4xl font-semibold">
                                 {{ $post->title }}
                             </h1>
                             <span class="opacity-60 text-sm rounded-full">
@@ -40,7 +40,7 @@
                         >
                     </header>
 
-                    <div class="prose prose-lg max-w-full text-[20px] p-3 dark:text-woodsmoke-100 text-gray-900">
+                    <div class="prose prose-lg max-w-full text-lg lg:text-[20px] lg:leading-9 p-3 dark:text-woodsmoke-100 text-gray-900">
                         <p class="pt-2">
                             {{ $post->caption }}
                         </p>
