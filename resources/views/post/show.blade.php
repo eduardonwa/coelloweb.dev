@@ -40,7 +40,7 @@
                         >
                     </header>
 
-                    <div class="prose prose-lg max-w-full text-lg lg:text-[20px] lg:leading-9 p-3 dark:text-woodsmoke-100 text-gray-900">
+                    <div class="prose prose-lg max-w-full text-lg leading-8 lg:text-[20px] lg:leading-9 p-3 dark:text-woodsmoke-100 text-gray-900">
                         <p class="pt-2">
                             {{ $post->caption }}
                         </p>
