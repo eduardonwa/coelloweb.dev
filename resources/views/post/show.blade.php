@@ -41,7 +41,7 @@
     </header>
 
     <article class="prose-lg post-body-wrap">
-        <p class="pt-2">
+        <p>
             {{ $post->caption }}
         </p>
         <p class="body-post">
