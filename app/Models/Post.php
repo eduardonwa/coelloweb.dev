@@ -79,11 +79,6 @@ class Post extends Model
         );
     }
 
-    // public function scopePostedWithinDays($query, $days)
-    // {
-    //     $query->where('created_at', '>', now()->subDays($days));
-    // }
-
     public function getFormattedDate()
     {
         return $this->published_at->format('jS F Y');

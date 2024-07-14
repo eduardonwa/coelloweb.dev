@@ -11,14 +11,14 @@ use App\Http\Controllers\CategoryController;
 
 Route::redirect('/', 'blog')->name('welcome');
 
-Route::view('about', 'about')->name('about');
+Route::view('acerca', 'about')->name('about');
 
 Route::get('blog', [BlogController::class, 'index'])->name('blog.index');
 
 Route::get('posts/{post:slug}', [PostController::class, 'show'])->name('posts.show');
 
-Route::get('categories', [CategoryController::class, 'index'])->name('categories.index');
-Route::get('categories/{category:slug}', [CategoryController::class, 'show'])->name('categories.show');
+Route::get('categorias', [CategoryController::class, 'index'])->name('categories.index');
+Route::get('categorias/{category:slug}', [CategoryController::class, 'show'])->name('categories.show');
 
 Route::get("sitemap.xml" , function () {
     return \Illuminate\Support\Facades\Redirect::to('sitemap.xml');

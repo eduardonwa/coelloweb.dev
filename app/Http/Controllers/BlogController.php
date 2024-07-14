@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use App\Models\Post;
+use App\Models\Category;
 use Illuminate\Http\Request;
 
 class BlogController extends Controller
@@ -18,30 +19,25 @@ class BlogController extends Controller
         $secondLast = Post::with('category')
             ->latest()
             ->where('active', '=', 1)
-            ->take(1)
+            ->take(2)
             ->skip(1)
             ->get();
 
-        $recentPosts = Post::latest()
+        $featured = Post::latest()
             ->where('active', '=', 1)
-            ->take(2)
-            ->skip(2)
-            ->get();
-
-        $popularPosts = Post::latest()
-            ->where('active', '=', 1)
-            ->take(2)
-            ->skip(4)
-            ->with('category')
+            ->take(1)
+            ->skip(3)
             ->get();
 
         $morePosts = Post::latest()
             ->where('active', '=', 1)
-            ->take(2)
-            ->skip(6)
-            ->withCount('category')
+            ->take(4)
+            ->skip(4)
+            ->with('category')
             ->get();
 
-        return view('blog', compact('lastPost', 'secondLast', 'recentPosts', 'popularPosts', 'morePosts'));
+        $categories = Category::take(3)->get();
+
+        return view('blog', compact('lastPost', 'secondLast', 'featured', 'morePosts', 'categories'));
     }
 }
