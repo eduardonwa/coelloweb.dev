@@ -1219,4 +1219,8 @@ a {
         color: var(--gray-900);
         font-size: var(--fs-400);
     }
+
+    h1 {
+        line-height: 1.4;
+    }
 }
