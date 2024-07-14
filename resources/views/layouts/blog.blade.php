@@ -23,18 +23,6 @@
                     color: black;
                 }
             }
-
-            .filament-tiptap-grid-builder {
-                display: grid;
-                place-items: center;
-            }
-
-            @media (min-width: 640px) {
-                .filament-tiptap-grid-builder {
-                    display: grid;
-                    place-items: center;
-                }
-            }
         </style>
         <!-- Scripts -->
         @vite(['resources/css/app.css', 'resources/js/app.js'])
