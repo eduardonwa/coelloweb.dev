@@ -23,6 +23,10 @@
                     color: black;
                 }
             }
+
+            small {
+                font-size: 50% !important;
+            }
         </style>
         <!-- Scripts -->
         @vite(['resources/css/app.css', 'resources/js/app.js'])
