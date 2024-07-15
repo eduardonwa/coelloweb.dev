@@ -14,7 +14,7 @@
         </a>
         <a
             class="nav-link"
-            href="acerca"
+            href="#"
         > Acerca
         </a>
     </article>
