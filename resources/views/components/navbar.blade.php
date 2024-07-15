@@ -2,17 +2,11 @@
     <a href="/">
         <img src="/images/ecoello-logo.svg" alt="">
     </a>
-    <ul>
-        <li class="nav-links">
-            <a href="/">Inicio</a>
-        </li>
-        <li class="nav-links">
-            <a href="/blog">
+    <article class="nav-links">
+            <a class="nav-link" href="/">Inicio</a>
+            <a class="nav-link" href="/blog">
                 Blog
             </a>
-        </li>
-        <li class="nav-links">
-            <a href="acerca">Acerca</a>
-        </li>
-    </ul>
+            <a class="nav-link" href="acerca">Acerca</a>
+    </article>
 </nav>
