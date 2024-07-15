@@ -214,13 +214,13 @@ a {
         border-radius: .75rem;
         margin: 1rem;
         padding: 21px;
+        color: var(--gray-50);
 
         .nav-links {
             display: flex;
-            gap: 1rem;
+            gap: 2rem;
 
             .nav-link {
-                color: var(--gray-50);
                 font-size: var(--fs-300);
             }
         }
