@@ -1,62 +1,44 @@
 <footer class="footer full-width">
     <header>
-        <img src="/images/ecoello-logo-footer.svg" alt="">
+        <a href="/">
+            <img src="/images/ecoello-logo-footer.svg" alt="">
+        </a>
     </header>
 
-    <article class="footer-links">
-        <div class="group-links">
+    <section class="footer-links">
+        <article class="footer-group-links">
             <h3>INFO</h3>
-            <ul>
-                <li>
-                    <a href="#">
-                        Contacto
-                    </a>
-                </li>
-                <li>
-                    <a href="acerca">
-                        Acerca
-                    </a>
-                </li>
-                <li>
-                    <a href="#">
-                        Preguntas
-                    </a>
-                </li>
-            </ul>
-        </div>
+            <a href="#">
+                Contacto
+            </a>
+            <a href="acerca">
+                Acerca
+            </a>
+            <a href="#">
+                Preguntas
+            </a>
+        </article>
 
-        <div class="group-links">
+        <article class="footer-group-links">
             <h3>LEGAL</h3>
-            <ul>
-                <li>
-                    <a href="#">
-                        Privacidad
-                    </a>
-                </li>
-                <li>
-                    <a href="#">
-                        Términos
-                    </a>
-                </li>
-            </ul>
-        </div>
+            <a href="#">
+                Privacidad
+            </a>
+            <a href="#">
+                Términos
+            </a>
+        </article>
 
-        <div class="group-links">
+        <article class="footer-group-links">
             <h3>LINKS</h3>
-            <ul>
-                <li>
-                    <a href="/">
-                        Inicio
-                    </a>
-                </li>
-                <li>
-                    <a href="/blog">
-                        Blog
-                    </a>
-                </li>
-            </ul>
-        </div>
-    </article>
+            <a href="/">
+                Inicio
+            </a>
+            <a href="/blog">
+                Blog
+            </a>
+        </article>
+    </section>
 
     <footer class="footer-pie">
         <hr>

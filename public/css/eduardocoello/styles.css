@@ -819,22 +819,22 @@ a {
     .footer-links {
         margin-block: 1rem;
 
-        .group-links {
-            padding-block-end: 1rem;
+        .footer-group-links {
+            display: flex;
+            flex-direction: column;
+            margin-block-end: 1.75rem;
 
             h3 {
                 font-weight: 600;
                 font-size: var(--fs-400);
                 padding-bottom: 8px;
+                color: var(--gray-400);
             }
 
-            ul {
+            a {
                 padding-block-end: 2rem;
                 font-size: var(--fs-400);
-
-                li {
-                    padding-block: 13px;
-                }
+                padding-block: 13px;
             }
 
         }
@@ -873,19 +873,15 @@ a {
             justify-content: flex-end;
             gap: 5rem;
 
-            .group-links {
-                ul {
-                    li {
-                        a {
-                            -webkit-transition: color 100ms linear;
-                            -ms-transition: color 100ms linear;
-                            transition: color 100ms linear;
-                        }
+            .footer-group-links {
+                a {
+                    -webkit-transition: color 100ms linear;
+                    -ms-transition: color 100ms linear;
+                    transition: color 100ms linear;
+                }
 
-                        a:hover {
-                            color: var(--primary-200);
-                        }
-                    }
+                a:hover {
+                    color: var(--primary-200);
                 }
             }
         }
