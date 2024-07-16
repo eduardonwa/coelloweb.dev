@@ -1,9 +1,7 @@
 <!DOCTYPE html>
 <html>
     <head>
-        {{-- <meta property="og:image:secure_url" content="https://coelloweb.dev/{{ $metaThumbnail }}" />
-        <meta property="og:url" content="https://www.coelloweb.dev/"/> --}}
-
+        <meta property="og:image:secure_url" content="https://coelloweb.dev/{{ $metaThumbnail }}" />
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <meta name="csrf-token" content="{{ csrf_token() }}">
