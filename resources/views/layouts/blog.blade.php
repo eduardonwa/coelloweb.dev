@@ -9,11 +9,6 @@
         <meta name="google-adsense-account" content="ca-pub-5338710529457277">
         <title>{{ $metaTitle ?? 'Eduardo Coello' }}</title>
 
-        <meta property="og:title" content="Eduardo Coello - Diseñador web" />
-        <meta property="og:type" content="website" />
-        <meta property="og:image" content="https://coelloweb.dev/storage/01HZ00YRNX2CG2G52W410TH675.webp" />
-        <meta property="og:url" content="https://www.coelloweb.dev" />
-
         <link rel="stylesheet" href="/css/eduardocoello/styles.css">
         <style>
             /* tip-tap styles */
