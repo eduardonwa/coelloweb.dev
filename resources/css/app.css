@@ -17,20 +17,6 @@
     }
 
     /* tip-tap styles */
-    a[data-as-button="true"] {
-        text-decoration: none;
-        display: inline-block;
-        @apply bg-monster-400 py-2 leading-relaxed px-5;
-
-        &[data-as-button-theme="primary"] {
-            color: black;
-        }
-    }
-
-    a[data-as-button="false"] {
-        @apply text-monster-600 dark:text-monster-400;
-    }
-
     h1,
     h2,
     h3,

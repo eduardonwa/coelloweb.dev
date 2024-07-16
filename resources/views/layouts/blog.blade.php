@@ -9,9 +9,7 @@
         <meta name="google-adsense-account" content="ca-pub-5338710529457277">
         <title>{{ $metaTitle ?? 'Eduardo Coello' }}</title>
         <!-- Fonts -->
-        <link rel="preconnect" href="https://fonts.bunny.net">
         <link rel="stylesheet" href="/css/eduardocoello/styles.css">
-        <link href="https://fonts.bunny.net/css?family=albert-sans:300,400,500,600,700" rel="stylesheet" />
         <style>
             /* tip-tap styles */
             a[data-as-button="true"] {
@@ -20,12 +18,25 @@
                 @apply bg-monster-400 py-2 leading-relaxed px-5;
 
                 &[data-as-button-theme="primary"] {
-                    color: black;
+                    color: white;
                 }
             }
 
+            a[data-as-button="false"] {
+                color: var(--accent-500);
+
+                -webkit-transition: color 200ms linear;
+                -ms-transition: color 200ms linear;
+                transition: color 200ms linear;
+            }
+
+            a[data-as-button="false"]:hover {
+                color: var(--accent-600);
+                text-decoration: underline;
+            }
+
             small {
-                font-size: 50% !important;
+                font-size: 60% !important;
             }
         </style>
         <!-- Scripts -->
