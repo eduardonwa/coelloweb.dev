@@ -3,7 +3,7 @@
     <head>
         <meta property="og:title" content="{{ $metaTitle }}" />
         <meta property="og:type" content="website" />
-        <meta property="og:image:secure" content="https://coelloweb.dev/{{ $metaThumbnail }}" />
+        <meta property="og:image:secure_url" content="https://coelloweb.dev/{{ $metaThumbnail }}" />
         <meta property="og:url" content="https://www.coelloweb.dev/"/>
 
         <meta charset="utf-8">
