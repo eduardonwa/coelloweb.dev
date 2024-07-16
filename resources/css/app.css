@@ -28,7 +28,15 @@
     }
 
     a[data-as-button="false"] {
-        @apply text-monster-600 dark:text-monster-400;
+        color: var(--accent-500);
+
+        -webkit-transition: color 200ms linear;
+        -ms-transition: color 200ms linear;
+        transition: color 200ms linear;
+    }
+
+    a[data-as-button="false"]:hover {
+
     }
 
     h1,
