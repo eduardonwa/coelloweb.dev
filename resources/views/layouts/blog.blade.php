@@ -1,7 +1,19 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <meta property="og:image:secure" content="https://coelloweb.dev/{{ $metaThumbnail }}" />
+        <!-- Open Graph meta tags -->
+        <meta property="og:title" content="{{ $metaTitle }}">
+        <meta property="og:description" content="{{ $metaDescription }}">
+        <meta property="og:type" content="article">
+        <meta property="og:url" content="{{ url()->current() }}">
+        <meta property="og:image" content="{{ asset('storage/'.$metaThumbnail) }}">
+        <meta property="og:image:secure_url" content="{{ asset('storage/'.$metaThumbnail) }}">
+        <meta property="og:image:type" content="image/webp">
+        <meta property="og:image:width" content="1200">
+        <meta property="og:image:height" content="630">
+        <meta property="og:locale" content="es_ES">
+        <meta property="og:site_name" content="Eduardo Coello">
+
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <meta name="csrf-token" content="{{ csrf_token() }}">
