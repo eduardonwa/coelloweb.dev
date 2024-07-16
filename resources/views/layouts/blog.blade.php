@@ -6,8 +6,8 @@
         <meta property="og:description" content="{{ $metaDescription }}">
         <meta property="og:type" content="article">
         <meta property="og:url" content="{{ url()->current() }}">
-        <meta property="og:image" content="{{ asset('storage/'.$metaThumbnail) }}">
-        <meta property="og:image:secure_url" content="{{ asset('storage/'.$metaThumbnail) }}">
+        <meta property="og:image" content="{{ asset($metaThumbnail) }}">
+        <meta property="og:image:secure_url" content="{{ asset($metaThumbnail) }}">
         <meta property="og:image:type" content="image/webp">
         <meta property="og:image:width" content="1200">
         <meta property="og:image:height" content="630">
