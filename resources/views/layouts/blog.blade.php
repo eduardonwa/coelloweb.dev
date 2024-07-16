@@ -12,16 +12,6 @@
         <link rel="stylesheet" href="/css/eduardocoello/styles.css">
         <style>
             /* tip-tap styles */
-            a[data-as-button="true"] {
-                text-decoration: none;
-                display: inline-block;
-                @apply bg-monster-400 py-2 leading-relaxed px-5;
-
-                &[data-as-button-theme="primary"] {
-                    color: white;
-                }
-            }
-
             a[data-as-button="false"] {
                 color: var(--accent-500);
 
