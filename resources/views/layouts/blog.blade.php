@@ -1,10 +1,10 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <meta property="og:title" content="Eduardo Coello - Diseñador web" />
+        <meta property="og:title" content="{{ $metaTitle }}" />
         <meta property="og:type" content="website" />
         <meta property="og:image:secure" content="https://coelloweb.dev/{{ $metaThumbnail }}" />
-        <meta property="og:url" content="https://www.coelloweb.dev/" />
+        <meta property="og:url" content="https://www.coelloweb.dev/"/>
 
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
