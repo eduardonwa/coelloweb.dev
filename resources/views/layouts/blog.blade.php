@@ -14,7 +14,6 @@
         <meta property="og:image" content="{{ $metaThumbnail }}" />
         <meta property="og:url" content="https://www.coelloweb.dev" />
 
-        <!-- Fonts -->
         <link rel="stylesheet" href="/css/eduardocoello/styles.css">
         <style>
             /* tip-tap styles */
