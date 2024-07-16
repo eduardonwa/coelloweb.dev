@@ -15,7 +15,7 @@
             a[data-as-button="true"] {
                 text-decoration: none;
                 display: inline-block;
-                background-color: var(--accent-500);
+                background-color: var(--accent-400);
                 padding: .5rem 1.25rem;
 
                 -webkit-transition: background-color 200ms linear;
