@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html x-cloak x-data="{darkMode: $persist(false)}" :class="{'dark': darkMode === true }" lang="{{ str_replace('_', '-', app()->getLocale()) }}">
+<html>
     <head>
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -8,6 +8,10 @@
         <meta name="msvalidate.01" content="64EB583AF6E921E1270E6F29A784A037" />
         <meta name="google-adsense-account" content="ca-pub-5338710529457277">
         <title>{{ $metaTitle ?? 'Eduardo Coello' }}</title>
+        <meta property="og:title" content="Eduardo Coello - Diseñador web" />
+        <meta property="og:type" content="website" />
+        <meta property="og:url" content="https://www.coelloweb.dev" />
+
         <!-- Fonts -->
         <link rel="stylesheet" href="/css/eduardocoello/styles.css">
         <style>

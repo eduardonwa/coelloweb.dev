@@ -1,4 +1,5 @@
 <x-blog-layout :meta-title="$post->meta_title ?: $post->title" :meta-description="$post->meta_description">
+    <meta property="og:image" content="{{ $post->thumbnail }}" />
     <header class="post-header">
         <!-- categoria y fecha -->
         <div class="post-categoria-fecha">
