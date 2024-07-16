@@ -12,6 +12,25 @@
         <link rel="stylesheet" href="/css/eduardocoello/styles.css">
         <style>
             /* tip-tap styles */
+            a[data-as-button="true"] {
+                text-decoration: none;
+                display: inline-block;
+                background-color: var(--accent-500);
+                padding: .5rem 1.25rem;
+
+                -webkit-transition: background-color 200ms linear;
+                -ms-transition: background-color 200ms linear;
+                transition: background-color 200ms linear;
+
+                &[data-as-button-theme="primary"] {
+                    color: white;
+                }
+            }
+
+            a[data-as-button="true"]:hover {
+                background-color: var(--accent-600);
+            }
+
             a[data-as-button="false"] {
                 color: var(--accent-500);
 
