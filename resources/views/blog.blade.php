@@ -1,4 +1,4 @@
-<x-blog-layout meta-description="¿Aún no tienes tu página web? ¡Yo te ayudo! Desde 500 pesos en adelante. Hablemos de ideas.">
+<x-blog-layout meta-description="¿Aún no tienes tu página web? ¡Yo te ayudo! Hablemos de ideas.">
     <!-- ultimos 3 posts -->
     <div class="ultimos-posts full-width">
         <!-- wrap -->

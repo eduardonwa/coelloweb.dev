@@ -40,8 +40,9 @@
         </article>
     </section>
 
+    <hr>
+    
     <footer class="footer-pie">
-        <hr>
         <h3>
             &copy; 2024 Eduardo Coello
         </h3>

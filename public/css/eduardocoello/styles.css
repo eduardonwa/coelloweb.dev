@@ -221,6 +221,7 @@ a {
             gap: 2rem;
 
             .nav-link {
+                color: var(--gray-50);
                 font-size: var(--fs-300);
             }
         }
@@ -840,17 +841,17 @@ a {
         }
     }
 
+    hr {
+        width: 100%;
+        border: 1px solid white;
+    }
+
     .footer-pie {
         padding-block: 21px;
         display: flex;
         flex-direction: column;
         align-items: center;
         gap: 2rem;
-
-        hr {
-            width: 100%;
-            border: 1px solid white;
-        }
 
         h3 {
             font-size: var(--fs-300);
@@ -875,6 +876,7 @@ a {
 
             .footer-group-links {
                 a {
+                    color: var(--gray-50);
                     -webkit-transition: color 100ms linear;
                     -ms-transition: color 100ms linear;
                     transition: color 100ms linear;
@@ -883,6 +885,16 @@ a {
                 a:hover {
                     color: var(--primary-200);
                 }
+            }
+        }
+
+        .footer-pie {
+            flex-direction: row;
+            gap: 2rem;
+            justify-content: flex-start;
+
+            .footer-social-links {
+                width: auto;
             }
         }
     }
