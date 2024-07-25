@@ -23,7 +23,7 @@
         <meta name="google-adsense-account" content="ca-pub-5338710529457277">
         <title>{{ $metaTitle ?? 'Eduardo Coello' }}</title>
 
-        <link rel="stylesheet" href="/css/eduardocoello/styles.css">
+        <link rel="stylesheet" href="/css/eduardocoello/blog.css">
         <style>
             /* tip-tap styles */
             a[data-as-button="true"] {
