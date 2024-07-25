@@ -18,8 +18,8 @@
 <body>
     <section class="ghost-hero-wrap full-width">
         <article class="ghost-copy">
-            <h1>Desarrollador de <br> páginas web</h1>
-            <p>Entrega tus proyectos a tiempo y evita perder clientes. <br> Rinde al <span style="font-style: italic;">máximo.</span> </p>
+            <h1>Tu diseñador fantasma</h1>
+            <p>Desarrollo web para equipos comprometidos: materializa la visión de tus clientes y eleva su presencia online.</p>
             <button>Empezar proyecto</button>
         </article>
 

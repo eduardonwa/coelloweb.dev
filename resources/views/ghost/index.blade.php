@@ -3,7 +3,7 @@
             <article class="quien-soy-copy">
                 <header>
                     <h1>Subcontratista Web, encubierto</h1>
-                    <p>Soy Eduardo Coello y mi objetivo es <strong>eliminar cuellos de botella</strong> que impidan que te enfoques al máximo en proyectos de alta prioridad. Soy capaz de desarrollar <strong>sitios web optimizados</strong> que reflejan la visión comercial de tus clientes.</p>
+                    <p>Desarrollamos <strong>sitios web optimizados</strong> que reflejan la visión comercial de tus clientes para <strong>eliminar cuellos de botella</strong>. Diseñamos proyectos web que necesitan <strong>personalización exacta</strong> para que rindas al máximo en tu hora más atareada.</p>
                 </header>
                 <img src="/images/ghost/profile-picture.png" alt="">
             </article>
@@ -31,9 +31,9 @@
                 <img src="images/ghost/corgi.png" alt="">
                 <div class="beneficio-copy">
                     <h1>
-                        <mark>Dices brinca, yo salto</mark>
+                        <mark>Dices brinca, y saltamos</mark>
                     </h1>
-                    <p>Podemos comunicarnos de manera asíncrona o remota y que siempres estes enterado de cada avance. Cualquier cosa me preguntas.</p>
+                    <p>Nos comunicamos de manera asíncrona o remota para que siempres estés enterado de cualquier avance. Cualquier cosa podemos comunicarnos enseguida.</p>
                     <a href="">
                         Trabajemos juntos
                     </a>
@@ -57,9 +57,9 @@
                 <img src="images/ghost/manada.png" alt="">
                 <div class="beneficio-copy">
                     <h1>
-                        <mark>Soy parte de tu equipo</mark>
+                        <mark>Somos parte de tu equipo</mark>
                     </h1>
-                    <p>Al final, tu reputación, tanto como la mía están en juego. Entrego un proyecto completo; responsive, código limpio, y con tus requisitos.</p>
+                    <p>Al final, tu reputación, tanto como la nuestra, está en juego. Entregamos un proyecto completo, responsivo, código limpio, y con tus requisitos.</p>
                     <a href="">Empecemos a trabajar</a>
                 </div>
             </article>
@@ -72,24 +72,24 @@
 
         <section class="proceso-disenio-wrap full-width">
             <article class="proceso-disenio-copy">
-                <h1>Hagamos diseño web</h1>
-                <p>Plataformas e-Commerce, landing sites responsivos, sitios web con un copywriting efectivo. Podemos empezar desde cero o a partir de un diseño que quieras implementar.</p>
+                <h1>Diseño web ajustable</h1>
+                <p>Plataformas e-commerce, landing sites responsivos, y <strong>sitios web 100% personalizables</strong> con un copywriting efectivo. Podemos empezar desde cero o implementar tu diseño.</p>
             </article>
 
             <div class="proceso-disenio-etapas">
                 <article class="proceso-etapa-wrap">
                     <h1>Prototipo</h1>
-                    <p>Objetivos del negocio.</p>
+                    <p>Objetivos del negocio</p>
                 </article>
 
                 <article class="proceso-etapa-wrap">
                     <h1>Navegador</h1>
-                    <p>Desarrollo de código.</p>
+                    <p>Desarrollo de código</p>
                 </article>
 
                 <article class="proceso-etapa-wrap">
                     <h1>Entrega</h1>
-                    <p>Hacia el mundo digital.</p>
+                    <p>Hacia el mundo digital</p>
                 </article>
             </div>
         </section>
@@ -102,8 +102,8 @@
 
         <section class="proceso-trabajo-wrap full-width">
             <article class="proceso-trabajo-copy">
-                <h1>Cantar te hace feliz</h1>
-                <p>Para tu conveniencia  nos apegamos a comunicaciones asíncronas y tendremos tiempo para reuniones cuando sea necesario profundizar. No pierdas el enfoque, mejor piensa en tu canción favorita.</p>
+                <h1>Aumenta tus clientes sin perder el sueño</h1>
+                <p>Para tu conveniencia  nos apegamos a comunicaciones asíncronas, teniendo reuniones cuando creas es conveniente profundizar.</p>
             </article>
 
             <div class="proceso-etapa-wrap">
@@ -122,7 +122,7 @@
                 <article class="proceso-etapa">
                     <span>3</span>
                     <h1>Aprobado</h1>
-                    <p>Envio detalles del depósito</p>
+                    <p>Envío detalles del depósito</p>
                 </article>
 
                 <article class="proceso-etapa">
@@ -165,7 +165,7 @@
                             <img src="images/ghost/responsive-icon.svg" alt="">
                             <h2>Armonía visual</h2>
                         </div>
-                        <p>Pruebas con <strong>Playwright</strong> para un rendimiento responsive y una <strong>experiencia de usuario</strong> armoniosa.</p>
+                        <p>Pruebas con <strong>Playwright</strong> y <strong>Lighthouse</strong> para el mejor rendimiento responsivo y una <strong>experiencia de usuario</strong> armoniosa.</p>
                     </article>
 
                     <article class="beneficio-tecnico">
@@ -187,7 +187,7 @@
                             <img src="images/ghost/pastor-aleman.png" alt="">
                         </div>
                         <h2>Tus requisitos tecnológicos</h2>
-                        <p>Dale a tus clientes la visión exacta. Landing pages, tiendas en línea con Shopify, SPA's y más. Olvídate de los sitios prediseñados y de las plantillas costosas.</p>
+                        <p>Dale a tus clientes la visión exacta que necesitan ver. Landing pages, tiendas en línea con Shopify, SPA's y más. Olvídate de los sitios prediseñados y de las plantillas costosas.</p>
                     </article>
                 </div>
 

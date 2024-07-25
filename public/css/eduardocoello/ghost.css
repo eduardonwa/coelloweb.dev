@@ -703,7 +703,7 @@ body {
         padding-inline: 144px;
 
         .beneficio-tecnico {
-            height: 224px;
+            height: 240px;
 
             .beneficio-header-wrap {
                 h2 {
@@ -742,7 +742,7 @@ body {
 
             h3 {
                 padding-bottom: var(--space-2);
-                font-size: var(--fs-400);
+                font-size: var(--fs-300);
                 font-weight: 600;
                 color: var(--gray-500);
             }
