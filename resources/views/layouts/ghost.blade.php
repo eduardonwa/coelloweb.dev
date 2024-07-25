@@ -20,7 +20,7 @@
     <section class="ghost-hero-wrap full-width">
         <article class="ghost-copy">
             <h1>Tu diseñador fantasma</h1>
-            <p>Desarrollo web para equipos comprometidos. Sigue materializando la visión de tus clientes, <em>más rápido</em>.</p>
+            <p>Desarrollo web para equipos comprometidos, y sigan materializando la visión de sus clientes, <em> rápido</em>.</p>
             <button class="glow-effect">
                 Empezar proyecto
                 <svg class="glow-container">
