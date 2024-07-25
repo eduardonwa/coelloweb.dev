@@ -21,6 +21,82 @@
 
 body {
     position: relative;
+    background-color: var(--gray-50);
+}
+
+/* glow effect */
+.glow-effect {
+    --glow-line-color: #fff;
+    --glow-line-thickness: 4px;
+
+    --glow-blur-color: #fff;
+    --glow-blur-size: 4px;
+
+    --glow-line-length: 16px;
+    --glow-offset: 0px;
+
+    --animation-speed: 1200ms;
+
+    --container-offset: 0px;
+    position: relative;
+}
+
+.glow-container {
+    cursor: pointer;
+    position: absolute;
+    inset: calc(var(--container-offset) / -2);
+    width: calc(100% + var(--container-offset));
+    height: calc(100% + var(--container-offset));
+    opacity: 0;
+    border-radius: 1.25rem;
+}
+
+.glow-blur,
+.glow-line {
+    width: calc(100% - var(--container-offset) + var(--glow-offset));
+    height: calc(100% - var(--container-offset) + var(--glow-offset));
+    x: calc((var(--container-offset) / 2) + calc(var(--glow-offset) / -2));
+    y: calc((var(--container-offset) / 2) + calc(var(--glow-offset) / -2));
+    /* rx: 1.25rem; */
+    fill: transparent;
+    stroke: black;
+    stroke-width: 5px;
+    stroke-dasharray: var(--glow-line-length) calc(50px - var(--glow-line-length));
+}
+
+.glow-line {
+    stroke: var(--glow-line-color);
+    stroke-width: var(--glow-line-thickness);
+}
+
+.glow-blur {
+    filter: blur(var(--glow-blur-size));
+    stroke: var(--glow-blur-color);
+    stroke-width: var(--glow-blur-size);
+}
+
+.glow-effect:is(:hover, :focus) .glow-container {
+    animation: glow-visibility var(--animation-speed) ease-in-out;
+}
+
+.glow-effect:is(:hover, :focus)
+:is(.glow-line, .glow-blur) {
+    stroke-dashoffset: -80px;
+    transition: stroke-dashoffset var(--animation-speed);
+}
+
+@keyframes glow-visibility {
+    0%, 100% { opacity: 0; }
+    25%, 75% { opacity: 1; }
+}
+
+.glow-effect[data-glow-animation="false"] {
+    --glow-line-length: 50px;
+}
+
+.glow-effect[data-glow-offset="true"] {
+    --glow-line-color: var(--ghost-400);
+    --glow-blur-color: var(--ghost-50);
 }
 
 /* hero */
@@ -53,9 +129,9 @@ body {
 
         button {
             border: none;
-            border-radius: .5rem;
+            border-radius: 1.25rem;
             background-color: var(--ghost-accent);
-            padding: 8px 55px;
+            padding: var(--space-1) var(--space-7);
             color: var(--gray-50);
             font-size: var(--fs-400);
             width: fit-content;
@@ -98,6 +174,13 @@ body {
 @media (min-width: 1268px) {
     .ghost-hero-wrap {
         margin-bottom: var(--space-8);
+
+        .ghost-copy {
+            button {
+                padding-inline: 89px;
+                font-size: var(--fs-300);
+            }
+        }
 
         .ghost-hero-img-wrap {
             padding: var(--space-5) 176px;
@@ -318,10 +401,10 @@ body {
     }
 
     button {
-        border-radius: .5rem;
+        border-radius: 1.25rem;
         border: none;
         background-color: var(--ghost-accent);
-        padding: 8px 21px;
+        padding: 8px 50px;
         color: var(--gray-50);
         font-size: var(--fs-400);
         filter: var(--ghost-shadow);
@@ -336,19 +419,19 @@ body {
         justify-content: center;
         align-items: center;
         gap: var(--space-4);
-
-        button
-        {
-            padding: 8px 24px;
-        }
     }
 }
 
 @media (min-width: 1268px) {
     .cta-banner-wrap {
         padding: var(--space-11);
+
         h1 {
             padding-inline: var(--space-10);
+        }
+
+        button {
+            padding: 8px 89px;
         }
     }
 }
@@ -683,8 +766,10 @@ body {
         .beneficio-tecnico {
             padding: var(--space-2);
             height: 256px;
-            border: 1px solid var(--gray-700);
+            border: 2px solid var(--gray-900);
+            box-shadow: 0 0 0 0 transparent;
             border-radius: .75rem;
+            transition: border 300ms ease-in-out, box-shadow 300ms ease-in-out; /* Aumentar la duración */
         }
 
         .beneficio-tecnico:last-child {
@@ -710,6 +795,11 @@ body {
                     font-size: var(--fs-400);
                 }
             }
+        }
+
+        .beneficio-tecnico:hover {
+            border: 2px solid var(--gray-50);
+            box-shadow: 4px 1px 52px -24px var(--gray-100);
         }
     }
 }
@@ -801,8 +891,8 @@ body {
 
     button {
         border: none;
-        border-radius: .5rem;
-        padding: var(--space-1) var(--space-5);
+        border-radius: 1.25rem;
+        padding: var(--space-1) var(--space-10);
         font-size: var(--fs-400);
         color: var(--gray-50);
         filter: var(--ghost-shadow);

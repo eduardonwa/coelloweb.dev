@@ -67,7 +67,16 @@
 
         <section class="cta-banner-wrap full-width">
             <h1>Tooooodo el tiempo del mundo</h1>
-            <button>Empezar proyecto</button>
+            <button
+                class="glow-effect"
+                data-glow-animation="false"
+            >
+                Empezar proyecto
+                <svg class="glow-container">
+                    <rect rx="21" pathLength="100" stroke-linecap="round" class="glow-blur"></rect>
+                    <rect rx="21" pathLength="100" stroke-linecap="round" class="glow-line"></rect>
+                </svg>
+            </button>
         </section>
 
         <section class="proceso-disenio-wrap full-width">
@@ -291,7 +300,16 @@
 
         <section class="copy-final-wrap">
             <h1>Ofrece nuevas experiencias</h1>
-            <button>Empezar proyecto</button>
+            <button
+                class="glow-effect"
+                data-glow-offset="true"
+                >
+                Empezar proyecto
+                <svg class="glow-container">
+                    <rect rx="20" pathLength="100" stroke-linecap="round" class="glow-blur"></rect>
+                    <rect rx="20" pathLength="100" stroke-linecap="round" class="glow-line"></rect>
+                </svg>
+            </button>
         </section>
 
         {{-- <section class="blog-wrap breakout">
