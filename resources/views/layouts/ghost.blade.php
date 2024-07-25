@@ -24,15 +24,15 @@
             <button class="glow-effect">
                 Empezar proyecto
                 <svg class="glow-container">
-                    <rect rx="20" pathLength="100" stroke-linecap="round" class="glow-blur"></rect>
-                    <rect rx="20" pathLength="100" stroke-linecap="round" class="glow-line"></rect>
+                    <rect pathLength="100" stroke-linecap="round" class="glow-blur"></rect>
+                    <rect pathLength="100" stroke-linecap="round" class="glow-line"></rect>
                 </svg>
             </button>
         </article>
 
         <article class="ghost-hero-img-wrap">
-            <img class="ghost-hero-mobile-img" src="/images/ghost/iphone-mockup-space-caps.png" alt="">
-            <img class="ghost-hero-desktop-img" src="/images/ghost/ghost-hero-desktop-img.png" alt="">
+            <img class="ghost-hero-mobile-img" src="/images/ghost/spacecaps-iphone.webp" alt="">
+            <img class="ghost-hero-desktop-img" src="/images/ghost/spacecaps-desktop.webp" alt="">
         </article>
     </section>
 

@@ -28,7 +28,7 @@
 
         <section class="beneficios-wrap full-width">
             <article class="beneficio">
-                <img src="images/ghost/corgi.png" alt="">
+                <img src="images/ghost/corgi.webp" alt="">
                 <div class="beneficio-copy">
                     <h1>
                         <mark>Dices brinca, y saltamos</mark>
@@ -41,7 +41,7 @@
             </article>
 
             <article class="beneficio">
-                <img src="images/ghost/chihuahua.png" alt="">
+                <img src="images/ghost/chihuahua.webp" alt="">
                 <div class="beneficio-copy">
                     <h1>
                         <mark>Sin "tarifas" especiales</mark>
@@ -54,7 +54,7 @@
             </article>
 
             <article class="beneficio">
-                <img src="images/ghost/manada.png" alt="">
+                <img src="images/ghost/manada.webp" alt="">
                 <div class="beneficio-copy">
                     <h1>
                         <mark>Somos parte de tu equipo</mark>
@@ -193,7 +193,7 @@
                 <div class="column">
                     <article class="herramientas-copy">
                         <div class="herramientas-img-wrap">
-                            <img src="images/ghost/pastor-aleman.png" alt="">
+                            <img src="images/ghost/pastor-aleman.webp" alt="">
                         </div>
                         <h2>Tus requisitos tecnológicos</h2>
                         <p>Dale a tus clientes la visión exacta que necesitan ver. Landing pages, tiendas en línea con Shopify, SPA's y más. Olvídate de los sitios prediseñados y de las plantillas costosas.</p>

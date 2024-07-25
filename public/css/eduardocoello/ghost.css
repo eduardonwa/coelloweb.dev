@@ -1,6 +1,6 @@
 @import "main.css";
 
-/* margin-inline reset */
+/* margin-inline reset de main.css */
 @media (min-width: 1366px) {
     .content-grid {
         margin-inline: 0;
@@ -368,6 +368,29 @@ body {
 @media (min-width: 1268px) {
     .beneficios-wrap {
         padding-inline: 176px;
+
+        .beneficio {
+            .beneficio-copy {
+
+                h1 {
+                    cursor: pointer;
+                }
+
+                a {
+                    position: relative;
+                    padding: 0;
+                    opacity: 0;
+                    transition: transform 0.5s ease, opacity 0.5s ease;
+                }
+            }
+        }
+
+        .beneficio:hover {
+            .beneficio-copy a {
+                opacity: 1;
+                transform: translateY(20px); /* Ajusta el valor para controlar qué tanto cae el texto */
+            }
+        }
     }
 }
 
@@ -390,7 +413,7 @@ body {
     margin-bottom: var(--space-7);
     background-color: var(--ghost-400);
 
-    padding: var(--space-11);
+    padding: var(--space-10);
     text-align: center;
 
     h1 {
