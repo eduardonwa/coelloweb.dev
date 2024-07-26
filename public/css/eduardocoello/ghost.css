@@ -115,13 +115,13 @@ body {
 
         h1 {
             font-weight: 600;
-            font-size: var(--fs-800);
+            font-size: var(--fs-600);
             padding-bottom: var(--space-4);
         }
 
         p {
             padding-bottom: var(--space-5);
-            font-size: var(--fs-500);
+            font-size: var(--fs-400);
             width: fit-content;
             max-width: 476px;
             align-self: center;
@@ -214,12 +214,13 @@ body {
     }
 }
 
-/* quien soy */
-.quien-soy-wrap {
+/* gran problema */
+.gran-problema-wrap {
     container-type: inline-size;
     padding-inline: 32px;
+    margin-bottom: var(--space-7);
 
-    .quien-soy-copy {
+    .gran-problema-copy {
         header {
             h1 {
                 font-size: var(--fs-600);
@@ -235,37 +236,18 @@ body {
         }
 
         img {
-            margin: var(--space-5) auto;
-        }
-    }
-
-    .quien-soy-servicios-wrap {
-        display: flex;
-        gap: var(--space-1);
-
-        .quien-soy-servicio {
-            flex: 1;
-            border-radius: .5rem;
-            padding: var(--space-2) var(--space-2);
-            background-color: var(--ghost-black);
-            filter: var(--ghost-shadow);
-
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            gap: var(--space-2);
-
-            span {
-                text-align: center;
-                color: var(--gray-50);
-            }
+            margin-inline: auto;
+            margin-top: var(--space-7);
+            /* margin-bottom: var(--space-5); */
+            border-radius: 50%;
+            aspect-ratio: 1 /1;
         }
     }
 }
 
 @media (min-width: 768px) {
-    .quien-soy-wrap {
-        .quien-soy-copy {
+    .gran-problema-wrap {
+        .gran-problema-copy {
             display: grid;
             grid-template-columns: 2fr 1fr;
             gap: var(--space-4);
@@ -274,18 +256,48 @@ body {
 }
 
 @media (min-width: 1268px) {
-    .quien-soy-wrap {
+    .gran-problema-wrap {
         padding-inline: 176px;
     }
 }
 
+/* servicios */
+.servicios-wrap {
+    .servicio {
+        padding-bottom: var(--space-4);
+
+        summary {
+            border-radius: .5rem;
+            padding: var(--space-2) var(--space-2);
+            color: var(--gray-50);
+            background-color: var(--ghost-black);
+            font-weight: 600;
+            font-size: var(--fs-400);
+
+            margin-block: var(--space-1);
+            filter: var(--ghost-shadow);
+
+            display: flex;
+            align-items: center;
+            gap: var(--space-2);
+        }
+
+        p {
+            padding-inline: var(--space-5);
+            font-size: var(--fs-400);
+        }
+    }
+
+    .servicio:last-child {
+        padding-bottom: 0;
+    }
+}
+
 @container (min-width: 560px) {
-    .quien-soy-wrap {
-        .quien-soy-servicios-wrap {
-            .quien-soy-servicio {
-                flex: 0 0 160px;
-                margin-right: var(--space-1);
-            }
+    .servicios-wrap {
+        .servicio {
+            flex: 0 0 160px;
+            margin-right: var(--space-1);
         }
     }
 }
@@ -298,8 +310,8 @@ body {
         margin-block: var(--space-7);
 
         img {
-            margin: auto;
-            padding-bottom: var(--space-2);
+            margin-inline: auto;
+            margin-bottom: var(--space-2);
         }
 
         .beneficio-copy {
@@ -314,7 +326,6 @@ body {
                 mark {
                     padding-inline: 0.1em;
                     background-color: var(--ghost-400);
-                    line-height: 1.5;
                 }
             }
 
@@ -324,11 +335,12 @@ body {
             }
 
             a {
-                font-size: var(--fs-400);
+                font-size: var(--fs-300);
                 font-weight: 600;
                 color: var(--gray-950);
-                padding: 8px;
-                border: 1px solid var(--gray-950);
+                border: 1px solid var(--gray-900);
+                padding: var(--space-1);
+                letter-spacing: 1px;
             }
         }
     }
@@ -370,6 +382,10 @@ body {
         padding-inline: 176px;
 
         .beneficio {
+            img {
+                margin-inline: 0;
+            }
+
             .beneficio-copy {
 
                 h1 {
@@ -399,6 +415,10 @@ body {
         display: grid;
         grid-template-columns: 1fr 1fr;
         gap: var(--space-5);
+
+        img {
+            aspect-ratio: 1 / 1;
+        }
     }
 
     .beneficio:nth-child(even) {
@@ -566,7 +586,7 @@ body {
     p {
         margin: var(--space-7) var(--space-4);
         font-weight: 500;
-        font-size: var(--fs-500);
+        font-size: var(--fs-400);
         line-height: 1.8;
     }
 
@@ -829,6 +849,7 @@ body {
 
 .herramientas-wrap {
     margin-inline: var(--space-4);
+    /* margin-bottom: var(--space-7); */
 
     .herramientas-copy {
         padding-bottom: var(--space-5);
@@ -908,7 +929,7 @@ body {
 
     h1 {
         font-weight: 600;
-        font-size: var(--fs-800);
+        font-size: var(--fs-700);
         padding-bottom: var(--space-8);
     }
 
@@ -924,6 +945,7 @@ body {
 }
 
 .footer {
+    margin-top: var(--space-5);
     margin-bottom: var(--space-2);
     .footer-links {
         .footer-group-links {
@@ -938,4 +960,52 @@ body {
             font-weight: normal;
         }
     }
+}
+
+/* formulario */
+.radio-wrapper-47 input[type="radio"] {
+    display: none;
+    visibility: hidden;
+}
+
+.radio-wrapper-47 label {
+    position: relative;
+    padding-left: 2em;
+    padding-right: 1em;
+    line-height: 2;
+    cursor: pointer;
+    display: inline-flex;
+    }
+
+.radio-wrapper-47 label:before {
+    box-sizing: border-box;
+    content: " ";
+    position: absolute;
+    top: 0.3em;
+    left: 0;
+    display: block;
+    width: 1.4em;
+    height: 1.4em;
+    border: 2px solid #9098A9;
+    border-radius: 6px; /* Ajusta el radio del borde para ser más cuadrado */
+    z-index: -1;
+}
+
+.radio-wrapper-47 input[type=radio]:checked + label {
+    padding-left: 1em;
+    color: #0f5229;
+}
+
+.radio-wrapper-47 input[type=radio]:checked + label:before {
+    top: 0;
+    width: 100%;
+    height: 100%; /* Ajustado para que sea un círculo completo */
+    background: #b7e6c9;
+    border-color: #2cbc63;
+    border-radius: 6px; /* Asegúrate de que el radio del borde coincida con el de los no seleccionados */
+}
+
+.radio-wrapper-47 label,
+.radio-wrapper-47 label::before {
+    transition: 0.25s all ease;
 }
