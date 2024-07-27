@@ -263,33 +263,126 @@ body {
 
 /* servicios */
 .servicios-wrap {
-    .servicio {
-        padding-bottom: var(--space-4);
+    .mobile-servicio-wrap {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        width: fit-content;
 
-        summary {
-            border-radius: .5rem;
-            padding: var(--space-2) var(--space-2);
-            color: var(--gray-50);
-            background-color: var(--ghost-black);
-            font-weight: 600;
-            font-size: var(--fs-400);
+        .mobile-servicio {
+            margin-bottom: var(--space-4);
+            details {
+                max-width: 500px;
+                overflow: hidden;
 
-            margin-block: var(--space-1);
-            filter: var(--ghost-shadow);
+                summary {
+                    display: block;
+                }
 
-            display: flex;
-            align-items: center;
-            gap: var(--space-2);
-        }
+                summary::-webkit-details-marker {
+                    display: none;
+                }
 
-        p {
-            padding-inline: var(--space-5);
-            font-size: var(--fs-400);
+                span {
+                    border-radius: .5rem;
+                    padding: var(--space-2) var(--space-2);
+                    color: var(--gray-50);
+                    background: var(--gray-700) linear-gradient(
+                        hsl(0 0% 0% / 0),
+                        hsl(20 0% 0% / 0.3), 16%,
+                        hsl(0 0% 0% / 1)
+                    );
+                    font-weight: 600;
+                    font-size: var(--fs-400);
+
+                    margin-block: var(--space-1);
+                    filter: var(--ghost-shadow);
+
+                    display: flex;
+                    align-items: center;
+                    gap: var(--space-2);
+                }
+
+                span:hover {
+                    cursor: pointer;
+                }
+
+                details:last-child {
+                    padding-bottom: 0;
+                }
+            }
+
+            details[open] + .content {
+                max-height: 800px; /* Set a max-height value enough to show all the content */
+                transition: max-height 500ms ease-in-out;
+            }
+
+            .content {
+                box-sizing: border-box;
+                max-width: 500px;
+                max-height: 0;
+                overflow: hidden;
+                padding: 0 10px;
+                transition: max-height 500ms ease-in-out;
+
+                p {
+                    padding-inline: var(--space-5);
+                    font-size: var(--fs-400);
+                }
+            }
         }
     }
 
-    .servicio:last-child {
-        padding-bottom: 0;
+    .servicios-desktop { display: none; }
+}
+
+@media (min-width: 768px) {
+    .servicios-wrap {
+        .mobile-servicio { display: none; }
+
+        .servicios-desktop {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: var(--space-1);
+
+            .desktop-servicio {
+                position: relative;
+                border-radius: 8px;
+                padding: var(--space-2);
+                background-color: var(--gray-950);
+                filter: var(--ghost-shadow);
+
+                header {
+                    display: flex;
+                    gap: var(--space-2);
+                    padding-left: var(--space-2);
+
+                    h3 {
+                        font-weight: 500;
+                        color: var(--gray-50);
+                        font-size: var(--fs-300);
+                    }
+                }
+
+                hr {
+                    position: absolute;
+                    left: 0;
+                    top: 56px;
+                    height: 4px;
+                    border: none;
+                    width: 64%;
+                    border-top-right-radius: .5rem;
+                    border-bottom-right-radius: .5rem;
+                    background-color: var(--ghost-accent);
+                }
+
+                p {
+                    padding: var(--space-2);
+                    color: var(--gray-50);
+                    font-size: var(--fs-300);
+                }
+            }
+        }
     }
 }
 
@@ -675,7 +768,11 @@ body {
 
             text-align: center;
             border-radius: .5rem;
-            background-color: var(--gray-950);
+            background: var(--gray-700) linear-gradient(
+                    hsl(0 0% 0% / 0),
+                    hsl(20 0% 0% / 0.3), 16%,
+                    hsl(0 0% 0% / 1)
+            );
             filter: var(--ghost-shadow);
 
             span {

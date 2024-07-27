@@ -2,20 +2,24 @@
     <section class="gran-problema-wrap full-width">
         <article class="gran-problema-copy">
             <header>
-                <h1>Dile adiós al diseño que no refleja la visión de tus clientes.</h1>
-                <p>Desde que la Inteligencia Artificial se puso de moda muchas personas quieren crear un
-                    sitio web en 5 segundos.
-                    <br><br>
-
-                    No necesitas gastar en plantillas estéticamente perfectas, que no pueden conectar
-                    con tu audiencia objetivo. Ni tampoco a un desarrollador que no piense en el copywriting,
-                    estrategias de SEO, etc.
+                <h1>Deshazte del diseño que no muestra la esencia de tus clientes</h1>
+                <p>Con la moda de la I.A., todos quieren crear un sitio web en 5 segundos y recibir un millón de visitas al día.
 
                     <br> <br>
 
-                    Si eres como yo, sabes que el diseño web necesita cumplir con una funcionalidad en concreto.
-                    Buscas convertir a visitantes en clientes porque sabes que una experiencia humana es
-                    mucho más útil que utilizar la última libreria de JavaScript.
+                    Pero sabes que esas tendencias superficiales buscan métricas de vanidad. Tú valoras el diseño auténtico que realmente conecta.
+
+                    <br> <br>
+
+                    Porque eres de los que entienden que el diseño web va más allá de las apariencias. Prefieres profundizar en la esencia de tus clientes y reflejarla fielmente. Y eliges crear una experiencia significativa en lugar de usar plantillas genéricas.
+
+                    No estás aquí para ofrecer un diseño estándar que se olvide rápido.
+
+                    <br> <br>
+
+                    Estás aquí para crear conexiones genuinas y duraderas.
+
+                    Porque sabes que el verdadero éxito radica en capturar la esencia.
                 </p>
                 {{-- <h1>Subcontratista Web, encubierto</h1>
                 <p>Desarrollamos <strong>sitios web optimizados</strong> que reflejan la visión comercial de tus clientes para <strong>eliminar cuellos de botella</strong>. Diseñamos proyectos web que necesitan la <strong>personalización exacta</strong> para que rindas al máximo y que tus clientes esten satisfechos.</p> --}}
@@ -24,41 +28,113 @@
         </article>
     </section>
 
-    <article class="testimonio-wrap">
+    <section class="testimonio-wrap">
         <img src="images/ghost/space-caps-logo.svg" alt="">
         <p>Eduardo fue muy amable enviándome y explicando cada uno de los avances de la creación de la tienda, resolvió todas nuestras dudas y atendió con éxito cada una de nuestras necesidades.</p>
         <h3>Space Caps Obregón</h3>
-    </article>
+    </section>
 
-    <article class="servicios-wrap">
-        <details class="servicio" open>
-            <summary>
-                <img
-                    src="/images/ghost/landing-site-icon.svg"
-                    alt=""
-                > Landing Sites
-            </summary>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae pariatur optio dicta provident modi magni quis. Placeat sint unde, asperiores voluptas porro, perferendis enim nostrum, aliquam deserunt omnis sit tempora!</p>
-        </details>
 
-        <details class="servicio">
-            <summary>
-                <img
-                    src="/images/ghost/sitios-web-icon.svg" alt=""
-                > Sitios Web
-            </summary>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae pariatur optio dicta provident modi magni quis. Placeat sint unde, asperiores voluptas porro, perferendis enim nostrum, aliquam deserunt omnis sit tempora!</p>
-        </details>
+    {{-- <details class="mobile-servicio">
+        <summary>
+          <span role="term" aria-details="pure-css">Click to open and close smoothly with pure CSS</span>
+        </summary>
+    </details>
 
-        <details class="servicio">
-            <summary>
-                <img
-                    src="/images/ghost/shopify-icon.svg" alt=""
-                > Shopify API
-            </summary>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae pariatur optio dicta provident modi magni quis. Placeat sint unde, asperiores voluptas porro, perferendis enim nostrum, aliquam deserunt omnis sit tempora!</p>
-        </details>
-    </article>
+    <div role="definition" id="pure-css" class="content">
+        <p>
+          Lorem, ipsum dolor sit amet consectetur adipisicing elit. Modi unde, ex rem voluptates autem aliquid veniam quis temporibus!</p>
+        <img src="https://upload.wikimedia.org/wikipedia/en/f/ff/SuccessKid.jpg" width="420px" style="margin-left: 26px;" alt="Success kid" />
+        <p>
+          Facilis ducimus iure officia quos possimus quaerat iusto, quas, laboriosam sapiente autem ab consequuntur? Nihil, soluta.
+        </p>
+        <p><a title="Accessibility using aria-details" href="https://developer.mozilla.org/en-US/docs/Web/Accessibility/ARIA/Attributes/aria-details" target="blank">The 'aria-details' and 'role' attributes have been implemented to ensure accessibility.</a></p>
+    </div> --}}
+
+    <section class="servicios-wrap">
+        <div class="mobile-servicio-wrap">
+            <div class="mobile-servicio">
+                <details open>
+                    <summary>
+                        <span role="term" aria-details="pure-css">
+                            <img src="/images/ghost/landing-site-icon.svg">
+                            Landing Sites
+                        </span>
+                    </summary>
+                </details>
+                <div role="definition" id="pure-css" class="content">
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore aperiam temporibus minus, laudantium doloribus consequuntur qui odio, est, excepturi ratione quos architecto dignissimos. Minima, impedit optio perspiciatis quae consectetur error possimus, praesentium adipisci nulla repudiandae neque consequatur est iste. Harum!
+                    </p>
+                </div>
+            </div>
+
+            <div class="mobile-servicio">
+                <details>
+                    <summary>
+                        <span role="term" aria-details="pure-css">
+                            <img src="/images/ghost/sitios-web-icon.svg">
+                            Sitios Web
+                        </span>
+                    </summary>
+                </details>
+                <div role="definition" id="pure-css" class="content">
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore aperiam temporibus minus, laudantium doloribus consequuntur qui odio, est, excepturi ratione quos architecto dignissimos. Minima, impedit optio perspiciatis quae consectetur error possimus, praesentium adipisci nulla repudiandae neque consequatur est iste. Harum!
+                    </p>
+                </div>
+            </div>
+
+            <div class="mobile-servicio">
+                <details>
+                    <summary>
+                        <span role="term" aria-details="pure-css">
+                            <img src="/images/ghost/shopify-icon.svg">
+                            Sitios Web
+                        </span>
+                    </summary>
+                </details>
+                <div role="definition" id="pure-css" class="content">
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore aperiam temporibus minus, laudantium doloribus consequuntur qui odio, est, excepturi ratione quos architecto dignissimos. Minima, impedit optio perspiciatis quae consectetur error possimus, praesentium adipisci nulla repudiandae neque consequatur est iste. Harum!
+                    </p>
+                </div>
+            </div>
+        </div class="mobile-servicio-wrap">
+
+        <article class="servicios-desktop">
+            <div class="desktop-servicio">
+                <header>
+                    <img src="/images/ghost/landing-site-icon.svg" alt="">
+                    <h3>Landing Sites</h3>
+                </header>
+                <hr>
+                <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora distinctio sunt similique repellendus maxime facilis hic expedita explicabo laboriosam! Eos quisquam, ad, esse est quidem dignissimos in non maiores at ducimus cumque aliquam sequi, deleniti voluptate facilis atque iusto itaque!
+                </p>
+            </div>
+
+            <div class="desktop-servicio">
+                <header>
+                    <img src="/images/ghost/sitios-web-icon.svg" alt="">
+                    <h3>Sitios Web</h3>
+                </header>
+                <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora distinctio sunt similique repellendus maxime facilis hic expedita explicabo laboriosam! Eos quisquam, ad, esse est quidem dignissimos in non maiores at ducimus cumque aliquam sequi, deleniti voluptate facilis atque iusto itaque!
+                </p>
+            </div>
+
+            <div class="desktop-servicio">
+                <header>
+                    <img src="/images/ghost/shopify-icon.svg" alt="">
+                    <h3> Shopify API</h3>
+                </header>
+                <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora distinctio sunt similique repellendus maxime facilis hic expedita explicabo laboriosam! Eos quisquam, ad, esse est quidem dignissimos in non maiores at ducimus cumque aliquam sequi, deleniti voluptate facilis atque iusto itaque!
+                </p>
+            </div>
+        </article>
+    </section>
 
     <section class="beneficios-wrap full-width">
         <article class="beneficio">
@@ -99,11 +175,11 @@
         </article>
     </section>
 
-    <article class="testimonio-wrap">
+    <section class="testimonio-wrap">
         <img src="images/ghost/space-caps-logo.svg" alt="">
         <p>Eduardo fue muy amable enviándome y explicando cada uno de los avances de la creación de la tienda, resolvió todas nuestras dudas y atendió con éxito cada una de nuestras necesidades.</p>
         <h3>Space Caps Obregón</h3>
-    </article>
+    </section>
 
     <section class="proceso-trabajo-wrap full-width">
         <article class="proceso-trabajo-copy">
