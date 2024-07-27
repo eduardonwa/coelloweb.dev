@@ -34,23 +34,6 @@
         <h3>Space Caps Obregón</h3>
     </section>
 
-
-    {{-- <details class="mobile-servicio">
-        <summary>
-          <span role="term" aria-details="pure-css">Click to open and close smoothly with pure CSS</span>
-        </summary>
-    </details>
-
-    <div role="definition" id="pure-css" class="content">
-        <p>
-          Lorem, ipsum dolor sit amet consectetur adipisicing elit. Modi unde, ex rem voluptates autem aliquid veniam quis temporibus!</p>
-        <img src="https://upload.wikimedia.org/wikipedia/en/f/ff/SuccessKid.jpg" width="420px" style="margin-left: 26px;" alt="Success kid" />
-        <p>
-          Facilis ducimus iure officia quos possimus quaerat iusto, quas, laboriosam sapiente autem ab consequuntur? Nihil, soluta.
-        </p>
-        <p><a title="Accessibility using aria-details" href="https://developer.mozilla.org/en-US/docs/Web/Accessibility/ARIA/Attributes/aria-details" target="blank">The 'aria-details' and 'role' attributes have been implemented to ensure accessibility.</a></p>
-    </div> --}}
-
     <section class="servicios-wrap">
         <div class="mobile-servicio-wrap">
             <div class="mobile-servicio">

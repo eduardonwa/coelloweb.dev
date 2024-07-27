@@ -238,9 +238,9 @@ body {
         img {
             margin-inline: auto;
             margin-top: var(--space-7);
-            /* margin-bottom: var(--space-5); */
             border-radius: 50%;
-            aspect-ratio: 1 /1;
+            width: 200px;
+            filter: var(--ghost-shadow);
         }
     }
 }
