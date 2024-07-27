@@ -34,7 +34,7 @@
         <h3>Space Caps Obregón</h3>
     </section>
 
-    <section class="servicios-wrap">
+    {{-- <section class="servicios-wrap">
         <div class="mobile-servicio-wrap">
             <div class="mobile-servicio">
                 <details open>
@@ -47,7 +47,7 @@
                 </details>
                 <div role="definition" id="pure-css" class="content">
                     <p>
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore aperiam temporibus minus, laudantium doloribus consequuntur qui odio, est, excepturi ratione quos architecto dignissimos. Minima, impedit optio perspiciatis quae consectetur error possimus, praesentium adipisci nulla repudiandae neque consequatur est iste. Harum!
+                        lol
                     </p>
                 </div>
             </div>
@@ -73,7 +73,7 @@
                     <summary>
                         <span role="term" aria-details="pure-css">
                             <img src="/images/ghost/shopify-icon.svg">
-                            Sitios Web
+                            Shopify API
                         </span>
                     </summary>
                 </details>
@@ -83,6 +83,7 @@
                     </p>
                 </div>
             </div>
+
         </div class="mobile-servicio-wrap">
 
         <article class="servicios-desktop">
@@ -117,14 +118,14 @@
                 </p>
             </div>
         </article>
-    </section>
+    </section> --}}
 
     <section class="beneficios-wrap full-width">
         <article class="beneficio">
             <img src="images/ghost/corgi.webp" alt="">
             <div class="beneficio-copy">
                 <h1>
-                    <mark>Dices brinca, y saltamos</mark>
+                    <mark>Dices brinca, y salto</mark>
                 </h1>
                 <p>Nos comunicamos de manera asíncrona o remota para que siempres estés enterado de cualquier avance. Cualquier cosa podemos comunicarnos enseguida.</p>
                 <a href="">
@@ -150,9 +151,9 @@
             <img src="images/ghost/manada.webp" alt="">
             <div class="beneficio-copy">
                 <h1>
-                    <mark>Somos parte de tu equipo</mark>
+                    <mark>Parte de un equipo, el tuyo</mark>
                 </h1>
-                <p>Al final, tu reputación, tanto como la nuestra, está en juego. Entregamos un proyecto completo, responsivo, código limpio, y con tus requisitos.</p>
+                <p>Al final, tu reputación, tanto como la mía, está en juego. Te entrego un proyecto completo, responsivo, código limpio, y con tus requisitos.</p>
                 <a href="">Empecemos a trabajar</a>
             </div>
         </article>
@@ -160,8 +161,8 @@
 
     <section class="testimonio-wrap">
         <img src="images/ghost/space-caps-logo.svg" alt="">
-        <p>Eduardo fue muy amable enviándome y explicando cada uno de los avances de la creación de la tienda, resolvió todas nuestras dudas y atendió con éxito cada una de nuestras necesidades.</p>
-        <h3>Space Caps Obregón</h3>
+        <p>Mi experiencia trabajando con Eduardo fue muy efectiva: desde la primera junta entendió muy bien lo que buscaba, y me fue guiando y proponiendo ideas para lograr la versión final de mi producto, que me encantó.  </p>
+        <h3>Adriana & Johann</h3>
     </section>
 
     <section class="proceso-trabajo-wrap full-width">
@@ -267,6 +268,22 @@
                     <h2>Tus requisitos tecnológicos</h2>
                     <p>Dale a tus clientes la visión exacta que necesitan ver. Landing pages, tiendas en línea con Shopify, SPA's y más. Olvídate de los sitios prediseñados y de las plantillas costosas.</p>
                 </article>
+
+                <article class="herramientas-servicios-wrap">
+                    <div class="servicio-wrap">
+                        <img src="/images/ghost/landing-site-icon.svg">
+                        <p>Landing Sites</p>
+                    </div>
+                    <div class="servicio-wrap">
+                        <img src="/images/ghost/sitios-web-icon.svg">
+                        <p>Sitios Web</p>
+                    </div>
+                    <div class="servicio-wrap">
+                        <img src="/images/ghost/shopify-icon.svg">
+                        <p>Shopify API</p>
+                    </div>
+                </article>
+
             </div>
 
             <div class="column">
