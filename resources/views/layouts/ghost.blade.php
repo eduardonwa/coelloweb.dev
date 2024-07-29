@@ -9,42 +9,15 @@
     <link rel="stylesheet" href="css/eduardocoello/ghost.css">
     <script src="js/eduardocoello/main.js" defer></script>
     <title>Diseñador Fantasma - Diseño Web Moderno y Profesional</title>
-    <style>
-        .ghost-navbar {
-            position: absolute;
-            top: 0;
-            left: 0;
-            width: 100%;
-        }
-    </style>
     @livewireStyles
 </head>
 <body>
-    <section class="ghost-hero-wrap full-width">
-        <article class="ghost-copy">
-            <h1>¿Que pasaría si pudieras desarrollar sitios web sin escribir una sola línea de código?</h1>
-            <p>Esta es la gran revelación que toda agencia necesita conocer para aumentar su roster de clientes.</p>
-            <button class="glow-effect">
-                Empezar proyecto
-                <svg class="glow-container">
-                    <rect pathLength="100" stroke-linecap="round" class="glow-blur"></rect>
-                    <rect pathLength="100" stroke-linecap="round" class="glow-line"></rect>
-                </svg>
-            </button>
-        </article>
-
-        <article class="ghost-hero-img-wrap">
-            <img class="ghost-hero-mobile-img" src="/images/ghost/spacecaps-iphone.webp" alt="">
-            <img class="ghost-hero-desktop-img" src="/images/ghost/spacecaps-desktop.webp" alt="">
-        </article>
-    </section>
-
-    <div class="ghost-navbar">
-        <x-navbar>
-        </x-navbar>
-    </div>
-
-    {{-- @livewire('contact-form') --}}
+    <dialog id="solicitudDialogo">
+        <form method="dialog">
+            <button type="submit" id="closeButton">&rsaquo;&lsaquo;</button>
+        </form>
+        @livewire('contact-form')
+    </dialog>
 
     <main class="content-grid">
         {{ $slot }}
@@ -52,6 +25,6 @@
         <x-footer>
         </x-footer>
     </main>
-    @livewireScriptConfig
+    @livewireScripts
 </body>
 </html>

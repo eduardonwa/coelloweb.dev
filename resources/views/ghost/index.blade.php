@@ -1,4 +1,24 @@
 <x-ghost-layout>
+
+    <section class="ghost-hero-wrap full-width">
+        <article class="ghost-copy">
+            <h1>¿Que pasaría si pudieras desarrollar sitios web sin escribir una sola línea de código?</h1>
+            <p>Esta es la gran revelación que toda agencia necesita conocer para aumentar su roster de clientes.</p>
+                <button class="glow-effect cta-button">
+                    Empezar proyecto
+                    <svg class="glow-container">
+                        <rect pathLength="100" stroke-linecap="round" class="glow-blur"></rect>
+                        <rect pathLength="100" stroke-linecap="round" class="glow-line"></rect>
+                    </svg>
+                </button>
+        </article>
+
+        <article class="ghost-hero-img-wrap">
+            <img class="ghost-hero-mobile-img" src="/images/ghost/spacecaps-iphone.webp" alt="">
+            <img class="ghost-hero-desktop-img" src="/images/ghost/spacecaps-desktop.webp" alt="">
+        </article>
+    </section>
+
     <section class="gran-problema-wrap full-width">
         <article class="gran-problema-copy">
             <header>
@@ -34,92 +54,6 @@
         <h3>Space Caps Obregón</h3>
     </section>
 
-    {{-- <section class="servicios-wrap">
-        <div class="mobile-servicio-wrap">
-            <div class="mobile-servicio">
-                <details open>
-                    <summary>
-                        <span role="term" aria-details="pure-css">
-                            <img src="/images/ghost/landing-site-icon.svg">
-                            Landing Sites
-                        </span>
-                    </summary>
-                </details>
-                <div role="definition" id="pure-css" class="content">
-                    <p>
-                        lol
-                    </p>
-                </div>
-            </div>
-
-            <div class="mobile-servicio">
-                <details>
-                    <summary>
-                        <span role="term" aria-details="pure-css">
-                            <img src="/images/ghost/sitios-web-icon.svg">
-                            Sitios Web
-                        </span>
-                    </summary>
-                </details>
-                <div role="definition" id="pure-css" class="content">
-                    <p>
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore aperiam temporibus minus, laudantium doloribus consequuntur qui odio, est, excepturi ratione quos architecto dignissimos. Minima, impedit optio perspiciatis quae consectetur error possimus, praesentium adipisci nulla repudiandae neque consequatur est iste. Harum!
-                    </p>
-                </div>
-            </div>
-
-            <div class="mobile-servicio">
-                <details>
-                    <summary>
-                        <span role="term" aria-details="pure-css">
-                            <img src="/images/ghost/shopify-icon.svg">
-                            Shopify API
-                        </span>
-                    </summary>
-                </details>
-                <div role="definition" id="pure-css" class="content">
-                    <p>
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore aperiam temporibus minus, laudantium doloribus consequuntur qui odio, est, excepturi ratione quos architecto dignissimos. Minima, impedit optio perspiciatis quae consectetur error possimus, praesentium adipisci nulla repudiandae neque consequatur est iste. Harum!
-                    </p>
-                </div>
-            </div>
-
-        </div class="mobile-servicio-wrap">
-
-        <article class="servicios-desktop">
-            <div class="desktop-servicio">
-                <header>
-                    <img src="/images/ghost/landing-site-icon.svg" alt="">
-                    <h3>Landing Sites</h3>
-                </header>
-                <hr>
-                <p>
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora distinctio sunt similique repellendus maxime facilis hic expedita explicabo laboriosam! Eos quisquam, ad, esse est quidem dignissimos in non maiores at ducimus cumque aliquam sequi, deleniti voluptate facilis atque iusto itaque!
-                </p>
-            </div>
-
-            <div class="desktop-servicio">
-                <header>
-                    <img src="/images/ghost/sitios-web-icon.svg" alt="">
-                    <h3>Sitios Web</h3>
-                </header>
-                <p>
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora distinctio sunt similique repellendus maxime facilis hic expedita explicabo laboriosam! Eos quisquam, ad, esse est quidem dignissimos in non maiores at ducimus cumque aliquam sequi, deleniti voluptate facilis atque iusto itaque!
-                </p>
-            </div>
-
-            <div class="desktop-servicio">
-                <header>
-                    <img src="/images/ghost/shopify-icon.svg" alt="">
-                    <h3> Shopify API</h3>
-                </header>
-                <p>
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora distinctio sunt similique repellendus maxime facilis hic expedita explicabo laboriosam! Eos quisquam, ad, esse est quidem dignissimos in non maiores at ducimus cumque aliquam sequi, deleniti voluptate facilis atque iusto itaque!
-                </p>
-            </div>
-        </article>
-    </section> --}}
-
     <section class="beneficios-wrap full-width">
         <article class="beneficio">
             <img src="images/ghost/corgi.webp" alt="">
@@ -128,7 +62,7 @@
                     <mark>Dices brinca, y salto</mark>
                 </h1>
                 <p>Nos comunicamos de manera asíncrona o remota para que siempres estés enterado de cualquier avance. Cualquier cosa podemos comunicarnos enseguida.</p>
-                <a href="">
+                <a class="cta-button">
                     Trabajemos juntos
                 </a>
             </div>
@@ -141,7 +75,7 @@
                     <mark>Sin "tarifas" especiales</mark>
                 </h1>
                 <p>No hay precios según el "tipo de agencia" o tamaño del equipo. Cada sitio web se destaca por su propia complejidad. </p>
-                <a href="">
+                <a class="cta-button">
                     Obtén un estimado
                 </a>
             </div>
@@ -154,7 +88,9 @@
                     <mark>Parte de un equipo, el tuyo</mark>
                 </h1>
                 <p>Al final, tu reputación, tanto como la mía, está en juego. Te entrego un proyecto completo, responsivo, código limpio, y con tus requisitos.</p>
-                <a href="">Empecemos a trabajar</a>
+                <a class="cta-button">
+                    Empecemos a trabajar
+                </a>
             </div>
         </article>
     </section>
@@ -207,7 +143,7 @@
     <section class="cta-banner-wrap full-width">
         <h1>Tooooodo el tiempo del mundo</h1>
         <button
-            class="glow-effect"
+            class="glow-effect cta-button"
             data-glow-animation="false"
         >
             Empezar proyecto
@@ -411,7 +347,7 @@
     <section class="copy-final-wrap">
         <h1>Ofrece nuevas experiencias</h1>
         <button
-            class="glow-effect"
+            class="glow-effect cta-button"
             data-glow-offset="true"
             >
             Empezar proyecto
@@ -422,31 +358,4 @@
         </button>
     </section>
 
-    {{-- <section class="blog-wrap breakout">
-        <h1>Date una vuelta por mi blog</h1>
-
-        <article class="blog-post">
-            <img src="images/ghost/blog-post.png" alt="">
-            <h1>Best plugins for WooCommerce in 2023. For every seller!</h1>
-            <p>
-                Starting and growing a sucessful online business is not an easy task. But most of the problems can be solved with various plugins. The more, WooCommerce offers a huge abundance of them.
-            </p>
-        </article>
-
-        <article class="blog-post">
-            <img src="images/ghost/blog-post.png" alt="">
-            <h1>Best plugins for WooCommerce in 2023. For every seller!</h1>
-            <p>
-                Starting and growing a sucessful online business is not an easy task. But most of the problems can be solved with various plugins. The more, WooCommerce offers a huge abundance of them.
-            </p>
-        </article>
-
-        <div class="blog-redes-sociales">
-            <img src="/images/icon-negro-fb.svg" alt="">
-            <img src="/images/icon-negro-ig.svg" alt="">
-            <img src="/images/icon-negro-github.svg" alt="">
-            <img src="/images/icon-negro-linkedin.svg" alt="">
-        </div>
-
-    </section> --}}
 </x-ghost-layout>
