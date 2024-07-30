@@ -939,6 +939,7 @@ body {
 }
 
 .footer {
+    z-index: 1;
     margin-top: var(--space-5);
     margin-bottom: var(--space-2);
     .footer-links {

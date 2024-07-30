@@ -8,7 +8,7 @@
     <section class="footer-links">
         <article class="footer-group-links">
             <h3>INFO</h3>
-            <a href="#">
+            <a href="mailto:coelloweb@aol.com">
                 Contacto
             </a>
             <a href="acerca">
@@ -41,7 +41,7 @@
     </section>
 
     <hr>
-    
+
     <footer class="footer-pie">
         <h3>
             &copy; 2024 Eduardo Coello
