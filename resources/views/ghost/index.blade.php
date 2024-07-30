@@ -13,7 +13,7 @@
                 </button>
         </article>
 
-        <article class="ghost-hero-img-wrap">
+        <article class="ghost-hero-img-wrap hidden">
             <img class="ghost-hero-mobile-img" src="/images/ghost/spacecaps-iphone.webp" alt="">
             <img class="ghost-hero-desktop-img" src="/images/ghost/spacecaps-desktop.webp" alt="">
         </article>
@@ -55,7 +55,7 @@
     </section>
 
     <section class="beneficios-wrap full-width">
-        <article class="beneficio">
+        <article class="beneficio hidden">
             <img src="images/ghost/corgi.webp" alt="">
             <div class="beneficio-copy">
                 <h1>
@@ -68,7 +68,7 @@
             </div>
         </article>
 
-        <article class="beneficio">
+        <article class="beneficio hidden-two">
             <img src="images/ghost/chihuahua.webp" alt="">
             <div class="beneficio-copy">
                 <h1>
@@ -81,7 +81,7 @@
             </div>
         </article>
 
-        <article class="beneficio">
+        <article class="beneficio hidden">
             <img src="images/ghost/manada.webp" alt="">
             <div class="beneficio-copy">
                 <h1>
@@ -344,7 +344,7 @@
         </div>
     </section> --}}
 
-    <section class="copy-final-wrap">
+    <section class="copy-final-wrap hidden-three">
         <h1>Ofrece nuevas experiencias</h1>
         <button
             class="glow-effect cta-button"

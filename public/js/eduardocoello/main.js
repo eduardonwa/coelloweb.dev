@@ -37,3 +37,16 @@ buttons.forEach(button => {
         dialog.classList.add('show');
     });
 });
+
+// animaciones
+const observer = new IntersectionObserver((entries) => {
+    entries.forEach((entry) => {
+        console.log(entry)
+        if(entry.isIntersecting) {
+            entry.target.classList.add('show');
+        }
+    });
+});
+
+const hiddenElements = document.querySelectorAll('.hidden, .hidden-two, .hidden-three');
+hiddenElements.forEach((el) => observer.observe(el));

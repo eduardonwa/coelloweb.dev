@@ -99,6 +99,40 @@ body {
     --glow-blur-color: var(--ghost-50);
 }
 
+/* intersection observer */
+.hidden {
+    opacity: 0;
+    filter: blur(5px);
+    transform: translateX(-100%);
+    transition: all 1.8s;
+}
+
+.hidden-two {
+    opacity: 0;
+    filter: blur(5px);
+    transform: translateX(100%);
+    transition: all 1.8s;
+}
+
+.hidden-three {
+    opacity: 0;
+    filter: blur(5px);
+    transform: translateY(100%);
+    transition: all 2s;
+}
+
+@media(prefers-reduced-motion) {
+    .hidden {
+        transition: none;
+    }
+}
+
+.show {
+    opacity: 1;
+    filter: blur(0);
+    transform: translateX(0);
+}
+
 /* hero */
 .ghost-hero-wrap {
     container-type: inline-size;
