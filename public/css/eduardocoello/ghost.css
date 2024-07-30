@@ -217,7 +217,7 @@ body {
         }
 
         .ghost-hero-img-wrap {
-            padding: var(--space-5) 176px;
+            padding: var(--space-4) 176px;
         }
     }
 }
@@ -564,6 +564,7 @@ body {
     }
 }
 
+
 /* testimonio */
 .testimonio-wrap {
     border-radius: .5rem;
@@ -676,8 +677,9 @@ body {
     }
 }
 
-@media (min-width: 1268px) {
+@media (min-width: 1024px) {
     .proceso-trabajo-wrap {
+        margin-block: var(--space-11);
         padding-inline: 176px;
 
         .proceso-trabajo-copy {
