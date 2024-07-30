@@ -1078,10 +1078,13 @@ body {
 
     button {
         border: 2px solid transparent;
-        margin-top: var(--space-6);
-        padding: var(--space-1);
+        color: var(--gray-950);
+        font-weight: 600;
+        font-size: var(--fs-300);
         background-color: var(--ghost-400);
+        padding: var(--space-1);
         width: 100%;
+        margin-top: var(--space-6);
         margin-bottom: var(--space-2);
         cursor: pointer;
 
@@ -1151,10 +1154,11 @@ body {
 }
 
 dialog {
-    background-color: var(--gray-950);
     border: none;
+    background-color: var(--gray-950);
     max-width: fit-content;
     overscroll-behavior-block: contain;
+    margin: auto;
     scrollbar-width: none;
     -ms-overflow-style: none;
 
