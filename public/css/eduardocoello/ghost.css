@@ -970,6 +970,7 @@ body {
         margin-block: var(--space-2);
         border-color: var(--gray-500);
         border-width: 2px;
+        position: relative;
 
         legend {
             padding-inline: var(--space-1);
@@ -1095,6 +1096,12 @@ body {
         background-color: transparent;
         color: var(--gray-50);
     }
+
+    .error {
+        font-size: 13px;
+        color: red;
+        font-style: italic;
+    }
 }
 
 @media (min-width: 1024px) {
@@ -1107,6 +1114,10 @@ body {
 
         fieldset {
             border-color: var(--gray-300);
+
+            input, select {
+                height: 0;
+            }
         }
 
         .detalles, button {

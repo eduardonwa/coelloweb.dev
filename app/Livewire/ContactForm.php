@@ -4,6 +4,7 @@ namespace App\Livewire;
 
 use Livewire\Component;
 use App\Mail\SolicitudMailable;
+use Livewire\Attributes\Validate;
 use Illuminate\Support\Facades\Mail;
 
 class ContactForm extends Component
@@ -30,6 +31,11 @@ class ContactForm extends Component
         'detalles' => 'min:6',
         'budget' => 'required'
     ];
+
+    public function updated($rules)
+    {
+        $this->validateOnly($rules);
+    }
 
     public function submit()
     {
