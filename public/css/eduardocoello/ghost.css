@@ -1231,6 +1231,10 @@ dialog[closing] {
             h1 {
                 padding-bottom: var(--space-2);
             }
+
+            p {
+                margin-inline: var(--space-2);
+            }
         }
 
         .alert-redes-sociales {
