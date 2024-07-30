@@ -46,9 +46,9 @@
             <legend>Plazo de entrega</legend>
             <select id="plazo-entrega" wire:model.blur="plazoEntrega" required>
                 <option value="">Selecciona el plazo</option>
-                <option value="1-mes-o-menos">1 Mes o menos</option>
-                <option value="1-3-meses">1 - 3 Meses</option>
-                <option value="3-6-meses">3 - 6 Meses</option>
+                <option value="1 mes o menos">1 Mes o menos</option>
+                <option value="1 a 3 meses">1 - 3 Meses</option>
+                <option value="3 a 6 meses">3 - 6 Meses</option>
             </select>
             @error('plazoEntrega') <span class="error">{{ $message }}</span> @enderror
         </fieldset>
@@ -57,9 +57,9 @@
             <legend># de páginas</legend>
             <select id="numero-paginas" wire:model="numeroPaginas" required>
                 <option value="1">1</option>
-                <option value="2-5">2 - 5</option>
-                <option value="5-10">5 - 10</option>
-                <option value="10-20">10 - 20</option>
+                <option value="2 - 5">2 - 5</option>
+                <option value="5 - 10">5 - 10</option>
+                <option value="10 - 20">10 - 20</option>
             </select>
             @error('numeroPaginas') <span class="error">{{ $message }}</span> @enderror
         </fieldset>
@@ -79,7 +79,7 @@
                         name="budget"
                         type="radio"
                         id="budget-1"
-                        value="500-100"
+                        value="500 - 100"
                         wire:model="budget"/>
                     <label for="budget-1">500 $ - 1,000 $</label>
                 </div>
@@ -89,7 +89,7 @@
                         name="budget"
                         type="radio"
                         id="budget-2"
-                        value="1,000-2,000"
+                        value="1,000 - 2,000"
                         wire:model="budget" />
                     <label for="budget-2">1,000 $ - 2,000 $</label>
                 </div>
@@ -99,7 +99,7 @@
                         name="budget"
                         type="radio"
                         id="budget-3"
-                        value="2,000-5,000"
+                        value="2,000 - 5,000"
                         wire:model="budget" />
                     <label for="budget-3">2,000 $ - 5,000 $</label>
                 </div>
@@ -109,7 +109,7 @@
                         name="budget"
                         type="radio"
                         id="budget-4"
-                        value="5,000-8,000"
+                        value="5,000 - 8,000"
                         wire:model="budget" />
                     <label for="budget-4">5,000 $ - 8,000 $</label>
                 </div>
