@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <!-- open graph -->
-    <meta property="og:title" content="Título de tu página" />
+    <meta property="og:title" content="Hablemos de tus ideas" />
     <meta property="og:type" content="website" />
     <meta property="og:url" content="{{ url()->current() }}" />
     <meta property="og:image" content="{{ asset('images/ecoello-logo.png') }}" />
