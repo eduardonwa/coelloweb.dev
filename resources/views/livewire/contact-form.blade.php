@@ -45,6 +45,7 @@
         <fieldset>
             <legend>Plazo de entrega</legend>
             <select id="plazo-entrega" wire:model.blur="plazoEntrega" required>
+                <option value="">Selecciona el plazo</option>
                 <option value="1-mes-o-menos">1 Mes o menos</option>
                 <option value="1-3-meses">1 - 3 Meses</option>
                 <option value="3-6-meses">3 - 6 Meses</option>
