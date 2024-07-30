@@ -1,3 +1,4 @@
+// efecto glow
 (function setGlowEffectRx() {
     const glowEffects = document.querySelectorAll('.glow-effect');
 
@@ -29,15 +30,10 @@ document.querySelectorAll('.enviar-consulta-form input, .enviar-consulta-form se
 // mostrar dialogo de solicitud
 const buttons = document.querySelectorAll('.cta-button');
 const dialog = document.getElementById('solicitudDialogo');
-const closeButton = document.getElementById('closeButton');
 
 buttons.forEach(button => {
     button.addEventListener('click', () => {
         dialog.showModal();
         dialog.classList.add('show');
     });
-});
-
-closeButton.addEventListener('click', () => {
-    dialog.classList.remove('show');
 });

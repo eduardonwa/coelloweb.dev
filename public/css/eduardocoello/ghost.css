@@ -100,13 +100,13 @@ body {
 }
 
 /* navbar */
-.ghost-navbar {
+/* .ghost-navbar {
     position: absolute;
     top: 0;
     left: 0;
     width: 100%;
     z-index: 1;
-}
+} */
 
 /* hero */
 .ghost-hero-wrap {
@@ -943,7 +943,7 @@ body {
     fieldset {
         margin-block: var(--space-2);
         border-color: var(--gray-500);
-        border-width: 1px;
+        border-width: 2px;
 
         legend {
             padding-inline: var(--space-1);
@@ -1114,12 +1114,12 @@ body {
 }
 
 dialog {
-    background-color: transparent;
+    background-color: var(--gray-950);
     border: none;
-    margin: 0 auto;
-    width: 100%;
-    padding: 0;
+    max-width: fit-content;
     overscroll-behavior-block: contain;
+    scrollbar-width: none;
+    -ms-overflow-style: none;
 
     #closeButton {
         background-color: transparent;
@@ -1137,32 +1137,46 @@ dialog::-webkit-scrollbar {
     display: none;
 }
 
-dialog {
-    scrollbar-width: none; /* Firefox */
-    -ms-overflow-style: none; /* Internet Explorer 10+ */
-}
-
-dialog {
-    -ms-overflow-style: none; /* Internet Explorer 10+ */
-}
-
 dialog::backdrop {
     background-color: var(--gray-950);
-    backdrop-filter: blur(3px);
 }
 
-/* 👇 style2: top2center */
-dialog#solicitudDialogo[open] {
-    animation: izqADerecha .8s cubic-bezier(.23,.59,.66,.89)
+dialog[open] {
+    animation: slide 1000ms forwards, fade-in 500ms forwards;
 }
 
-@keyframes izqADerecha {
-    from {
-        transform: translateX(-200%);
+dialog[closing] {
+    display: block;
+    pointer-events: none;
+    inset: 0;
+    animation: fade-out 500ms forwards;
+}
+
+@keyframes fade-in {
+    0% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+}
+
+@keyframes fade-out {
+    0% {
+        opacity: 1;
     }
 
-    to {
-        transform: translateX(0%);
+    100% {
+        opacity: 0;
+    }
+}
+
+@keyframes slide {
+    0% {
+      transform: translateX(100%);
+    }
+    100% {
+      transform: translateY(0%);
     }
 }
 

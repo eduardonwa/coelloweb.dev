@@ -12,7 +12,8 @@
     @livewireStyles
 </head>
 <body>
-    <dialog id="solicitudDialogo">
+
+    <dialog class="modal" id="solicitudDialogo">
         <form method="dialog">
             <button type="submit" id="closeButton">&rsaquo;&lsaquo;</button>
         </form>
