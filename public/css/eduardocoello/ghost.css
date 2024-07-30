@@ -99,15 +99,6 @@ body {
     --glow-blur-color: var(--ghost-50);
 }
 
-/* navbar */
-/* .ghost-navbar {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    z-index: 1;
-} */
-
 /* hero */
 .ghost-hero-wrap {
     container-type: inline-size;
@@ -556,7 +547,7 @@ body {
     }
 
     p {
-        margin: var(--space-7) var(--space-4);
+        margin: var(--space-4);
         font-weight: 500;
         font-size: var(--fs-400);
         line-height: 1.8;

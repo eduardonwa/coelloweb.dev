@@ -96,7 +96,7 @@
     </section>
 
     <section class="testimonio-wrap">
-        <img src="images/ghost/space-caps-logo.svg" alt="">
+        <img src="images/ghost/aj-logo.svg" alt="">
         <p>Mi experiencia trabajando con Eduardo fue muy efectiva: desde la primera junta entendió muy bien lo que buscaba, y me fue guiando y proponiendo ideas para lograr la versión final de mi producto, que me encantó.  </p>
         <h3>Adriana & Johann</h3>
     </section>
