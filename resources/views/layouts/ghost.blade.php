@@ -1,6 +1,15 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <!-- open graph -->
+    <meta property="og:title" content="Título de tu página" />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="{{ url()->current() }}" />
+    <meta property="og:image" content="{{ asset('images/ecoello-logo.png') }}" />
+    <meta property="og:description" content="Soy un subcontratista especializado en diseño web moderno y profesional. Ayudo a equipos y agencias comprometidos con otros proyectos a crear sitios web de alta calidad." />
+    <meta property="og:site_name" content="CoelloWeb" />
+    <meta property="og:locale" content="es_ES" />
+
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
