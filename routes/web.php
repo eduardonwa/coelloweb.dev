@@ -14,6 +14,7 @@ Route::redirect('/', 'blog')->name('welcome');
 Route::view('acerca', 'acerca')->name('acerca');
 
 Route::view('privacidad', 'privacidad')->name('privacidad');
+Route::view('terminos', 'terminos')->name('terminos');
 
 Route::get('blog', [BlogController::class, 'index'])->name('blog.index');
 

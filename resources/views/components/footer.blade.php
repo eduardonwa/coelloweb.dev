@@ -21,10 +21,10 @@
 
         <article class="footer-group-links">
             <h3>LEGAL</h3>
-            <a href="/privacidad">
+            <a href="privacidad">
                 Privacidad
             </a>
-            <a href="#">
+            <a href="terminos">
                 Términos
             </a>
         </article>
