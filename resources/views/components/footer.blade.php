@@ -11,7 +11,7 @@
             <a href="mailto:coelloweb@aol.com">
                 Contacto
             </a>
-            <a href="#h">
+            <a href="#">
                 Acerca
             </a>
             <a href="#">
