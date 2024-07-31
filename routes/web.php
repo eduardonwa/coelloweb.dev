@@ -11,7 +11,9 @@ use App\Http\Controllers\CategoryController;
 
 Route::redirect('/', 'blog')->name('welcome');
 
-Route::view('acerca', 'about')->name('about');
+Route::view('acerca', 'acerca')->name('acerca');
+
+Route::view('privacidad', 'privacidad')->name('privacidad');
 
 Route::get('blog', [BlogController::class, 'index'])->name('blog.index');
 
