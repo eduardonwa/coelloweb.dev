@@ -1,16 +1,16 @@
-<x-ghost-layout>
+<x-blog-layout>
     <section style="margin-top: 40px;">
-        <h1>AVISO DE PRIVACIDAD</h1>
+        <h1 style="font-weight: 700;">AVISO DE PRIVACIDAD</h1>
         <p>
             Eduardo Coello, con domicilio en Río Balsas, 718, colonia del Valle, Ciudad Obregón, Cajeme, Sonora, es responsable
             de recabar sus datos personales, del uso que se le dé a los mismos y de su protección.
             <br><br>
-        <h2>Información recopilada</h2>
+        <h2 style="font-weight: 700;">Información recopilada</h2>
             El sitio web podrá recoger información personal por ejemplo: Nombre, información de contacto como su dirección
             de correo electrónica e información demográfica. Así mismo cuando sea necesario podrá ser requerida información
             específica para procesar algún pedido o realizar una entrega o facturación.
             <br><br>
-        <h2>Uso de la información recogida</h2>
+        <h2 style="font-weight: 700;">Uso de la información recogida</h2>
             El sitio web emplea la información con el fin de proporcionar el mejor servicio posible, particularmente para
             mantener un registro de usuarios, de pedidos en caso que aplique, y mejorar nuestros productos y servicios.
             Es posible que sean enviados correos electrónicos periódicamente a través de nuestro sitio con ofertas especiales,
@@ -21,7 +21,7 @@
             Está altamente comprometido para cumplir con el compromiso de mantener su información segura. Uso los sistemas
             más avanzados y los actualizo constantemente para asegurarme que no exista ningún acceso no autorizado.
             <br><br>
-        <h2>Cookies</h2>
+        <h2 style="font-weight: 700;">Cookies</h2>
             Una cookie se refiere a un fichero que es enviado con la finalidad de solicitar permiso para almacenarse en su
             ordenador, al aceptar dicho fichero se crea y la cookie sirve entonces para tener información respecto al
             tráfico web, y también facilita las futuras visitas a una web recurrente. Otra función que tienen las cookies
@@ -38,14 +38,14 @@
             pues sirve para tener un mejor servicio web. También usted puede cambiar la configuración de su ordenador para
             declinar las cookies. Si se declinan es posible que no pueda utilizar algunos de nuestros servicios.
             <br><br>
-        <h2>Enlaces a Terceros</h2>
+        <h2 style="font-weight: 700;">Enlaces a Terceros</h2>
             Este sitio web pudiera contener enlaces a otros sitios que pudieran ser de su interés. Una vez que usted de clic
             en estos enlaces y abandone nuestra página, ya no tenemos control sobre al sitio al que es redirigido y por lo
             tanto no somos responsables de los términos o privacidad ni de la protección de sus datos en esos otros sitios
             terceros. Dichos sitios están sujetos a sus propias políticas de privacidad por lo cual es recomendable que los
             consulte para confirmar que usted está de acuerdo con estas.
             <br><br>
-        <h2>Control de su información personal</h2>
+        <h2 style="font-weight: 700;">Control de su información personal</h2>
             En cualquier momento usted puede restringir la recopilación o el uso de la información personal que es proporcionada
             en mi sitio web. Cada vez que se le solicite rellenar un formulario, como el de alta de usuario, puede marcar o
             desmarcar la opción de recibir información por correo electrónico. En caso de que haya marcado la opción de recibir
@@ -58,4 +58,4 @@
             Fecha última actualización 31 de julio, 2024
         </p>
     </section>
-</x-ghost-layout>
+</x-blog-layout>
