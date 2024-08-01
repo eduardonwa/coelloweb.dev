@@ -180,6 +180,7 @@ body {
         .ghost-hero-mobile-img {
             width: 280px;
             margin: 0 auto;
+            animation: fade-in 2s forwards;
         }
 
         .ghost-hero-desktop-img {
@@ -200,6 +201,7 @@ body {
             .ghost-hero-desktop-img {
                 display: block;
                 width: 100%;
+                animation: fade-in 2s forwards;
             }
         }
     }
@@ -1016,6 +1018,12 @@ body {
             padding: var(--space-1);
         }
     }
+    
+    .error {
+        font-size: 13px;
+        color: red;
+        font-style: italic;
+    }
 
     .presupuesto-wrap {
         .presupuesto-encabezado {
@@ -1102,11 +1110,7 @@ body {
         color: var(--gray-50);
     }
 
-    .error {
-        font-size: 13px;
-        color: red;
-        font-style: italic;
-    }
+
 }
 
 @media (min-width: 1024px) {
@@ -1119,9 +1123,11 @@ body {
 
         fieldset {
             border-color: var(--gray-300);
+            position: relative;
 
-            input, select {
-                height: 0;
+            .error {
+                position: absolute;
+                bottom: 0;
             }
         }
 

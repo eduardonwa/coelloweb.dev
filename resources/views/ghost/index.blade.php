@@ -13,7 +13,7 @@
                 </button>
         </article>
 
-        <article class="ghost-hero-img-wrap hidden">
+        <article class="ghost-hero-img-wrap">
             <img class="ghost-hero-mobile-img" src="/images/ghost/spacecaps-iphone.webp" alt="">
             <img class="ghost-hero-desktop-img" src="/images/ghost/spacecaps-desktop.webp" alt="">
         </article>
@@ -202,7 +202,7 @@
                         <img src="images/ghost/pastor-aleman.webp" alt="">
                     </div>
                     <h2>Tus requisitos tecnológicos</h2>
-                    <p>Dale a tus clientes la visión exacta que necesitan ver. Landing pages, tiendas en línea con Shopify, SPA's y más. Olvídate de los sitios prediseñados y de las plantillas costosas.</p>
+                    <p>Dale a tus clientes la visión exacta que buscan. Olvídate de los sitios prediseñados y de las plantillas costosas.</p>
                 </article>
 
                 <article class="herramientas-servicios-wrap">
