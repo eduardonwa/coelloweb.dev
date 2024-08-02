@@ -336,7 +336,7 @@ a {
                 }
 
                 a:hover {
-                    color: var(--primary-200);
+                    color: var(--accent-200);
                 }
             }
         }
