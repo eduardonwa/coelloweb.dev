@@ -45,7 +45,7 @@
                     </span>
                     <div class="respuesta" x-show="open" x-transition>
                         <p>Esto depende de los mismos requisitos del proyecto. <br> <br>
-                            <a style="text-decoration: underline;" href="">Si tienes algo en mente</a>
+                            <a style="text-decoration: underline;" href="mailto:coelloweb@aol.com?subject=Envio%20de%20solicitud">Si tienes algo en mente</a>
                             no dudes en mandarme una solicitud para que puedas recibir un estimado.
                         </p>
                     </div>
@@ -60,7 +60,7 @@
                         <p>Diseño, desarrollo, pruebas y puede incluir el lanzamiento.
                             <br> <br>
                             Cada sitio web es responsivo y tiene código limpio para facilitar actualizaciones.
-                            Uso <a href="https://playwright.dev">Playwright</a> y <a href="https://puntorojo.com/blog/google-lighthouse-una-herramienta-indispensable/">Lighthouse</a> para asegurar la consistencia visual y asegurarme de que tu sitio sea veloz.
+                            Uso <a target="_blank" href="https://medium.com/somos-pragma/automatizaci%C3%B3n-de-pruebas-web-simplificada-con-playwright-a0d38b9afc79">Playwright</a> y <a target="_blank" href="https://puntorojo.com/blog/google-lighthouse-una-herramienta-indispensable/">Lighthouse</a> para asegurar la consistencia visual y asegurarme de que tu sitio sea veloz.
                             También integro palabras clave para mejorar el SEO.
                             <br> <br>
                             Si lo necesitas, puedo sugerirte dónde registrar tu dominio y qué proveedor de hosting contratar.
@@ -79,8 +79,8 @@
                         <p>
                             El diseño será personalizado y ajustado a tus necesidades.
                             <br> <br>
-                            Podemos partir de un prototipo o bien, puedo diseñar uno
-                            desde cero donde estarás al tanto de cada avance.
+                            Puedes mandarme una liga con tu prototipo o diseñar tu idea
+                            la cuál podrás revisar en cualquier momento.
                             Mis diseños priorizan la experiencia del usuario, siguiendo las mejores prácticas de interfaz, colores, tipografía y más.
                             <br> <br>
                             Además, considero los objetivos del negocio, el marketing, la audiencia y tu identidad visual.
@@ -128,12 +128,12 @@
                         <p>
                             El SEO se realizará mediante palabras clave y optimización técnica.
                             <br><br>
-                            Utilizo <a href="https://ubersuggest.com">UberSuggest</a> y <a href="https://answerthepublic.com">AnswerThePublic</a> para identificar las mejores
+                            Utilizo <a target="_blank" href="https://ubersuggest.com">UberSuggest</a> y <a target="_blank" href="https://answerthepublic.com">AnswerThePublic</a> para identificar las mejores
                             palabras clave para tu proyecto, asegurando que el copywriting se
                             alinee con tu nicho de mercado.
                             <br> <br>
                             Y para que puedas compartir tu página web en redes sociales,
-                            me aseguro de utilizar Open Graph y Twitter Meta Tags.
+                            me aseguro de utilizar <a target="_blank" href="https://desarrolloweb.com/articulos/tags-open-graph-facebook.html">Open Graph</a> y Twitter Meta Tags.
                         </p>
                     </div>
                 </div>
@@ -149,7 +149,7 @@
                         <p>
                             Sí, te proporcionaré acceso para que puedas hacerlo fácilmente.
                             <br><br>
-                            <a href="">Puedes consultar estas opciones</a> en el paquete “Estándar”
+                            <a target="_blank" href="{{ asset('images/eduardocoello-paquetes.png') }}">Puedes consultar estas opciones</a> en el paquete “Estándar”
                             que te dejo en el enlace.
                         </p>
                     </div>
