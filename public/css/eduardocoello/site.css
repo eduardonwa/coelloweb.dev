@@ -1,4 +1,27 @@
 @import "main.css";
+/* terminos */
+.terminos-wrap {
+    padding: var(--space-3);
+
+    li {
+        a {
+            text-decoration: underline;
+            color: var(--accent-500);
+            -webkit-transition: color 100ms linear;
+            -ms-transition: color 100ms linear;
+            transition: color 100ms linear;
+        }
+
+        a:hover {
+            color: var(--accent-600);
+        }
+    }
+}
+
+/* privacidad */
+.privacidad-wrap {
+    padding: var(--space-3);
+}
 
 /* preguntas */
 .preguntas-wrap {

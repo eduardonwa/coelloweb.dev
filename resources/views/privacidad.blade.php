@@ -1,5 +1,5 @@
-<x-blog-layout>
-    <section>
+<x-site-layout>
+    <section class="privacidad-wrap">
         <h1 style="font-weight: 700;">AVISO DE PRIVACIDAD</h1>
         <p>
             Eduardo Coello, con domicilio en Río Balsas, 718, colonia del Valle, Ciudad Obregón, Cajeme, Sonora, es responsable
@@ -58,4 +58,4 @@
             Fecha última actualización 31 de julio, 2024
         </p>
     </section>
-</x-blog-layout>
+</x-site-layout>

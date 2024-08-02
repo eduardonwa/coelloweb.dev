@@ -1,13 +1,13 @@
-<x-blog-layout>
+<x-site-layout>
 
-    <section>
+    <section class="terminos-wrap">
         <h1 style="font-weight: 700;">TÉRMINOS Y CONDICIONES</h1>
             El presente contrato describe los términos y condiciones aplicables al uso del contenido, productos y/o servicios del sitio web
             CoelloWeb del cual es titular Eduardo Robles Coello. Para hacer uso del contenido, productos y/o servicios del sitio web el usuario
             deberá sujetarse a los presentes términos y condiciones.
         <br><br>
         <h2 style="font-weight: 700;">I. OBJETO</h2>
-            <li>El objeto es regular el acceso y utilización del contenido, productos y/o servicios a disposición del público en general en el dominio <a href="https://www.coelloweb.dev" style="text-decoration: underline; color: var(--primary-500)">https://www.coelloweb.dev</a>.</li>
+            <li>El objeto es regular el acceso y utilización del contenido, productos y/o servicios a disposición del público en general en el dominio <a href="https://www.coelloweb.dev">https://www.coelloweb.dev</a>.</li>
             <li>El titular se reserva el derecho de realizar cualquier tipo de modificación en el sitio web en cualquier momento y sin previo aviso, el usuario acepta dichas modificaciones.</li>
             <li>El acceso al sitio web por parte del usuario es libre y gratuito, la utilización del contenido, productos y/o servicios implica un costo de suscripción para el usuario.</li>
             <li>El sitio web solo admite el acceso a personas mayores de edad y no se hace responsable por el incumplimiento de esto.</li>
@@ -28,7 +28,7 @@
         <h2 style="font-weight: 700;">IV. POLÍTICA DE PRIVACIDAD Y PROTECCIÓN DE DATOS</h2>
             <li>Conforme a lo establecido en la Ley Federal de Protección de Datos Personales en Posesión de Particulares, el titular se compromete a tomar las medidas necesarias que garanticen la seguridad del usuario, evitando que se haga uso indebido de los datos personales que el usuario proporcione en el sitio web.</li>
             <li>El titular corroborará que los datos personales contenidos en las bases de datos sean correctos, verídicos y actuales, así como que se utilicen únicamente con el fin con el que fueron recabad</li>
-            <li>El uso de datos personales se limitará a lo previsto en el Aviso de Privacidad disponible en el <a style="text-decoration: underline; color: var(--primary-500)" href="https://www.coelloweb.dev/privacidad">aviso de privacidad</a>.</li>
+            <li>El uso de datos personales se limitará a lo previsto en el Aviso de Privacidad disponible en el <a href="https://www.coelloweb.dev/privacidad">aviso de privacidad</a>.</li>
             <li>EduardoCoello se reserva el derecho de realizar cualquier tipo de modificación en el Aviso de Privacidad en cualquier momento y sin previo aviso, de acuerdo con sus necesidades o cambios en la legislación aplicable, el usuario acepta dichas modificaciones.</li>
             <li>El sitio web implica la utilización de cookies que son pequeñas cantidades de información que se almacenan en el navegador utilizado por el usuario como datos de ingreso, preferencias del usuario, fecha y hora en que se accede al sitio web, sitios visitados y dirección IP, esta información es anónima y solo se utilizará para mejorar el sitio web. Los cookies facilitan la navegación y la hacen más amigable, sin embargo, el usuario puede desactivarlos en cualquier momento desde su navegador en el entendido de que esto puede afectar algunas funciones del sitio web.</li>
         <br><br>
@@ -44,4 +44,4 @@
             <li>EduardoCoello no se responsabiliza por la indebida utilización del contenido, productos y/o servicios del sitio web y del incumplimiento de los presentes términos y condiciones.</li>
     </section>
 
-</x-blog-layout>
+</x-site-layout>
