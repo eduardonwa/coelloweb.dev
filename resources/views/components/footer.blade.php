@@ -14,7 +14,7 @@
             <a href="#">
                 Acerca
             </a>
-            <a href="#">
+            <a href="preguntas">
                 Preguntas
             </a>
         </article>

@@ -16,7 +16,7 @@
     <meta name="description" content="Soy un subcontratista especializado en diseño web moderno y profesional. Ayudo a equipos y agencias comprometidos con otros proyectos a crear sitios web de alta calidad.">
     <meta name="author" content="Eduardo Coello">
     <link rel="stylesheet" href="css/eduardocoello/ghost.css">
-    <script src="js/eduardocoello/main.js" defer></script>
+    <script src="js/eduardocoello/ghost.js" defer></script>
     <title>Diseñador Fantasma - Diseño Web Moderno y Profesional</title>
     @livewireStyles
 </head>

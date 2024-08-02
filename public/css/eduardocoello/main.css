@@ -99,7 +99,6 @@ a {
     --font-family: system-ui;
 
     /* tamaño de tipografia */
-
     --fs-300: clamp(0.94rem, calc(0.92rem + 0.08vw), 0.98rem);
     --fs-400: clamp(1.13rem, calc(1.06rem + 0.33vw), 1.31rem);
     --fs-500: clamp(1.35rem, calc(1.21rem + 0.69vw), 1.75rem);
@@ -126,7 +125,6 @@ a {
     --space-15: 120px;
 
     /* colores */
-
     /* primario: #1fadff */
     --primary-100: hsl(208.13, 100%, 93.73%);
     --primary-200: hsl(203.66, 100%, 86.08%);
@@ -172,6 +170,9 @@ a {
     --gray-800: hsl(240, 7.14%, 27.45%);
     --gray-900: hsl(240, 6.56%, 23.92%);
     --gray-950: hsl(240, 5.88%, 10%);
+
+    /* sombras */
+    --ghost-shadow: drop-shadow(0px 3px 6px hsla(0, 0%, 0%, 0.295));
 }
 
 /* esquema */

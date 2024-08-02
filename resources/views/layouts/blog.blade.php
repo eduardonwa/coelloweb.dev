@@ -119,7 +119,6 @@
                 </a>
             </x-slot>
         </x-bottom-nav>
-
         <!-- navbar -->
         <x-navbar>
         </x-navbar>
