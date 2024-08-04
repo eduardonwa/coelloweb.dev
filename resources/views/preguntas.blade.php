@@ -60,10 +60,11 @@
                         <p>Diseño, desarrollo, pruebas y puede incluir el lanzamiento.
                             <br> <br>
                             Cada sitio web es responsivo y tiene código limpio para facilitar actualizaciones.
-                            Uso <a target="_blank" href="https://medium.com/somos-pragma/automatizaci%C3%B3n-de-pruebas-web-simplificada-con-playwright-a0d38b9afc79">Playwright</a> y <a target="_blank" href="https://puntorojo.com/blog/google-lighthouse-una-herramienta-indispensable/">Lighthouse</a> para asegurar la consistencia visual y asegurarme de que tu sitio sea veloz.
-                            También integro palabras clave para mejorar el SEO.
+                            Uso <a target="_blank" href="https://medium.com/somos-pragma/automatizaci%C3%B3n-de-pruebas-web-simplificada-con-playwright-a0d38b9afc79">Playwright</a>
+                            y <a target="_blank" href="https://puntorojo.com/blog/google-lighthouse-una-herramienta-indispensable/">Lighthouse</a> para asegurar la consistencia visual
+                            y optimización de velocidad. También integro palabras clave para mejorar tu desempeño en Google, Bing, Yahoo, etc.
                             <br> <br>
-                            Si lo necesitas, puedo sugerirte dónde registrar tu dominio y qué proveedor de hosting contratar.
+                            También puedo sugerirte dónde registrar tu nombre de dominio y qué proveedor de hosting contratar.
                         </p>
                     </div>
                 </div>
@@ -79,11 +80,15 @@
                         <p>
                             El diseño será personalizado y ajustado a tus necesidades.
                             <br> <br>
-                            Puedes mandarme una liga con tu prototipo o diseñar tu idea
-                            la cuál podrás revisar en cualquier momento.
-                            Mis diseños priorizan la experiencia del usuario, siguiendo las mejores prácticas de interfaz, colores, tipografía y más.
+                            Puedes mandarme una liga a un prototipo para implentar código
+                            desde el mismísimo comienzo.
+                            Si no cuentas con una plantilla o prototipo, empiezo a idear
+                            una idea nueva la cual tendrás que aprobar. Mis diseños priorizan
+                            la experiencia del usuario siguiendo las mejores prácticas de
+                            interfaz, colores, tipografía, y más.
                             <br> <br>
-                            Además, considero los objetivos del negocio, el marketing, la audiencia y tu identidad visual.
+                            Considero también tus objetivos de negocio, marketing, tu audiencia
+                            y tu identidad visual.
                         </p>
                     </div>
                 </div>
@@ -128,12 +133,14 @@
                         <p>
                             El SEO se realizará mediante palabras clave y optimización técnica.
                             <br><br>
-                            Utilizo <a target="_blank" href="https://ubersuggest.com">UberSuggest</a> y <a target="_blank" href="https://answerthepublic.com">AnswerThePublic</a> para identificar las mejores
-                            palabras clave para tu proyecto, asegurando que el copywriting se
-                            alinee con tu nicho de mercado.
+                            Utilizo <a target="_blank" href="https://ubersuggest.com">UberSuggest</a>
+                            y <a target="_blank" href="https://answerthepublic.com">AnswerThePublic</a>
+                            para identificar las mejores palabras clave, asegurándome que el
+                            copywriting se alinee con tu audiencia.
                             <br> <br>
-                            Y para que puedas compartir tu página web en redes sociales,
-                            me aseguro de utilizar <a target="_blank" href="https://desarrolloweb.com/articulos/tags-open-graph-facebook.html">Open Graph</a> y Twitter Meta Tags.
+                            Para que puedas compartir tu página web en redes sociales con toda seguridad,
+                            incorporo etiquetas <a target="_blank" href="https://desarrolloweb.com/articulos/tags-open-graph-facebook.html">Open Graph</a>
+                            y Twitter Meta Tags.
                         </p>
                     </div>
                 </div>
