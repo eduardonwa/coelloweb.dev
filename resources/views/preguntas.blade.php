@@ -82,9 +82,9 @@
                             <br> <br>
                             Puedes mandarme una liga a un prototipo para implentar código
                             desde el mismísimo comienzo.
-                            Si no cuentas con una plantilla o prototipo, empiezo a idear
-                            una idea nueva la cual tendrás que aprobar. Mis diseños priorizan
-                            la experiencia del usuario siguiendo las mejores prácticas de
+                            Si no cuentas con una plantilla o prototipo, empiezo a trabajar
+                            en un diseño nuevo el cual siempre podrás revisar.
+                            Mis diseños priorizan la experiencia del usuario siguiendo las mejores prácticas de
                             interfaz, colores, tipografía, y más.
                             <br> <br>
                             Considero también tus objetivos de negocio, marketing, tu audiencia
