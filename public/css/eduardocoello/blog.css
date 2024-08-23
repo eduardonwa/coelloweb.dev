@@ -18,6 +18,7 @@
                 img {
                     object-fit: cover;
                     border-radius: .75rem;
+                    height: 100%;
                 }
             }
 
