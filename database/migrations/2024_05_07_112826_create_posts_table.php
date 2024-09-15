@@ -15,7 +15,7 @@ return new class extends Migration
             $table->id();
             $table->string('title');
             $table->text('body');
-            $table->string('thumbnail');
+            $table->string('thumbnail')->nullable();
             $table->string('slug');
             $table->string('caption', 2048);
             $table->boolean('active');

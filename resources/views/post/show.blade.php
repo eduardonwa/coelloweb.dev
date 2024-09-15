@@ -34,8 +34,15 @@
 
         <!-- img -->
         <div class="post-img-wrap">
+            {{-- src="{{ Storage::disk('public')->exists($post->thumbnail) ? Storage::url($post->thumbnail) : asset($post->thumbnail) }}" --}}
             <img
-                src="{{ Storage::disk('public')->exists($post->thumbnail) ? Storage::url($post->thumbnail) : asset($post->thumbnail) }}"
+                src="{{ $post->getFirstMediaUrl('thumbnails', 'medium') }}"  {{-- La imagen de tamaño medio como fallback --}}
+                srcset="
+                    {{ $post->getFirstMedia('thumbnails')->getUrl('small') }} 320w,
+                    {{ $post->getFirstMedia('thumbnails')->getUrl('medium') }} 640w,
+                    {{ $post->getFirstMedia('thumbnails')->getUrl('large') }} 1024w,
+                    {{ $post->getFirstMedia('thumbnails')->getUrl('extra-large') }} 1920w
+                "
                 alt="{{ $post->title }}"
             >
         </div>

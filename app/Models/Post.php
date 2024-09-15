@@ -7,14 +7,17 @@ use App\Models\User;
 use App\Models\Category;
 use Spatie\Tags\HasTags;
 use Illuminate\Support\Str;
+use Spatie\MediaLibrary\HasMedia;
 use Illuminate\Database\Eloquent\Model;
+use Spatie\MediaLibrary\InteractsWithMedia;
 use Illuminate\Database\Eloquent\Casts\Attribute;
 use Illuminate\Database\Eloquent\Relations\BelongsTo;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
+use Spatie\MediaLibrary\MediaCollections\Models\Media;
 
-class Post extends Model
+class Post extends Model implements HasMedia
 {
-    use HasFactory, HasTags;
+    use HasFactory, HasTags, InteractsWithMedia;
 
     protected $fillable = [
         'title',
@@ -84,5 +87,22 @@ class Post extends Model
         return $this->published_at->format('jS F Y');
     }
 
+    public function registerMediaConversions(Media $media = null): void
+    {
+        $this->addMediaConversion('small')
+            ->width(320)
+            ->height(240);
 
+        $this->addMediaConversion('medium')
+            ->width(640)
+            ->height(480);
+
+        $this->addMediaConversion('large')
+            ->width(1024)
+            ->height(768);
+
+        $this->addMediaConversion('extra-large')
+            ->width(1920)
+            ->height(1080);
+    }
 }

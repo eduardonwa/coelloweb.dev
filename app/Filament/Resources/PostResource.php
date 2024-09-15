@@ -17,6 +17,8 @@ use App\Filament\Resources\PostResource\Pages;
 use Filament\Forms\Components\SpatieTagsInput;
 use Illuminate\Database\Eloquent\SoftDeletingScope;
 use App\Filament\Resources\PostResource\RelationManagers;
+use Filament\Tables\Columns\SpatieMediaLibraryImageColumn;
+use Filament\Forms\Components\SpatieMediaLibraryFileUpload;
 
 class PostResource extends Resource
 {
@@ -52,7 +54,9 @@ class PostResource extends Resource
                 ])->columnSpan(8),
                 Forms\Components\Card::make()
                 ->schema([
-                    FileUpload::make('thumbnail')
+                    SpatieMediaLibraryFileUpload::make('thumbnail')
+                        ->collection('thumbnails')
+                        ->responsiveImages()
                         ->required(),
                     Forms\Components\Select::make('category_id')
                         ->relationship('category', 'name')
@@ -67,7 +71,8 @@ class PostResource extends Resource
     {
         return $table
             ->columns([
-                Tables\Columns\ImageColumn::make('thumbnail'),
+                SpatieMediaLibraryImageColumn::make('thumbnail')
+                    ->collection('thumbnails'),
                 Tables\Columns\TextColumn::make('title')->searchable(['title', 'body'])->sortable(),
                 Tables\Columns\IconColumn::make('active')->sortable()
                     ->boolean(),
