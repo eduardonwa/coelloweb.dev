@@ -1,7 +1,12 @@
 <footer class="footer full-width">
     <header>
         <a href="/">
-            <img src="/images/ecoello-logo-footer.svg" aria-label="Inicio">
+            <img
+                width="170"
+                height="130"
+                src="/images/ecoello-logo-footer.svg"
+                aria-label="Inicio"
+            >
         </a>
     </header>
 

@@ -9,6 +9,8 @@
                 <div class="left-img-wrap">
                     <img
                         fetchpriority="high"
+                        width="640"
+                        height="640"
                         src="{{ $left->getFirstMediaUrl('thumbnails', 'medium') }}"  {{-- La imagen de tamaño medio como fallback --}}
                         srcset="
                             {{ $left->getFirstMedia('thumbnails')->getUrl('small') }} 320w,
@@ -41,6 +43,8 @@
             <a href="{{ route('posts.show', $last->slug) }}">
                 <div class="big-post-img-wrapper">
                     <img
+                        width="640"
+                        height="640"
                         src="{{ $last->getFirstMediaUrl('thumbnails', 'medium') }}"  {{-- La imagen de tamaño medio como fallback --}}
                         srcset="
                             {{ $last->getFirstMedia('thumbnails')->getUrl('small') }} 320w,
@@ -102,7 +106,10 @@
             <div class="categoria">
                 <!-- icono -->
                 <div class="categoria-img-wrapper">
-                    <img src="{{ Storage::disk('public')->exists($category->icon) ? Storage::url($category->icon) : asset($category->icon) }}" alt="{{ $category->name }}">
+                    <img
+                        width="70"
+                        height="70"
+                        src="{{ Storage::disk('public')->exists($category->icon) ? Storage::url($category->icon) : asset($category->icon) }}" alt="{{ $category->name }}">
                 </div>
 
                 <!-- categoria descripcion -->
@@ -132,6 +139,8 @@
             <a href="{{ route('posts.show', $featured->slug) }}">
                 <div class="destacada-img-wrap">
                     <img
+                        width="640"
+                        height="640"
                         src="{{ $featured->getFirstMediaUrl('thumbnails', 'medium') }}"  {{-- La imagen de tamaño medio como fallback --}}
                         srcset="
                             {{ $featured->getFirstMedia('thumbnails')->getUrl('small') }} 320w,
@@ -163,6 +172,8 @@
             <a href="{{ route('posts.show', $more->slug) }}">
                 <div class="lista-img-wrap">
                     <img
+                        width="640"
+                        height="640"
                         src="{{ $more->getFirstMediaUrl('thumbnails', 'medium') }}"  {{-- La imagen de tamaño medio como fallback --}}
                         srcset="
                             {{ $more->getFirstMedia('thumbnails')->getUrl('small') }} 320w,

@@ -7,17 +7,32 @@
     <!-- social links -->
     <article class="conecta-links">
         <a href="https://instagram.com/coelloweb">
-            <img src="/images/icon-negro-ig.svg" alt="">
+            <img
+                width="40"
+                height="40"
+                src="/images/icon-negro-ig.svg"
+                alt=""
+            >
             <h2>@coelloweb</h2>
         </a>
 
         <a href="https://www.facebook.com/coelloweb">
-            <img src="/images/icon-negro-fb.svg" alt="">
+            <img
+                width="40"
+                height="40"
+                src="/images/icon-negro-fb.svg"
+                alt=""
+            >
             <h2>Eduardo Coello</h2>
         </a>
 
         <a href="https://linkedin.com/in/coelloweb">
-            <img src="/images/icon-negro-linkedin.svg" alt="">
+            <img
+                width="40"
+                height="40"
+                src="/images/icon-negro-linkedin.svg"
+                alt=""
+            >
             <h2>/in/coelloweb</h2>
         </a>
     </article>
