@@ -34,7 +34,6 @@
 
         <!-- img -->
         <div class="post-img-wrap">
-            {{-- src="{{ Storage::disk('public')->exists($post->thumbnail) ? Storage::url($post->thumbnail) : asset($post->thumbnail) }}" --}}
             <img
                 src="{{ $post->getFirstMediaUrl('thumbnails', 'medium') }}"  {{-- La imagen de tamaño medio como fallback --}}
                 srcset="

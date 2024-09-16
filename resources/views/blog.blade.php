@@ -7,7 +7,16 @@
             @foreach ($secondLast as $left)
             <a href="{{ route('posts.show', $left->slug) }}" class="left-post">
                 <div class="left-img-wrap">
-                    <img src="{{ Storage::disk('public')->exists($left->thumbnail) ? Storage::url($left->thumbnail) : asset($left->thumbnail) }}">
+                    <img
+                        src="{{ $left->getFirstMediaUrl('thumbnails', 'medium') }}"  {{-- La imagen de tamaño medio como fallback --}}
+                        srcset="
+                            {{ $left->getFirstMedia('thumbnails')->getUrl('small') }} 320w,
+                            {{ $left->getFirstMedia('thumbnails')->getUrl('medium') }} 640w,
+                            {{ $left->getFirstMedia('thumbnails')->getUrl('large') }} 1024w,
+                            {{ $left->getFirstMedia('thumbnails')->getUrl('extra-large') }} 1920w
+                        "
+                        alt="{{ $left->title }}"
+                    >
                 </div>
 
                 <div class="left-copy-wrap">
@@ -30,7 +39,16 @@
             @foreach($lastPost as $last)
             <a href="{{ route('posts.show', $last->slug) }}">
                 <div class="big-post-img-wrapper">
-                    <img src="{{ Storage::disk('public')->exists($last->thumbnail) ? Storage::url($last->thumbnail) : asset($last->thumbnail) }}">
+                    <img
+                        src="{{ $last->getFirstMediaUrl('thumbnails', 'medium') }}"  {{-- La imagen de tamaño medio como fallback --}}
+                        srcset="
+                            {{ $last->getFirstMedia('thumbnails')->getUrl('small') }} 320w,
+                            {{ $last->getFirstMedia('thumbnails')->getUrl('medium') }} 640w,
+                            {{ $last->getFirstMedia('thumbnails')->getUrl('large') }} 1024w,
+                            {{ $last->getFirstMedia('thumbnails')->getUrl('extra-large') }} 1920w
+                        "
+                        alt="{{ $last->title }}"
+                    >
                 </div>
 
                 <!-- inner w -->
@@ -112,7 +130,16 @@
             @foreach ($featured as $featured)
             <a href="{{ route('posts.show', $featured->slug) }}">
                 <div class="destacada-img-wrap">
-                    <img src="{{ Storage::disk('public')->exists($featured->thumbnail) ? Storage::url($featured->thumbnail) : asset($featured->thumbnail) }}" alt="">
+                    <img
+                        src="{{ $featured->getFirstMediaUrl('thumbnails', 'medium') }}"  {{-- La imagen de tamaño medio como fallback --}}
+                        srcset="
+                            {{ $featured->getFirstMedia('thumbnails')->getUrl('small') }} 320w,
+                            {{ $featured->getFirstMedia('thumbnails')->getUrl('medium') }} 640w,
+                            {{ $featured->getFirstMedia('thumbnails')->getUrl('large') }} 1024w,
+                            {{ $featured->getFirstMedia('thumbnails')->getUrl('extra-large') }} 1920w
+                        "
+                        alt="{{ $featured->title }}"
+                    >
                 </div>
 
                 <!-- categoria, tiempo-->
@@ -134,7 +161,16 @@
             @foreach ($morePosts as $more)
             <a href="{{ route('posts.show', $more->slug) }}">
                 <div class="lista-img-wrap">
-                    <img src="{{ Storage::disk('public')->exists($more->thumbnail) ? Storage::url($more->thumbnail) : asset($more->thumbnail) }}">
+                    <img
+                        src="{{ $more->getFirstMediaUrl('thumbnails', 'medium') }}"  {{-- La imagen de tamaño medio como fallback --}}
+                        srcset="
+                            {{ $more->getFirstMedia('thumbnails')->getUrl('small') }} 320w,
+                            {{ $more->getFirstMedia('thumbnails')->getUrl('medium') }} 640w,
+                            {{ $more->getFirstMedia('thumbnails')->getUrl('large') }} 1024w,
+                            {{ $more->getFirstMedia('thumbnails')->getUrl('extra-large') }} 1920w
+                        "
+                        alt="{{ $more->title }}"
+                    >
                 </div>
 
                 <div class="lista-info">
