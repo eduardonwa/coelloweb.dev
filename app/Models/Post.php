@@ -91,18 +91,22 @@ class Post extends Model implements HasMedia
     {
         $this->addMediaConversion('small')
             ->width(320)
-            ->height(240);
+            ->height(240)
+            ->nonQueued();
 
         $this->addMediaConversion('medium')
             ->width(640)
-            ->height(480);
+            ->height(480)
+            ->nonQueued();
 
         $this->addMediaConversion('large')
             ->width(1024)
-            ->height(768);
+            ->height(768)
+            ->nonQueued();
 
         $this->addMediaConversion('extra-large')
             ->width(1920)
-            ->height(1080);
+            ->height(1080)
+            ->nonQueued();
     }
 }
