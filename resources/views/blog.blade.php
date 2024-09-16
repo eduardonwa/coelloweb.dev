@@ -43,8 +43,6 @@
             <a href="{{ route('posts.show', $last->slug) }}">
                 <div class="big-post-img-wrapper">
                     <img
-                        width="640"
-                        height="640"
                         src="{{ $last->getFirstMediaUrl('thumbnails', 'medium') }}"  {{-- La imagen de tamaño medio como fallback --}}
                         srcset="
                             {{ $last->getFirstMedia('thumbnails')->getUrl('small') }} 320w,
