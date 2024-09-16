@@ -8,6 +8,7 @@
             <a href="{{ route('posts.show', $left->slug) }}" class="left-post">
                 <div class="left-img-wrap">
                     <img
+                        fetchpriority="high"
                         src="{{ $left->getFirstMediaUrl('thumbnails', 'medium') }}"  {{-- La imagen de tamaño medio como fallback --}}
                         srcset="
                             {{ $left->getFirstMedia('thumbnails')->getUrl('small') }} 320w,
