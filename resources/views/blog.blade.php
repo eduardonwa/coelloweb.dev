@@ -102,7 +102,7 @@
             <div class="categoria">
                 <!-- icono -->
                 <div class="categoria-img-wrapper">
-                    <img src="{{ Storage::disk('public')->exists($category->icon) ? Storage::url($category->icon) : asset($category->icon) }}">
+                    <img src="{{ Storage::disk('public')->exists($category->icon) ? Storage::url($category->icon) : asset($category->icon) }}" alt="{{ $category->name }}">
                 </div>
 
                 <!-- categoria descripcion -->
