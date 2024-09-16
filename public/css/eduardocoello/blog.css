@@ -6,7 +6,7 @@
 
     .left-wrap {
         .left-post {
-            display: inline-block;
+            display: block;
             margin-block: 1.75rem;
             border-radius: .75rem;
             position: relative;
@@ -53,7 +53,7 @@
     }
 
     .big-post {
-        display: inline-block;
+        display: block;
         margin-block: 1.75rem;
         border-radius: .75rem;
         position: relative;
