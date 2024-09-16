@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es-ES">
 <head>
     <!-- open graph -->
     <meta property="og:title" content="Hablemos de tus ideas" />

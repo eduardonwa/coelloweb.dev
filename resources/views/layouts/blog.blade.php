@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html lang="es-ES">
     <head>
         <!-- Open Graph meta tags -->
         <meta property="og:title" content="{{ $metaTitle }}">
@@ -105,11 +105,18 @@
                     </svg>
                     Categorías
                 </a>
-                <a href="{{ route('welcome') }}" class="w-12 fill-current">
+                <a
+                    href="{{ route('welcome') }}"
+                    class="w-12 fill-current"
+                    aria-label="Inicio"
+                >
                     <x-logo-app-small/>
                 </a>
-                <a class="font-semibold flex flex-col items-center justify-center"
-                    href="#">
+                <a
+                    class="font-semibold flex flex-col items-center justify-center"
+                    href="#"
+                    aria-label="Acerca de Eduardo Coello"
+                >
                     <svg viewBox="0 0 24 24" width="34" height="30" xmlns="http://www.w3.org/2000/svg" data-name="Layer 3">
                         <path class="fill-white" d="m12 21.75c-.49 0-.96-.23-1.27-.64l-2.1-2.73c-.2-.26-.48-.41-.76-.41h-2.19c-1.91 0-3.46-1.73-3.46-3.85v-8.02c0-2.12 1.55-3.85 3.46-3.85h12.64c1.91 0 3.46 1.73 3.46 3.85v8.02c0 2.12-1.55 3.85-3.46 3.85h-2.19c-.28 0-.56.15-.76.41l-2.1 2.73c-.31.41-.78.64-1.27.64zm-6.32-18c-1.08 0-1.96 1.05-1.96 2.35v8.02c0 1.29.88 2.35 1.96 2.35h2.19c.75 0 1.46.36 1.95.99l2.1 2.73c.06.07.11.07.17 0l2.1-2.73c.49-.63 1.2-.99 1.95-.99h2.19c1.08 0 1.96-1.05 1.96-2.35v-8.02c0-1.29-.88-2.35-1.96-2.35z"/>
                         <path class="fill-white" d="m12 6.5c.35 0 .64.29.64.64s-.29.64-.64.64-.64-.29-.64-.64.29-.64.64-.64m0-1.5c-1.18 0-2.14.96-2.14 2.14s.96 2.14 2.14 2.14 2.14-.96 2.14-2.14-.96-2.14-2.14-2.14z"/>

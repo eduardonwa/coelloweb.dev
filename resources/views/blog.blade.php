@@ -84,7 +84,7 @@
                 </div>
 
                 <div class="posts-principiantes-copy">
-                    <h3>DESARROLLO WEB</h1>
+                    <p>DESARROLLO WEB</p>
                     <h1>10 Consejos para un diseño web impresionante y efectivo</h1>
                 </div>
             </a>
@@ -145,8 +145,8 @@
 
                 <!-- categoria, tiempo-->
                 <div class="destacada-info">
-                    <h3>{{ $featured->category->name }}</h3>
-                    <h4>{{ $featured->human_read_time }}</h4>
+                    <p>{{ $featured->category->name }}</p>
+                    <span>{{ $featured->human_read_time }}</span>
                 </div>
 
                 <!-- título, descripción -->
@@ -175,8 +175,8 @@
                 </div>
 
                 <div class="lista-info">
-                    <h3>{{ $more->category->name }}</h3>
-                    <h4>{{ $more->human_read_time }}</h4>
+                    <p>{{ $more->category->name }}</p>
+                    <span>{{ $more->human_read_time }}</span>
                 </div>
 
                 <div class="lista-post">

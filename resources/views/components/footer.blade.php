@@ -1,7 +1,7 @@
 <footer class="footer full-width">
     <header>
         <a href="/">
-            <img src="/images/ecoello-logo-footer.svg" alt="">
+            <img src="/images/ecoello-logo-footer.svg" aria-label="Inicio">
         </a>
     </header>
 
@@ -54,7 +54,7 @@
                     width="34"
                     height="34"
                     src="/images/icon-blanco-ig.svg"
-                    alt=""
+                    aria-label="Instagram de Eduardo Coello"
                 >
             </a>
             <a href="https://www.facebook.com/coelloweb">
@@ -62,7 +62,7 @@
                     width="34"
                     height="34"
                     src="/images/icon-blanco-fb.svg"
-                    alt=""
+                    aria-label="Facebook de Eduardo Coello"
                 >
             </a>
             <a href="https://linkedin.com/in/coelloweb">
@@ -70,7 +70,7 @@
                     width="34"
                     height="34"
                     src="/images/icon-blanco-linkedin.svg"
-                    alt=""
+                    aria-label="LinkedIn de Eduardo Coello"
                 >
             </a>
         </div>
