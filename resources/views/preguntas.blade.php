@@ -80,15 +80,13 @@
                         <p>
                             El diseño será personalizado y ajustado a tus necesidades.
                             <br> <br>
-                            Puedes mandarme una liga a un prototipo para implentar código
-                            desde el mismísimo comienzo.
-                            Si no cuentas con una plantilla o prototipo, empiezo a trabajar
-                            en un diseño nuevo el cual siempre podrás revisar.
-                            Mis diseños priorizan la experiencia del usuario siguiendo las mejores prácticas de
+                            Puedes mandarme una liga hacia un prototipo para implentar su código
+                            desde el mismísimo comienzo. Pero si no cuentas con algo previamente diseñado,
+                            puedo diseñar tu propuesta desde cero el cual siempre podrás revisar.
+                            Mis diseños priorizan la experiencia del usuario,  siguiendo las mejores prácticas de
                             interfaz, colores, tipografía, y más.
                             <br> <br>
-                            Considero también tus objetivos de negocio, marketing, tu audiencia
-                            y tu identidad visual.
+                            Considero también tus objetivos de negocio, tu audiencia, identidad visual, etc.
                         </p>
                     </div>
                 </div>
