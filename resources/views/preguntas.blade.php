@@ -135,8 +135,10 @@
                             y <a target="_blank" href="https://answerthepublic.com">AnswerThePublic</a>
                             para identificar las mejores palabras clave, asegurándome que el
                             copywriting se alinee con tu audiencia.
+                            Al final te daré una lista con 10 palabras clave para que puedas seguir nutriendo
+                            tus estrategias SEO. Por el momento no ofrezco un servicio dedicado al SEO.
                             <br> <br>
-                            Para que puedas compartir tu página web en redes sociales con toda seguridad,
+                            Para que puedas compartir tu página web en redes sociales con seguridad,
                             incorporo etiquetas <a target="_blank" href="https://desarrolloweb.com/articulos/tags-open-graph-facebook.html">Open Graph</a>
                             y Twitter Meta Tags.
                         </p>
