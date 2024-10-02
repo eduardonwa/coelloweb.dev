@@ -27,11 +27,10 @@
                     </span>
                     <div class="respuesta" x-show="open" x-transition>
                         <p>
-                            Según los requisitos y la plataforma. <br> <br> Una landing page
-                            suele ser una sola página con varias secciones, enfocada en un producto
-                            o servicio. Un sitio de e-commerce necesita múltiples páginas, como
-                            búsqueda y catálogo de productos.
-
+                            Según los requisitos y la plataforma que requieras. <br> <br>
+                            Una landing page suele ser una estrategia que busca una acción concreta por el usuario.
+                            Un sitio e-commerce en Shopify, necesita múltiples páginas para que tu negocio pueda
+                            convertir y ser confiable.
                             <br> <br> El precio depende del presupuesto y
                             necesidades específicas del proyecto.
                         </p>
@@ -65,6 +64,33 @@
                             y optimización de velocidad. También integro palabras clave para mejorar tu desempeño en Google, Bing, Yahoo, etc.
                             <br> <br>
                             También puedo sugerirte dónde registrar tu nombre de dominio y qué proveedor de hosting contratar.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="pregunta" x-data="{ open: false }">
+                    <span @click="open = !open" class="cursor-pointer">
+                        <img src="{{ asset('images/icon-pregunta.svg') }}">
+                            ¿Ofreces estrategias de marketing?
+                    </span>
+                    <div class="respuesta" x-show="open" x-transition>
+                        <p>No, pero es importante resaltar que una página web puede facilitarte la creación de estas estrategias.
+                            <br> <br>
+                            Es decir que podrás vincular tu sitio web con otros servicios como Google Analytics y/o Google Ads para crear
+                            campañas publicitarias y medir el rendimiento de tu página.
+                            <br> <br>
+                        </p>
+                    </div>
+                </div>
+
+                <div class="pregunta" x-data="{ open: false }">
+                    <span @click="open = !open" class="cursor-pointer">
+                        <img src="{{ asset('images/icon-pregunta.svg') }}">
+                            ¿Ofreces estrategias de SEO?
+                    </span>
+                    <div class="respuesta" x-show="open" x-transition>
+                        <p>No, pero al finalizar te compartiré una lista con 10 palabras clave para que puedas
+                            formalizar tus estrategias de contenido.
                         </p>
                     </div>
                 </div>
@@ -136,9 +162,9 @@
                             para identificar las mejores palabras clave, asegurándome que el
                             copywriting se alinee con tu audiencia.
                             Al final te daré una lista con 10 palabras clave para que puedas seguir nutriendo
-                            tus estrategias SEO. Por el momento no ofrezco un servicio dedicado al SEO.
+                            tus estrategias SEO.
                             <br> <br>
-                            Para que puedas compartir tu página web en redes sociales con seguridad,
+                            Y para que puedas compartir tu página web en redes sociales con seguridad,
                             incorporo etiquetas <a target="_blank" href="https://desarrolloweb.com/articulos/tags-open-graph-facebook.html">Open Graph</a>
                             y Twitter Meta Tags.
                         </p>
