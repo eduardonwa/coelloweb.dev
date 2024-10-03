@@ -181,9 +181,6 @@
                     <div class="respuesta" x-show="open" x-transition>
                         <p>
                             Sí, te proporcionaré acceso para que puedas hacerlo fácilmente.
-                            <br><br>
-                            <a target="_blank" href="{{ asset('images/eduardocoello-paquetes.png') }}">Puedes consultar estas opciones</a> en el paquete “Estándar”
-                            que te dejo en el enlace.
                         </p>
                     </div>
                 </div>
