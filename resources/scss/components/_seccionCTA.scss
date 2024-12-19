@@ -1,0 +1,80 @@
+@use "../abstracts" as *;
+
+.seccionCTA {
+    &[data-type="principal"] {
+        text-transform: uppercase;
+        font-family: $font-family-wide;
+        .cta-inner {
+            .subtitulo {
+                @include mq(small) {
+                    font-size: $font-size-600;
+                    padding-block: $size-4;
+                }
+                @include mq(medium) {
+                    padding-block: 0;
+                }
+            }
+        }
+    }
+    &[data-type="acerca"] {
+        .cta-inner {
+            .subtitulo {
+                @include mq(small) {
+                    font-size: 21px;
+                    padding-block: $size-4;
+                }
+                @include mq(medium) {
+                    padding-block: 0;
+                }
+            }
+        }
+    }
+    &[data-type="contacto"] {
+        .cta-inner {
+            @include mq(small) {
+
+            }
+            @include mq(medium) {
+                display: flex;
+                gap: $size-8;
+            }
+
+            &__imagen {
+                width: 300px;
+                margin: auto;
+                padding-block-end: $size-10;
+
+                @include mq(medium) {
+                    flex: 1;
+                }
+            }
+
+            &__copy {
+                @include mq(medium) {
+                    flex: 2;
+                }
+                .subtitulo {
+                    @include mq(small) {
+                        font-size: 21px;
+                    }
+                    @include mq(medium) {
+                        font-size: 21px;
+                    }
+                }
+
+                a {
+                    margin-block-start: $size-5;
+                    @include mq(small) {
+                        width: 100%;
+                        padding: $size-3;
+                        font-size: $font-size-600;
+                    }
+                    @include mq(medium) {
+                        width: fit-content;
+                        font-size: 24px;
+                    }
+                }
+            }
+        }
+    }
+}

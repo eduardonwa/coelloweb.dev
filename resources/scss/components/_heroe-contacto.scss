@@ -1,0 +1,202 @@
+@use "../abstracts" as *;
+
+.heroe-contacto {
+    margin-block-start: $size-8;
+
+    .contenedor {
+        display: grid;
+        gap: 1.5rem;
+
+        @include mq(large) {
+            grid-auto-flow: column;
+            grid-auto-columns: 1fr 2fr;
+        }
+
+        .info-contacto {
+            @include mq(small) {
+                order: 2;
+            }
+            @include mq(large) {
+                order: 1;
+            }
+            a {
+                color: $body-text-color;
+            }
+        }
+
+        .form-container {
+            @include mq(large) {
+                order: 2;
+            }
+
+            &__copy {
+                h1 {
+                    font-family: $font-family-display;
+                    @include mq(small) {
+                        font-size: 32px;
+                    }
+                    @include mq(medium) {
+                        font-size: $heroe-header-font-size;
+                    }
+                }
+
+                p {
+                    @include mq(small) {
+                        font-size: $heroe-subtitle-font-size;
+                    }
+                    @include mq(large) {
+                        font-size: $font-size-300;
+                    }
+                }
+
+                .mensaje {
+                    color: $color-acerca-400;
+
+                    @include mq(small) {
+                        font-size: $size-4;
+                    }
+                    @include mq(large) {
+                        font-size: $size-3;
+                    }
+                }
+            }
+
+            form {
+                .form-fields {
+                    @include mq(small) {
+                        display: grid;
+                    }
+                    @include mq(large) {
+                        grid-template-columns: 1fr 1fr;
+                        column-gap: $size-3;
+                    }
+                }
+
+                fieldset {
+                    border: none;
+                    font-family: $font-family-medium;
+
+                    label {
+                        @include mq(small) {
+                            font-size: 16px;
+                            padding-bottom: $size-1;
+                            font-weight: normal;
+                            font-family: $font-family-medium;
+                        }
+                        @include mq(medium) {
+                            font-size: 18px;
+                        }
+                    }
+
+                    input {
+                        font-family: $font-family-base;
+                        @include mq(small) {
+                            padding: $size-2;
+                        }
+                    }
+
+                    textarea {
+                        font-family: $font-family-base;
+                        font-size: $form-textarea-font-size;
+                        background-color: $color-contacto-200;
+                        border: $form-input-border-default;
+                        border-radius: 8px;
+                        padding: $size-1;
+                        resize: vertical;
+                    }
+
+                    .dropdown {
+                        position: relative;
+
+                        .dropdown__btn {
+                            padding: $size-1;
+                            width: 100%;
+                            border: none;
+                            background-color: $color-contacto-200;
+                            border-bottom: 0;
+                            font-family: $font-family-base;
+                            border-radius: 8px;
+                            cursor: pointer;
+                            text-align: start;
+                            border: $form-input-border-default;
+                            display: flex;
+                            justify-content: space-between;
+                            align-items: center;
+
+                            @include mq(small) {
+                                padding: $size-2;
+                            }
+
+                            &:is(:focus) {
+                                outline: auto 1px Highlight;
+                            }
+
+                            img {
+                                @include mq(small) {
+                                    height: 18px;
+                                }
+                                @include mq(medium) {
+                                    height: auto;
+                                }
+                            }
+                        }
+
+                        .dropdown__select {
+                            background-color: $color-contacto-200;
+                            filter: drop-shadow(0px 3px 6px rgba(0, 0, 0, 0.112));
+                            position: absolute;
+                            z-index: 10;
+                            width: 100%;
+                            border-radius: 8px;
+                            border: $form-input-border-default;
+
+                            @include mq(small) {
+                                top: 42px;
+                                left: 0;
+                            }
+                            @include mq(medium) {
+                                top: 60px;
+                                left: 0;
+                            }
+
+                            li {
+                                font-family: $font-family-base;
+                                padding: $size-1;
+                                cursor: pointer;
+                                transition: background-color 0.1s ease-in-out;
+
+                                @include mq(medium) {
+                                    font-size: 21px;
+                                }
+
+                                &:hover {
+                                    background-color: $color-contacto-100;
+                                }
+                                &:first-child {
+                                    border-top-left-radius: 8px;
+                                    border-top-right-radius: 8px;
+                                    border-bottom-left-radius: 0;
+                                    border-bottom-right-radius: 0;
+                                }
+                                &:not(:first-child):not(:last-child) {
+                                    border-radius: 0;
+                                }
+                                &:last-child {
+                                    border-bottom-left-radius: 8px;
+                                    border-bottom-right-radius: 8px;
+                                    border-top-left-radius: 0;
+                                    border-top-right-radius: 0;
+                                }
+                            }
+                        }
+                    }
+                }
+
+                hr {
+                    color: $color-acerca-200;
+                    opacity: .5;
+                }
+            }
+        }
+    }
+}

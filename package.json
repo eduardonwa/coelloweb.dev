@@ -13,7 +13,13 @@
         "laravel-vite-plugin": "^1.0",
         "postcss": "^8.4.38",
         "postcss-nesting": "^12.1.2",
+        "sass": "^1.80.6",
         "tailwindcss": "^3.4.3",
         "vite": "^5.0"
+    },
+    "dependencies": {
+        "@sanity/client": "^6.23.0",
+        "@sanity/image-url": "^1.1.0",
+        "alpinejs": "^3.14.7"
     }
 }

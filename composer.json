@@ -13,6 +13,8 @@
         "laravel/framework": "^11.0",
         "laravel/tinker": "^2.9",
         "pboivin/filament-peek": "^2.0",
+        "robertpainsi/sanity-image-url-php": "^1.0",
+        "sanity/sanity-php": "^1.5",
         "shweshi/opengraph": "^1.1"
     },
     "require-dev": {

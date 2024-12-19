@@ -1,0 +1,26 @@
+@use "../abstracts" as *;
+
+.invitacion {
+    h1 {
+        font-family: $font-family-display;
+
+        @include mq(small) {
+            font-size: $font-size-700;
+            text-align: center;
+            padding-block-end: $size-3;
+        }
+        @include mq(medium) {
+            width: 70%;
+            text-align: end;
+        }
+        @include mq(xlarge) {
+            font-size: $heroe-header-font-size;
+        }
+    }
+    p {
+        border: 1px solid;
+        padding-inline: $size-6;
+        padding-block: $size-7;
+        border-radius: $border-radius-1;
+    }
+}

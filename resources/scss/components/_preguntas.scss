@@ -1,0 +1,42 @@
+@use "../abstracts" as *;
+
+.preguntas {
+    &__pregunta {
+        display: flex;
+        flex-direction: column;
+        margin-block: $size-7;
+
+        button {
+            display: flex;
+            justify-content: space-between;
+            border: none;
+            background-color: $color-contacto-200;
+            border-radius: $border-radius-1;
+            border: 1px solid $color-contacto-300;
+            padding: $size-4;
+            cursor: pointer;
+            transition: background-color 0.2s ease-in-out;
+
+            &:hover {
+                background-color: $color-contacto-100;
+            }
+        }
+    }
+    &__respuesta {
+        padding-block: $size-2;
+        padding-inline: $size-4;
+    }
+
+    .test {
+        margin-top: 12px;
+
+        @include mq(small) {
+            margin: auto;
+            font-size: 16px;
+        }
+        @include mq(medium) {
+            margin: 56px auto 0 auto;
+            font-size: 18px;
+        }
+    }
+}

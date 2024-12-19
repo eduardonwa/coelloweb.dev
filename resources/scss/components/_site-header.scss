@@ -1,0 +1,52 @@
+@use "../abstracts" as *;
+
+    .site-header {
+        --_animationStartsAfter: 50vh;
+        color: $site-header-color;
+        background-color: $site-header-background-color;
+        padding: $site-header-padding;
+        margin: $site-header-margin;
+        border-radius: $border-radius-1;
+        font-size: $site-header-font-size;
+        width: inherit;
+        backdrop-filter: blur(10px); /* Efecto de desenfoque */
+        transition: background-color 0.3s ease, box-shadow 0.3s ease;
+
+    @include mq(small) {
+        padding: $size-4 $size-4;
+        position: fixed;
+        top: 740px;
+        bottom: 0;
+        height: fit-content;
+        margin: 0;
+        z-index: 1000;
+    }
+    @include mq(medium) {
+        top: 10px;
+        position: sticky;
+        margin: $site-header-margin;
+    }
+    @include mq(large) {
+        padding: $site-header-padding;
+    }
+
+    &__inner {
+        display: flex;
+        gap: $size-4;
+        align-items: $site-header-alignment;
+        justify-content: $site-header-jusitifcation-small-screens;
+        @include mq(small) {
+            flex-direction: column;
+        }
+        @include mq(medium) {
+            justify-content: $site-header-jusitifcation-large-screens;
+        }
+        @include mq(large) {
+            flex-direction: row;
+        }
+    }
+    &.scrolled {
+        background: rgba(3, 3, 3, 0.568); /* Aumenta la opacidad al hacer scroll */
+        box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2); /* Sombra más intensa */
+    }
+}

@@ -1,0 +1,97 @@
+@use "../abstracts" as *;
+
+.objeciones {
+    h1 {
+        font-family: $font-family-display;
+
+        @include mq(small) {
+            font-size: $font-size-700;
+            margin-bottom: $size-8;
+        }
+        @include mq(medium) {
+            font-family: $font-family-display;
+            margin-bottom: $size-11;
+        }
+
+    }
+
+    &__copy {
+        margin-bottom: $size-10;
+        p {
+            @include mq(small) {
+                width: fit-content;
+            }
+            @include mq(medium) {
+                width: 50%;
+                font-family: $font-family-medium;
+            }
+        }
+    }
+
+    .objecion {
+        &__wrapper {
+            @include mq(small) {
+                display: grid;
+            }
+            @include mq(medium) {
+                grid-auto-flow: column;
+                grid-auto-columns: 1fr;
+            }
+            /* columna izquierda */
+            .content {
+                @include mq(small) {
+                    order: 2;
+                }
+                @include mq(medium) {
+                    order: 1;
+                }
+
+                &__item {
+                    button {
+                        display: flex;
+                        justify-content: space-between;
+                        width: 100%;
+                        text-align: start;
+                        padding-inline: $size-3;
+                        padding-block: $size-2;
+
+                        border: 1px solid $color-contacto-300;
+                        border-radius: $border-radius-1;
+                        background-color: $color-contacto-200;
+                        cursor: pointer;
+                        transition: background-color 0.3s ease-in-out;
+
+                        &:hover {
+                            background-color: $color-contacto-100;
+                        }
+                    }
+                    .descripcion {
+                        padding: $size-4;
+                    }
+                }
+            }
+
+            /* columna derecha */
+            .lottie {
+                @include mq(small) {
+                    order: 1;
+                }
+                @include mq(medium) {
+                    order: 2;
+                }
+
+                /* tamaño del reproducto */
+                .lottie-player {
+                    @include mq(small) {
+                        width: 350px;
+                        height: 350px;
+                    }
+                    @include mq(medium) {
+                        width: 500px;
+                        height: 500px;
+                    }
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,122 @@
+@use '../abstracts/' as *;
+
+.proceso {
+    background-color: $color-primary-500;
+    padding-block-end: $size-10;
+
+    &__encabezado {
+        font-size: 56px;
+
+        @include mq(small) {
+            text-align: center;
+            padding-block: $size-10;
+        }
+
+        @include mq(xlarge) {
+            text-align: start;
+            padding-inline-start: $size-12;
+        }
+    }
+
+    &__nav-btns {
+        @include mq(small) {
+            margin: auto;
+            padding-block-end: $size-8;
+        }
+
+        @include mq(large) {
+            margin: 0;
+            margin-left: auto;
+            padding-inline-end: $size-15;
+            padding-block-end: $size-10;
+        }
+
+        button {
+            border: none;
+            background-color: $color-primary-200;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            cursor: pointer;
+            transition: transform 0.1s ease-in-out, background-color 0.3s ease;
+
+            &:active {
+                transform: scale(0.9);
+                background-color: $color-primary-300;
+            }
+
+            &:focus {
+                outline: none;
+            }
+
+            &:hover {
+                background-color: $color-primary-400;
+            }
+
+            @include mq(small) {
+                padding: $size-4;
+            }
+            @include mq(xlarge) {
+                padding: $size-3;
+            }
+        }
+    }
+
+    &__inner {
+        color: $color-neutral-100;
+        display: flex;
+        overflow: hidden;
+        position: relative;
+        touch-action: pan-y;
+
+        li {
+            flex: 0 0 100%;
+            opacity: 0;
+            pointer-events: none;
+            transition: opacity 0.3s ease-in-out, transform 0.3s ease-in-out;
+
+            &:not(.active) {
+                opacity: 0;
+                pointer-events: none;
+                position: absolute;
+                top: 0;
+                left: 0;
+            }
+
+            &.active {
+                pointer-events: all;
+                opacity: 1;
+            }
+
+            @include mq(medium) {
+                flex-wrap: nowrap;
+            }
+
+            @include mq(large) {
+                padding-inline: $size-8;
+            }
+
+            @include mq(xlarge) {
+                padding-inline: $size-12;
+            }
+
+            .paso-a-seguir {
+                padding-inline: $size-5;
+            }
+
+            img {
+                @include mq(xlarge) {
+                    padding-right: 0;
+                    padding-top: 0;
+                }
+            }
+        }
+
+        h1 {
+            font-weight: $font-weight-bold;
+            font-size: $size-8;
+            text-align: start;
+            padding-block-end: $size-4;
+        }
+    }
+}

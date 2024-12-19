@@ -1,0 +1,108 @@
+// global color tokens
+$-clr-white: hsl(0, 0%, 100%);
+$-clr-gray-100: hsl(240, 6.67%, 97.06%);
+$-clr-gray-200: hsl(240, 7.04%, 86.08%);
+$-clr-gray-300: hsl(231.43, 6.8%, 59.61%);
+$-clr-gray-400: hsl(240, 6.56%, 23.92%);
+$-clr-gray-500: hsl(240, 5.88%, 10%);
+$-clr-black: hsl(0 0% 0%);
+$-clr-turquesa-100: hsl(176.67, 100%, 96.47%);
+$-clr-turquesa-200: hsl(180.95, 100%, 87.65%);
+$-clr-turquesa-300: hsl(180, 100%, 51.18%);
+$-clr-turquesa-400: hsl(183.16, 100%, 22.35%);
+$-clr-turquesa-500: hsl(186.21, 100%, 11.37%);
+$-clr-verde-100: hsl(80, 84%, 95.1%);
+$-clr-verde-200: hsl(82.68, 78.85%, 79.61%);
+$-clr-verde-300: hsl(84.42, 69.35%, 51.37%);
+$-clr-verde-400: hsl(86.42, 76.14%, 34.51%);
+$-clr-verde-500: hsl(90.81, 72.55%, 10%);
+$-clr-naranja-100: hsl(357.42, 80.3%, 60.2%);
+$-clr-morado-100: hsl(250, 100%, 97.65%);
+$-clr-morado-200: hsl(252, 95.24%, 91.76%);
+$-clr-morado-300: hsl(256.22, 91.74%, 76.27%);
+$-clr-morado-400: hsl(264.42, 69.35%, 51.37%);
+$-clr-morado-500: hsl(264.41, 66.29%, 34.9%);
+$-clr-claret-100: hsl(323.84, 78.49%, 81.76%);
+$-clr-claret-200: hsl(327.16, 73.27%, 60.39%);
+$-clr-claret-300: hsl(330, 65.08%, 50.59%);
+$-clr-claret-400: hsl(332, 70.09%, 41.96%);
+$-clr-claret-500: hsl(333.03, 76.07%, 22.94%);
+
+
+$default: (
+  "neutral": (
+    "000": $-clr-white,
+    "100": $-clr-gray-100,
+    "200": $-clr-gray-200,
+    "300": $-clr-gray-300,
+    "400": $-clr-gray-400,
+    "500": $-clr-gray-500,
+    "1000": $-clr-black,
+  ),
+  "primary": (
+    "100": $-clr-turquesa-100,
+    "200": $-clr-turquesa-200,
+    "300": $-clr-turquesa-300,
+    "400": $-clr-turquesa-400,
+    "500": $-clr-turquesa-500,
+  ),
+  "contacto": (
+    "100": $-clr-verde-100,
+    "200": $-clr-verde-200,
+    "300": $-clr-verde-300,
+    "400": $-clr-verde-400,
+    "500": $-clr-verde-500,
+  ),
+  "acerca": (
+    "100": $-clr-morado-100,
+    "200": $-clr-morado-200,
+    "300": $-clr-morado-300,
+    "400": $-clr-morado-400,
+    "500": $-clr-morado-500,
+  ),
+  "alt": (
+    "100": $-clr-claret-100,
+    "200": $-clr-claret-200,
+    "300": $-clr-claret-300,
+    "400": $-clr-claret-400,
+    "500": $-clr-claret-500,
+  ),
+  "cta": (
+    "100": $-clr-naranja-100,
+  ),
+);
+
+// contextual color tokens
+$color-neutral-000: var(--neutral-000);
+$color-neutral-100: var(--neutral-100);
+$color-neutral-200: var(--neutral-200);
+$color-neutral-300: var(--neutral-300);
+$color-neutral-400: var(--neutral-400);
+$color-neutral-500: var(--neutral-500);
+$color-neutral-1000: var(--neutral-1000);
+
+$color-primary-100: var(--primary-100);
+$color-primary-200: var(--primary-200);
+$color-primary-300: var(--primary-300);
+$color-primary-400: var(--primary-400);
+$color-primary-500: var(--primary-500);
+
+$color-contacto-100: var(--contacto-100);
+$color-contacto-200: var(--contacto-200);
+$color-contacto-300: var(--contacto-300);
+$color-contacto-400: var(--contacto-400);
+$color-contacto-500: var(--contacto-500);
+
+$color-acerca-100: var(--acerca-100);
+$color-acerca-200: var(--acerca-200);
+$color-acerca-300: var(--acerca-300);
+$color-acerca-400: var(--acerca-400);
+$color-acerca-500: var(--acerca-500);
+
+$color-alt-100: var(--alt-100);
+$color-alt-200: var(--alt-200);
+$color-alt-300: var(--alt-300);
+$color-alt-400: var(--alt-400);
+$color-alt-500: var(--alt-500);
+
+$color-cta: var(--cta-100);

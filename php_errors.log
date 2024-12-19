@@ -19,3 +19,6 @@ Stack trace:
 [15-Sep-2024 20:06:57 UTC] PHP Fatal error:  Cannot redeclare App\Models\Post::registerMediaConversions() in /var/www/html/coellobranding/app/Models/Post.php on line 96
 [15-Sep-2024 20:07:19 UTC] PHP Fatal error:  Cannot redeclare App\Models\Post::registerMediaConversions() in /var/www/html/coellobranding/app/Models/Post.php on line 96
 [15-Sep-2024 20:07:55 UTC] PHP Fatal error:  Declaration of App\Models\Post::registerMediaCollections() must be compatible with Spatie\MediaLibrary\HasMedia::registerMediaCollections(): void in /var/www/html/coellobranding/app/Models/Post.php on line 90
+[02-Dec-2024 17:29:37 UTC] PHP Fatal error:  Cannot use empty array elements in arrays in /var/www/html/coellobranding/config/services.php on line 36
+[02-Dec-2024 17:30:13 UTC] PHP Fatal error:  Cannot use empty array elements in arrays in /var/www/html/coellobranding/config/services.php on line 36
+[02-Dec-2024 17:30:13 UTC] PHP Fatal error:  Cannot use empty array elements in arrays in /var/www/html/coellobranding/config/services.php on line 36

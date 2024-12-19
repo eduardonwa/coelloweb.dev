@@ -140,7 +140,6 @@
             <x-footer>
             </x-footer>
         </main>
-
         @livewireScriptConfig
     </body>
 </html>

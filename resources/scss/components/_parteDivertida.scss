@@ -1,0 +1,19 @@
+@use "../abstracts" as *;
+
+.parte-divertida {
+    .preferida {
+        border-bottom: 5px solid $color-alt-200;
+    }
+
+    & article {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        align-items: center;
+        gap: $size-6;
+
+        .opcion-1 {
+            text-align: end;
+            padding: $size-1;
+        }
+    }
+}

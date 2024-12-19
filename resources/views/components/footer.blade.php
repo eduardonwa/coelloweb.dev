@@ -1,83 +1,90 @@
-<footer class="footer full-width">
-    <header>
-        <a href="/">
-            <img
-                width="170"
-                height="130"
-                src="/images/ecoello-logo-footer.svg"
-                aria-label="Inicio"
-            >
+<footer
+    class="site-footer | container border-radius-1"
+    data-type="wide"
+>
+    <section class="site-footer__content even-columns">
+        <a href="{{ route('welcome') }}">
+            <img src="/images/ecoello-logo-footer.svg" alt="Inicio">
         </a>
-    </header>
 
-    <section class="footer-links">
-        <article class="footer-group-links">
-            <h3>INFO</h3>
-            <a href="mailto:coelloweb@aol.com">
-                Contacto
-            </a>
-            <a href="#">
-                Acerca
-            </a>
-            <a href="preguntas">
-                Preguntas
-            </a>
-        </article>
+        <div class="listas | even-columns">
+            <!-- info -->
+            <ul>
+                <h2 class="fw-bold uppercase">info</h2>
+                <li>
+                    <a href="{{ route('acerca') }}">Acerca</a>
+                </li>
+                <li>
+                    <a href="{{ route('contacto') }}">Contacto</a>
+                </li>
+                <li>
+                    <a href="{{ route('preguntas') }}">
+                        Preguntas
+                    </a>
+                </li>
+            </ul>
 
-        <article class="footer-group-links">
-            <h3>LEGAL</h3>
-            <a href="privacidad">
-                Privacidad
-            </a>
-            <a href="terminos">
-                Términos
-            </a>
-        </article>
+            <!-- links -->
+            <ul>
+                <h2 class="fw-bold uppercase">links</h2>
+                <li>
+                    <a href="{{ route('welcome') }}">
+                        Inicio
+                    </a>
+                </li>
+                <li>
+                    <a href="{{ route('blog.index') }}">
+                        Blog
+                    </a>
+                </li>
+                <li>
+                    <a href="{{ route('servicios') }}">Servicios</a>
+                </li>
+            </ul>
 
-        <article class="footer-group-links">
-            <h3>LINKS</h3>
-            <a href="/">
-                Inicio
-            </a>
-            <a href="/blog">
-                Blog
-            </a>
-        </article>
+            <!-- legal -->
+            <ul>
+                <h2 class="fw-bold uppercase">LEGAL</h2>
+                    <li>
+                        <a href="{{ route('privacidad') }}">
+                            Privacidad
+                        </a>
+                    </li>
+                    <li>
+                        <a href="{{ route('terminos') }}">
+                            Términos
+                        </a>
+                    </li>
+            </ul>
+        </div>
     </section>
 
-    <hr>
+    <hr class="mx-auto color-neutral-000">
 
-    <footer class="footer-pie">
-        <h3>
-            &copy; 2024 Eduardo Coello
-        </h3>
-
-        <!-- social links -->
-        <div class="footer-social-links">
-            <a href="https://instagram.com/coelloweb">
-                <img
-                    width="34"
-                    height="34"
-                    src="/images/icon-blanco-ig.svg"
-                    aria-label="Instagram de Eduardo Coello"
-                >
-            </a>
-            <a href="https://www.facebook.com/coelloweb">
-                <img
-                    width="34"
-                    height="34"
-                    src="/images/icon-blanco-fb.svg"
-                    aria-label="Facebook de Eduardo Coello"
-                >
-            </a>
-            <a href="https://linkedin.com/in/coelloweb">
-                <img
-                    width="34"
-                    height="34"
-                    src="/images/icon-blanco-linkedin.svg"
-                    aria-label="LinkedIn de Eduardo Coello"
-                >
-            </a>
-        </div>
-    </footer>
+    <section class="site-footer__redes">
+        <a href="https://instagram.com/coelloweb">
+            <img
+                width="34"
+                height="34"
+                src="/images/icon-blanco-ig.svg"
+                aria-label="Instagram de Eduardo Coello"
+            >
+        </a>
+        <a href="https://www.facebook.com/coelloweb">
+            <img
+                width="34"
+                height="34"
+                src="/images/icon-blanco-fb.svg"
+                aria-label="Facebook de Eduardo Coello"
+            >
+        </a>
+        <a href="https://linkedin.com/in/coelloweb">
+            <img
+                width="34"
+                height="34"
+                src="/images/icon-blanco-linkedin.svg"
+                aria-label="LinkedIn de Eduardo Coello"
+            >
+        </a>
+    </section>
 </footer>

@@ -31,4 +31,8 @@ return [
         ],
     ],
 
+    'sanity' => [
+        'projectId' => env('SANITY_PROJECT_ID'),
+        'dataset' => env('SANITY_DATASET'),
+    ],
 ];

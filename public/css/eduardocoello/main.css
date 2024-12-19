@@ -178,7 +178,7 @@ a {
 /* esquema */
 .content-grid {
     --padding-inline: 1rem;
-    --content-max-width: 900px;
+    --content-max-width: 2000px;
     --breakout-max-width: 1200px;
 
     --breakout-size: calc(

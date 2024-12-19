@@ -1,0 +1,17 @@
+@use "../abstracts/" as *;
+
+.ff-base {
+  font-family: $font-family-base;
+}
+.ff-medium {
+    font-family: $font-family-medium;
+}
+.ff-display {
+    font-family: $font-family-display;
+}
+.ff-wide {
+  font-family: $font-family-wide;
+}
+.ff-ultra {
+    font-family: $font-family-ultra;
+}

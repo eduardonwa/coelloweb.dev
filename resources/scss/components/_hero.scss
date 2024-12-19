@@ -1,0 +1,64 @@
+@use "../abstracts" as *;
+
+.hero {
+    &__top-space {
+        @include mq(small) {
+            padding-top: $size-5;
+        }
+
+        @include mq (large) {
+            padding-top: 104px;
+        }
+    }
+    &__header {
+        color: $hero-header-font-color;
+        font-size: $hero-header-font-size;
+        font-family: $hero-header-font-family;
+        line-height: 1.2;
+
+        @include mq(small) {
+            font-size: $size-9;
+        }
+        @include mq(large) {
+            font-size: $size-10;
+        }
+        @include mq(2xlarge) {
+            font-size: $hero-header-font-size;
+        }
+    }
+    &__image-wrap {
+        height: 100%;
+        object-fit: cover;
+        display: flex;
+        justify-content: center;
+        align-items: flex-end;
+
+        img {
+            aspect-ratio: 1;
+            width: 100%;
+            max-width: 610px;
+            max-height: 610px;
+            object-fit: cover;
+
+            @include mq(large) {
+                width: 450px;
+                height: 450px;
+            }
+            @include mq(xlarge) {
+                width: 650px;
+                height: 650px;
+                aspect-ratio: 1;
+            }
+       }
+    }
+    &__testimonio {
+        padding-top: 262px;
+        font-style: italic;
+        @include mq(small) {
+            padding-top: 0;
+        }
+        @include mq (large) {
+            padding-top: $size-15;
+        }
+    }
+}

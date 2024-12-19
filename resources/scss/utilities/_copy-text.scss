@@ -1,0 +1,10 @@
+@use "../abstracts/" as *;
+
+.copy-text {
+    @include mq(small) {
+        font-size: 18px;
+    }
+    @include mq(medium){
+        font-size: $body-font-size;
+    }
+}

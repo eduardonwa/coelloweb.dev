@@ -1,0 +1,15 @@
+@use "../abstracts" as *;
+
+.porque-eduardo {
+    &__copy {
+        .pq-eduardo-custom-btn {
+            padding: $size-3;
+            @include mq(small) {
+                width: 100%;
+            }
+            @include mq(medium) {
+                width: fit-content;
+            }
+        }
+    }
+}
