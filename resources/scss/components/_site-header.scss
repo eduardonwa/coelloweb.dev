@@ -13,7 +13,7 @@
         border-radius: $border-radius-1;
 
     @include mq(small) {
-        padding: $size-4 $size-4;
+        padding: $size-4 0;
         position: fixed;
         bottom: 0;
         left: 0;
@@ -33,21 +33,56 @@
         font-size: $font-size-500;
     }
 
+    &__logo {
+        &__wordmark {
+            @include mq(small) {
+                display: none;
+            }
+            @include mq(medium) {
+                display: block;
+            }
+        }
+
+        &__icon {
+            @include mq(small) {
+                display: none;
+            }
+            @include mq(medium) {
+                display: none;
+            }
+        }
+    }
+
     &__inner {
         display: flex;
-        gap: $size-4;
+        //gap: $size-4;
         align-items: $site-header-alignment;
         justify-content: $site-header-jusitifcation-small-screens;
-        @include mq(small) {
-            flex-direction: column;
-        }
+
         @include mq(medium) {
             justify-content: $site-header-jusitifcation-large-screens;
         }
-        @include mq(large) {
-            flex-direction: row;
+
+        .nav {
+            span {
+                @include mq(small) {
+                    display: none;
+                }
+                @include mq(medium) {
+                    display: block;
+                }
+            }
+            img {
+                @include mq(small) {
+                    display: block;
+                }
+                @include mq(medium) {
+                    display: none;
+                }
+            }
         }
     }
+
 
     &.scrolled {
         background: rgba(3, 3, 3, 0.568);
