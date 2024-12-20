@@ -15,8 +15,9 @@
     @include mq(small) {
         padding: $size-4 $size-4;
         position: fixed;
-        top: 700px;
         bottom: 0;
+        left: 0;
+        width: 100%;
         height: fit-content;
         margin: 0;
         z-index: 1000;
@@ -47,7 +48,7 @@
         }
     }
     &.scrolled {
-        background: rgba(3, 3, 3, 0.568); /* Aumenta la opacidad al hacer scroll */
-        box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2); /* Sombra más intensa */
+        background: rgba(3, 3, 3, 0.568);
+        box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2);
     }
 }
