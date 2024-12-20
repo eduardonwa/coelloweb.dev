@@ -13,31 +13,31 @@
                         <li>
                             <a href="{{ route('welcome') }}">
                                 <span>Inicio</span>
-                                <img src="/images/navbar-home-icon.png" alt="">
+                                <img src="/images/navbar-home-icon.svg" alt="">
                             </a>
                         </li>
                         <li>
                             <a href="{{ route('acerca') }}">
                                 <span>Acerca</span>
-                                <img src="/images/navbar-acerca-icon.png" alt="">
+                                <img src="/images/navbar-acerca-icon.svg" alt="">
                             </a>
                         </li>
                         <li>
                             <a href="{{ route('servicios') }}">
                                 <span>Servicios</span>
-                                <img src="/images/navbar-servicios-icon.png" alt="">
+                                <img src="/images/navbar-servicios-icon.svg" alt="">
                             </a>
                         </li>
                         <li>
                             <a href="{{ route('blog.index') }}">
                                 <span>Blog</span>
-                                <img src="/images/navbar-blog-icon.png" alt="">
+                                <img src="/images/navbar-blog-icon.svg" alt="">
                             </a>
                         </li>
                         <li>
                             <a href="{{ route('contacto') }}">
                                 <span>Contacto</span>
-                                <img src="/images/navbar-contacto-icon.png" alt="">
+                                <img src="/images/navbar-contacto-icon.svg" alt="">
                             </a>
                         </li>
                     </ul>
