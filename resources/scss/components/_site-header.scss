@@ -17,9 +17,10 @@
         position: fixed;
         bottom: 0;
         left: 0;
-        width: 100%;
+        right: 0;
+        width: auto;
+        transform: translateX(0px);
         height: fit-content;
-        margin: 0;
         z-index: 1000;
     }
     @include mq(medium) {
