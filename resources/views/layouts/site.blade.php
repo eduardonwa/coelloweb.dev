@@ -18,6 +18,7 @@
     </main>
 
     <x-footer/>
+    <script src="/js/eduardocoello/site.js"></script>
     @livewireScripts
 </body>
 </html>
