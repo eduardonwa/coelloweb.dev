@@ -1,41 +1,48 @@
 @use "../abstracts" as *;
 
 .objeciones {
+    @include mq(small) {
+        padding-inline: $size-2;
+    }
+    @include mq(medium) {
+        padding-inline: 0;
+    }
+
     h1 {
         font-family: $font-family-display;
 
         @include mq(small) {
-            font-size: $font-size-700;
+            font-size: 40px;
             margin-bottom: $size-8;
         }
         @include mq(medium) {
             font-family: $font-family-display;
             margin-bottom: $size-11;
         }
-
     }
 
     &__copy {
         margin-bottom: $size-10;
+
+        @include mq(large) {
+            margin-bottom: $size-13;
+        }
+
         p {
-            @include mq(small) {
-                width: fit-content;
-            }
-            @include mq(medium) {
-                width: 50%;
-                font-family: $font-family-medium;
-            }
+            font-size: $font-size-600;
         }
     }
 
     .objecion {
+
         &__wrapper {
             @include mq(small) {
                 display: grid;
+                gap: $size-10;
             }
             @include mq(medium) {
                 grid-auto-flow: column;
-                grid-auto-columns: 1fr;
+                grid-auto-columns: 2fr 1fr;
             }
             /* columna izquierda */
             .content {

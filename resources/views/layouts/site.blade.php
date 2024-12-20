@@ -5,7 +5,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Eduardo Coello - SEO Tags</title>
-    <link rel="stylesheet" href="/css/eduardocoello/main.css">
     @vite(['resources/js/app.js'])
     @livewireStyles
     <script src="https://cdnjs.cloudflare.com/ajax/libs/vanilla-lazyload/17.6.1/lazyload.min.js"></script>

@@ -45,8 +45,16 @@
                 opacity: 1; // se muestra suavemente al hacer hover
             }
         }
+
+        @include mq(small) {
+            width: 100%;
+        }
+        @include mq(medium) {
+            width: fit-content;
+        }
         @include mq(large){
-            margin-block-start: 48px;
+            margin-block-start: 24px;
+            font-size: $font-size-600;
         }
     }
 
@@ -56,12 +64,23 @@
         color: $button-acerca-color;
         filter: drop-shadow(0px 3px 6px rgba(0, 0, 0, 0.152));
         transition: transform 0.2s ease-in-out, background-color 0.2s ease-in-out, color 0.2s ease-in-out;
+        margin-block-start: 24px;
 
         &:is(:hover, :focus) {
             background-color: $button-acerca-background-hover;
             color: $button-acerca-color-hover;
             filter: drop-shadow(0px 3px 6px rgba(0, 0, 0, 0.264));
             transform: scale(1.1) translate(0, 0);
+        }
+
+        @include mq(small) {
+            width: 100%;
+        }
+        @include mq(medium) {
+            width: fit-content;
+        }
+        @include mq(large) {
+            font-size: $font-size-500;
         }
     }
 
@@ -75,29 +94,30 @@
         align-items: center;
         font-size: 18px;
         margin: $size-10 0;
-            img {
-                margin-left: $size-3;
-            }
-            @include mq(small) {
-                width: 100%;
-            }
-            @include mq(medium) {
-                margin: $size-5 0;
-                flex: 1 1 50%;
-                width: 60%;
-                font-size: 16px;
-                padding: $size-3;
-            }
-            @include mq(xlarge) {
-                font-size: 18px;
-                width: 40%;
-            }
 
-            &:is(:hover, :focus) {
-                position: relative;
-                transform: translateY(-8px); /* Desplazar el botón ligeramente hacia abajo */
-                transition: transform 0.2s ease-in-out, bottom 0.2s ease-in-out; /* Agrega transición a ambas propiedades */
-            }
+        &:is(:hover, :focus) {
+            position: relative;
+            transform: translateY(-8px); /* Desplazar el botón ligeramente hacia abajo */
+            transition: transform 0.2s ease-in-out, bottom 0.2s ease-in-out; /* Agrega transición a ambas propiedades */
+        }
+
+        img {
+            margin-left: $size-3;
+        }
+
+        @include mq(small) {
+            width: 100%;
+        }
+        @include mq(medium) {
+            margin: $size-5 0;
+            flex: 1 1 50%;
+            width: 60%;
+            font-size: 16px;
+            padding: $size-3;
+        }
+        @include mq(xlarge) {
+            width: 40%;
+        }
     }
 
     &[data-type="enviar-btn"] {

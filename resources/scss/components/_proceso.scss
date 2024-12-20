@@ -69,6 +69,10 @@
         position: relative;
         touch-action: pan-y;
 
+/*         @include mq(2xlarge) {
+            padding-inline: $size-10;
+        } */
+
         li {
             flex: 0 0 100%;
             opacity: 0;
@@ -101,7 +105,23 @@
             }
 
             .paso-a-seguir {
-                padding-inline: $size-5;
+                @include mq(small) {
+                    padding-inline: $size-4;
+                }
+
+                p {
+                    @include mq(small) {
+                        font-size: $font-size-500;
+                    }
+
+                    @include mq(large) {
+                        font-size: $font-size-500;
+                    }
+
+                    @include mq(xlarge) {
+                        font-size: $font-size-600;
+                    }
+                }
             }
 
             img {

@@ -34,11 +34,11 @@
         justify-content: center;
         flex-direction: column;
         h1 {
-            font-weight: $font-weight-bold;
             font-size: $font-size-700;
-            @include mq(large) {
-                font-size: $font-size-600;
-            }
+            font-family: $font-family-medium;
+        }
+        p {
+            font-size: $font-size-600;
         }
     }
 }

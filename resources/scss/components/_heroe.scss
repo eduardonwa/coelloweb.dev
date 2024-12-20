@@ -14,8 +14,8 @@
             @include mq(small) {
                 font-size: $heroe-subtitle-font-size;
             }
-            @include mq(xlarge) {
-                font-size: $font-size-500;
+            @include mq(large) {
+                font-size: $font-size-600;
             }
         }
     }

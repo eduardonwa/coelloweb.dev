@@ -107,7 +107,7 @@
                     <img
                         width="70"
                         height="70"
-                        src="{{ Storage::disk('public')->exists($category->icon) ? Storage::url($category->icon) : asset($category->icon) }}" alt="{{ $category->name }}">
+                        src="{{ $category->icon_url }}" alt="{{ $category->name }}">
                 </div>
 
                 <!-- categoria descripcion -->

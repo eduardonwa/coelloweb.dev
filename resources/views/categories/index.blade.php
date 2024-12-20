@@ -32,7 +32,7 @@
 
                 <div class="categoria-post-img-wrap">
                     <img
-                        src="{{ Storage::disk('public')->exists($post->thumbnail) ? Storage::url($post->thumbnail) : asset($post->thumbnail) }}" alt="{{ $post->title }}"
+                        src="{{ $category->icon_url }}" alt="{{ $post->title }}"
                         alt="{{ $post->title }}"
                     >
                 </div>

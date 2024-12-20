@@ -30,7 +30,7 @@
                     <x-dropdown-form>
                         <x-slot name="trigger">
                             <button type="button" class="dropdown__btn" tabindex="0" aria-haspopup="listbox" aria-expanded="isOpen">
-                                <span style="font-size: 21px;" x-text="selected || 'Seleccionar' "></span>
+                                <span style="font-size: 18px;" x-text="selected || 'Seleccionar' "></span>
                                 <img src="/images/icono-chev-abajo.png" alt="">
                             </button>
                         </x-slot>

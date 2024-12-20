@@ -65,7 +65,7 @@
                 tabindex="0"
                 role="listbox"
                 aria-labelledby="carousel-content-label"
-                class="proceso__inner"
+                class="proceso__inner container" data-type="full-bleed"
                 style="overflow-x: hidden"
                 x-ref="slider"
             >
@@ -83,7 +83,7 @@
                         <div class="paso-a-seguir">
                             <h1 class="uppercase ff-display fs-700">{{ $item['encabezado'] }}</h1>
                             @foreach ($item['descripcion'] as $descripcion)
-                                <p class="copy-text">{!! $descripcion !!}</p>
+                                <p>{!! $descripcion !!}</p>
                             @endforeach
                         </div>
                     </li>

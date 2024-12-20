@@ -1,7 +1,18 @@
 @use "../abstracts" as *;
 
 .porque-eduardo {
+    img {
+        @include mq(small) {
+            margin: auto;
+        }
+        @include mq(large) {
+            margin: 0;
+        }
+    }
     &__copy {
+        p {
+            font-size: $font-size-600;
+        }
         .pq-eduardo-custom-btn {
             padding: $size-3;
             @include mq(small) {

@@ -10,12 +10,13 @@
         </article>
 
         <article class="cta-inner__copy">
-            <h1 class="ff-display uppercase fs-700">{{ $item['encabezado'] }}</h1>
+            <h1 class="ff-display">{{ $item['encabezado'] }}</h1>
             @if(isset($item['subtitulo']) && is_array($item['subtitulo']))
                 @foreach ($item['subtitulo'] as $subtitulo)
                     <p class="subtitulo">{!! $subtitulo !!}</p>
                 @endforeach
             @endif
+            
             <a
                 href="{{ $item['enlaceCTA'] }}"
                 class="button"

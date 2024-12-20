@@ -1,7 +1,7 @@
 <!-- incluir google script, meta title, meta description-->
 <x-site-layout>
     <!-- que haces -->
-    <section class="heroe | section container text-center" data-type="narrow"">
+    <section class="heroe | section container text-center">
         @foreach ($queHaces as $item)
             <article class="flow">
                 <h1 class="ff-display">{{ $item['encabezado'] }}</h1>
@@ -13,25 +13,25 @@
     </section>
 
     <!-- objeciones -->
-    <section class="objeciones | section container flow padding-inline-2">
+    <section
+        class="objeciones | section flow">
         @foreach ($objeciones as $item)
-            <h1 class="container text-center" data-type="narrow">
+            <h1 class="text-center container">
                 {{ $item['encabezado'] }}
             </h1>
 
-            <article class="objeciones__copy">
+            <article class="objeciones__copy | container">
                 @foreach ($item['subtitulo'] as $subtitulo)
-                    <p class="copy-text">{!! $subtitulo !!}</p>
+                    <p class="text-center">{!! $subtitulo !!}</p>
                 @endforeach
             </article>
 
             <div
                 x-data="{ activeIndex: 0 }"
-                class="objecion"
+                class="objecion | container" data-type="wide"
             >
                 <!-- contenedor principal -->
                 <div class="objecion__wrapper">
-
                     <!-- columna izquierda -->
                     <div class="content | flow">
                         @foreach ($item['objeciones'] as $index => $obj)
@@ -46,7 +46,7 @@
                                             lastActiveIndex = {{ $index }};
                                         }
                                     "
-                                    class="copy-text"
+                                    class="fs-500"
                                 >
                                     {{ $obj['titulo'] }}
                                 </button>
@@ -58,13 +58,12 @@
                                     class="descripcion"
                                 >
                                     @foreach ($obj['descripcion'] as $descripcion)
-                                        <p class="copy-text">{!! $descripcion !!}</p>
+                                        <p class="fs-500">{!! $descripcion !!}</p>
                                     @endforeach
                                 </div>
                             </div>
                         @endforeach
                     </div>
-
                     <!-- columna derecha -->
                     <div class="lottie | mx-auto">
                         @foreach ($item['objeciones'] as $index => $obj)
@@ -85,29 +84,33 @@
 
     <!-- valores -->
     <div class="section">
-        <div class="container">
+        <div class="container" data-type="wide">
             @foreach ($valores as $item)
-                <h1 class="text-center margin-block-end-12 ff-display fs-700 container" data-type="narrow">{{ $item['titulo'] }}</h1>
-
-               <section class="valores">
+                <h1 class="text-center margin-block-end-12 ff-display fs-700 container" data-type="narrow">
+                    {{ $item['titulo'] }}
+                </h1>
+                <section class="valores">
                     @foreach ($item['definicion'] as $def)
                         <article class="valores__item">
                             <img class="padding-6 mx-auto" src="{{ $def['iconoUrl'] }}" alt="">
-                            <h2 class="padding-block-end-6 text-center">{{ $def['encabezado'] }}</h2>
+
+                            <h2 class="padding-block-end-6 text-center">
+                                {{ $def['encabezado'] }}
+                            </h2>
+
                             @foreach ($def['subtitulo'] as $subtitulo)
-                                <p class="text-center copy-text padding-inline-3">{!! $subtitulo !!}</p>
+                                <p class="text-center fs-500 padding-inline-3">{!! $subtitulo !!}</p>
                             @endforeach
                         </article>
                     @endforeach
-               </section>
-
+                </section>
             @endforeach
         </div>
     </div>
 
     <!-- ofertas -->
     <div class="section">
-        <div class="container">
+        <div class="container" data-type="wide">
             @foreach ($servicios as $item)
                 <div class="oferta | even-columns padding-inline-2">
                     <img
@@ -119,12 +122,12 @@
                     <div class="oferta__copy">
                         <h1>{{ $item['titulo'] }}</h1>
                         @foreach ($item['descripcion'] as $descripcion)
-                            <p class="copy-text">{!! $descripcion !!}</p>
+                            <p>{!! $descripcion !!}</p>
                         @endforeach
 
                         <a
                             href="{{ $item['enlaceCTA'] }}"
-                            class="button btn-custom-servicios"
+                            class="button"
                             data-type="acerca"
                         >
                             {{ $item['botonCTA']['textoCTA'] }}
@@ -140,16 +143,14 @@
     <x-proceso :proceso="$proceso"/>
 
     <!-- invitacion -->
-    <div class="section">
+    <div class="section container" data-type="wide">
         @foreach ($objeciones as $item)
             @foreach ($item['invitacion'] as $inv)
-                <div class="container">
-                    <div class="invitacion | even-columns padding-inline-2">
-                        <h1>{{ $inv['encabezado'] }}</h1>
-                        @foreach ($inv['descripcion'] as $descripcion)
-                            <p class="copy-text">{!! $descripcion !!}</p>
-                        @endforeach
-                    </div>
+                <div class="invitacion | even-columns padding-inline-2">
+                    <h1>{{ $inv['encabezado'] }}</h1>
+                    @foreach ($inv['descripcion'] as $descripcion)
+                        <p>{!! $descripcion !!}</p>
+                    @endforeach
                 </div>
             @endforeach
         @endforeach
@@ -162,9 +163,9 @@
             <div class="flex-group">
                 @foreach ($testimonios as $item)
                     <div class="testimonio-servicios__testimonio">
-                        <p class="copy-text">{!! $item['testimonio'] !!}</p>
-                        <span class="copy-text italic">- {{ $item['nombreEmpresa'] }}</span>,
-                        <span class="copy-text italic">{{ $item['representanteNombre'] }}</span>
+                        <p class="fs-500">{!! $item['testimonio'] !!}</p>
+                        <span class="fs-400 italic">- {{ $item['nombreEmpresa'] }}</span>,
+                        <span class="fs-400 italic">{{ $item['representanteNombre'] }}</span>
                     </div>
                 @endforeach
             </div>
@@ -172,8 +173,8 @@
     </div>
 
     <!-- seccion CTA -->
-    <section class="seccionCTA" data-type="acerca">
-        <article class="section text-center">
+    <section class="seccionCTA | section" data-type="servicios">
+        <article class="text-center">
             <div class="container" data-type="narrow">
                 <x-seccionCTA
                     :cta="$serviciosCTA"

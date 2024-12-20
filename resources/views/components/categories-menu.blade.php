@@ -16,8 +16,8 @@
                     <img
                         width="50"
                         height="50"
-                        src="{{ Storage::disk('public')->exists($category->icon) ? Storage::url($category->icon) : asset($category->icon) }}"
-                        alt="{{ $category->icon }}"
+                        src="{{ $category->icon_url }}"
+                        alt="{{ $category->name }}"
                     >
                 </div>
                 <h2>

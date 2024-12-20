@@ -1,7 +1,7 @@
 <!-- incluir google script, meta title, meta description-->
 <x-site-layout>
     <!-- heroe -->
-    <section class="heroe | section container text-center" data-type="narrow">
+    <section class="heroe | section container text-center">
         @foreach ($queHaces as $item)
             <article class="flow">
                 <h1 class="ff-display">{{ $item['encabezado'] }}</h1>
@@ -18,7 +18,7 @@
             @foreach ($introAha as $item)
                 <div class="even-columns">
                     <img
-                        class="m-auto lazy"
+                        class="lazy"
                         src="{{ $item['lqip'] }}"
                         data-src="{{ $item['imagenUrl'] }}"
                         alt="{{ $item['encabezado'] }}"
@@ -26,7 +26,7 @@
                     <article class="flow">
                         <h1 class="ff-display fs-700">{{ $item['encabezado'] }}</h1>
                         @foreach ($item['descripcion'] as $descripcion)
-                            <p class="copy-text">{!! $descripcion !!}</p>
+                            <p class="fs-500">{!! $descripcion !!}</p>
                         @endforeach
                     </article>
                 </div>
@@ -36,11 +36,11 @@
 
     <!-- declaracion poderosa -->
     <section class="section">
-        <div class="container flow" data-type="narrow">
+        <div class="container flow" data-type="">
             @foreach ($declaracionPoderosa as $item)
-                <h1 class="ff-display text-center fs-700">{{ $item['encabezado'] }}</h1>
+                <h1 class="ff-display fs-700 text-center">{{ $item['encabezado'] }}</h1>
                 @foreach ($item['descripcion'] as $descripcion)
-                    <p class="copy-text padding-inline-3">{!! $descripcion !!}</p>
+                    <p class="fs-500 padding-inline-3">{!! $descripcion !!}</p>
                 @endforeach
             @endforeach
         </div>
@@ -53,7 +53,7 @@
                 <div class="flow">
                     <h1 class="ff-display fs-700 text-center">{{ $item['encabezado'] }}</h1>
                     @foreach ($item['descripcion'] as $descripcion)
-                        <p class="copy-text padding-inline-3">{!! $descripcion !!}</p>
+                        <p class="fs-500 padding-inline-3">{!! $descripcion !!}</p>
                     @endforeach
                 </div>
             @endforeach
@@ -64,16 +64,18 @@
     <div class="parte-divertida | margin-block-start-8 margin-block-end-12">
         <div class="container">
             @foreach ($parteDivertida as $item)
-                <h1 class="ff-display text-center fs-700 margin-block-end-4">{{ $item['encabezado'] }}</h1>
+                <h1 class="ff-display text-center fs-700 margin-block-end-4">
+                    {{ $item['encabezado'] }}
+                </h1>
                     @foreach ($item['estoAquello'] as $subItem)
                         <article>
                             <div class="opcion-1">
-                                <span class="{{ $subItem['eleccionPreferida'] === 'respuestaUno' ? 'preferida' : '' }} copy-text">
+                                <span class="{{ $subItem['eleccionPreferida'] === 'respuestaUno' ? 'preferida' : '' }} fs-500">
                                     {{ $subItem['respuestaUno'] }}
                                 </span>
                             </div>
                             <div class="opcion-2">
-                                <span class="{{ $subItem['eleccionPreferida'] === 'respuestaDos' ? 'preferida' : '' }} copy-text">
+                                <span class="{{ $subItem['eleccionPreferida'] === 'respuestaDos' ? 'preferida' : '' }} fs-500">
                                     {{ $subItem['respuestaDos'] }}
                                 </span>
                             </div>
@@ -84,8 +86,8 @@
     </div>
 
     <!-- zona cta -->
-    <section class="seccionCTA padding-inline-5" data-type="acerca">
-        <article class="section text-center">
+    <section class="seccionCTA | section padding-inline-5" data-type="acerca">
+        <article class="text-center">
             <div class="container" data-type="narrow">
                 <x-seccionCTA
                     :cta="$acercaCTA"

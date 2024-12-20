@@ -1,6 +1,6 @@
 <footer
     class="site-footer | container border-radius-1"
-    data-type="wide"
+    data-type="full-bleed"
 >
     <section class="site-footer__content even-columns">
         <a href="{{ route('welcome') }}">

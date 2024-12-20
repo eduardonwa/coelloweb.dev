@@ -4,9 +4,9 @@
         <div class="container">
             <div class="contenedor">
                 <!-- info contacto -->
-                <article class="info-contacto copy-text">
+                <article class="info-contacto">
                     @foreach ($contactoInfo as $item)
-                        <a class="" href="mailto:{{ $item['email'] }}">
+                        <a href="mailto:{{ $item['email'] }}">
                             {{ $item['email'] }}
                         </a>
                         <p>{{ $item['ubicacion'] }}</p>
@@ -38,7 +38,7 @@
             <h1 class="ff-display fs-700 text-center">¿Tienes Preguntas?</h1>
             <div
                 class="preguntas | container flow"
-                data-type="narrow"
+                data-type=""
                 x-data="{ openIndex: null }"
             >
                 @foreach($preguntas as $index => $item)
@@ -48,7 +48,7 @@
                     >
                         <button
                             @click="openIndex = (openIndex === {{ $index }} ? null : {{ $index }})"
-                            class="copy-text"
+                            class="fs-500"
                         >
                             {{ $item['pregunta'] }}
                             <span x-show="openIndex !== {{ $index }}">&plus;</span>
@@ -62,7 +62,7 @@
                             x-transition.opacity.scale.100.origin.bottom.duration.300ms
                         >
                             @foreach ($item['respuesta'] as $respuesta)
-                                <p class="copy-text">{!! $respuesta !!}</p>
+                                <p class="fs-500">{!! $respuesta !!}</p>
                             @endforeach
                         </div>
                     </div>
@@ -74,11 +74,10 @@
         </div>
     </div>
 
-
     <!-- cta -->
     <section class="seccionCTA padding-inline-5" data-type="contacto">
         <article class="margin-block-end-12">
-            <div class="container" data-type="narrow">
+            <div class="container">
                 <x-seccionCTA
                     :cta="$contactoCTA"
                     tipoBoton="acerca"

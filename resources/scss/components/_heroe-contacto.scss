@@ -13,12 +13,14 @@
         }
 
         .info-contacto {
+            font-size: $font-size-500;
             @include mq(small) {
                 order: 2;
             }
             @include mq(large) {
                 order: 1;
             }
+
             a {
                 color: $body-text-color;
             }
@@ -45,7 +47,7 @@
                         font-size: $heroe-subtitle-font-size;
                     }
                     @include mq(large) {
-                        font-size: $font-size-300;
+                        font-size: $font-size-500;
                     }
                 }
 
@@ -53,10 +55,7 @@
                     color: $color-acerca-400;
 
                     @include mq(small) {
-                        font-size: $size-4;
-                    }
-                    @include mq(large) {
-                        font-size: $size-3;
+                        font-size: $font-size-400;
                     }
                 }
             }
@@ -84,7 +83,6 @@
                             font-family: $font-family-medium;
                         }
                         @include mq(medium) {
-                            font-size: 18px;
                         }
                     }
 
@@ -160,13 +158,14 @@
                             }
 
                             li {
+                                list-style: none;
                                 font-family: $font-family-base;
                                 padding: $size-1;
                                 cursor: pointer;
                                 transition: background-color 0.1s ease-in-out;
 
                                 @include mq(medium) {
-                                    font-size: 21px;
+                                    font-size: 18px;
                                 }
 
                                 &:hover {

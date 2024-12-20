@@ -1,11 +1,14 @@
 @use "../abstracts" as *;
 
 .seccionCTA {
-    &[data-type="principal"] {
-        text-transform: uppercase;
-        font-family: $font-family-wide;
-        .cta-inner {
+    .cta-inner {
+        &__copy {
+            h1 {
+                font-size: 40px;
+            }
             .subtitulo {
+                font-family: $font-family-wide;
+
                 @include mq(small) {
                     font-size: $font-size-600;
                     padding-block: $size-4;
@@ -16,36 +19,24 @@
             }
         }
     }
-    &[data-type="acerca"] {
-        .cta-inner {
-            .subtitulo {
-                @include mq(small) {
-                    font-size: 21px;
-                    padding-block: $size-4;
-                }
-                @include mq(medium) {
-                    padding-block: 0;
-                }
-            }
-        }
-    }
+
     &[data-type="contacto"] {
         .cta-inner {
-            @include mq(small) {
-
-            }
             @include mq(medium) {
                 display: flex;
-                gap: $size-8;
+                gap: $size-12;
+                align-items: center;
             }
 
             &__imagen {
                 width: 300px;
                 margin: auto;
-                padding-block-end: $size-10;
-
+                @include mq(small) {
+                    padding-block-end: $size-10;
+                }
                 @include mq(medium) {
                     flex: 1;
+                    padding-block-end: 0;
                 }
             }
 
@@ -54,11 +45,10 @@
                     flex: 2;
                 }
                 .subtitulo {
+                    font-family: $font-family-base;
                     @include mq(small) {
-                        font-size: 21px;
                     }
                     @include mq(medium) {
-                        font-size: 21px;
                     }
                 }
 
@@ -72,7 +62,18 @@
                     @include mq(medium) {
                         width: fit-content;
                         font-size: 24px;
+                        font-size: $font-size-500;
+                        padding: 0.5rem 1.8em;
                     }
+                }
+            }
+        }
+    }
+    &[data-type="servicios"] {
+        .cta-inner {
+            &__copy {
+                h1 {
+                    margin-bottom: $size-8;
                 }
             }
         }

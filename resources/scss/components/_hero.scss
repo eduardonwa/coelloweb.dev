@@ -1,12 +1,20 @@
 @use "../abstracts" as *;
 
 .hero {
+    @include mq(large) {
+        padding-inline: $size-4;
+    }
+    @include mq(2xlarge) {
+        padding-inline: $size-10;
+    }
     &__top-space {
         @include mq(small) {
             padding-top: $size-5;
         }
-
-        @include mq (large) {
+        @include mq(large) {
+            padding-top: 80px;
+        }
+        @include mq(xlarge) {
             padding-top: 104px;
         }
     }
@@ -17,13 +25,22 @@
         line-height: 1.2;
 
         @include mq(small) {
-            font-size: $size-9;
+            font-size: $font-size-800;
         }
         @include mq(large) {
-            font-size: $size-10;
+            font-size: $font-size-900;
         }
         @include mq(2xlarge) {
             font-size: $hero-header-font-size;
+        }
+    }
+    &__subtitulo {
+        font-size: $font-size-400;
+        @include mq(large) {
+            font-size: $font-size-500;
+        }
+        @include mq(2xlarge) {
+            font-size: $font-size-600;
         }
     }
     &__image-wrap {
@@ -34,20 +51,10 @@
         align-items: flex-end;
 
         img {
-            aspect-ratio: 1;
-            width: 100%;
-            max-width: 610px;
-            max-height: 610px;
-            object-fit: cover;
-
-            @include mq(large) {
-                width: 450px;
-                height: 450px;
-            }
             @include mq(xlarge) {
                 width: 650px;
-                height: 650px;
-                aspect-ratio: 1;
+                height: auto;
+                padding: 48px;
             }
        }
     }
@@ -56,9 +63,11 @@
         font-style: italic;
         @include mq(small) {
             padding-top: 0;
+            font-size: $font-size-300;
         }
         @include mq (large) {
             padding-top: $size-15;
+            font-size: $font-size-500;
         }
     }
 }

@@ -5,6 +5,8 @@ namespace App\Http\Controllers;
 use App\Models\Post;
 use App\Models\Category;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Log;
+use Illuminate\Support\Facades\Storage;
 
 class BlogController extends Controller
 {
@@ -36,8 +38,12 @@ class BlogController extends Controller
             ->with('category')
             ->get();
 
-        $categories = Category::take(3)->get();
+            $categories = Category::take(3)->get();
 
+            $categories->each(function ($category) {
+                $category->icon_url = Storage::url($category->icon);
+            });
+            
         return view('blog', compact('lastPost', 'secondLast', 'featured', 'morePosts', 'categories'));
     }
 }

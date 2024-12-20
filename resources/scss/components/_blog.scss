@@ -1,6 +1,18 @@
 @use "../abstracts" as *;
 
 .blog {
+    &__header {
+        padding-block-start: $size-2;
+        padding-block-end: $size-11;
+        h1 {
+            @include mq(small) {
+                font-size: $font-size-700;
+            }
+            @include mq(large) {
+                font-size: $font-size-800;
+            }
+        }
+    }
     &__posts {
         @include mq(small) {
             margin: auto;
@@ -36,10 +48,10 @@
 
                 h1 {
                     @include mq(small) {
-                        font-size: $size-5;
+                        font-size: $font-size-500;
                     }
                     @include mq(medium) {
-                        font-size: $size-4;
+                        font-size: $font-size-400;
                     }
                 }
 

@@ -20,11 +20,12 @@
 
         h2 {
             font-family: $font-family-display;
+
             @include mq(small) {
                 font-size: 21px;
             }
             @include mq(medium) {
-                font-size: $font-size-400;
+                font-size: $font-size-600;
             }
         }
         &:last-child {

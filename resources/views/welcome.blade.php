@@ -1,8 +1,8 @@
 <x-site-layout>
     <!-- seccion de impacto/heroe -->
     @foreach($impacto as $item)
-        <section class="hero | hero__top-space padding-inline-5">
-            <div class="container" data-type="wide">
+        <section class="hero | hero__top-space">
+            <div class="container" data-type="full-bleed">
                 <article class="even-columns">
                     <div class="flow">
                         <h1 class="hero__header">
@@ -10,7 +10,7 @@
                         </h1>
 
                         @foreach ($item['subtitulo'] as $sub)
-                            <p class="copy-text">{!! $sub !!}</p>
+                            <p class="hero__subtitulo">{!! $sub !!}</p>
                         @endforeach
 
                         <a
@@ -42,7 +42,7 @@
     <!-- el gran problema -->
     @foreach ($granProblema as $item)
         <section class="gran-problema | padding-block-15 padding-inline-5">
-            <div class="container">
+            <div class="container" data-type="wide">
                 <div class="even-columns">
                     <!-- -->
                     <header class="gran-problema__header">
@@ -59,7 +59,7 @@
                     <article class="gran-problema__copy">
                         <h1>{{ $item['subtitulo'] }}</h1>
                         @foreach($item['descripcion'] as $descripcion)
-                            <p class="copy-text">{!! $descripcion !!}</p>
+                            <p>{!! $descripcion !!}</p>
                         @endforeach
                     </article>
                 </div>
@@ -69,11 +69,11 @@
 
     <!-- porque Eduardo -->
     @foreach ($porqueEduardo as $item)
-        <section class="padding-block-end-15 padding-inline-5">
-            <div class="container">
+        <section class="section padding-inline-5">
+            <div class="container" data-type="wide">
                 <article class="porque-eduardo | even-columns">
                     <img
-                        class="m-auto lazy"
+                        class="lazy"
                         src="{{ $item['lqip'] }}"
                         data-src="{{ $item['imagenUrl'] }}"
                         alt="¿Por que Eduardo Coello?"
@@ -81,12 +81,12 @@
 
                     <article class="porque-eduardo__copy">
                         @foreach ($item['descripcion'] as $descripcion)
-                            <p class="copy-text">{!! $descripcion !!}</p>
+                            <p>{!! $descripcion !!}</p>
                         @endforeach
 
                         <a
                             href="{{ $item['enlaceCTA'] }}"
-                            class="button margin-block-start-8 pq-eduardo-custom-btn"
+                            class="button margin-block-start-8"
                             data-type="acerca"
                         >
                             {{ $item['botonCTA']['textoCTA'] }}
@@ -98,17 +98,19 @@
     @endforeach
 
     <!-- servicios -->
-    <div class="container padding-inline-5">
+    <div class="container section" data-type="wide">
         <div class="servicio">
             @foreach ($servicios as $item)
                 <div class="servicio-item | even-columns">
                     <article class="servicio-item__copy | flow">
                         <!-- titulo -->
                         <h1>{{ $item['titulo'] }}</h1>
+
                         <!-- descripción -->
                         @foreach ($item['descripcion'] as $descripcion)
-                            <p class="copy-text">{!! $descripcion !!}</p>
+                            <p>{!! $descripcion !!}</p>
                         @endforeach
+
                         <!-- CTA -->
                         <a
                             href="{{ $item['enlaceCTA'] }}"
@@ -127,7 +129,7 @@
                         >
                     </article>
                 </div>
-            @endforeach
+                @endforeach
         </div>
     </div>
 
@@ -142,10 +144,9 @@
     <!-- testimonios -->
     <div class="container even-columns">
         @foreach ($testimonios as $item)
-            <section class="testimonios | padding-block-start-8">
+            <section class="testimonios | padding-block-start-10">
                 <article class="testimonios__img-wrap | padding-inline-end-5">
                     <img
-
                         src="{{ $item['logoUrl'] }}"
                         alt="{{ $item['nombreEmpresa'] }} logo"
                     />
@@ -164,12 +165,13 @@
 
     <x-proceso :proceso="$proceso"/>
 
-    <section class="blog">
+    <section class="blog | margin-block-5">
         <div class="container">
-            <header class="blog__header | text-center padding-block-end-10">
-                <h1 class="uppercase ff-wide fs-700">Visita mi blog</h1>
-                <p class="copy-text">¡Comparto contenido cada semana!</p>
+            <header class="blog__header | text-center">
+                <h1 class="ff-wide">Visita mi blog</h1>
+                <p class="fs-600">¡Comparto contenido cada semana!</p>
             </header>
+
             <article class="blog__posts | even-columns padding-block-end-0">
                 @foreach ($blog as $item)
                     <a href="{{ route('posts.show', $item->slug) }}">
@@ -198,8 +200,8 @@
     </section>
 
     <!-- seccion CTA -->
-    <section class="seccionCTA" data-type="principal">
-        <article class="section text-center">
+    <section class="seccionCTA | section padding-inline-5" data-type="principal">
+        <article class="text-center">
             <x-seccionCTA
                 :cta="$principalCTA"
                 tipoBoton="primary"

@@ -22,9 +22,12 @@
                 margin-block-end: $size-4;
             }
             @include mq(medium) {
-                font-size: $font-size-600;
                 text-align: start;
             }
+        }
+
+        p {
+            font-size: $font-size-500;
         }
 
         .btn-custom-servicios {
@@ -39,6 +42,7 @@
                 padding-block: $size-2;
             }
         }
+
         // &__copy
         @include mq(small) {
             margin-block-end: $size-12;

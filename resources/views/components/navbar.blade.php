@@ -1,7 +1,7 @@
     <!-- navbar -->
     <div class="site-header margin-inline-4">
-        <div class="container" data-type="wide">
-            <div class="site-header__inner">
+        <div class="container" data-type="full-bleed">
+            <div class="site-header__inner | padding-block-2">
                 <a href="{{ route('welcome') }}"><img src="/images/ecoello-logo.svg" alt=""></a>
                 <nav aria-label="primary navigation">
                     <ul class="nav | flex-group">
