@@ -73,6 +73,7 @@
                 }
             }
             img {
+                width: 32px;
                 @include mq(small) {
                     display: block;
                 }
