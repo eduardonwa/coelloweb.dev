@@ -75,11 +75,11 @@
 
         @include mq(small) {
             width: 100%;
+            padding: $size-4;
+            font-size: $font-size-600;
         }
         @include mq(medium) {
             width: fit-content;
-        }
-        @include mq(large) {
             font-size: $font-size-500;
         }
     }
@@ -116,7 +116,7 @@
             padding: $size-3;
         }
         @include mq(xlarge) {
-            width: 40%;
+            width: fit-content;
         }
     }
 

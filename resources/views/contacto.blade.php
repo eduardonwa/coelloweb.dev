@@ -6,6 +6,7 @@
                 <!-- info contacto -->
                 <article class="info-contacto">
                     @foreach ($contactoInfo as $item)
+                        <img src="{{ $item['fotoPerfilUrl'] }}" alt="">
                         <a href="mailto:{{ $item['email'] }}">
                             {{ $item['email'] }}
                         </a>
@@ -58,8 +59,7 @@
                         <div
                             class="preguntas__respuesta"
                             x-show="openIndex === {{ $index }}"
-                            x-transition.opacity.scale.100.origin.top.duration.300ms
-                            x-transition.opacity.scale.100.origin.bottom.duration.300ms
+                            x-transition.duration.300ms
                         >
                             @foreach ($item['respuesta'] as $respuesta)
                                 <p class="fs-500">{!! $respuesta !!}</p>

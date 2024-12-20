@@ -46,24 +46,13 @@
                 }
                 .subtitulo {
                     font-family: $font-family-base;
-                    @include mq(small) {
-                    }
-                    @include mq(medium) {
-                    }
                 }
 
                 a {
                     margin-block-start: $size-5;
-                    @include mq(small) {
-                        width: 100%;
-                        padding: $size-3;
-                        font-size: $font-size-600;
-                    }
+                    
                     @include mq(medium) {
                         width: fit-content;
-                        font-size: 24px;
-                        font-size: $font-size-500;
-                        padding: 0.5rem 1.8em;
                     }
                 }
             }

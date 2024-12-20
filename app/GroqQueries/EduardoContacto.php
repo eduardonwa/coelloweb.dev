@@ -12,7 +12,7 @@ class EduardoContacto
                     email,
                     ubicacion,
                     horario,
-                        logo {
+                        fotoPerfil {
                             asset -> {
                             url,
                             metadata {

@@ -34,12 +34,12 @@ class ContactoController extends Controller
         $contactoInfoData = $contactoCached['eduardoContacto'][0];
 
         $contactoInfo = collect($contactoInfoData['infoContacto'])->map(function ($item) {
-            $logo = new SanityImage($item['logo']);
+            $foto = new SanityImage($item['fotoPerfil']);
             return [
                 'email' => $item['email'],
                 'ubicacion' => $item['ubicacion'],
                 'horario' => $item['horario'],
-                'logoUrl' => $logo->getUrl(),
+                'fotoPerfilUrl' => $foto->getUrl(),
                 'redesSociales' => collect($item['redesSociales'][0]['redes'])->map(function ($subItem) {
                     return [
                         'redSocial' => $subItem['redSocial'],
@@ -71,7 +71,7 @@ class ContactoController extends Controller
             // procesar el enlace del boton CTA
             $botonCTA = $item['botonCTA'];
             $enlace = $botonCTA['enlace'];
-            
+
             return [
                 'encabezado' => $item['encabezado'],
                 'subtitulo' => SanityHelpers::processBlockText($item['subtitulo']),

@@ -14,15 +14,29 @@
 
         .info-contacto {
             font-size: $font-size-500;
+
             @include mq(small) {
                 order: 2;
+                margin: auto;
             }
             @include mq(large) {
                 order: 1;
+                margin: 0;
             }
 
             a {
                 color: $body-text-color;
+            }
+
+            img {
+                width: 180px;
+                border-radius: $size-8;
+                filter: drop-shadow(0px 3px 6px rgba(0, 0, 0, 0.152));
+                padding-bottom: $size-4;
+
+                @include mq(small) {
+                    width: 230px;
+                }
             }
         }
 

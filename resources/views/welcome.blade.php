@@ -98,7 +98,7 @@
     @endforeach
 
     <!-- servicios -->
-    <div class="container section" data-type="wide">
+    <div class="container section" data-type="full-bleed">
         <div class="servicio">
             @foreach ($servicios as $item)
                 <div class="servicio-item | even-columns">

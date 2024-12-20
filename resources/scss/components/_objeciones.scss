@@ -40,7 +40,7 @@
                 display: grid;
                 gap: $size-10;
             }
-            @include mq(medium) {
+            @include mq(large) {
                 grid-auto-flow: column;
                 grid-auto-columns: 2fr 1fr;
             }
@@ -49,29 +49,46 @@
                 @include mq(small) {
                     order: 2;
                 }
-                @include mq(medium) {
+                @include mq(large) {
                     order: 1;
                 }
 
                 &__item {
                     button {
                         display: flex;
-                        justify-content: space-between;
+                        align-items: center;
                         width: 100%;
                         text-align: start;
-                        padding-inline: $size-3;
                         padding-block: $size-2;
-
-                        border: 1px solid $color-contacto-300;
-                        border-radius: $border-radius-1;
-                        background-color: $color-contacto-200;
+                        padding-left: $size-8;
+                        background-color: transparent;
+                        border: none;
                         cursor: pointer;
-                        transition: background-color 0.3s ease-in-out;
+                        font-family: $font-family-display;
+                        font-size: 21px;
+                        transition: background-color 0.3s ease-in-out, color 0.2s ease-in-out;
+                        position: relative;
 
                         &:hover {
-                            background-color: $color-contacto-100;
+                            //color: $color-alt-300;
+                            background-color: $color-contacto-200;
+                            border-radius: 4px;
+                        }
+
+                        img {
+                            padding-right: $size-2;
+                            position: absolute;
+                            top: 25%;
+                            left: 0;
+                        }
+
+                        &.active {
+                            //color: $color-alt-300;
+                            background-color: $color-contacto-200;
+                            border-radius: 4px;
                         }
                     }
+
                     .descripcion {
                         padding: $size-4;
                     }
@@ -83,7 +100,7 @@
                 @include mq(small) {
                     order: 1;
                 }
-                @include mq(medium) {
+                @include mq(large) {
                     order: 2;
                 }
 

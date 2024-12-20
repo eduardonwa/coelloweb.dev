@@ -13,6 +13,10 @@
         }
         @include mq(medium) {
             margin-block-end: $size-15;
+            margin-inline: $size-10;
+        }
+        @include mq(xlarge) {
+            margin-inline: $size-15;
         }
 
         &__copy {
@@ -47,6 +51,9 @@
             }
             @include mq(medium) {
                 order: 2;
+                width: 100%;
+                display: flex;
+                justify-content: flex-end;
             }
             img {
                 width: 400px;

@@ -1,6 +1,19 @@
 @use "../abstracts" as *;
 
 .oferta {
+    &:last-child {
+        @include mq(small) {
+            margin-block-end: 0;
+        }
+    }
+
+    @include mq(small) {
+        margin-block-end: $size-7;
+    }
+    @include mq(medium) {
+        margin-block-end: $size-15;
+    }
+
     &__img {
         margin: auto;
         @include mq(small) {
@@ -12,8 +25,15 @@
     }
 
     &__copy {
+        // &__copy
+        @include mq(small) {
+            margin-block-end: $size-12;
+        }
+        @include mq(medium) {
+            margin-block-end: 0;
+        }
+
         h1 {
-            margin-block-end: $size-2;
             font-family: $font-family-display;
 
             @include mq(small) {
@@ -41,27 +61,6 @@
                 width: fit-content;
                 padding-block: $size-2;
             }
-        }
-
-        // &__copy
-        @include mq(small) {
-            margin-block-end: $size-12;
-        }
-        @include mq(medium) {
-            margin-block-end: 0;
-        }
-    }
-
-    // .oferta
-    @include mq(small) {
-        margin-block-end: $size-7;
-    }
-    @include mq(medium) {
-        margin-block-end: $size-15;
-    }
-    &:last-child {
-        @include mq(small) {
-            margin-block-end: 0;
         }
     }
 }

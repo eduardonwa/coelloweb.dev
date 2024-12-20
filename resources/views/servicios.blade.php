@@ -46,15 +46,29 @@
                                             lastActiveIndex = {{ $index }};
                                         }
                                     "
-                                    class="fs-500"
+                                    :class="{ 'active': activeIndex === {{ $index }} }"
                                 >
+                                    <img
+                                        x-show="activeIndex !== {{ $index }}"
+                                        x-transition.opacity
+                                        src="images/chevron-right.svg"
+                                        alt="Chevron Right"
+                                        class="icon"
+                                    >
+                                    <img
+                                        class="chevron-down"
+                                        x-show="activeIndex === {{ $index }}"
+                                        x-transition.opacity
+                                        src="images/chevron-down.svg"
+                                        alt="Chevron Down"
+                                        class="icon"
+                                    >
                                     {{ $obj['titulo'] }}
                                 </button>
 
                                 <div
                                     x-show="activeIndex === {{ $index }}"
-                                    x-transition.opacity.scale.100.origin.top.duration.300ms
-                                    x-transition.opacity.scale.100.origin.bottom.duration.300ms
+                                    x-transition.duration.300ms
                                     class="descripcion"
                                 >
                                     @foreach ($obj['descripcion'] as $descripcion)
