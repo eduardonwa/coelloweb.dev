@@ -38,6 +38,8 @@
             justify-content: center;
             align-items: center;
             cursor: pointer;
+            border-radius: 50%;
+            aspect-ratio: 1;
             transition: transform 0.1s ease-in-out, background-color 0.3s ease;
 
             &:active {
@@ -68,10 +70,6 @@
         overflow: hidden;
         position: relative;
         touch-action: pan-y;
-
-/*         @include mq(2xlarge) {
-            padding-inline: $size-10;
-        } */
 
         li {
             flex: 0 0 100%;

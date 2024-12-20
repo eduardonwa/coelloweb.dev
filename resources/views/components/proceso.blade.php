@@ -53,10 +53,10 @@
             <h1 class="proceso__encabezado | uppercase ff-wide clr-neutral-100">El proceso</h1>
             <!-- prev, next btns -->
             <div class="proceso__nav-btns | flex-group">
-                <button @click="prev" class="round">
+                <button @click="prev">
                     <span class="fs-600" aria-hidden="true">&#x2190;</span>
                 </button>
-                <button @click="next" class="round">
+                <button @click="next">
                     <span class="fs-600" aria-hidden="true">&#x2192;</span>
                 </button>
             </div>

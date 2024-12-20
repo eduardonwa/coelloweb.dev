@@ -52,8 +52,8 @@
                             class="fs-500"
                         >
                             {{ $item['pregunta'] }}
-                            <span x-show="openIndex !== {{ $index }}">&plus;</span>
-                            <span x-show="openIndex === {{ $index }}">&minus;</span>
+                            {{-- <span x-show="openIndex !== {{ $index }}">&plus;</span>
+                            <span x-show="openIndex === {{ $index }}">&minus;</span> --}}
                         </button>
 
                         <div
