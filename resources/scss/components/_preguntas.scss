@@ -16,12 +16,14 @@
             padding: $size-4;
             cursor: pointer;
             text-align: start;
-            font-size: 18px;
             color: $color-neutral-500;
             transition: background-color 0.2s ease-in-out;
 
             &:hover {
                 background-color: $color-contacto-100;
+            }
+            @include mq(small) {
+                font-size: 18px;
             }
         }
     }
