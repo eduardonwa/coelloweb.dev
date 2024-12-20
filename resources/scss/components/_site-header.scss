@@ -22,7 +22,7 @@
         transform: translateX(0px);
         height: fit-content;
         z-index: 1000;
-        border-radius: 0 0 env(safe-area-inset-bottom) env(safe-area-inset-bottom);
+        border-radius: $border-radius-1 $border-radius-1 clamp(35px, 5vw, 44px) clamp(35px, 5vw, 44px);
     }
     @include mq(medium) {
         top: 10px;
