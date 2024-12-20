@@ -6,7 +6,7 @@
         flex-direction: column;
         margin-block: $size-7;
 
-        button {
+        .pregunta-button {
             display: flex;
             justify-content: space-between;
             border: none;
@@ -25,11 +25,18 @@
             @include mq(small) {
                 font-size: 18px;
             }
+            @include mq(medium) {
+                font-size: 18px;
+            }
         }
     }
     &__respuesta {
         padding-block: $size-2;
         padding-inline: $size-4;
+
+        @include mq(small) {
+            font-size: 18px;
+        }
     }
 
     .test {
