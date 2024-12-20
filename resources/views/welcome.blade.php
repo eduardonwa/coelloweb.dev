@@ -166,13 +166,13 @@
     <x-proceso :proceso="$proceso"/>
 
     <section class="blog | margin-block-5">
-        <div class="container">
+        <div class="container" data-type="wide">
             <header class="blog__header | text-center">
                 <h1 class="ff-wide">Visita mi blog</h1>
                 <p class="fs-600">¡Comparto contenido cada semana!</p>
             </header>
 
-            <article class="blog__posts | even-columns padding-block-end-0">
+            <article class="blog__posts | even-columns padding-block-end-0" style="--grid-gap: 2rem">
                 @foreach ($blog as $item)
                     <a href="{{ route('posts.show', $item->slug) }}">
                         <img
@@ -190,8 +190,8 @@
                             class="border-radius-1"
                         >
                         <div class="post-details">
-                            <span>{{ $item->category->name }}</span>
-                            <h1 class="uppercase ff-medium">{{ $item->title }}</h1>
+                            <span class="uppercase">{{ $item->category->name }}</span>
+                            <h1 class="ff-medium">{{ $item->title }}</h1>
                         </div>
                     </a>
                 @endforeach

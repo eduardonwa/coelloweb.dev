@@ -13,13 +13,14 @@
             }
         }
     }
+
     &__posts {
         @include mq(small) {
             margin: auto;
         }
+
         a {
             height: auto;
-
             img {
                 height: auto;
                 width: 250px;
