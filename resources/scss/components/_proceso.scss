@@ -20,7 +20,6 @@
 
     &__nav-btns {
         @include mq(small) {
-            margin: auto;
             padding-block-end: $size-8;
         }
 

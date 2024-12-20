@@ -47,13 +47,8 @@
                         class="preguntas__pregunta"
                         role="region"
                     >
-                        <button
-                            @click="openIndex = (openIndex === {{ $index }} ? null : {{ $index }})"
-                            class="fs-500"
-                        >
+                        <button @click="openIndex = (openIndex === {{ $index }} ? null : {{ $index }})"                        >
                             {{ $item['pregunta'] }}
-                            {{-- <span x-show="openIndex !== {{ $index }}">&plus;</span>
-                            <span x-show="openIndex === {{ $index }}">&minus;</span> --}}
                         </button>
 
                         <div
