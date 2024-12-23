@@ -14,7 +14,6 @@
         <meta property="og:locale" content="es_ES">
         <meta property="og:site_name" content="Eduardo Coello">
         <meta property="fb:app_id" content="659345982284804">
-
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <meta name="csrf-token" content="{{ csrf_token() }}">
@@ -23,25 +22,26 @@
         <meta name="google-adsense-account" content="ca-pub-5338710529457277">
         <title>{{ $metaTitle ?? 'Eduardo Coello' }}</title>
         <!-- Scripts -->
-        @vite(['resources/css/app.css', 'resources/js/app.js'])
+        @vite(['resources/js/app.js'])
         @livewireStyles
+        <!-- lazy loading -->
+        <script src="https://cdn.jsdelivr.net/npm/vanilla-lazyload@17.3.1/dist/lazyload.min.js"></script>
     </head>
+
     <body class="antialiased">
-    <!-- Google tag (gtag.js) -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-MPL9EF0DLQ"></script>
-    <script>
-      window.dataLayer = window.dataLayer || [];
-      function gtag(){dataLayer.push(arguments);}
-      gtag('js', new Date());
+        <!-- Google tag (gtag.js) -->
+        <script async src="https://www.googletagmanager.com/gtag/js?id=G-MPL9EF0DLQ"></script>
+        <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
 
-      gtag('config', 'G-MPL9EF0DLQ');
-    </script>
+        gtag('config', 'G-MPL9EF0DLQ');
+        </script>
 
-        <!-- navbar -->
-        <x-navbar>
-        </x-navbar>
+        <x-navbar/>
 
-        <main class="content-grid">
+        <main>
             {{ $slot }}
             <!-- conecta conmigo -->
             <x-conecta>
@@ -51,6 +51,8 @@
             <x-footer>
             </x-footer>
         </main>
-        @livewireScriptConfig
+
+        @livewireScripts
+        <script src="/js/eduardocoello/site.js"></script>
     </body>
 </html>

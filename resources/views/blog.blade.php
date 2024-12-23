@@ -1,70 +1,72 @@
 <x-blog-layout meta-description="¿Aún no tienes tu página web? ¡Yo te ayudo! Hablemos de ideas.">
     <!-- ultimos 3 posts -->
-    <div class="ultimos-posts full-width">
-        <!-- wrap -->
-        <div class="left-wrap">
-            <!-- inner w -->
-            @foreach ($secondLast as $left)
-            <a href="{{ route('posts.show', $left->slug) }}" class="left-post">
-                <div class="left-img-wrap">
-                    <img
-                        fetchpriority="high"
-                        width="640"
-                        height="640"
-                        src="{{ $left->getFirstMediaUrl('thumbnails', 'medium') }}"  {{-- La imagen de tamaño medio como fallback --}}
-                        srcset="
-                            {{ $left->getFirstMedia('thumbnails')->getUrl('small') }} 320w,
-                            {{ $left->getFirstMedia('thumbnails')->getUrl('medium') }} 640w,
-                            {{ $left->getFirstMedia('thumbnails')->getUrl('large') }} 1024w,
-                            {{ $left->getFirstMedia('thumbnails')->getUrl('extra-large') }} 1920w
-                        "
-                        alt="{{ $left->title }}"
+    <section
+        class="blog-featured | container"
+        data-type="full-bleed"
+    >
+        <div class="blog-featured__wrapper">
+
+            <article class="izquierda">
+                <!-- izquierda inner wrap -->
+                @foreach ($secondLast as $left)
+                <a
+                    href="{{ route('posts.show', $left->slug) }}"
+                    class="izquierda__inner"
+                >
+                    <section class="inner-img">
+                        <img
+                            fetchpriority="high"
+                            src="{{ $left->getFirstMediaUrl('thumbnails', 'medium') }}"
+                            srcset="
+                                {{ $left->getFirstMedia('thumbnails')->getUrl('small') }} 320w,
+                                {{ $left->getFirstMedia('thumbnails')->getUrl('medium') }} 640w,
+                                {{ $left->getFirstMedia('thumbnails')->getUrl('large') }} 1024w,
+                                {{ $left->getFirstMedia('thumbnails')->getUrl('extra-large') }} 1920w
+                            "
+                            alt="{{ $left->title }}"
+                            class="img-chica"
+                        >
+                    </section>
+
+                    <section class="inner-detalles">
+                        <h2>{{ $left->category->name }}</h2>
+                        <h1 class="ff-medium">{{ $left->title }}</h1>
+                    </section>
+                </a>
+
+                @endforeach
+            </article>
+
+            <article class="derecha">
+                <!-- derecha inner wrap -->
+                @foreach($lastPost as $last)
+                    <a
+                        href="{{ route('posts.show', $last->slug) }}"
+                        class="derecha__inner"
                     >
-                </div>
+                        <section class="inner-img">
+                            <img
+                                src="{{ $last->getFirstMediaUrl('thumbnails', 'medium') }}"  {{-- La imagen de tamaño medio como fallback --}}
+                                srcset="
+                                    {{ $last->getFirstMedia('thumbnails')->getUrl('small') }} 320w,
+                                    {{ $last->getFirstMedia('thumbnails')->getUrl('medium') }} 640w,
+                                    {{ $last->getFirstMedia('thumbnails')->getUrl('large') }} 1024w,
+                                    {{ $last->getFirstMedia('thumbnails')->getUrl('extra-large') }} 1920w
+                                "
+                                alt="{{ $last->title }}"
+                                class="img-grande"
+                            >
+                        </section>
 
-                <div class="left-copy-wrap">
-                    <div class="left-copy">
-                        <h3>
-                            {{ $left->category->name }}
-                        </h3>
-                        <h2>
-                            {{ $left->title }}
-                        </h2>
-                    </div>
-                </div>
-            </a>
-            @endforeach
+                        <section class="inner-detalles">
+                            <h2>{{ $left->category->name }}</h2>
+                            <h1 class="ff-medium">{{ $last->title }}</h1>
+                        </section>
+                    </a>
+                @endforeach
+            </article>
         </div>
-
-        <!-- wrap -->
-        <div class="big-post">
-            <!-- inner w -->
-            @foreach($lastPost as $last)
-            <a href="{{ route('posts.show', $last->slug) }}">
-                <div class="big-post-img-wrapper">
-                    <img
-                        src="{{ $last->getFirstMediaUrl('thumbnails', 'medium') }}"  {{-- La imagen de tamaño medio como fallback --}}
-                        srcset="
-                            {{ $last->getFirstMedia('thumbnails')->getUrl('small') }} 320w,
-                            {{ $last->getFirstMedia('thumbnails')->getUrl('medium') }} 640w,
-                            {{ $last->getFirstMedia('thumbnails')->getUrl('large') }} 1024w,
-                            {{ $last->getFirstMedia('thumbnails')->getUrl('extra-large') }} 1920w
-                        "
-                        alt="{{ $last->title }}"
-                    >
-                </div>
-
-                <!-- inner w -->
-                <div class="big-post-copy-wrap">
-                    <div class="big-post-copy">
-                        <h3>{{ $last->category->name }}</h3>
-                        <h2>{{ $last->title }}</h2>
-                    </div>
-                </div>
-            </a>
-            @endforeach
-        </div>
-    </div>
+    </section>
 
     <!-- esencial para principiantes -->
     <section class="principiantes full-width border border-gray-400">

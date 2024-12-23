@@ -1,0 +1,106 @@
+@use "../abstracts" as *;
+
+.blog-featured {
+    padding: $size-4;
+
+    @include mq(medium) {
+        padding: 0 $size-4;
+    }
+    @include mq(large) {
+        padding-inline: $size-8;
+    }
+
+    &__wrapper {
+        display: grid;
+
+        @include mq(medium) {
+            grid-auto-flow: column;
+            grid-auto-columns: 1fr 2fr;
+            gap: $size-8;
+        }
+
+        .inner-wrap {
+            position: relative;
+            display: block;
+            width: 100%;
+            height: auto;
+
+            .inner-img {
+                width: 100%;
+                height: auto;
+
+                img {
+                    box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.35);
+                    object-fit: cover;
+                    border-radius: $size-2;
+                    width: 100%;
+                    height: 100%;
+                }
+            }
+
+            .inner-detalles {
+                position: absolute;
+                bottom: 0;
+                left: 0;
+                z-index: 1;
+                color: $color-neutral-100;
+                font-size: $font-size-600;
+                padding: $size-4;
+                background: linear-gradient(transparent, black);
+                height: 100%;
+                width: 100%;
+                border-radius: $size-2;
+                display: flex;
+                flex-direction: column;
+                justify-content: flex-end;
+
+                @include mq(small) {
+                    h1 {
+                        font-size: $font-size-600;
+                    }
+                    h2 {
+                        font-size: $font-size-400;
+                    }
+                }
+            }
+        }
+
+        // Estilos específicos para izquierda y derecha
+        .izquierda {
+            display: flex;
+            flex-direction: column;
+
+            .izquierda__inner {
+                @extend .inner-wrap;
+
+                @include mq(small) {
+                    &:first-child {
+                        margin-bottom: $size-8;
+                    }
+                }
+
+            }
+        }
+
+        .derecha {
+            .derecha__inner {
+                @extend .inner-wrap;
+
+                @include mq(small) {
+                    margin-top: $size-8;
+                }
+                @include mq(medium) {
+                    height: 100%;
+                    margin-top: 0;
+                }
+                .inner-detalles {
+                    @include mq(large) {
+                        h1 {
+                            font-size: $font-size-900;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

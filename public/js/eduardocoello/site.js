@@ -13,7 +13,7 @@ document.addEventListener("scroll", () => {
     } else {
       siteHeader.classList.remove("scrolled");
     }
-  });
+});
 /* FIN Navbar scroll */
 
 /* Marquesina */

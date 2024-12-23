@@ -1,3 +1,4 @@
+//import Alpine from 'alpinejs';
 import './bootstrap';
 import '../scss/main.scss';
 
