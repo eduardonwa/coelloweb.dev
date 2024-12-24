@@ -18,7 +18,7 @@ class EditPost extends EditRecord
     {
         return [
             Actions\DeleteAction::make(),
-            PreviewAction::make(),
+            //PreviewAction::make(),
         ];
     }
 
@@ -31,9 +31,4 @@ class EditPost extends EditRecord
     {
         return 'post';
     }
-
-    // protected function getRedirectUrl(): string
-    // {
-    //     return $this->getResource()::getUrl('index');
-    // }
 }
