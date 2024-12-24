@@ -18,6 +18,7 @@
             h1 {
                 font-size: $font-size-700;
                 font-family: $font-family-medium;
+
                 @include mq(medium) {
                     font-size: $font-size-800;
                 }
@@ -31,12 +32,12 @@
     }
 
     hr {
-        margin-block: $size-10;
+        margin-block-start: $size-10;
         color: $horizontal-line-color;
     }
 
     &__body {
-        margin-block-start: $size-8;
+        margin-block-start: 0;
         font-size: $font-size-500;
 
         @include mq(large) {
@@ -46,6 +47,24 @@
         h1 {
             font-size: $font-size-700;
             font-family: $font-family-medium;
+        }
+
+        h2 {
+            font-size: $font-size-600;
+            font-weight: $font-weight-bold;
+        }
+
+        a {
+            color: $color-acerca-300;
+            transition: color .3s ease-in-out;
+
+            &:hover {
+                color: $color-acerca-400;
+            }
+        }
+
+        img {
+            height: auto;
         }
 
         strong {
@@ -72,6 +91,36 @@
                 }
             }
         }
+
+        details {
+            summary {
+                cursor: pointer;
+                border: 1px solid $color-acerca-300;
+                padding: $size-3;
+                border-radius: $border-radius-1;
+                position: relative;
+                background-color: $color-acerca-200;
+
+                &::marker {
+                    content: '';
+                }
+
+                &::before {
+                    content: '👇';
+                    display: inline-block;
+                    margin-right: 0.5rem;
+                }
+
+                &[open] summary::before {
+                    content: '👆';
+                }
+            }
+
+            [data-type="details-content"] {
+                padding: $size-2;
+            }
+        }
+
 
         a[data-as-button="true"] {
             background-color: $color-neutral-500;
