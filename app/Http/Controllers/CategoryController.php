@@ -5,6 +5,7 @@ namespace App\Http\Controllers;
 use App\Models\Post;
 use App\Models\Category;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Storage;
 
 class CategoryController extends Controller
 {
@@ -15,8 +16,10 @@ class CategoryController extends Controller
         // closure limits the number of posts to 3 and returns distinct values
             $query->distinct()->limit(3);
         }])->get();
-
         $metaName = Category::where('name');
+
+        // Attach thumbnails for posts
+        $this->attachThumbnailUrls($categories);
 
         return view('categories.index', compact('categories'));
     }
@@ -39,6 +42,24 @@ class CategoryController extends Controller
             ->where('slug', $slug)
             ->firstOrFail();
 
+        // Attach thumbnails for posts
+        $this->attachThumbnailUrls(collect([$category]));
+
         return view('categories.show', compact('category'));
+    }
+
+    /**
+     * Attach thumbnail URLs to posts in a collection of categories.
+     *
+     * @param \Illuminate\Support\Collection $categories
+     * @return void
+     */
+    private function attachThumbnailUrls($categories)
+    {
+        $categories->each(function ($category) {
+            $category->posts->each(function ($post) {
+                $post->thumbnail_url = Storage::url($post->thumbnail);
+            });
+        });
     }
 }

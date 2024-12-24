@@ -10,28 +10,39 @@
         </h1>
     </header>
 
-    <div class="categoria-lista-posts-wrap breakout">
+    <div class="categorias-posts__wrap container" data-type="wide">
         @foreach ($category->posts as $post)
             @if ($post->active == 1)
-            <a href="{{ route('posts.show', $post->slug) }}"
-                class="categoria-lista-posts"
-            >
-                <div class="categoria-lista-post-resumen">
-                    <h1>
-                        {{ $post->title }}
-                    </h1>
-                    <h3>
-                        {{ $post->human_read_time }}
-                    </h3>
-                </div>
+                <a
+                    class="categorias-posts__wrap__articulo"
+                    href="{{ route('posts.show', $post->slug) }}"
+                >
+                    <div class="categorias-posts__wrap__articulo__resumen">
+                        <h1>
+                            {{ $post->title }}
+                        </h1>
+                        <h3>
+                            {{ $post->human_read_time }}
+                        </h3>
+                    </div>
 
-                <div class="categoria-lista-img-wrap">
-                    <img
-                        src="{{ $category->icon_url }}" alt="{{ $post->title }}"
-                        alt="{{ $post->title }}"
-                    >
-                </div>
-            </a>
+                    <div class="categorias-posts__wrap__articulo__img-wrap">
+                        <img
+                            fetchpriority="high"
+                            width="640"
+                            height="640"
+                            src="{{ $post->getFirstMediaUrl('thumbnails', 'medium') }}"  {{-- La imagen de tamaño medio como fallback --}}
+                            srcset="
+                                {{ $post->getFirstMedia('thumbnails')->getUrl('small') }} 320w,
+                                {{ $post->getFirstMedia('thumbnails')->getUrl('medium') }} 640w,
+                                {{ $post->getFirstMedia('thumbnails')->getUrl('large') }} 1024w,
+                                {{ $post->getFirstMedia('thumbnails')->getUrl('extra-large') }} 1920w
+                            "
+                            alt="{{ $post->title }}"
+                            class="border-radius-1"
+                        >
+                    </div>
+                </a>
             @endif
         @endforeach
     </div>

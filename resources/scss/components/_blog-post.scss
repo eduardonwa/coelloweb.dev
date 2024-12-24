@@ -1,0 +1,63 @@
+@use "../abstracts/" as *;
+
+.post-header {
+    &__categoria-fecha {
+        padding-top: $size-4;
+
+        @include mq(medium) {
+            display: flex;
+            gap: $size-2;
+        }
+        /* categoria */
+        a {
+            color: $color-neutral-500;
+            text-decoration: none;
+        }
+
+        .dot {
+            display: none;
+            @include mq(medium) {
+                display: block;
+                font-weight: 900;
+            }
+        }
+        /* fecha */
+        p {
+
+        }
+    }
+
+    &__titulo-minutos {
+        h1 {
+            font-size: $font-size-700;
+        }
+
+        span {
+            color: $color-neutral-400;
+        }
+    }
+
+    &__etiquetas {
+    }
+
+    &__img-wrap {
+        margin-bottom: $size-4;
+
+        img {
+            width: 100%;
+        }
+    }
+}
+
+.post {
+    font-size: $font-size-500;
+
+    @include mq(large) {
+        font-size: $font-size-600;
+    }
+
+    &__caption {
+        font-style: italic;
+        color: $color-primary-400;
+    }
+}
