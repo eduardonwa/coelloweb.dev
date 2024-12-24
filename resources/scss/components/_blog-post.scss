@@ -114,6 +114,9 @@
                 &[open] summary::before {
                     content: '👆';
                 }
+                &:hover {
+                    outline: 2px solid $color-acerca-500;
+                }
             }
 
             [data-type="details-content"] {
