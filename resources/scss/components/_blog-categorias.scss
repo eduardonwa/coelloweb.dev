@@ -1,12 +1,13 @@
 @use '../abstracts/' as *;
 
 .blog-categorias {
-@include mq(small) {
-    padding-inline: 0;
-}
-@include mq(large) {
-    padding-inline: $size-8;
-}
+    @include mq(small) {
+        padding-inline: 0;
+    }
+    @include mq(large) {
+        padding-inline: $size-8;
+    }
+
     &__header {
         padding: $size-5;
         color: $color-neutral-100;

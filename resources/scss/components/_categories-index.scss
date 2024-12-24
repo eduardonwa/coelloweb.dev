@@ -24,10 +24,10 @@
 
     &__btn {
         border-radius: 1rem;
-        background-color: $color-acerca-200;
+        background-color: $color-acerca-300;
         padding: 13px .75rem;
         min-width: 192px;
-        color: $color-primary-500;
+        color: $color-acerca-100;
         text-decoration: none;
 
         display: flex;
@@ -46,9 +46,7 @@
         }
 
         &:hover {
-            color: $color-primary-500;
-            background-color: $color-acerca-300;
-            filter: drop-shadow(0px 3px 6px rgba(0, 0, 0, 0.152));
+            color: $color-acerca-100;
         }
     }
 }
