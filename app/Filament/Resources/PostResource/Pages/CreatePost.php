@@ -25,7 +25,7 @@ class CreatePost extends CreateRecord
     protected function getActions(): array
     {
         return [
-            PreviewAction::make(),
+            //PreviewAction::make(),
         ];
     }
 

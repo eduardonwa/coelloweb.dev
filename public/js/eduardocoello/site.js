@@ -74,3 +74,20 @@ document.addEventListener('DOMContentLoaded', () => {
     console.log(adjustCorners());
 });
 /* FIN Navbar border radius */
+
+/* Centrar imagenes dentro de un p con text-align:center */
+document.addEventListener('DOMContentLoaded', function() {
+    // Seleccionamos todos los <p> dentro de .blog-post__body que contienen una <img>
+    const paragraphsWithImages = document.querySelectorAll('.blog-post__body p img');
+
+    paragraphsWithImages.forEach(img => {
+        // Verificamos que la imagen está dentro de un <p> centrado
+        const p = img.closest('p');
+        if (p && p.style.textAlign === 'center') {
+            // Aplicamos los estilos necesarios a la imagen
+            img.style.display = 'block';  // Hace que la imagen se comporte como un bloque
+            img.style.marginLeft = 'auto';  // Centra la imagen hacia la izquierda
+            img.style.marginRight = 'auto'; // Centra la imagen hacia la derecha
+        }
+    });
+});

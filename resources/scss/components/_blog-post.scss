@@ -1,63 +1,250 @@
 @use "../abstracts/" as *;
 
-.post-header {
-    &__categoria-fecha {
-        padding-top: $size-4;
-
-        @include mq(medium) {
-            display: flex;
-            gap: $size-2;
-        }
-        /* categoria */
-        a {
-            color: $color-neutral-500;
-            text-decoration: none;
-        }
-
-        .dot {
-            display: none;
-            @include mq(medium) {
-                display: block;
-                font-weight: 900;
-            }
-        }
-        /* fecha */
-        p {
-
-        }
-    }
-
-    &__titulo-minutos {
-        h1 {
-            font-size: $font-size-700;
-        }
-
-        span {
-            color: $color-neutral-400;
-        }
-    }
-
-    &__etiquetas {
-    }
-
-    &__img-wrap {
-        margin-bottom: $size-4;
+.blog-post {
+    &__header {
 
         img {
             width: 100%;
+            border-bottom-right-radius: $border-radius-2;
+            border-bottom-left-radius: $border-radius-2;
+            filter: drop-shadow(0px 3px 6px rgba(0, 0, 0, 0.267));
+
+            @include mq(medium) {
+                border-radius: $border-radius-2;
+            }
+        }
+
+        .post-info {
+            h1 {
+                font-size: $font-size-700;
+                font-family: $font-family-medium;
+                @include mq(medium) {
+                    font-size: $font-size-800;
+                }
+            }
+
+            .caption {
+                font-size: $font-size-500;
+                font-style: italic;
+            }
         }
     }
-}
 
-.post {
-    font-size: $font-size-500;
-
-    @include mq(large) {
-        font-size: $font-size-600;
+    hr {
+        margin-block: $size-10;
+        color: $horizontal-line-color;
     }
 
-    &__caption {
-        font-style: italic;
-        color: $color-primary-400;
+    &__body {
+        margin-block-start: $size-8;
+        font-size: $font-size-500;
+
+        @include mq(large) {
+            font-size: $font-size-600;
+        }
+
+        h1 {
+            font-size: $font-size-700;
+            font-family: $font-family-medium;
+        }
+
+        strong {
+            font-family: $font-family-medium;
+        }
+
+        small {
+            font-size: $font-size-400;
+        }
+
+        ol, ul {
+            margin-block-start: $size-8;
+
+            li {
+                margin-block-end: $size-6;
+                padding-left: $size-2;
+
+                > p {
+                    margin-block-end: $size-2;
+                }
+
+                &::marker {
+                    content: '✔️';
+                }
+            }
+        }
+
+        a[data-as-button="true"] {
+            background-color: $color-neutral-500;
+            color: white !important;
+            text-decoration: none;
+            display: inline-block;
+            padding: $size-2 $size-5;
+            border-radius: $border-radius-1;
+
+            &[data-as-button-theme="primary"] {
+                background-color: $color-cta;
+                transition: transform .2s;
+
+                &:hover {
+                    transform: scale(1.1) rotate(3deg);
+                    filter: drop-shadow(0px 3px 6px rgba(0, 0, 0, 0.264));
+                }
+            }
+
+            &[data-as-button-theme="secondary"] {
+                background-color: $color-acerca-400;
+                transition: transform .2s;
+
+                &:hover {
+                    transform: scale(1.1);
+                }
+            }
+
+            &[data-as-button-theme="tertiary"] {
+                background-color: $color-contacto-300;
+                transition: transform .2s;
+
+                &:hover {
+                    transform: scale(1.1);
+                }
+            }
+
+            &[data-as-button-theme="accent"] {
+                background-color: $color-alt-300;
+                filter: drop-shadow(0px 3px 6px rgba(0, 0, 0, 0.152));
+            }
+        }
+
+        .filament-tiptap-grid,
+        .filament-tiptap-grid-builder {
+            display: grid;
+            gap: 1rem;
+            box-sizing: border-box;
+
+            .filament-tiptap-grid__column,
+            .filament-tiptap-grid-builder__column {
+                box-sizing: border-box;
+                border-width: 1px;
+                padding: 0.5rem;
+
+                > * + * {
+                    margin-block-start: 1rem;
+                }
+            }
+
+            &.ProseMirror-selectednode {
+                outline-offset: 2px;
+            }
+        }
+
+        .filament-tiptap-grid[type^="asymetric"] {
+            grid-template-columns: 1fr;
+            grid-template-rows: auto;
+        }
+
+        @media (max-width: theme('screens.sm')) {
+            .filament-tiptap-grid-builder[data-stack-at="sm"] {
+                grid-template-columns: 1fr !important;
+
+                .filament-tiptap-grid-builder__column {
+                    grid-column: span 1 !important;
+                }
+            }
+        }
+
+        @media (max-width: theme('screens.md')) {
+            .filament-tiptap-grid-builder[data-stack-at="md"] {
+                grid-template-columns: 1fr !important;
+
+                .filament-tiptap-grid-builder__column {
+                    grid-column: span 1 !important;
+                }
+            }
+        }
+
+        @media (max-width: theme('screens.lg')) {
+            .filament-tiptap-grid-builder[data-stack-at="lg"] {
+                grid-template-columns: 1fr !important;
+
+                .filament-tiptap-grid-builder__column {
+                    grid-column: span 1 !important;
+                }
+            }
+        }
+
+        .filament-tiptap-grid[type="asymetric-right-thirds"] {
+            @include mq(medium) {
+                grid-template-columns: 1fr 2fr;
+            }
+        }
+
+        .filament-tiptap-grid[type="asymetric-left-thirds"] {
+            @include mq(medium) {
+                grid-template-columns: 2fr 1fr;
+            }
+        }
+
+        .filament-tiptap-grid[type="asymetric-right-fourths"] {
+            @include mq(medium) {
+                grid-template-columns: 1fr 3fr;
+            }
+        }
+
+        .filament-tiptap-grid[type="asymetric-left-fourths"] {
+            @include mq(medium) {
+                grid-template-columns: 3fr 1fr;
+            }
+        }
+
+        .filament-tiptap-grid[type="responsive"] {
+            grid-template-columns: 1fr;
+            grid-template-rows: auto;
+
+            &[cols="2"] {
+                @include mq(medium) {
+                    grid-template-columns: repeat(2, 1fr);
+                }
+            }
+
+            &[cols="3"] {
+                @include mq(medium) {
+                    grid-template-columns: repeat(3, 1fr);
+                }
+            }
+
+            &[cols="4"] {
+                @include mq(medium) {
+                    grid-template-columns: repeat(2, 1fr);
+                }
+
+                @include mq(large) {
+                    grid-template-columns: repeat(4, 1fr);
+                }
+            }
+
+            &[cols="5"] {
+                @include mq(medium) {
+                    grid-template-columns: repeat(5, 1fr);
+                }
+            }
+        }
+
+        .filament-tiptap-grid[type="fixed"] {
+            &[cols="2"] {
+                grid-template-columns: repeat(2, 1fr);
+            }
+
+            &[cols="3"] {
+                grid-template-columns: repeat(3, 1fr);
+            }
+
+            &[cols="4"] {
+                grid-template-columns: repeat(4, 1fr);
+            }
+
+            &[cols="5"] {
+                grid-template-columns: repeat(5, 1fr);
+            }
+        }
     }
 }
