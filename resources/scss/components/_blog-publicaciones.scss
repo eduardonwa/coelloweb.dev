@@ -50,7 +50,7 @@
                     font-size: $font-size-600;
                 }
                 @include mq(large) {
-                    font-size: $font-size-700;
+                    font-size: $font-size-600;
                 }
             }
 
@@ -59,7 +59,7 @@
                     font-size: $font-size-500;
                 }
                 @include mq(large) {
-                    font-size: $font-size-700;
+                    font-size: $font-size-600;
                 }
             }
         }
@@ -73,36 +73,45 @@
             margin-block: 0;
         }
 
-        &__img-wrap {
-            aspect-ratio: 1 / 1;
-            width: 144px;
-            height: 89px;
+        &__wrap {
+            display: flex;
+            gap: $size-4;
 
-            img {
-                object-fit: cover;
-                width: 100%;
-                height: 100%;
-                border-radius: $border-radius-1;
-            }
-        }
+            &__img {
+                aspect-ratio: 1 / 1;
+                width: 144px;
+                height: 89px;
 
-        &__tiempo {
-            color: $color-neutral-500;
-            font-size: $font-size-400;
-            margin-block: $size-1;
-        }
-
-        &__detalles {
-            color: $color-neutral-500;
-            margin-bottom: $size-6;
-
-            h1 {
-                font-family: $font-family-medium;
-                font-size: $font-size-600;
+                img {
+                    object-fit: cover;
+                    width: 100%;
+                    height: 100%;
+                    border-radius: $border-radius-1;
+                }
             }
 
-            p {
-                font-size: $font-size-500;
+            &__detalles {
+                color: $color-neutral-500;
+                margin-bottom: $size-6;
+                
+                @include mq(medium) {
+                    margin-bottom: 0;
+                }
+
+                h1 {
+                    font-family: $font-family-medium;
+                    font-size: $font-size-600;
+                    @include mq(medium) {
+                        font-size: $font-size-500;
+                    }
+                }
+
+                p {
+                    font-size: $font-size-500;
+                    @include mq(medium) {
+                        font-size: $font-size-400;
+                    }
+                }
             }
         }
     }

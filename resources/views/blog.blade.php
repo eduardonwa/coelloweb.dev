@@ -135,8 +135,11 @@
 
             <article class="publicaciones__lista">
                 @foreach ($morePosts as $more)
-                    <a href="{{ route('posts.show', $more->slug) }}">
-                        <div class="publicaciones__lista__img-wrap">
+                    <a
+                        class="publicaciones__lista__wrap"
+                        href="{{ route('posts.show', $more->slug) }}"
+                    >
+                        <article class="publicaciones__lista__wrap__img">
                             <img
                                 width="640"
                                 height="640"
@@ -149,17 +152,14 @@
                                 "
                                 alt="{{ $more->title }}"
                             >
-                        </div>
+                        </article>
 
-                        <div class="publicaciones__lista__tiempo">
+                        <div class="publicaciones__lista__wrap__detalles">
+                            <h1>{{ $more->title }}</h1>
                             <span>{{ $more->human_read_time }}</span>
                         </div>
-
-                        <div class="publicaciones__lista__detalles">
-                            <h1>{{ $more->title }}</h1>
-                        </div>
                     </a>
-                    <hr class="margin-block-6">
+                    <hr class="margin-block-5">
                 @endforeach
             </article>
         </div>
