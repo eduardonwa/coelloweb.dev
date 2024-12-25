@@ -67,10 +67,7 @@
 
     &__lista {
         @include mq(small) {
-            margin-block: $size-5;
-        }
-        @include mq(large) {
-            margin-block: 0;
+            margin-block-start: $size-5;
         }
 
         &__wrap {
@@ -92,11 +89,6 @@
 
             &__detalles {
                 color: $color-neutral-500;
-                margin-bottom: $size-6;
-
-                @include mq(medium) {
-                    margin-bottom: 0;
-                }
 
                 h1 {
                     font-family: $font-family-medium;
