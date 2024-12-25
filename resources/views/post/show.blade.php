@@ -17,9 +17,10 @@
             <div class="post-info | flow">
                 <h1>{{ $post->title }}</h1>
                 <span>{{ $post->human_read_time }}</span>
-                <a
-                    href="{{ route('categories.show', $post->category->slug) }}"
-                    >{{ $post->category->name }}</a>
+                <span>&bull;</span>
+                <a href="{{ route('categories.show', $post->category->slug) }}">
+                    {{ $post->category->name }}
+                </a>
                 <p>{{ $post->getFormattedDate() }}</p>
                 <p class="caption">{{ $post->caption }}</p>
             </div>
