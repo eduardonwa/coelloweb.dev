@@ -2,38 +2,36 @@
     <!-- ultimos 3 posts -->
     <section
         class="blog-featured | container"
-        data-type="full-bleed"
+        data-type="wide"
     >
         <div class="blog-featured__wrapper">
 
             <article class="izquierda">
                 <!-- izquierda inner wrap -->
                 @foreach ($secondLast as $left)
-                <a
-                    href="{{ route('posts.show', $left->slug) }}"
-                    class="izquierda__inner"
-                >
-                    <section class="inner-img">
-                        <img
-                            fetchpriority="high"
-                            src="{{ $left->getFirstMediaUrl('thumbnails', 'medium') }}"
-                            srcset="
-                                {{ $left->getFirstMedia('thumbnails')->getUrl('small') }} 320w,
-                                {{ $left->getFirstMedia('thumbnails')->getUrl('medium') }} 640w,
-                                {{ $left->getFirstMedia('thumbnails')->getUrl('large') }} 1024w,
-                                {{ $left->getFirstMedia('thumbnails')->getUrl('extra-large') }} 1920w
-                            "
-                            alt="{{ $left->title }}"
-                            class="img-chica"
-                        >
-                    </section>
+                    <a
+                        href="{{ route('posts.show', $left->slug) }}"
+                        class="izquierda__inner"
+                    >
+                        <section class="izquierda__inner__img">
+                            <img
+                                fetchpriority="high"
+                                src="{{ $left->getFirstMediaUrl('thumbnails', 'medium') }}"
+                                srcset="
+                                    {{ $left->getFirstMedia('thumbnails')->getUrl('small') }} 320w,
+                                    {{ $left->getFirstMedia('thumbnails')->getUrl('medium') }} 640w,
+                                    {{ $left->getFirstMedia('thumbnails')->getUrl('large') }} 1024w,
+                                    {{ $left->getFirstMedia('thumbnails')->getUrl('extra-large') }} 1920w
+                                "
+                                alt="{{ $left->title }}"
+                                >
 
-                    <section class="inner-detalles">
-                        <h2>{{ $left->category->name }}</h2>
-                        <h1 class="ff-medium">{{ $left->title }}</h1>
-                    </section>
-                </a>
-
+                            <div class="izquierda__inner__detalles">
+                                <h2>{{ $left->category->name }}</h2>
+                                <h1 class="ff-medium">{{ $left->title }}</h1>
+                            </div>
+                        </section>
+                    </a>
                 @endforeach
             </article>
 
@@ -44,7 +42,7 @@
                         href="{{ route('posts.show', $last->slug) }}"
                         class="derecha__inner"
                     >
-                        <section class="inner-img">
+                        <section class="derecha__inner__img">
                             <img
                                 src="{{ $last->getFirstMediaUrl('thumbnails', 'medium') }}"  {{-- La imagen de tamaño medio como fallback --}}
                                 srcset="
@@ -56,15 +54,16 @@
                                 alt="{{ $last->title }}"
                                 class="img-grande"
                             >
+                            <div class="derecha__inner__detalles">
+                                <h2>{{ $left->category->name }}</h2>
+                                <h1 class="ff-medium">{{ $last->title }}</h1>
+                            </div>
                         </section>
 
-                        <section class="inner-detalles">
-                            <h2>{{ $left->category->name }}</h2>
-                            <h1 class="ff-medium">{{ $last->title }}</h1>
-                        </section>
                     </a>
                 @endforeach
             </article>
+
         </div>
     </section>
 
@@ -99,7 +98,7 @@
     </div>
 
     <!-- lista de publicaciones -->
-    <section class="container" data-type="full-bleed">
+    <section class="container" data-type="wide">
         <!-- post destacado -->
         <div class="publicaciones">
             <article class="publicaciones__destacada">

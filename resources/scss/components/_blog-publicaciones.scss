@@ -7,8 +7,6 @@
         grid-auto-flow: column;
         grid-auto-columns: 2fr 1fr;
         gap: $size-10;
-        padding-inline: $size-13;
-
     }
 
     &__destacada {
@@ -47,7 +45,7 @@
 
             h1 {
                 font-family: $font-family-medium;
-                
+
                 @include mq(small) {
                     font-size: $font-size-600;
                 }
