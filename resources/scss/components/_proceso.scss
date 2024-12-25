@@ -21,6 +21,7 @@
     &__nav-btns {
         @include mq(small) {
             padding-block-end: $size-8;
+            margin: auto;
         }
 
         @include mq(large) {

@@ -175,20 +175,23 @@
             <article class="blog-welcome__posts | even-columns padding-block-end-0" style="--grid-gap: 2rem">
                 @foreach ($blog as $item)
                     <a href="{{ route('posts.show', $item->slug) }}">
-                        <img
-                            fetchpriority="high"
-                            width="640"
-                            height="640"
-                            src="{{ $item->getFirstMediaUrl('thumbnails', 'medium') }}"  {{-- La imagen de tamaño medio como fallback --}}
-                            srcset="
-                                {{ $item->getFirstMedia('thumbnails')->getUrl('small') }} 320w,
-                                {{ $item->getFirstMedia('thumbnails')->getUrl('medium') }} 640w,
-                                {{ $item->getFirstMedia('thumbnails')->getUrl('large') }} 1024w,
-                                {{ $item->getFirstMedia('thumbnails')->getUrl('extra-large') }} 1920w
-                            "
-                            alt="{{ $item->title }}"
-                            class="border-radius-1"
-                        >
+                        <div class="img-wrap">
+                            <img
+                                fetchpriority="high"
+                                width="640"
+                                height="640"
+                                src="{{ $item->getFirstMediaUrl('thumbnails', 'medium') }}"  {{-- La imagen de tamaño medio como fallback --}}
+                                srcset="
+                                    {{ $item->getFirstMedia('thumbnails')->getUrl('small') }} 320w,
+                                    {{ $item->getFirstMedia('thumbnails')->getUrl('medium') }} 640w,
+                                    {{ $item->getFirstMedia('thumbnails')->getUrl('large') }} 1024w,
+                                    {{ $item->getFirstMedia('thumbnails')->getUrl('extra-large') }} 1920w
+                                "
+                                alt="{{ $item->title }}"
+                                class="border-radius-1"
+                            >
+                        </div>
+
                         <div class="post-details">
                             <span class="uppercase">{{ $item->category->name }}</span>
                             <h1 class="ff-medium">{{ $item->title }}</h1>

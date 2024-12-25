@@ -52,7 +52,7 @@
         >
             <h1 class="proceso__encabezado | uppercase ff-wide clr-neutral-100">El proceso</h1>
             <!-- prev, next btns -->
-            <div class="proceso__nav-btns | flex-group mx-auto">
+            <div class="proceso__nav-btns | flex-group">
                 <button @click="prev">
                     <img src="images/chevron-left.svg" aria-hidden="true"/>
                 </button>
