@@ -42,6 +42,40 @@
                 }
             }
 
+            .post-etiquetas {
+                display: flex;
+                justify-content: flex-start;
+                align-items: baseline;
+                flex-wrap: wrap;
+                gap: $size-3;
+                padding-bottom: $size-3;
+
+                .etiqueta {
+                    padding: $size-1;
+                    border-radius: $border-radius-1;
+                    border: 1px solid $color-primary-400;
+                    font-size: 0.875rem;
+                    cursor: pointer;
+                    background-color: $color-primary-500;
+                    color: $color-primary-100;
+
+                    -webkit-transition: background-color .2s ease-in-out;
+                    -ms-transition: background-color .2s ease-in-out;
+                    transition: background-color .2s ease-in-out;
+
+                    @include mq(medium) {
+                        background-color: transparent;
+                        color: $color-primary-500;
+                    }
+                }
+
+                .etiqueta:hover {
+                    background-color: $color-primary-500;
+                    color: $color-primary-100;
+                    border: 1px solid transparent;
+                }
+            }
+
             .caption {
                 font-size: $font-size-500;
                 font-style: italic;

@@ -22,6 +22,13 @@
                     {{ $post->category->name }}
                 </a>
                 <p>{{ $post->getFormattedDate() }}</p>
+
+                <span class="post-etiquetas">
+                    @foreach ($post->tags as $tag)
+                        <p class="etiqueta">#{{ json_decode($tag->slug)->en }}</p>
+                    @endforeach
+                </span>
+
                 <p class="caption">{{ $post->caption }}</p>
             </div>
         </header>
