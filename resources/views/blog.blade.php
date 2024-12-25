@@ -125,7 +125,7 @@
                     </div>
 
                     <!-- título, descripción -->
-                    <div class="publicaciones__destacada__detalles">
+                    <div class="publicaciones__destacada__detalles | flow">
                         <h1>{{ $featured->title }}</h1>
                         <p>{{ $featured->caption }}</p>
                     </div>
