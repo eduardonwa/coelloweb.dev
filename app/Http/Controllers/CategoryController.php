@@ -46,7 +46,7 @@ class CategoryController extends Controller
             ->where('slug', $slug)
             ->firstOrFail();
 
-            return view('categories.show', compact('category', 'iconUrl'));
+            return view('categories.show', compact('category'));
     }
 
     /**
