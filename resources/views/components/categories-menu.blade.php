@@ -17,8 +17,9 @@
                     <img
                         width="50"
                         height="50"
-                        src="{{ $category->icon_url }}"
+                        src="{{ $category->iconUrl }}"
                         alt="{{ $category->name }}"
+                        class="padding-2"
                     >
                 </div>
                 <h2>

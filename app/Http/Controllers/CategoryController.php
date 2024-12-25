@@ -21,6 +21,10 @@ class CategoryController extends Controller
         // Attach thumbnails for posts
         $this->attachThumbnailUrls($categories);
 
+        foreach ($categories as $category) {
+            $category->iconUrl = Storage::url($category->icon);
+        }
+
         return view('categories.index', compact('categories'));
     }
 
@@ -42,10 +46,7 @@ class CategoryController extends Controller
             ->where('slug', $slug)
             ->firstOrFail();
 
-        // Attach thumbnails for posts
-        $this->attachThumbnailUrls(collect([$category]));
-
-        return view('categories.show', compact('category'));
+            return view('categories.show', compact('category', 'iconUrl'));
     }
 
     /**
