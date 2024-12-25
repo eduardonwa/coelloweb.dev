@@ -1,7 +1,7 @@
 <div class="section">
     <section class="blog-conecta | container even-columns" data-type="wide">
-        <header class="blog-conecta__header | text-center">
-            <p>Pequeños bits de información que pueden salvar tu marca.</p>
+        <header class="blog-conecta__header | text-center m-auto">
+            <p>Pequeños bits de información que pueden salvar tu marca</p>
         </header>
 
         <!-- social links -->
