@@ -45,6 +45,7 @@
 
             h1 {
                 font-family: $font-family-medium;
+                color: $color-primary-500;
 
                 @include mq(small) {
                     font-size: $font-size-600;

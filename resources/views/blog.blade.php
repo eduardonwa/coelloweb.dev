@@ -101,35 +101,40 @@
     <section class="container" data-type="wide">
         <!-- post destacado -->
         <div class="publicaciones">
-            <article class="publicaciones__destacada">
+            <article class="publicaciones__destacada | flow">
                 @foreach ($featured as $featured)
-                <a href="{{ route('posts.show', $featured->slug) }}">
                     <div class="publicaciones__destacada__img-wrap">
-                        <img
-                            width="640"
-                            height="640"
-                            src="{{ $featured->getFirstMediaUrl('thumbnails', 'medium') }}"  {{-- La imagen de tamaño medio como fallback --}}
-                            srcset="
-                                {{ $featured->getFirstMedia('thumbnails')->getUrl('small') }} 320w,
-                                {{ $featured->getFirstMedia('thumbnails')->getUrl('medium') }} 640w,
-                                {{ $featured->getFirstMedia('thumbnails')->getUrl('large') }} 1024w,
-                                {{ $featured->getFirstMedia('thumbnails')->getUrl('extra-large') }} 1920w
-                            "
-                            alt="{{ $featured->title }}"
-                        >
+                        <a href="{{ route('posts.show', $featured->slug) }}">
+                            <img
+                                width="640"
+                                height="640"
+                                src="{{ $featured->getFirstMediaUrl('thumbnails', 'medium') }}"  {{-- La imagen de tamaño medio como fallback --}}
+                                srcset="
+                                    {{ $featured->getFirstMedia('thumbnails')->getUrl('small') }} 320w,
+                                    {{ $featured->getFirstMedia('thumbnails')->getUrl('medium') }} 640w,
+                                    {{ $featured->getFirstMedia('thumbnails')->getUrl('large') }} 1024w,
+                                    {{ $featured->getFirstMedia('thumbnails')->getUrl('extra-large') }} 1920w
+                                "
+                                alt="{{ $featured->title }}"
+                            >
+                        </a>
                     </div>
 
                     <!-- detalles -->
                     <div class="publicaciones__destacada__tiempo">
+                        <span>{{ $category->name }}</span>
+                        <span>&bull;</span>
                         <span>{{ $featured->human_read_time }}</span>
                     </div>
 
                     <!-- título, descripción -->
                     <div class="publicaciones__destacada__detalles | flow">
-                        <h1>{{ $featured->title }}</h1>
+                        <a href="{{ route('posts.show', $featured->slug) }}">
+                            <h1>{{ $featured->title }}</h1>
+                        </a>
                         <p>{{ $featured->caption }}</p>
                     </div>
-                </a>
+
                 @endforeach
             </article>
 

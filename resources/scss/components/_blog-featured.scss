@@ -25,6 +25,9 @@
             }
 
             &__inner {
+                &:hover {
+                    color: $color-neutral-100;
+                }
                 &__img {
                     position: relative;
                     margin-block-end: $size-8;
@@ -57,6 +60,9 @@
 
         .derecha {
             &__inner {
+                &:hover {
+                    color: $color-neutral-100;
+                }
                 &__img {
                     position: relative;
                     width: 100%;
