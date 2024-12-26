@@ -135,7 +135,7 @@ class WelcomeController extends Controller
         $blog = Post::with('category')
             ->latest()
             ->where('active', '=', 1)
-            ->take(5)
+            ->take(4)
             ->get();
 
         $principalCTAData = $welcomeCache['principalCTA'];

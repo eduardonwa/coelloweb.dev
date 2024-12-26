@@ -173,7 +173,7 @@
                 <p class="fs-600">¡Comparto contenido cada semana!</p>
             </header>
 
-            <article class="blog-welcome__posts | even-columns padding-block-end-0" style="--grid-gap: 2rem">
+            <article class="blog-welcome__posts | padding-block-end-0 padding-inline-13">
                 @foreach ($blog as $item)
                     <a href="{{ route('posts.show', $item->slug) }}">
                         <div class="img-wrap">

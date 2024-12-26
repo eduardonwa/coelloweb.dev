@@ -15,8 +15,13 @@
     }
 
     &__posts {
-        @include mq(small) {
-            margin: auto;
+        margin: auto;
+        display: grid;
+
+        @include mq(medium) {
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            grid-auto-rows: auto;
+            gap: $size-4;
         }
 
         a {
@@ -24,7 +29,11 @@
                 height: 200px;
                 width: 200px;
                 margin: auto;
-                
+
+                @include mq(medium) {
+                    margin: 0;
+                }
+
                 img {
                     object-fit: cover;
                     width: 100%;
