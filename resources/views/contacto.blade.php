@@ -62,9 +62,9 @@
                         </div>
                     </div>
                 @endforeach
-                <a href="{{ route('preguntas') }}" class="button test" data-type="preguntas">
+                {{-- <a href="{{ route('preguntas') }}" class="button test" data-type="preguntas">
                     Tengo más preguntas
-                </a>
+                </a> --}}
             </div>
         </div>
     </div>

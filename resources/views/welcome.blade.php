@@ -27,8 +27,9 @@
                     </div>
 
                     <article class="hero__image-wrap">
+                        <img class="hero__image-wrap__bg" src="/images/espiral-heroe.svg" />
                         <img
-                            class="hero__image lazy"
+                            class="hero__image-wrap__impacto lazy"
                             src="{{ $item['lqip'] }}"
                             data-src="{{ $item['imagenUrl'] }}"
                             alt="{{ $item['encabezado'] }}"

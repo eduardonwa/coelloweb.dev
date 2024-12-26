@@ -15,12 +15,10 @@
                     <a href="{{ route('acerca') }}">Acerca</a>
                 </li>
                 <li>
-                    <a href="{{ route('contacto') }}">Contacto</a>
+                    <a href="{{ route('servicios') }}">Servicios</a>
                 </li>
                 <li>
-                    <a href="{{ route('preguntas') }}">
-                        Preguntas
-                    </a>
+                    <a href="{{ route('contacto') }}">Contacto</a>
                 </li>
             </ul>
 
@@ -36,9 +34,6 @@
                     <a href="{{ route('blog.index') }}">
                         Blog
                     </a>
-                </li>
-                <li>
-                    <a href="{{ route('servicios') }}">Servicios</a>
                 </li>
             </ul>
 

@@ -10,14 +10,17 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/vanilla-lazyload/17.6.1/lazyload.min.js"></script>
     <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
 </head>
-<body>
+<body style="background: linear-gradient(to bottom, transparent 20%, #edfffe)">
     <x-navbar/>
 
-    <main>
-        {{ $slot }}
-    </main>
+    <div style="background-color: #EDFFFE">
+        <main>
+            {{ $slot }}
+        </main>
 
-    <x-footer/>
+        <x-footer/>
+    </div>
+
     @livewireScripts
     <script src="/js/eduardocoello/site.js"></script>
 </body>

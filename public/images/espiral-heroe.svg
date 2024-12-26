@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="620" height="620" viewBox="0 0 620 620">
+  <defs>
+    <radialGradient id="radial-gradient" cx="0.5" cy="0.5" r="0.5" gradientUnits="objectBoundingBox">
+      <stop offset="0.25" stop-color="#00cbcc" stop-opacity="0.502"/>
+      <stop offset="0.85" stop-color="#05ffff"/>
+      <stop offset="1" stop-color="#b2ffff" stop-opacity="0.502"/>
+    </radialGradient>
+  </defs>
+  <g id="Group_549" data-name="Group 549" transform="translate(-48 -48)" opacity="0.29">
+    <circle id="Ellipse_9" data-name="Ellipse 9" cx="310" cy="310" r="310" transform="translate(48 48)" opacity="0.05" fill="url(#radial-gradient)"/>
+    <circle id="Ellipse_10" data-name="Ellipse 10" cx="283" cy="283" r="283" transform="translate(75 75)" opacity="0.15" fill="url(#radial-gradient)"/>
+    <circle id="Ellipse_11" data-name="Ellipse 11" cx="253" cy="253" r="253" transform="translate(105 105)" opacity="0.24" fill="url(#radial-gradient)"/>
+    <circle id="Ellipse_12" data-name="Ellipse 12" cx="226" cy="226" r="226" transform="translate(132 132)" opacity="0.33" fill="url(#radial-gradient)"/>
+    <circle id="Ellipse_13" data-name="Ellipse 13" cx="198" cy="198" r="198" transform="translate(160 160)" opacity="0.43" fill="url(#radial-gradient)"/>
+    <circle id="Ellipse_14" data-name="Ellipse 14" cx="169" cy="169" r="169" transform="translate(189 189)" opacity="0.53" fill="url(#radial-gradient)"/>
+    <circle id="Ellipse_15" data-name="Ellipse 15" cx="141" cy="141" r="141" transform="translate(217 217)" opacity="0.62" fill="url(#radial-gradient)"/>
+    <circle id="Ellipse_16" data-name="Ellipse 16" cx="112" cy="112" r="112" transform="translate(246 246)" opacity="0.71" fill="url(#radial-gradient)"/>
+    <circle id="Ellipse_17" data-name="Ellipse 17" cx="84" cy="84" r="84" transform="translate(274 274)" opacity="0.81" fill="url(#radial-gradient)"/>
+    <circle id="Ellipse_18" data-name="Ellipse 18" cx="57" cy="57" r="57" transform="translate(301 301)" opacity="0.91" fill="url(#radial-gradient)"/>
+  </g>
+</svg>

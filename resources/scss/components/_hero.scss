@@ -1,12 +1,19 @@
 @use "../abstracts" as *;
 
 .hero {
+    background: rgb(255,255,255);
+    background: -moz-linear-gradient(180deg, rgba(255,255,255,1) 0%, rgba(237,255,254,1) 100%);
+    background: -webkit-linear-gradient(180deg, rgba(255,255,255,1) 0%, rgba(237,255,254,1) 100%);
+    background: linear-gradient(180deg, rgba(255,255,255,1) 0%, rgba(237,255,254,1) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#ffffff",endColorstr="#edfffe",GradientType=1);
+
     @include mq(large) {
         padding-inline: $size-4;
     }
     @include mq(2xlarge) {
         padding-inline: $size-10;
     }
+
     &__top-space {
         @include mq(small) {
             padding-top: $size-5;
@@ -44,17 +51,48 @@
         }
     }
     &__image-wrap {
+        display: grid;
+        grid-template-areas: "stack";
+        position: relative;
         height: 100%;
-        object-fit: cover;
-        display: flex;
-        justify-content: center;
-        align-items: flex-end;
+        width: 100%;
+        margin-top: $size-8;
 
-        img {
+        @include mq(medium) {
+            margin-top: $size-4;
+        }
+        @include mq(large) {
+            margin-top: 0;
+        }
+
+        &__bg {
+            grid-area: stack;
+            justify-self: center;
+            align-self: center;
+            width: 90%;
+            height: auto;
+            transform: translateY(-30%);
+
+            @include mq(medium) {
+                transform: translateY(-25%);
+            }
+        }
+
+        &__impacto {
+            grid-area: stack;
+            justify-self: center;
+            align-self: self-end;
+            max-width: 80%;
+            z-index: 1;
+
+            @include mq(large) {
+                align-self: center;
+            }
+
             @include mq(xlarge) {
                 width: 650px;
                 height: auto;
-                padding: 48px;
+                padding: $size-10;
             }
        }
     }
