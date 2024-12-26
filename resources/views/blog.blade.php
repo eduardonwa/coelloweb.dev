@@ -1,7 +1,7 @@
 <x-blog-layout meta-description="¿Aún no tienes tu página web? ¡Yo te ayudo! Hablemos de ideas.">
     <!-- ultimos 3 posts -->
     <section
-        class="blog-featured | container"
+        class="blog-featured | container padding-block-start-10"
         data-type="wide"
     >
         <div class="blog-featured__wrapper">
