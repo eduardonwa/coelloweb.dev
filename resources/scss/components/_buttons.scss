@@ -41,6 +41,7 @@
             filter: drop-shadow(0px 3px 6px rgba(0, 0, 0, 0.264));
             transform: scale(1.2) translate(0, 0) rotate(-3deg);
             transform-origin: center;
+
             &::after {
                 opacity: 1; // se muestra suavemente al hacer hover
             }
@@ -80,6 +81,24 @@
         }
         @include mq(medium) {
             width: fit-content;
+            font-size: $font-size-500;
+        }
+    }
+
+    &[data-type="contacto"] {
+        background-color: $color-contacto-300;
+
+        &:is(:hover, :focus) {
+            color: $color-neutral-500;
+        }
+
+        @include mq(small) {
+            width: 100%;
+        }
+        @include mq(medium) {
+            width: fit-content;
+        }
+        @include mq(large){
             font-size: $font-size-500;
         }
     }

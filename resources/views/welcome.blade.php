@@ -161,7 +161,9 @@
         @endforeach
     </div>
 
-    <x-proceso :proceso="$proceso"/>
+    <div style="padding-block:clamp(5rem, 10vh, 6rem);">
+        <x-proceso :proceso="$proceso"/>
+    </div>
 
     <section class="blog-welcome | margin-block-5">
         <div class="container" data-type="wide">

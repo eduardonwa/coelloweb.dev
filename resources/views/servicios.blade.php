@@ -153,22 +153,29 @@
         </div>
     </div>
 
-    <!-- el proceso -->
-    <x-proceso :proceso="$proceso"/>
-
+    <img src="/images/listo-para-top-bg.svg">
     <!-- invitacion -->
-    <div class="section container" data-type="wide">
+    <div class="margin-block-8 container" data-type="wide">
         @foreach ($objeciones as $item)
             @foreach ($item['invitacion'] as $inv)
-                <div class="invitacion | even-columns padding-inline-2">
+                <section class="invitacion | even-columns padding-inline-2">
                     <h1>{{ $inv['encabezado'] }}</h1>
-                    @foreach ($inv['descripcion'] as $descripcion)
-                        <p>{!! $descripcion !!}</p>
-                    @endforeach
-                </div>
+                    <div>
+                        @foreach ($inv['descripcion'] as $descripcion)
+                            <p>{!! $descripcion !!}</p>
+                        @endforeach
+                        <a href="{{ $inv['botonCTA']['enlaceCTA'] }}" class="button" data-type="contacto">
+                            {{ $inv['botonCTA']['textoCTA'] }}
+                        </a>
+                    </div>
+                </section>
             @endforeach
         @endforeach
     </div>
+    <img src="/images/listo-para-bot-bg.svg">
+
+    <!-- el proceso -->
+    <x-proceso :proceso="$proceso"/>
 
     <!-- testimonios -->
     <div class="section">

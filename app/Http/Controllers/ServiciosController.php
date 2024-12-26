@@ -77,6 +77,7 @@ class ServiciosController extends Controller
                     // procesar el enlace del boton CTA
                     $botonCTA = $invitacion['botonCTA'];
                     $enlace = $botonCTA['enlace'];
+
                     return [
                         'encabezado' => $invitacion['encabezado'],
                         'descripcion' => SanityHelpers::processBlockText($invitacion['descripcion']),

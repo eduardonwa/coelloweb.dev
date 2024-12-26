@@ -37,28 +37,31 @@ class EduardoServicios
                             type,
                             lottieFile {
                                 asset-> {
-                                url,
+                                    url,
+                                },
                             },
-                        },
                         image {
                             asset-> {
                                 url,
                                 metadata {
-                                lqip,
-                                dimensions {
-                                    width,
-                                    height
+                                    lqip,
+                                    dimensions {
+                                        width,
+                                        height
+                                    }
                                 }
                             }
                         }
-                        }
                     }
-                    },
-                    invitacion[] {
-                        encabezado,
-                        descripcion,
-                        botonCTA
+                },
+                invitacion[] {
+                    encabezado,
+                    descripcion,
+                    botonCTA {
+                        textoCTA,
+                        "enlace": enlace[0].secciones->alias.current
                     }
+                }
                 },
                 valores[] {
                     titulo,
