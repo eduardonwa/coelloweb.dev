@@ -1,6 +1,6 @@
 <!-- incluir google script, meta title, meta description-->
 <x-site-layout>
-    <section class="heroe-contacto | padding-inline-5">
+    <section class="heroe-contacto | bg-seccion padding-inline-5">
         <div class="container">
             <div class="contenedor">
                 <!-- info contacto -->

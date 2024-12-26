@@ -1,9 +1,9 @@
 <!-- incluir google script, meta title, meta description-->
 <x-site-layout>
     <!-- heroe -->
-    <section class="heroe | section container text-center">
+    <section class="heroe | bg-seccion section text-center">
         @foreach ($queHaces as $item)
-            <article class="flow">
+            <article class="flow container">
                 <h1 class="ff-display">{{ $item['encabezado'] }}</h1>
                 @foreach ($item['subtitulo'] as $subtitulo)
                     <p>{!! $subtitulo !!}</p>

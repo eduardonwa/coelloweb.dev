@@ -1,7 +1,7 @@
 <x-site-layout>
     <!-- seccion de impacto/heroe -->
     @foreach($impacto as $item)
-        <section class="hero | hero__top-space">
+        <section class="hero | bg-seccion hero__top-space">
             <div class="container" data-type="full-bleed">
                 <article class="even-columns">
                     <div class="flow">
