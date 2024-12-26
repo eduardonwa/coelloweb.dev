@@ -1,0 +1,95 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="1920" height="712" viewBox="0 0 1920 712">
+  <defs>
+    <radialGradient id="radial-gradient" cx="0.5" cy="0.5" r="0.5" gradientUnits="objectBoundingBox">
+      <stop offset="0" stop-color="#edfffe" stop-opacity="0"/>
+      <stop offset="1" stop-color="#06ffff"/>
+    </radialGradient>
+    <clipPath id="clip-path">
+      <rect id="Rectangle_838" data-name="Rectangle 838" width="1920" height="712" transform="translate(-509 1420)" fill="url(#radial-gradient)"/>
+    </clipPath>
+    <radialGradient id="radial-gradient-2" cx="0.5" cy="0.5" r="0.5" gradientUnits="objectBoundingBox">
+      <stop offset="0" stop-color="#edfffe" stop-opacity="0"/>
+      <stop offset="1" stop-color="#edfffe"/>
+    </radialGradient>
+  </defs>
+  <g id="Group_1109" data-name="Group 1109" transform="translate(509 -1420)">
+    <g id="Mask_Group_12" data-name="Mask Group 12" clip-path="url(#clip-path)">
+      <g id="qqquad" transform="translate(-509 1420)">
+        <path id="Path_338" data-name="Path 338" d="M1547.287,0,1066.5,270.485h480.787Z" transform="translate(372.713)" fill="none" stroke="#06ffff" stroke-linejoin="round" stroke-width="2" opacity="0.4"/>
+        <path id="Path_339" data-name="Path 339" d="M888.75,0l240.393,135.242H888.75Z" transform="translate(310.969)" fill="none" stroke="#06ffff" stroke-linejoin="round" stroke-width="2" opacity="0.4"/>
+        <path id="Path_340" data-name="Path 340" d="M951.393,135.242,711,0V135.242Z" transform="translate(248.775)" fill="none" stroke="#06ffff" stroke-linejoin="round" stroke-width="2" opacity="0.4"/>
+        <path id="Path_341" data-name="Path 341" d="M951.393,235.242V100L711,235.242Z" transform="translate(248.775 35.242)" fill="none" stroke="#06ffff" stroke-linejoin="round" stroke-width="2" opacity="0.4"/>
+        <path id="Path_342" data-name="Path 342" d="M1129.143,100H888.75V235.242Z" transform="translate(310.969 35.242)" fill="none" stroke="#06ffff" stroke-linejoin="round" stroke-width="2" opacity="0.4"/>
+        <path id="Path_343" data-name="Path 343" d="M1129.143,200V335.242L888.75,200Z" transform="translate(310.969 70.485)" fill="none" stroke="#06ffff" stroke-linejoin="round" stroke-width="2" opacity="0.4"/>
+        <path id="Path_344" data-name="Path 344" d="M799.875,267.621h120.2L799.875,200Z" transform="translate(280.007 70.485)" fill="none" stroke="#06ffff" stroke-linejoin="round" stroke-width="2" opacity="0.4"/>
+        <path id="Path_345" data-name="Path 345" d="M831.2,267.621H711L831.2,200Z" transform="translate(248.895 70.485)" fill="none" stroke="#06ffff" stroke-linejoin="round" stroke-width="2" opacity="0.4"/>
+        <path id="Path_346" data-name="Path 346" d="M831.2,317.621H711L831.2,250Z" transform="translate(248.895 88.106)" fill="none" stroke="#06ffff" stroke-linejoin="round" stroke-width="2" opacity="0.4"/>
+        <path id="Path_347" data-name="Path 347" d="M920.072,317.621V250l-120.2,67.621Z" transform="translate(280.007 88.106)" fill="none" stroke="#06ffff" stroke-linejoin="round" stroke-width="2" opacity="0.4"/>
+        <path id="Path_348" data-name="Path 348" d="M711,300H951.393L711,435.242Z" transform="translate(248.775 105.727)" fill="none" stroke="#06ffff" stroke-linejoin="round" stroke-width="2" opacity="0.4"/>
+        <path id="Path_349" data-name="Path 349" d="M888.75,300V435.242h240.393Z" transform="translate(310.969 105.727)" fill="none" stroke="#06ffff" stroke-linejoin="round" stroke-width="2" opacity="0.4"/>
+        <path id="Path_350" data-name="Path 350" d="M1547.287,470.485H1066.5L1547.287,200Z" transform="translate(372.713 70.485)" fill="none" stroke="#06ffff" stroke-linejoin="round" stroke-width="2" opacity="0.4"/>
+        <path id="Path_351" data-name="Path 351" d="M533.25,135.242,773.643,0H533.25Z" transform="translate(186.581)" fill="none" stroke="#06ffff" stroke-linejoin="round" stroke-width="2" opacity="0.4"/>
+        <path id="Path_352" data-name="Path 352" d="M355.5,135.242,595.893,0V135.242Z" transform="translate(124.388)" fill="none" stroke="#06ffff" stroke-linejoin="round" stroke-width="2" opacity="0.4"/>
+        <path id="Path_353" data-name="Path 353" d="M355.5,100H595.893V235.242Z" transform="translate(124.388 35.242)" fill="none" stroke="#06ffff" stroke-linejoin="round" stroke-width="2" opacity="0.4"/>
+        <path id="Path_354" data-name="Path 354" d="M773.643,235.242V100L533.25,235.242Z" transform="translate(186.581 35.242)" fill="none" stroke="#06ffff" stroke-linejoin="round" stroke-width="2" opacity="0.4"/>
+        <path id="Path_355" data-name="Path 355" d="M480.787,0V270.485L0,0Z" fill="none" stroke="#06ffff" stroke-linejoin="round" stroke-width="2" opacity="0.4"/>
+        <path id="Path_356" data-name="Path 356" d="M418.143,335.242V200L177.75,335.242Z" transform="translate(62.643 70.485)" fill="none" stroke="#06ffff" stroke-linejoin="round" stroke-width="2" opacity="0.4"/>
+        <path id="Path_357" data-name="Path 357" d="M0,335.242V200L240.393,335.242Z" transform="translate(0 70.485)" fill="none" stroke="#06ffff" stroke-linejoin="round" stroke-width="2" opacity="0.4"/>
+        <path id="Path_358" data-name="Path 358" d="M240.393,300V435.242L0,300Z" transform="translate(0 105.727)" fill="none" stroke="#06ffff" stroke-linejoin="round" stroke-width="2" opacity="0.4"/>
+        <path id="Path_359" data-name="Path 359" d="M177.75,300H418.143L177.75,435.242Z" transform="translate(62.643 105.727)" fill="none" stroke="#06ffff" stroke-linejoin="round" stroke-width="2" opacity="0.4"/>
+        <path id="Path_360" data-name="Path 360" d="M533.25,335.242,773.643,200V335.242Z" transform="translate(186.581 70.485)" fill="none" stroke="#06ffff" stroke-linejoin="round" stroke-width="2" opacity="0.4"/>
+        <path id="Path_361" data-name="Path 361" d="M355.5,200V335.242H595.893Z" transform="translate(124.388 70.485)" fill="none" stroke="#06ffff" stroke-linejoin="round" stroke-width="2" opacity="0.4"/>
+        <path id="Path_362" data-name="Path 362" d="M595.893,435.242,355.5,300V435.242Z" transform="translate(124.388 105.727)" fill="none" stroke="#06ffff" stroke-linejoin="round" stroke-width="2" opacity="0.4"/>
+        <path id="Path_363" data-name="Path 363" d="M622.125,300h120.2l-120.2,67.621Z" transform="translate(217.783 105.727)" fill="none" stroke="#06ffff" stroke-linejoin="round" stroke-width="2" opacity="0.4"/>
+        <path id="Path_364" data-name="Path 364" d="M533.25,300l120.2,67.621H533.25Z" transform="translate(186.671 105.727)" fill="none" stroke="#06ffff" stroke-linejoin="round" stroke-width="2" opacity="0.4"/>
+        <path id="Path_365" data-name="Path 365" d="M653.447,417.621H533.25V350Z" transform="translate(186.671 123.349)" fill="none" stroke="#06ffff" stroke-linejoin="round" stroke-width="2" opacity="0.4"/>
+        <path id="Path_366" data-name="Path 366" d="M742.322,417.621h-120.2L742.322,350Z" transform="translate(217.783 123.349)" fill="none" stroke="#06ffff" stroke-linejoin="round" stroke-width="2" opacity="0.4"/>
+        <path id="Path_367" data-name="Path 367" d="M742.322,400v67.621h-120.2Z" transform="translate(217.783 140.97)" fill="none" stroke="#06ffff" stroke-linejoin="round" stroke-width="2" opacity="0.4"/>
+        <path id="Path_368" data-name="Path 368" d="M653.447,467.621V400H533.25Z" transform="translate(186.671 140.97)" fill="none" stroke="#06ffff" stroke-linejoin="round" stroke-width="2" opacity="0.4"/>
+        <path id="Path_369" data-name="Path 369" d="M533.25,450v67.621L653.447,450Z" transform="translate(186.671 158.591)" fill="none" stroke="#06ffff" stroke-linejoin="round" stroke-width="2" opacity="0.4"/>
+        <path id="Path_370" data-name="Path 370" d="M742.322,517.621h-120.2L742.322,450Z" transform="translate(217.783 158.591)" fill="none" stroke="#06ffff" stroke-linejoin="round" stroke-width="2" opacity="0.4"/>
+        <path id="Path_371" data-name="Path 371" d="M595.893,535.242V400L355.5,535.242Z" transform="translate(124.388 140.97)" fill="none" stroke="#06ffff" stroke-linejoin="round" stroke-width="2" opacity="0.4"/>
+        <path id="Path_372" data-name="Path 372" d="M355.5,500V635.242H595.893Z" transform="translate(124.388 176.212)" fill="none" stroke="#06ffff" stroke-linejoin="round" stroke-width="2" opacity="0.4"/>
+        <path id="Path_373" data-name="Path 373" d="M742.322,500v67.621L622.125,500Z" transform="translate(217.783 176.212)" fill="none" stroke="#06ffff" stroke-linejoin="round" stroke-width="2" opacity="0.4"/>
+        <path id="Path_374" data-name="Path 374" d="M653.447,500H533.25l120.2,67.621Z" transform="translate(186.671 176.212)" fill="none" stroke="#06ffff" stroke-linejoin="round" stroke-width="2" opacity="0.4"/>
+        <path id="Path_375" data-name="Path 375" d="M653.447,550v67.621L533.25,550Z" transform="translate(186.671 193.833)" fill="none" stroke="#06ffff" stroke-linejoin="round" stroke-width="2" opacity="0.4"/>
+        <path id="Path_376" data-name="Path 376" d="M622.125,550l120.2,67.621V550Z" transform="translate(217.783 193.833)" fill="none" stroke="#06ffff" stroke-linejoin="round" stroke-width="2" opacity="0.4"/>
+        <path id="Path_377" data-name="Path 377" d="M418.143,535.242H177.75L418.143,400Z" transform="translate(62.643 140.97)" fill="none" stroke="#06ffff" stroke-linejoin="round" stroke-width="2" opacity="0.4"/>
+        <path id="Path_378" data-name="Path 378" d="M240.393,400,0,535.242V400Z" transform="translate(0 140.97)" fill="none" stroke="#06ffff" stroke-linejoin="round" stroke-width="2" opacity="0.4"/>
+        <path id="Path_379" data-name="Path 379" d="M0,500,240.393,635.242H0Z" transform="translate(0 176.212)" fill="none" stroke="#06ffff" stroke-linejoin="round" stroke-width="2" opacity="0.4"/>
+        <path id="Path_380" data-name="Path 380" d="M177.75,500,418.143,635.242H177.75Z" transform="translate(62.643 176.212)" fill="none" stroke="#06ffff" stroke-linejoin="round" stroke-width="2" opacity="0.4"/>
+        <path id="Path_381" data-name="Path 381" d="M418.143,600H177.75V735.242Z" transform="translate(62.643 211.455)" fill="none" stroke="#06ffff" stroke-linejoin="round" stroke-width="2" opacity="0.4"/>
+        <path id="Path_382" data-name="Path 382" d="M240.393,735.242H0L240.393,600Z" transform="translate(0 211.455)" fill="none" stroke="#06ffff" stroke-linejoin="round" stroke-width="2" opacity="0.4"/>
+        <path id="Path_383" data-name="Path 383" d="M240.393,835.242,0,700H240.393Z" transform="translate(0 246.697)" fill="none" stroke="#06ffff" stroke-linejoin="round" stroke-width="2" opacity="0.4"/>
+        <path id="Path_384" data-name="Path 384" d="M418.143,835.242V700H177.75Z" transform="translate(62.643 246.697)" fill="none" stroke="#06ffff" stroke-linejoin="round" stroke-width="2" opacity="0.4"/>
+        <path id="Path_385" data-name="Path 385" d="M533.25,600V735.242H773.643Z" transform="translate(186.581 211.455)" fill="none" stroke="#06ffff" stroke-linejoin="round" stroke-width="2" opacity="0.4"/>
+        <path id="Path_386" data-name="Path 386" d="M595.893,600,355.5,735.242H595.893Z" transform="translate(124.388 211.455)" fill="none" stroke="#06ffff" stroke-linejoin="round" stroke-width="2" opacity="0.4"/>
+        <path id="Path_387" data-name="Path 387" d="M595.893,700V835.242L355.5,700Z" transform="translate(124.388 246.697)" fill="none" stroke="#06ffff" stroke-linejoin="round" stroke-width="2" opacity="0.4"/>
+        <path id="Path_388" data-name="Path 388" d="M533.25,700,773.643,835.242H533.25Z" transform="translate(186.581 246.697)" fill="none" stroke="#06ffff" stroke-linejoin="round" stroke-width="2" opacity="0.4"/>
+        <path id="Path_389" data-name="Path 389" d="M1484.643,400V535.242H1244.25Z" transform="translate(435.357 140.97)" fill="none" stroke="#06ffff" stroke-linejoin="round" stroke-width="2" opacity="0.4"/>
+        <path id="Path_390" data-name="Path 390" d="M1155.38,400h120.19v67.621Z" transform="translate(404.037 140.97)" fill="none" stroke="#06ffff" stroke-linejoin="round" stroke-width="2" opacity="0.4"/>
+        <path id="Path_391" data-name="Path 391" d="M1186.7,467.621,1066.5,400h120.2Z" transform="translate(373.343 140.97)" fill="none" stroke="#06ffff" stroke-linejoin="round" stroke-width="2" opacity="0.4"/>
+        <path id="Path_392" data-name="Path 392" d="M1186.7,450v67.621H1066.5Z" transform="translate(373.343 158.591)" fill="none" stroke="#06ffff" stroke-linejoin="round" stroke-width="2" opacity="0.4"/>
+        <path id="Path_393" data-name="Path 393" d="M1155.38,450h120.19v67.621Z" transform="translate(404.037 158.591)" fill="none" stroke="#06ffff" stroke-linejoin="round" stroke-width="2" opacity="0.4"/>
+        <path id="Path_394" data-name="Path 394" d="M1066.5,635.242h240.393V500Z" transform="translate(372.713 176.212)" fill="none" stroke="#06ffff" stroke-linejoin="round" stroke-width="2" opacity="0.4"/>
+        <path id="Path_395" data-name="Path 395" d="M1244.25,500V635.242h240.393Z" transform="translate(435.357 176.212)" fill="none" stroke="#06ffff" stroke-linejoin="round" stroke-width="2" opacity="0.4"/>
+        <path id="Path_396" data-name="Path 396" d="M1129.143,400V535.242H888.75Z" transform="translate(310.969 140.97)" fill="none" stroke="#06ffff" stroke-linejoin="round" stroke-width="2" opacity="0.4"/>
+        <path id="Path_397" data-name="Path 397" d="M951.393,535.242H711V400Z" transform="translate(248.775 140.97)" fill="none" stroke="#06ffff" stroke-linejoin="round" stroke-width="2" opacity="0.4"/>
+        <path id="Path_398" data-name="Path 398" d="M920.072,500h-120.2l120.2,67.621Z" transform="translate(280.007 176.212)" fill="none" stroke="#06ffff" stroke-linejoin="round" stroke-width="2" opacity="0.4"/>
+        <path id="Path_399" data-name="Path 399" d="M711,500v67.621H831.2Z" transform="translate(248.895 176.212)" fill="none" stroke="#06ffff" stroke-linejoin="round" stroke-width="2" opacity="0.4"/>
+        <path id="Path_400" data-name="Path 400" d="M831.2,617.621,711,550H831.2Z" transform="translate(248.895 193.833)" fill="none" stroke="#06ffff" stroke-linejoin="round" stroke-width="2" opacity="0.4"/>
+        <path id="Path_401" data-name="Path 401" d="M920.072,617.621,799.875,550v67.621Z" transform="translate(280.007 193.833)" fill="none" stroke="#06ffff" stroke-linejoin="round" stroke-width="2" opacity="0.4"/>
+        <path id="Path_402" data-name="Path 402" d="M888.75,500l240.393,135.242V500Z" transform="translate(310.969 176.212)" fill="none" stroke="#06ffff" stroke-linejoin="round" stroke-width="2" opacity="0.4"/>
+        <path id="Path_403" data-name="Path 403" d="M1129.143,600V735.242H888.75Z" transform="translate(310.969 211.455)" fill="none" stroke="#06ffff" stroke-linejoin="round" stroke-width="2" opacity="0.4"/>
+        <path id="Path_404" data-name="Path 404" d="M951.393,600H711V735.242Z" transform="translate(248.775 211.455)" fill="none" stroke="#06ffff" stroke-linejoin="round" stroke-width="2" opacity="0.4"/>
+        <path id="Path_405" data-name="Path 405" d="M951.393,835.242V700H711Z" transform="translate(248.775 246.697)" fill="none" stroke="#06ffff" stroke-linejoin="round" stroke-width="2" opacity="0.4"/>
+        <path id="Path_406" data-name="Path 406" d="M1129.143,835.242H888.75L1129.143,700Z" transform="translate(310.969 246.697)" fill="none" stroke="#06ffff" stroke-linejoin="round" stroke-width="2" opacity="0.4"/>
+        <path id="Path_407" data-name="Path 407" d="M1484.643,600V735.242L1244.25,600Z" transform="translate(435.357 211.455)" fill="none" stroke="#06ffff" stroke-linejoin="round" stroke-width="2" opacity="0.4"/>
+        <path id="Path_408" data-name="Path 408" d="M1306.893,600,1066.5,735.242h240.393Z" transform="translate(372.713 211.455)" fill="none" stroke="#06ffff" stroke-linejoin="round" stroke-width="2" opacity="0.4"/>
+        <path id="Path_409" data-name="Path 409" d="M1306.893,700V835.242L1066.5,700Z" transform="translate(372.713 246.697)" fill="none" stroke="#06ffff" stroke-linejoin="round" stroke-width="2" opacity="0.4"/>
+        <path id="Path_410" data-name="Path 410" d="M1484.643,700V835.242H1244.25Z" transform="translate(435.357 246.697)" fill="none" stroke="#06ffff" stroke-linejoin="round" stroke-width="2" opacity="0.4"/>
+      </g>
+    </g>
+    <rect id="Rectangle_839" data-name="Rectangle 839" width="1920" height="712" transform="translate(-509 1420)" fill="url(#radial-gradient-2)"/>
+  </g>
+</svg>

@@ -43,27 +43,26 @@
     <!-- el gran problema -->
     @foreach ($granProblema as $item)
         <section class="gran-problema | padding-block-15 padding-inline-5">
-            <div class="container" data-type="wide">
-                <div class="even-columns">
-                    <!-- -->
-                    <header class="gran-problema__header">
-                        <img
-                            class="lazy"
-                            src="{{ $item['lqip'] }}"
-                            data-src="{{ $item['imagenUrl'] }}"
-                            alt="{{ $item['encabezado'] }}"
-                        >
-                        <h1>{{ $item['encabezado'] }}</h1>
-                    </header>
 
-                    <!-- -->
-                    <article class="gran-problema__copy">
-                        <h1>{{ $item['subtitulo'] }}</h1>
-                        @foreach($item['descripcion'] as $descripcion)
-                            <p>{!! $descripcion !!}</p>
-                        @endforeach
-                    </article>
-                </div>
+            <img class="gran-problema__bg" src="/images/bg-problema.svg">
+
+            <div class="gran-problema__content | container even-columns" data-type="wide">
+                <header class="gran-problema__content__header">
+                    <img
+                        class="gran-problema-pic lazy"
+                        src="{{ $item['lqip'] }}"
+                        data-src="{{ $item['imagenUrl'] }}"
+                        alt="{{ $item['encabezado'] }}"
+                    >
+                    <h1>{{ $item['encabezado'] }}</h1>
+                </header>
+
+                <article class="gran-problema__content__copy">
+                    <h1>{{ $item['subtitulo'] }}</h1>
+                    @foreach($item['descripcion'] as $descripcion)
+                        <p>{!! $descripcion !!}</p>
+                    @endforeach
+                </article>
             </div>
         </section>
     @endforeach
