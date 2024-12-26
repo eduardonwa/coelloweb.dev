@@ -1,11 +1,18 @@
 @use "../abstracts" as *;
 
 .parte-divertida {
-    .preferida {
-        border-bottom: 5px solid $color-alt-200;
+    position: relative;
+
+    &__bg {
+        position: absolute;
+        top: 0;
+        left: 0;
+        z-index: 1;
+        height: 100%;
+        width: 100%;
     }
 
-    & article {
+    article {
         display: grid;
         grid-template-columns: 1fr 1fr;
         align-items: center;
@@ -15,5 +22,9 @@
             text-align: end;
             padding: $size-1;
         }
+}
+
+    .preferida {
+        border-bottom: 5px solid $color-alt-200;
     }
 }

@@ -70,8 +70,9 @@
     </div>
 
     <!-- cta -->
-    <section class="seccionCTA padding-inline-5" data-type="contacto">
-        <article class="margin-block-end-12">
+    <section class="seccion-cta | padding-inline-5" data-type="contacto">
+        <img class="seccion-cta__bg" src="/images/cta-bg.svg">
+        <article class="seccion-cta__content | margin-block-end-12">
             <div class="container">
                 <x-seccionCTA
                     :cta="$contactoCTA"

@@ -67,27 +67,29 @@
                 <h1 class="ff-display text-center fs-700 margin-block-end-4">
                     {{ $item['encabezado'] }}
                 </h1>
-                    @foreach ($item['estoAquello'] as $subItem)
-                        <article>
-                            <div class="opcion-1">
-                                <span class="{{ $subItem['eleccionPreferida'] === 'respuestaUno' ? 'preferida' : '' }} fs-500">
-                                    {{ $subItem['respuestaUno'] }}
-                                </span>
-                            </div>
-                            <div class="opcion-2">
-                                <span class="{{ $subItem['eleccionPreferida'] === 'respuestaDos' ? 'preferida' : '' }} fs-500">
-                                    {{ $subItem['respuestaDos'] }}
-                                </span>
-                            </div>
-                        </article>
-                    @endforeach
+                @foreach ($item['estoAquello'] as $subItem)
+                    <article>
+                        <div class="opcion-1">
+                            <span class="{{ $subItem['eleccionPreferida'] === 'respuestaUno' ? 'preferida' : '' }} fs-500">
+                                {{ $subItem['respuestaUno'] }}
+                            </span>
+                        </div>
+                        <div class="opcion-2">
+                            <span class="{{ $subItem['eleccionPreferida'] === 'respuestaDos' ? 'preferida' : '' }} fs-500">
+                                {{ $subItem['respuestaDos'] }}
+                            </span>
+                        </div>
+                    </article>
+                @endforeach
             @endforeach
         </div>
     </div>
 
     <!-- zona cta -->
-    <section class="seccionCTA | section padding-inline-5" data-type="acerca">
-        <article class="text-center">
+    <section class="seccion-cta | section padding-inline-5" data-type="acerca">
+        <img class="seccion-cta__bg" src="/images/cta-bg.svg">
+
+        <article class="seccion-cta__content | text-center">
             <div class="container" data-type="narrow">
                 <x-seccionCTA
                     :cta="$acercaCTA"

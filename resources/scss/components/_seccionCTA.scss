@@ -1,6 +1,18 @@
 @use "../abstracts" as *;
 
-.seccionCTA {
+.seccion-cta {
+    display: grid;
+    grid-template-areas: "stack";
+
+    &__bg {
+        grid-area: stack;
+    }
+
+    &__content {
+        grid-area: stack;
+        align-self: center;
+    }
+
     .cta-inner {
         &__copy {
             h1 {
@@ -50,7 +62,7 @@
 
                 a {
                     margin-block-start: $size-5;
-                    
+
                     @include mq(medium) {
                         width: fit-content;
                     }
@@ -58,6 +70,7 @@
             }
         }
     }
+
     &[data-type="servicios"] {
         .cta-inner {
             &__copy {

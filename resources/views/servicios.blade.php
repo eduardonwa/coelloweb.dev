@@ -187,14 +187,13 @@
     </div>
 
     <!-- seccion CTA -->
-    <section class="seccionCTA | section" data-type="servicios">
-        <article class="text-center">
-            <div class="container" data-type="narrow">
-                <x-seccionCTA
-                    :cta="$serviciosCTA"
-                    tipoBoton="primary"
-                />
-            </div>
-        </article>
+    <section class="seccion-cta | text-center section" data-type="servicios">
+        <img class="seccion-cta__bg" src="/images/cta-bg.svg">
+        <div class="seccion-cta__content | container" data-type="narrow">
+            <x-seccionCTA
+                :cta="$serviciosCTA"
+                tipoBoton="primary"
+            />
+        </div>
     </section>
 </x-site-layout>

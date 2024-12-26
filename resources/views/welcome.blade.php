@@ -43,9 +43,7 @@
     <!-- el gran problema -->
     @foreach ($granProblema as $item)
         <section class="gran-problema | padding-block-15 padding-inline-5">
-
             <img class="gran-problema__bg" src="/images/bg-problema.svg">
-
             <div class="gran-problema__content | container even-columns" data-type="wide">
                 <header class="gran-problema__content__header">
                     <img
@@ -203,8 +201,9 @@
     </section>
 
     <!-- seccion CTA -->
-    <section class="seccionCTA | section padding-inline-5" data-type="principal">
-        <article class="text-center">
+    <section class="seccion-cta | section padding-inline-5" data-type="principal">
+        <img class="seccion-cta__bg" src="/images/cta-bg.svg">
+        <article class="seccion-cta__content | text-center">
             <x-seccionCTA
                 :cta="$principalCTA"
                 tipoBoton="primary"
