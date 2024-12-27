@@ -1,6 +1,7 @@
 @use "../abstracts" as *;
 
 .servicio {
+    overflow: hidden;
     @include mq(small) {
         padding-inline: $size-5;
     }
