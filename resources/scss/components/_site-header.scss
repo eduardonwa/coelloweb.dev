@@ -1,6 +1,7 @@
 @use "../abstracts" as *;
 
     .site-header {
+        overflow-x: hidden;
         --_animationStartsAfter: 50vh;
         color: $site-header-color;
         background-color: $site-header-background-color;
@@ -19,7 +20,6 @@
         left: 0;
         right: 0;
         width: auto;
-        transform: translateX(0px);
         height: fit-content;
         z-index: 1000;
     }
@@ -55,7 +55,6 @@
 
     &__inner {
         display: flex;
-        //gap: $size-4;
         align-items: $site-header-alignment;
         justify-content: $site-header-jusitifcation-small-screens;
 

@@ -6,6 +6,7 @@
     position: relative;
     height: 100%;
     width: 100%;
+    overflow-x: hidden;
 
     &__bg {
         grid-area: stack;
@@ -59,3 +60,7 @@
         }
     }
 }
+
+.gran-problema__content__header, .gran-problema__content__copy {
+    will-change: transform, opacity;
+  }

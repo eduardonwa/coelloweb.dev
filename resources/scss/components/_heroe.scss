@@ -1,6 +1,94 @@
 @use "../abstracts" as *;
 
 .heroe {
+    height: auto;
+    //margin-block-start: $size-13;
+
+    &__acerca {
+
+        .img-pilar-izq,
+        .img-pilar-der {
+            display: none;
+
+            @include mq(medium) {
+                display: block;
+                width: clamp(200px, 15vw, 267px);
+            }
+        }
+
+        .img-pilar-izq {
+            position: absolute;
+            top: 0;
+            left: 0;
+        }
+
+        .img-pilar-der {
+            position: absolute;
+            top: 0;
+            right: 0;
+        }
+
+        &__inner {
+            overflow: hidden;
+            position: relative;
+
+            &__content {
+                width: 300vw;
+                display: flex;
+                align-items: flex-start;
+
+                @include mq(medium) {
+                    margin-block-start: 0;
+                    align-items: center;
+                    height: 100vh;
+                }
+
+                section {
+                    width: 100vw;
+                }
+
+                #hero {
+                    @include mq(small) {
+                        margin-block-start: $size-15;
+                    }
+
+                    article {
+                        p {
+                            font-size: $font-size-600;
+
+                            @include mq(medium) {
+                                font-size: $font-size-700;
+                            }
+                        }
+                    }
+                }
+
+                #introAha {
+                    article {
+                        p {
+                            font-size: $font-size-600;
+                        }
+                    }
+                }
+
+                #declaracion {
+                    @include mq(small) {
+                        margin-block-start: $size-15;
+                    }
+                    article {
+                        p {
+                            font-size: $font-size-600;
+
+                            @include mq(medium) {
+                                font-size: $font-size-700;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+
     article {
         h1 {
             @include mq(small) {
@@ -10,13 +98,9 @@
                 font-size: $heroe-header-font-size;
             }
         }
+
         p {
-            @include mq(small) {
-                font-size: $heroe-subtitle-font-size;
-            }
-            @include mq(large) {
-                font-size: $font-size-600;
-            }
+            font-size: $font-size-600;
         }
     }
 }

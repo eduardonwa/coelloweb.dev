@@ -52,7 +52,7 @@
                         data-src="{{ $item['imagenUrl'] }}"
                         alt="{{ $item['encabezado'] }}"
                     >
-                    <h1>{{ $item['encabezado'] }}</h1>
+                    <h1 id="gp-trigger">{{ $item['encabezado'] }}</h1>
                 </header>
 
                 <article class="gran-problema__content__copy">
@@ -71,9 +71,8 @@
             <div class="container" data-type="wide">
                 <article class="porque-eduardo | even-columns">
                     <img
-                        class="lazy"
-                        src="{{ $item['lqip'] }}"
-                        data-src="{{ $item['imagenUrl'] }}"
+                        class="pq-eduardo-img lazy"
+                        src="{{ $item['imagenUrl'] }}"
                         alt="¿Por que Eduardo Coello?"
                     >
 
@@ -122,6 +121,7 @@
                     <!-- imagen -->
                     <article class="servicio-item__imagen">
                         <img
+                            class="servicio-img-anim"
                             src="{{ $item['imagenUrl'] }}"
                             alt="{{ $item['titulo'] }}"
                         >

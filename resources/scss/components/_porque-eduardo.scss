@@ -1,6 +1,7 @@
 @use "../abstracts" as *;
 
 .porque-eduardo {
+    overflow: hidden;
     img {
         @include mq(small) {
             margin: auto;

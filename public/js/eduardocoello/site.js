@@ -4,17 +4,36 @@ var lazyLoadInstance = new LazyLoad({
 });
 /* FIN lazyload.js */
 
-/* Navbar scroll */
-// cambiar el color de la navbar
-document.addEventListener("scroll", () => {
-    const siteHeader = document.querySelector(".site-header");
-    if (window.scrollY > 50) {
-      siteHeader.classList.add("scrolled");
-    } else {
-      siteHeader.classList.remove("scrolled");
+// Navbar Scroll y Border Radius
+document.addEventListener('DOMContentLoaded', () => {
+    const siteHeader = document.querySelector('.site-header');
+    let lastHeight = window.innerHeight;
+
+    function adjustCorners() {
+        const currentHeight = window.innerHeight;
+
+        if (window.matchMedia('(max-width: 767px)').matches) {
+            if (currentHeight > lastHeight) {
+                siteHeader.classList.add('estilo-esquina-abajo');
+            } else if (currentHeight < lastHeight) {
+                siteHeader.classList.remove('estilo-esquina-abajo');
+            }
+        }
+        lastHeight = currentHeight;
     }
+
+    window.addEventListener('resize', adjustCorners);
+    adjustCorners();
+
+    // Scroll
+    document.addEventListener("scroll", () => {
+        if (window.scrollY > 50) {
+            siteHeader.classList.add("scrolled");
+        } else {
+            siteHeader.classList.remove("scrolled");
+        }
+    });
 });
-/* FIN Navbar scroll */
 
 /* Marquesina */
 // infinite scroll para la marquesina
@@ -43,37 +62,6 @@ scrollers.forEach((scroller) => {
 });
 }
 /* FIN Marquesina */
-
-/* Navbar border radius */
-document.addEventListener('DOMContentLoaded', () => {
-    const siteHeader = document.querySelector('.site-header');
-    let lastHeight = window.innerHeight;
-
-    function adjustCorners() {
-        const currentHeight = window.innerHeight;
-
-        if (window.matchMedia('(max-width: 767px)').matches) {
-            // Desliz hacia abajo: aplica esquinas redondeadas adicionales
-            if (currentHeight > lastHeight) {
-                siteHeader.classList.add('estilo-esquina-abajo');
-            }
-            // Desliz hacia arriba: elimina esquinas adicionales
-            else if (currentHeight < lastHeight) {
-                siteHeader.classList.remove('estilo-esquina-abajo');
-            }
-        }
-
-        lastHeight = currentHeight;
-    }
-
-    // Escuchar el evento de cambio de tamaño
-    window.addEventListener('resize', adjustCorners);
-
-    // Ejecutar la función al cargar por primera vez
-    adjustCorners();
-    console.log(adjustCorners());
-});
-/* FIN Navbar border radius */
 
 /* Centrar imagenes dentro de un p con text-align:center */
 document.addEventListener('DOMContentLoaded', function() {
