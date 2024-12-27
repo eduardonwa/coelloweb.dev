@@ -84,7 +84,7 @@ servicioCopySections.forEach((servicioCopy) => {
         scrollTrigger: {
             trigger: servicioCopy,
             scrub: 1,
-            end: "+=600",
+            end: "+=500",
         }
     });
 });
@@ -104,7 +104,7 @@ servicioSections.forEach((servicioImg) => {
             trigger: servicioImg,
             scrub: 1,
             start: "top bottom",
-            end: "+=600",
+            end: "+=500",
         }
     });
 });
