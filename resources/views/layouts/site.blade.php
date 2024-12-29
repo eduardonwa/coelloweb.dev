@@ -9,12 +9,16 @@
     @livewireStyles
     <script src="https://cdnjs.cloudflare.com/ajax/libs/vanilla-lazyload/17.6.1/lazyload.min.js"></script>
     <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
+    <style>
+        .faded-bg {
+            background-color: #EDFFFE;
+        }
+    </style>
 </head>
-
     <body style="background: linear-gradient(to bottom, transparent 20%, #edfffe)">
         <x-navbar/>
 
-        <div style="background-color: #EDFFFE">
+        <div class="faded-bg">
             <main>
                 {{ $slot }}
             </main>

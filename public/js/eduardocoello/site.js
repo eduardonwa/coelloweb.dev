@@ -78,3 +78,12 @@ document.addEventListener('DOMContentLoaded', function() {
         }
     });
 });
+
+// quitar el fondo de terminos y privacidad
+const currentPage = window.location.pathname.replace(/\/$/, ""); // Remueve el slash final si existe.
+const removeBgFromPage = ["/terminos", "/privacidad"];
+const fadedClass = document.querySelector(".faded-bg");
+
+if (removeBgFromPage.includes(currentPage) && fadedClass) {
+    fadedClass.classList.remove("faded-bg");
+}
