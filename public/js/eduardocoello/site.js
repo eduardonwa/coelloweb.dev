@@ -25,7 +25,6 @@ document.addEventListener('DOMContentLoaded', () => {
     window.addEventListener('resize', adjustCorners);
     adjustCorners();
 
-    // Scroll
     document.addEventListener("scroll", () => {
         if (window.scrollY > 50) {
             siteHeader.classList.add("scrolled");

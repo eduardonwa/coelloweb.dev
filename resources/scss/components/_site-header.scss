@@ -88,7 +88,6 @@
         background: rgba(3, 3, 3, 0.568);
         box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2);
     }
-    // cuando se desliza hacia abajo
     &.estilo-esquina-abajo {
         border-radius: $border-radius-1 $border-radius-1 clamp(35px, 5vw, 44px) clamp(35px, 5vw, 44px);
     }

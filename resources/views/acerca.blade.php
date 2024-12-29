@@ -1,12 +1,12 @@
 <!-- incluir google script, meta title, meta description-->
 <x-site-layout>
     <!-- heroe -->
-    <section class="heroe | bg-seccion text-center">
-        <div class="heroe__acerca">
+    <section class="heroe | bg-seccion text-center test">
+        <div class="heroe__acerca"">
             <img class="img-pilar-izq" src="/images/acerca-pilar-izq.svg" alt="">
             <div class="heroe__acerca__inner">
-                <div class="heroe__acerca__inner__content">
-                    <section id="hero">
+                <div class="acerca-cards">
+                    <section class="hero-acerca">
                         @foreach ($queHaces as $item)
                             <article class="container flow">
                                 <h1 class="ff-display fs-800">{{ $item['encabezado'] }}</h1>
@@ -16,34 +16,32 @@
                             </article>
                         @endforeach
                     </section>
-
-                    <section id="introAha">
+                    <section class="intro-aha | flow" style="--flow-spacer: 1rem;">
                         @foreach ($introAha as $item)
-                            <div class="container">
-                                <div class="even-columns">
-                                    <img
-                                        class="m-auto lazy anim"
-                                        src="{{ $item['lqip'] }}"
-                                        data-src="{{ $item['imagenUrl'] }}"
-                                        alt="{{ $item['encabezado'] }}"
-                                    >
-                                    <article class="flow">
-                                        <h1 class="ff-display fs-700 anim">{{ $item['encabezado'] }}</h1>
-                                        @foreach ($item['descripcion'] as $descripcion)
-                                            <p class="anim">{!! $descripcion !!}</p>
-                                        @endforeach
-                                    </article>
-                                </div>
+                            <h1 class="ff-display fs-800 anim">{{ $item['encabezado'] }}</h1>
+                            <div class="aha-copy | container even-columns">
+                                <img
+                                    class="m-auto lazy anim"
+                                    src="{{ $item['lqip'] }}"
+                                    data-src="{{ $item['imagenUrl'] }}"
+                                    alt="{{ $item['encabezado'] }}"
+                                >
+                                <article>
+                                    @foreach ($item['descripcion'] as $descripcion)
+                                        <p class="aha-p">
+                                            {!! $descripcion !!}
+                                        </p>
+                                    @endforeach
+                                </article>
                             </div>
                         @endforeach
                     </section>
-
-                    <section id="declaracion">
+                    <section class="declaracion">
                         @foreach ($declaracionPoderosa as $item)
                             <article class="container flow">
                                 <h1 class="ff-display fs-700 text-center anim">{{ $item['encabezado'] }}</h1>
                                 @foreach ($item['descripcion'] as $descripcion)
-                                    <p class="padding-inline-3 anim">{!! $descripcion !!}</p>
+                                    <p class="anim">{!! $descripcion !!}</p>
                                 @endforeach
                             </article>
                         @endforeach
