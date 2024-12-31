@@ -9,8 +9,8 @@
     <meta property="og:image" content="{{ asset('images/ecoello-logo.png') }}">
     <meta property="og:image:secure_url" content="{{ asset('images/ecoello-logo.png') }}">
     <meta property="og:image:type" content="image/png">
-    <meta property="og:image:width" content="320">
-    <meta property="og:image:height" content="301">
+    <meta property="og:image:width" content="358">
+    <meta property="og:image:height" content="252">
     <meta property="og:type" content="website">
     <meta property="og:title" content="{{ $metaTitle ?? 'Eduardo Coello | Diseña tu web' }}">
     <meta name="author" content="Eduardo Coello">
