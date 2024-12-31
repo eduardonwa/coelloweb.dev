@@ -7,7 +7,7 @@
     <meta property="og:locale" content="es_ES">
     <meta property="og:site_name" content="Eduardo Coello | Diseño Web">
     <meta property="og:image:secure_url" content="{{ asset('images/eduardocoello-foto.png') }}">
-    <meta property="og:image:type" content="image/webp">
+    <meta property="og:image:type" content="image/png">
     <meta property="og:image:width" content="320">
     <meta property="og:image:height" content="301">
     <meta charset="UTF-8">
