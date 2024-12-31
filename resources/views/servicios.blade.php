@@ -1,5 +1,5 @@
 <!-- incluir google script, meta title, meta description-->
-<x-site-layout>
+<x-site-layout :metaTitle="'Eduardo Coello | Servicios'">
     <!-- que haces -->
     <section class="heroe | bg-seccion section text-center">
         @foreach ($queHaces as $item)

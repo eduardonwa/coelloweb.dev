@@ -1,5 +1,5 @@
 <!-- incluir google script, meta title, meta description-->
-<x-site-layout>
+<x-site-layout :metaTitle="'Eduardo Coello | Acerca'">
     <!-- heroe -->
     <section class="heroe | bg-seccion text-center test">
         <div class="heroe__acerca"">

@@ -11,7 +11,7 @@ class SiteLayout extends Component
     /**
      * Create a new component instance.
      */
-    public function __construct()
+    public function __construct(public ?string $metaTitle = null, public ?string $metaDescription = null, public ?string $metaThumbnail = null)
     {
         //
     }

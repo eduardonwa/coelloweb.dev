@@ -20,7 +20,7 @@
         <meta name="description" content="{{ $metaDescription }}">
         <meta name="msvalidate.01" content="64EB583AF6E921E1270E6F29A784A037" />
         <meta name="google-adsense-account" content="ca-pub-5338710529457277">
-        <title>{{ $metaTitle ?? 'Eduardo Coello' }}</title>
+        <title>{{ $metaTitle ?? 'Eduardo Coello | Blog' }}</title>
         <!-- Scripts -->
         @vite(['resources/js/app.js'])
         @livewireStyles

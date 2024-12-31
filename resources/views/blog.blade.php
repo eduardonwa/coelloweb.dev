@@ -1,4 +1,4 @@
-<x-blog-layout meta-description="¿Aún no tienes tu página web? ¡Yo te ayudo! Hablemos de ideas.">
+<x-blog-layout metaDescription="Eduardo Coello | Blog Diseño Web">
     <!-- ultimos 3 posts -->
     <section
         class="blog-featured | container padding-block-start-10"
