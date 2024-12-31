@@ -13,6 +13,7 @@
     <meta property="og:image:height" content="301">
     <meta property="og:type" content="website">
     <meta property="og:title" content="{{ $metaTitle ?? 'Eduardo Coello | Diseña tu web' }}">
+    <meta name="author" content="Eduardo Coello">
     <title>{{ $metaTitle ?? 'Eduardo Coello - Diseña tu web' }}</title>
     @vite(['resources/js/app.js', 'resources/js/animaciones.js'])
     @livewireStyles
