@@ -1,4 +1,4 @@
-<x-site-layout metaDescription="Eduardo Coello | Desarrollo y diseño de páginas web">
+<x-site-layout metaDescription="Enfocado en las personas, para que tu sitio web te encante a ti y a tus clientes.">
     <!-- seccion de impacto/heroe -->
     @foreach($impacto as $item)
         <section class="hero | bg-seccion hero__top-space">
