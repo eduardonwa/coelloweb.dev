@@ -49,13 +49,15 @@
     aria-labelledby="carousel-label"
     class="proceso"
 >
-    <h1 class="proceso__encabezado | uppercase ff-wide clr-neutral-100">El proceso</h1>
+    <h1 class="proceso__encabezado | uppercase ff-wide clr-neutral-100">
+        El proceso
+    </h1>
     <!-- prev, next btns -->
     <div class="proceso__nav-btns | flex-group">
-        <button @click="prev">
+        <button aria-label="previous" @click="prev">
             <img src="images/chevron-left.svg" aria-hidden="true"/>
         </button>
-        <button @click="next">
+        <button aria-label="next" @click="next">
             <img src="images/chevron-right.svg" aria-hidden="true"/>
         </button>
     </div>

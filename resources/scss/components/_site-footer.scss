@@ -3,10 +3,12 @@
 .site-footer {
   background-color: $footer-background-color;
   color: $footer-text-color;
+
     @include mq(small) {
         margin-block-end: $size-15;
         font-size: $size-5;
     }
+
     @include mq(medium) {
         margin-block-end: $size-3;
         font-size: $size-4;
@@ -17,31 +19,32 @@
         padding: $size-9;
     }
     @include mq(large) {
-        padding-inline: $size-15;
+        padding-inline: $size-12;
     }
 
     .listas {
-        ul {
-            @include mq(small) {
-                padding-block-start: $size-6;
+
+        &__item {
+            h2 {
+                color: $color-neutral-300;
+                font-size: $font-size-600;
             }
-            @include mq(large) {
-                padding-block-start: $size-10;
-            }
-            li {
-                line-height: 2;
-                list-style: none;
-                font-size: $font-size-500;
+
+            ul {
                 @include mq(large) {
-                    padding-block-end: $size-2;
+                    padding-block-start: $size-5;
+                }
+
+                li {
+                    line-height: 2;
+                    list-style: none;
+                    font-size: $font-size-500;
+
+                    @include mq(large) {
+                        padding-block-end: $size-2;
+                    }
                 }
             }
-        }
-
-        h2 {
-            padding-block-end: $size-3;
-            color: $color-neutral-300;
-            font-size: $font-size-600;
         }
     }
   }
@@ -58,7 +61,7 @@
     @include mq(medium) {
         gap: $size-7;
         justify-content: flex-start;
-        padding-inline: $size-15;
+        padding-inline: $size-12;
     }
   }
 

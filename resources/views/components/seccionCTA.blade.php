@@ -13,10 +13,10 @@
             <h1 class="ff-display">{{ $item['encabezado'] }}</h1>
             @if(isset($item['subtitulo']) && is_array($item['subtitulo']))
                 @foreach ($item['subtitulo'] as $subtitulo)
-                    <p class="subtitulo">{!! $subtitulo !!}</p>
+                    <h2 class="subtitulo">{!! $subtitulo !!}</h2>
                 @endforeach
             @endif
-            
+
             <a
                 href="{{ $item['enlaceCTA'] }}"
                 class="button"

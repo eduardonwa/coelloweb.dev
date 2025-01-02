@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="description" content="{{ $metaDescription ?? 'Diseño web enfocado en las personas. Para que tu sitio web te encante a ti, y a los tuyos.' }}">
     <!-- open graph -->
     <meta property="og:url" content="{{ url()->current() }}">
     <meta property="og:site_name" content="Eduardo Coello | Diseño Web">

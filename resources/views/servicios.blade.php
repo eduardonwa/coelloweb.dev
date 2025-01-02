@@ -22,7 +22,7 @@
 
             <article class="objeciones__copy | container">
                 @foreach ($item['subtitulo'] as $subtitulo)
-                    <p class="text-center">{!! $subtitulo !!}</p>
+                    <h2 class="text-center">{!! $subtitulo !!}</h2>
                 @endforeach
             </article>
 
@@ -195,7 +195,7 @@
 
     <!-- seccion CTA -->
     <section class="seccion-cta | text-center section" data-type="servicios">
-        <img class="seccion-cta__bg" src="/images/cta-bg.svg">
+        <img class="seccion-cta__bg" src="/images/cta-bg.svg" alt="fondo de imagen">
         <div class="seccion-cta__content | container" data-type="narrow">
             <x-seccionCTA
                 :cta="$serviciosCTA"

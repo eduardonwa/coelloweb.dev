@@ -9,37 +9,42 @@
 
         <div class="listas | even-columns">
             <!-- info -->
-            <ul>
+            <div class="listas__item">
                 <h2 class="fw-bold uppercase">info</h2>
-                <li>
-                    <a href="{{ route('acerca') }}">Acerca</a>
-                </li>
-                <li>
-                    <a href="{{ route('servicios') }}">Servicios</a>
-                </li>
-                <li>
-                    <a href="{{ route('contacto') }}">Contacto</a>
-                </li>
-            </ul>
+                <ul>
+                    <li>
+                        <a href="{{ route('acerca') }}">Acerca</a>
+                    </li>
+                    <li>
+                        <a href="{{ route('servicios') }}">Servicios</a>
+                    </li>
+                    <li>
+                        <a href="{{ route('contacto') }}">Contacto</a>
+                    </li>
+                </ul>
+            </div>
 
             <!-- links -->
-            <ul>
+            <div class="listas__item">
                 <h2 class="fw-bold uppercase">links</h2>
-                <li>
-                    <a href="{{ route('welcome') }}">
-                        Inicio
-                    </a>
-                </li>
-                <li>
-                    <a href="{{ route('blog.index') }}">
-                        Blog
-                    </a>
-                </li>
-            </ul>
+                <ul>
+                    <li>
+                        <a href="{{ route('welcome') }}">
+                            Inicio
+                        </a>
+                    </li>
+                    <li>
+                        <a href="{{ route('blog.index') }}">
+                            Blog
+                        </a>
+                    </li>
+                </ul>
+            </div>
 
             <!-- legal -->
-            <ul>
+            <div class="listas__item">
                 <h2 class="fw-bold uppercase">LEGAL</h2>
+                <ul>
                     <li>
                         <a href="{{ route('privacidad') }}">
                             Privacidad
@@ -50,7 +55,8 @@
                             Términos
                         </a>
                     </li>
-            </ul>
+                </ul>
+            </div>
         </div>
     </section>
 

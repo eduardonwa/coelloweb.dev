@@ -5,37 +5,36 @@
 
                 <a class="site-header__logo" href="{{ route('welcome') }}">
                     <img class="site-header__logo__wordmark" src="/images/ecoello-logo.svg" alt="">
-                    {{-- <img class="site-header__logo__icon" src="/images/ecoello-icon.svg" alt=""> --}}
                 </a>
 
                 <nav aria-label="primary navigation">
                     <ul class="nav | flex-group">
                         <li>
-                            <a href="{{ route('welcome') }}">
+                            <a href="{{ route('welcome') }}" aria-label="Ir al inicio">
                                 <span>Inicio</span>
                                 <img src="/images/navbar-home-icon.svg" alt="">
                             </a>
                         </li>
                         <li>
-                            <a href="{{ route('acerca') }}">
+                            <a href="{{ route('acerca') }}" aria-label="Más acerca de mi">
                                 <span>Acerca</span>
                                 <img src="/images/navbar-acerca-icon.svg" alt="">
                             </a>
                         </li>
                         <li>
-                            <a href="{{ route('servicios') }}">
+                            <a href="{{ route('servicios') }}" aria-label="Checa mis servicios">
                                 <span>Servicios</span>
                                 <img src="/images/navbar-servicios-icon.svg" alt="">
                             </a>
                         </li>
                         <li>
-                            <a href="{{ route('blog.index') }}">
+                            <a href="{{ route('blog.index') }}" aria-label="Navega mi blog">
                                 <span>Blog</span>
                                 <img src="/images/navbar-blog-icon.svg" alt="">
                             </a>
                         </li>
                         <li>
-                            <a href="{{ route('contacto') }}">
+                            <a href="{{ route('contacto') }}" aria-label="¿Listo? Contáctame para crear tu web">
                                 <span>Contacto</span>
                                 <img src="/images/navbar-contacto-icon.svg" alt="">
                             </a>

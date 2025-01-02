@@ -10,7 +10,7 @@
                         </h1>
 
                         @foreach ($item['subtitulo'] as $sub)
-                            <p class="hero__subtitulo">{!! $sub !!}</p>
+                            <h2 class="hero__subtitulo">{!! $sub !!}</h2>
                         @endforeach
 
                         <a
@@ -27,7 +27,11 @@
                     </div>
 
                     <article class="hero__image-wrap">
-                        <img class="hero__image-wrap__bg" src="/images/espiral-heroe.svg" />
+                        <img
+                            class="hero__image-wrap__bg"
+                            src="/images/espiral-heroe.svg"
+                            alt="fondo de imagen"
+                        />
                         <img
                             class="hero__image-wrap__impacto lazy"
                             src="{{ $item['lqip'] }}"
@@ -43,7 +47,7 @@
     <!-- el gran problema -->
     @foreach ($granProblema as $item)
         <section class="gran-problema | padding-block-15 padding-inline-5">
-            <img class="gran-problema__bg" src="/images/bg-problema.svg">
+            <img class="gran-problema__bg" src="/images/bg-problema.svg" alt="fondo de imagen">
             <div class="gran-problema__content | container even-columns" data-type="wide">
                 <header class="gran-problema__content__header">
                     <img
@@ -56,7 +60,7 @@
                 </header>
 
                 <article class="gran-problema__content__copy">
-                    <h1>{{ $item['subtitulo'] }}</h1>
+                    <h2>{{ $item['subtitulo'] }}</h2>
                     @foreach($item['descripcion'] as $descripcion)
                         <p>{!! $descripcion !!}</p>
                     @endforeach
@@ -169,7 +173,7 @@
         <div class="container" data-type="wide">
             <header class="blog-welcome__header | text-center">
                 <h1 class="ff-wide">Visita mi blog</h1>
-                <p class="fs-600">¡Comparto contenido cada semana!</p>
+                <h2 class="fs-600">¡Comparto contenido cada semana!</h2>
             </header>
 
             <article class="blog-welcome__posts | padding-block-end-0 padding-inline-13">
@@ -193,7 +197,7 @@
                         </div>
 
                         <div class="post-details">
-                            <span class="uppercase">{{ $item->category->name }}</span>
+                            <h2 class="uppercase">{{ $item->category->name }}</h2>
                             <h1 class="ff-medium">{{ $item->title }}</h1>
                         </div>
                     </a>
@@ -204,7 +208,7 @@
 
     <!-- seccion CTA -->
     <section class="seccion-cta | section padding-inline-5" data-type="principal">
-        <img class="seccion-cta__bg" src="/images/cta-bg.svg">
+        <img class="seccion-cta__bg" src="/images/cta-bg.svg" alt="fondo de imagen">
         <article class="seccion-cta__content | text-center">
             <x-seccionCTA
                 :cta="$principalCTA"

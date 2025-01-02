@@ -16,6 +16,7 @@
                             </article>
                         @endforeach
                     </section>
+
                     <section class="intro-aha | flow" style="--flow-spacer: 1rem;">
                         @foreach ($introAha as $item)
                             <h1 class="ff-display fs-800 anim">{{ $item['encabezado'] }}</h1>
@@ -36,6 +37,7 @@
                             </div>
                         @endforeach
                     </section>
+
                     <section class="declaracion">
                         @foreach ($declaracionPoderosa as $item)
                             <article class="container flow">
@@ -93,7 +95,7 @@
 
     <!-- zona cta -->
     <section class="seccion-cta | section padding-inline-5" data-type="acerca">
-        <img class="seccion-cta__bg" src="/images/cta-bg.svg">
+        <img class="seccion-cta__bg" src="/images/cta-bg.svg" alt="fondo de imagen">
 
         <article class="seccion-cta__content | text-center">
             <div class="container" data-type="narrow">
