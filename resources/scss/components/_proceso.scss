@@ -123,9 +123,14 @@
             }
 
             img {
+                border-radius: $border-radius-1;
+                min-width: 300px;
+                max-width: 610px;
+                width: 100%;
+                aspect-ratio: 16 / 9;
+                object-fit: cover;
                 @include mq(xlarge) {
-                    padding-right: 0;
-                    padding-top: 0;
+                    padding: 0;
                 }
             }
         }

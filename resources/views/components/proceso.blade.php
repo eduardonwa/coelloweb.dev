@@ -77,7 +77,7 @@
                 <img
                     src="{{ $item['imagenUrl'] }}"
                     alt="{{ $item['encabezado'] }}"
-                    class="padding-5 mx-auto"
+                    class="mx-auto"
                 >
                 <div class="paso-a-seguir">
                     <h1 class="uppercase ff-display fs-700">{{ $item['encabezado'] }}</h1>

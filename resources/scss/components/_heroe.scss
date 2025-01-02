@@ -70,14 +70,13 @@
                             transform: translateX(-50%);
                             z-index: 1;
                             width: auto;
-                            max-width: 100%;
+                            max-width: 80%;
 
                             @include mq(medium) {
                                 position: relative;
                                 top: auto;
                                 left: auto;
                                 transform: translateX(0);
-                                width: 80%;
                             }
                         }
 
@@ -104,12 +103,15 @@
                         .aha-p {
                             position: absolute;
                             width: 100%;
+                            top: -40px;
 
                             @include mq(medium) {
                                 display: flex;
                                 justify-content: center;
                                 align-items: center;
                                 padding-right: $size-4;
+                                top: 0;
+                                bottom: 0;
                             }
                         }
                     }
