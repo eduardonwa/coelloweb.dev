@@ -80,6 +80,7 @@
                     src="{{ $item['imagenUrl'] }}"
                     alt="{{ $item['encabezado'] }}"
                     class="mx-auto"
+                    loading="lazy"
                 >
                 <div class="paso-a-seguir">
                     <h1 class="uppercase ff-display fs-700">{{ $item['encabezado'] }}</h1>

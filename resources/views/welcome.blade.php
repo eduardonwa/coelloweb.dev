@@ -152,6 +152,7 @@
                     <img
                         src="{{ $item['logoUrl'] }}"
                         alt="{{ $item['nombreEmpresa'] }} logo"
+                        loading="lazy"
                     />
                 </article>
 
@@ -182,7 +183,6 @@
                     <a href="{{ route('posts.show', $item->slug) }}">
                         <div class="img-wrap">
                             <img
-                                fetchpriority="high"
                                 width="640"
                                 height="640"
                                 src="{{ $item->getFirstMediaUrl('thumbnails', 'medium') }}"  {{-- La imagen de tamaño medio como fallback --}}
@@ -193,7 +193,8 @@
                                     {{ $item->getFirstMedia('thumbnails')->getUrl('extra-large') }} 1920w
                                 "
                                 alt="{{ $item->title }}"
-                                class="border-radius-1"
+                                class="border-radius-1 lazy"
+                                loading="lazy"
                             >
                         </div>
 
