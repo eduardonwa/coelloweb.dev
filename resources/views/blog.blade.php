@@ -25,6 +25,7 @@
                                 "
                                 alt="{{ $left->title }}"
                                 loading="lazy"
+                                class="lazy"
                             >
 
                             <div class="izquierda__inner__detalles">

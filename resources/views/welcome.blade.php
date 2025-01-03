@@ -125,6 +125,7 @@
                     <!-- imagen -->
                     <article class="servicio-item__imagen">
                         <img
+                            loading="lazy"
                             class="servicio-img-anim lazy"
                             src="{{ $item['imagenUrl'] }}"
                             alt="{{ $item['titulo'] }}"
