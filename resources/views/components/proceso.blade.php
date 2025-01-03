@@ -65,7 +65,7 @@
     <ul
         tabindex="0"
         role="listbox"
-        aria-labelledby="carousel-content-label"
+        aria-labelledby="carousel-label"
         class="proceso__inner container" data-type="full-bleed"
         style="overflow-x: hidden"
         x-ref="slider"

@@ -24,7 +24,8 @@
                                     {{ $left->getFirstMedia('thumbnails')->getUrl('extra-large') }} 1920w
                                 "
                                 alt="{{ $left->title }}"
-                                >
+                                loading="lazy"
+                            >
 
                             <div class="izquierda__inner__detalles">
                                 <h2>{{ $left->category->name }}</h2>

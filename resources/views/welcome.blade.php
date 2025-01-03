@@ -119,13 +119,13 @@
                             data-type="info"
                         >
                             {{ $item['botonCTA']['textoCTA'] }}
-                            <img src="{{ $item['iconoCTA'] }}" alt="">
+                            <img src="{{ $item['iconoCTA'] }}" alt="este es un icono para el boton">
                         </a>
                     </article>
                     <!-- imagen -->
                     <article class="servicio-item__imagen">
                         <img
-                            class="servicio-img-anim"
+                            class="servicio-img-anim lazy"
                             src="{{ $item['imagenUrl'] }}"
                             alt="{{ $item['titulo'] }}"
                         >
@@ -208,7 +208,7 @@
 
     <!-- seccion CTA -->
     <section class="seccion-cta | section padding-inline-5" data-type="principal">
-        <img class="seccion-cta__bg" src="/images/cta-bg.svg" alt="fondo de imagen">
+        <img class="seccion-cta__bg" src="/images/cta-bg.svg">
         <article class="seccion-cta__content | text-center">
             <x-seccionCTA
                 :cta="$principalCTA"

@@ -20,9 +20,6 @@
     <!-- recursos vite -->
     @vite(['resources/js/app.js', 'resources/js/animaciones.js'])
     @livewireStyles
-    <!-- scripts externos -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/vanilla-lazyload/17.6.1/lazyload.min.js"></script>
-    <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
     <style>
         .faded-bg {
             background-color: #EDFFFE;
@@ -40,6 +37,8 @@
         </div>
 
         @livewireScripts
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/vanilla-lazyload/17.6.1/lazyload.min.js"></script>
+        <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
         <script src="/js/eduardocoello/site.js"></script>
     </body>
 </html>

@@ -3,6 +3,7 @@
         <article class="cta-inner__imagen">
             <img
                 class="lazy"
+                loading="lazy"
                 @if (isset($item['imagenUrl']))
                     <img src="{{ $item['imagenUrl'] }}" alt="Imagen" />
                 @else

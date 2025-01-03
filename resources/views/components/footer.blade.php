@@ -4,7 +4,7 @@
 >
     <section class="site-footer__content even-columns">
         <a href="{{ route('welcome') }}">
-            <img src="/images/ecoello-logo-footer.svg" alt="Inicio">
+            <img src="/images/ecoello-logo-footer.svg" alt="Inicio" loading="lazy">
         </a>
 
         <div class="listas | even-columns">

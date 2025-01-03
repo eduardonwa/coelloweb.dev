@@ -3,7 +3,7 @@
         <div class="container" data-type="full-bleed">
             <div class="site-header__inner | padding-block-2">
 
-                <a class="site-header__logo" href="{{ route('welcome') }}">
+                <a class="site-header__logo" href="{{ route('welcome') }}" aria-label="Ir al inicio">
                     <img class="site-header__logo__wordmark" src="/images/ecoello-logo.svg" alt="">
                 </a>
 
