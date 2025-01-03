@@ -195,7 +195,7 @@
 
     <!-- seccion CTA -->
     <section class="seccion-cta | text-center section" data-type="servicios">
-        <img class="seccion-cta__bg" src="/images/cta-bg.svg" alt="">
+        <img class="seccion-cta__bg" src="/images/cta-bg.svg" loading="lazy" alt="">
         <div class="seccion-cta__content | container" data-type="narrow">
             <x-seccionCTA
                 :cta="$serviciosCTA"

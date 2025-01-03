@@ -95,7 +95,7 @@
 
     <!-- zona cta -->
     <section class="seccion-cta | section padding-inline-5" data-type="acerca">
-        <img class="seccion-cta__bg" src="/images/cta-bg.svg" alt="">
+        <img class="seccion-cta__bg" src="/images/cta-bg.svg" loading="lazy" alt="">
 
         <article class="seccion-cta__content | text-center">
             <div class="container" data-type="narrow">

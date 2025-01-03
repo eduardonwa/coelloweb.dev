@@ -53,7 +53,8 @@
                                     {{ $last->getFirstMedia('thumbnails')->getUrl('extra-large') }} 1920w
                                 "
                                 alt="{{ $last->title }}"
-                                class="img-grande"
+                                class="img-grande lazy"
+                                loading="lazy"
                             >
                             <div class="derecha__inner__detalles">
                                 <h2>{{ $left->category->name }}</h2>
