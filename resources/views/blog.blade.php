@@ -15,7 +15,6 @@
                     >
                         <section class="izquierda__inner__img">
                             <img
-                                fetchpriority="high"
                                 src="{{ $left->getFirstMediaUrl('thumbnails', 'medium') }}"
                                 srcset="
                                     {{ $left->getFirstMedia('thumbnails')->getUrl('small') }} 320w,
