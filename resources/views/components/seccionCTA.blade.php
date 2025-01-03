@@ -4,8 +4,9 @@
             <img
                 class="lazy"
                 loading="lazy"
+                alt=""
                 @if (isset($item['imagenUrl']))
-                    src="{{ $item['imagenUrl'] }}" alt="Imagen" />
+                    src="{{ $item['imagenUrl'] }}" alt="" />
                 @else
                 @endif
         </article>
