@@ -29,7 +29,7 @@
         <script src="https://cdn.jsdelivr.net/npm/vanilla-lazyload@17.3.1/dist/lazyload.min.js"></script>
     </head>
 
-    <body class="antialiased">
+    <body class="antialiased" id="content" style="opacity: 0; transition: opacity 0.3s ease;">
         <!-- Google tag (gtag.js) -->
         <script async src="https://www.googletagmanager.com/gtag/js?id=G-MPL9EF0DLQ"></script>
         <script>
@@ -55,5 +55,14 @@
 
         @livewireScripts
         <script src="/js/eduardocoello/site.js"></script>
+        <script>
+            window.addEventListener('load', () => {
+                // Cambia el fondo
+                document.body.style.background = 'linear-gradient(to bottom, transparent 20%, #edfffe)';
+
+                // Muestra el contenido
+                document.getElementById('content').style.opacity = 1;
+            });
+        </script>
     </body>
 </html>
