@@ -15,11 +15,20 @@
     <meta property="og:image:width" content="358">
     <meta property="og:image:height" content="252">
     <meta property="og:type" content="website">
+    <!-- preload de fuentes -->
+    <link rel="preload" href="/fonts/chaney-ultraextended.woff2" as="font" type="font/woff2" crossorigin>
+    <link rel="preload" href="/fonts/chaney-wide.woff2" as="font" type="font/woff2" crossorigin>
+    <link rel="preload" href="/fonts/chaney-regular.woff2" as="font" type="font/woff2" crossorigin>
+    <link rel="preload" href="/fonts/nudica-medium.woff2" as="font" type="font/woff2" crossorigin>
+    <link rel="preload" href="/fonts/nudica-regular.woff2" as="font" type="font/woff2" crossorigin>
     <!-- titulo -->
     <title>{{ $metaTitle ?? 'Eduardo Coello - Diseña tu web' }}</title>
     <!-- recursos vite -->
     @vite(['resources/js/app.js', 'resources/js/animaciones.js'])
     @livewireStyles
+    <!-- scripts externos -->
+    <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js" async></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/vanilla-lazyload/17.6.1/lazyload.min.js" defer></script>
     <style>
         .faded-bg {
             background-color: #EDFFFE;
@@ -37,8 +46,6 @@
         </div>
 
         @livewireScripts
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/vanilla-lazyload/17.6.1/lazyload.min.js"></script>
-        <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
         <script src="/js/eduardocoello/site.js"></script>
     </body>
 </html>

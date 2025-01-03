@@ -46,7 +46,7 @@
     @touchend="handleSwipe($event)"
     tabindex="0"
     role="region"
-    aria-labelledby="carousel-label"
+    aria-labelledby="el proceso"
     class="proceso"
 >
     <h1 class="proceso__encabezado | uppercase ff-wide clr-neutral-100">
@@ -65,7 +65,7 @@
     <ul
         tabindex="0"
         role="listbox"
-        aria-labelledby="carousel-label"
+        aria-labelledby="el proceso"
         class="proceso__inner container" data-type="full-bleed"
         style="overflow-x: hidden"
         x-ref="slider"

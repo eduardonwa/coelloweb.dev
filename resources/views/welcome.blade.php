@@ -30,7 +30,7 @@
                         <img
                             class="hero__image-wrap__bg"
                             src="/images/espiral-heroe.svg"
-                            alt="fondo de imagen"
+                            alt=""
                         />
                         <img
                             class="hero__image-wrap__impacto lazy"
@@ -47,7 +47,7 @@
     <!-- el gran problema -->
     @foreach ($granProblema as $item)
         <section class="gran-problema | padding-block-15 padding-inline-5">
-            <img class="gran-problema__bg" src="/images/bg-problema.svg" alt="fondo de imagen">
+            <img class="gran-problema__bg" src="/images/bg-problema.svg" alt="">
             <div class="gran-problema__content | container even-columns" data-type="wide">
                 <header class="gran-problema__content__header">
                     <img
@@ -208,7 +208,7 @@
 
     <!-- seccion CTA -->
     <section class="seccion-cta | section padding-inline-5" data-type="principal">
-        <img class="seccion-cta__bg" src="/images/cta-bg.svg">
+        <img class="seccion-cta__bg" src="/images/cta-bg.svg" alt="">
         <article class="seccion-cta__content | text-center">
             <x-seccionCTA
                 :cta="$principalCTA"

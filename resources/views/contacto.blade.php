@@ -71,7 +71,7 @@
 
     <!-- cta -->
     <section class="seccion-cta | padding-inline-5" data-type="contacto">
-        <img class="seccion-cta__bg" src="/images/cta-bg.svg" alt="fondo de imagen">
+        <img class="seccion-cta__bg" src="/images/cta-bg.svg" alt="">
         <article class="seccion-cta__content | margin-block-end-12">
             <div class="container">
                 <x-seccionCTA
