@@ -6,7 +6,7 @@
 
         <!-- social links -->
         <article class="blog-conecta__links">
-            <a href="https://instagram.com/coelloweb">
+            <a href="https://instagram.com/eduardocoelloweb">
                 <img
                     width="40"
                     height="40"

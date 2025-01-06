@@ -63,7 +63,7 @@
     <hr class="mx-auto color-neutral-000">
 
     <section class="site-footer__redes">
-        <a href="https://instagram.com/coelloweb">
+        <a href="https://instagram.com/eduardocoelloweb">
             <img
                 width="34"
                 height="34"
