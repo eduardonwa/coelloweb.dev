@@ -28,11 +28,13 @@
     <!-- 3 agitación -->
     @if ($secciones['agitacion'] ?? false)
         <section class="section">
-            <article class="agitacion | container">
-                <h1>{{ $secciones['agitacion']['titulo'] }}</h1>
-                @foreach ($secciones['agitacion']['descripcion'] as $descripcion)
-                    <p>{!! $descripcion !!}</p>
-                @endforeach
+            <article class="container">
+                <div class="agitacion">
+                    <h1>{{ $secciones['agitacion']['titulo'] }}</h1>
+                    @foreach ($secciones['agitacion']['descripcion'] as $descripcion)
+                        <p>{!! $descripcion !!}</p>
+                    @endforeach
+                </div>
             </article>
         </section>
     @endif
