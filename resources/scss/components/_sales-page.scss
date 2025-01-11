@@ -79,7 +79,7 @@
 
 @mixin seccion-cta {
     @include pad-responsivo($size-3, 0);
-    
+
     h1 {
         font-size: $font-size-700;
         margin-block-end: $size-8;
@@ -351,6 +351,7 @@
 }
 
 .que-incluye {
+
     @include pad-responsivo($size-3, 0);
 
     h1 {
@@ -387,7 +388,7 @@
         font-size: $font-size-700;
 
         @include mq(large) {
-            width: 70ch;
+            width: 50ch;
             margin: auto;
         }
     }
@@ -456,6 +457,10 @@
     }
 
     &__inner {
+        @include mq(large) {
+            width: 60ch;
+        }
+
         h1 {
             font-size: $font-size-700;
             text-align: center;
@@ -505,12 +510,17 @@
         }
 
         &__descripciones {
+
             @include mq(medium) {
                 flex: 1;
             }
 
             p {
                 font-size: $font-size-600;
+
+                @include mq(large) {
+                    width: 45ch;
+                }
             }
         }
     }
@@ -523,6 +533,9 @@
             padding-block-start: $size-10;
             width: 50ch;
             margin: auto;
+        }
+        @include mq(large) {
+            width: 45ch;
         }
     }
 }
