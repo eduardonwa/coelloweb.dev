@@ -1,6 +1,6 @@
 <?php
 
-namespace App\Http\Controllers;
+namespace App\Http\Controllers\Servicios;
 
 use App\Facades\Sanity;
 use App\GroqQueries\Proceso;
@@ -10,6 +10,7 @@ use Illuminate\Http\Request;
 use App\GroqQueries\Servicios;
 use App\Helpers\SanityHelpers;
 use App\GroqQueries\Testimonios;
+use App\Http\Controllers\Controller;
 use App\GroqQueries\EduardoServicios;
 use Illuminate\Support\Facades\Cache;
 
@@ -35,7 +36,7 @@ class ServiciosController extends Controller
         });
     }
 
-    public function show()
+    public function index()
     {
         $serviciosCached = $this->getServiciosCached();
         $eduardoServiciosData = $serviciosCached['eduardoServicios'][0];
@@ -178,7 +179,7 @@ class ServiciosController extends Controller
             ];
         });
 
-        return view('servicios', [
+        return view('servicios.index', [
             'queHaces' => $queHaces,
             'objeciones' => $objeciones,
             'valores' => $valores,

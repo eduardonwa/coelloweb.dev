@@ -34,40 +34,7 @@
         </div>
     </section>
 
-    <div class="container">
-        <div class="margin-block-14">
-            <h1 class="ff-display fs-700 text-center">¿Tienes Preguntas?</h1>
-            <div
-                class="preguntas | container flow"
-                data-type=""
-                x-data="{ openIndex: null }"
-            >
-                @foreach($preguntas as $index => $item)
-                    <div
-                        class="preguntas__pregunta"
-                        role="region"
-                    >
-                        <button class="pregunta-button" @click="openIndex = (openIndex === {{ $index }} ? null : {{ $index }})"                        >
-                            {{ $item['pregunta'] }}
-                        </button>
-
-                        <div
-                            class="preguntas__respuesta"
-                            x-show="openIndex === {{ $index }}"
-                            x-transition.duration.300ms
-                        >
-                            @foreach ($item['respuesta'] as $respuesta)
-                                <p class="fs-500">{!! $respuesta !!}</p>
-                            @endforeach
-                        </div>
-                    </div>
-                @endforeach
-                {{-- <a href="{{ route('preguntas') }}" class="button test" data-type="preguntas">
-                    Tengo más preguntas
-                </a> --}}
-            </div>
-        </div>
-    </div>
+    <x-preguntas :preguntas="$preguntas"></x-preguntas>
 
     <!-- cta -->
     <section class="seccion-cta | padding-inline-5" data-type="contacto">

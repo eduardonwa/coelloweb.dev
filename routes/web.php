@@ -9,7 +9,10 @@ use App\Http\Controllers\AcercaController;
 use App\Http\Controllers\WelcomeController;
 use App\Http\Controllers\CategoryController;
 use App\Http\Controllers\ContactoController;
-use App\Http\Controllers\ServiciosController;
+use App\Http\Controllers\Servicios\EcommerceController;
+use App\Http\Controllers\Servicios\ServiciosController;
+use App\Http\Controllers\Servicios\CorporativaController;
+use App\Http\Controllers\Servicios\LandingPageController;
 
 Route::view('privacidad', 'privacidad')->name('privacidad');
 Route::view('terminos', 'terminos')->name('terminos');
@@ -20,7 +23,13 @@ Route::get('acerca', [AcercaController::class, 'show'])->name('acerca');
 Route::get('contacto', [ContactoController::class, 'show'])->name('contacto');
 Route::get('contactoForm', MainContactForm::class)->name('contactoForm');
 Route::get('gracias', [GhostController::class, 'gracias'])->name('gracias');
-Route::get('servicios', [ServiciosController::class, 'show'])->name('servicios');
+
+Route::prefix('servicios')->group(function () {
+    Route::get('/', [ServiciosController::class, 'index'])->name('servicios.index');
+    Route::get('landing-page', [LandingPageController::class, 'show'])->name('servicios.landing-page');
+    Route::get('ecommerce', [EcommerceController::class, 'show'])->name('servicios.ecommerce');
+    Route::get('corporativa', [CorporativaController::class, 'show'])->name('servicios.corporativa');
+});
 
 Route::get('blog', [BlogController::class, 'index'])->name('blog.index');
 Route::get('posts/{post:slug}', [PostController::class, 'show'])->name('posts.show');

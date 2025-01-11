@@ -1,0 +1,504 @@
+@use '../abstracts/' as *;
+
+@mixin bloque-listas ($img-width: 25px, $img-height: 25px) {
+    header {
+        padding-block-end: $size-10;
+
+        h1 {
+            font-size: $font-size-700;
+            @include mq(medium) {
+                font-size: $font-size-800;
+            }
+        }
+    }
+
+    &__lista {
+        @include mq(large) {
+            width: 70ch;
+            margin: auto;
+        }
+        &__item {
+            display: flex;
+            margin-block-end: $size-11;
+
+            img {
+                width: $img-width;
+                height: $img-height;
+
+                @include mq(medium) {
+                    align-self: center;
+                }
+            }
+
+            &__inner {
+                padding-left: $size-4;
+
+                h3 {
+                    font-family: $font-family-medium;
+                    font-size: $font-size-500;
+                    @include mq(medium) {
+                        font-size: $font-size-600;
+                    }
+                }
+
+                p {
+                    font-size: $font-size-500;
+                }
+            }
+        }
+    }
+}
+
+@mixin testimonio {
+    &__texto {
+        @include mq(medium) {
+            width: 70ch;
+            margin: auto;
+        }
+
+        h1 {
+            font-size: $font-size-600;
+        }
+
+        p {
+            font-size: $font-size-500;
+        }
+    }
+
+    img {
+        margin-top: $size-8;
+    }
+}
+
+@mixin seccion-cta {
+    h1 {
+        font-size: $font-size-700;
+        margin-block-end: $size-8;
+
+        @include mq(medium) {
+            font-size: $font-size-800;
+        }
+    }
+
+    p {
+        font-size: $font-size-500;
+        margin-block-end: $size-8;
+
+        @include mq(medium) {
+            font-size: $font-size-600;
+            width: 50ch;
+            margin: auto;
+        }
+
+        @include mq(large) {
+            width: 65ch;
+        }
+    }
+}
+
+.resultado-perfecto {
+    font-size: $font-size-500;
+
+    @include mq(medium) {
+        font-size: $font-size-600;
+    }
+
+    h1 {
+        padding-block-end: $size-4;
+    }
+}
+
+.agitacion {
+    font-size: $font-size-500;
+    margin-top: $size-8;
+
+    @include mq(medium) {
+        font-size: $font-size-600;
+        margin-top: $size-15;
+    }
+}
+
+.porque-esto {
+    &__copy {
+        @include mq(medium) {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
+        @include mq(large) {
+            width: 65ch;
+        }
+
+        h1 {
+            font-family: $font-family-medium;
+            font-size: $font-size-500;
+
+            @include mq(medium) {
+                font-size: $font-size-600;
+            }
+        }
+
+        p {
+            font-size: $font-size-500;
+        }
+    }
+}
+
+.intro-solucion {
+    h1 {
+        font-family: $font-family-medium;
+        font-size: $font-size-600;
+    }
+
+    p {
+        padding-block: $size-4;
+        font-size: $font-size-500;
+
+        @include mq(large) {
+            width: 65ch;
+            margin: auto;
+        }
+    }
+}
+
+.lo-que-necesitas {
+    @include bloque-listas;
+}
+
+.bondades {
+    header {
+        padding-block-end: $size-12;
+
+        h1 {
+            font-size: $font-size-700;
+
+            @include mq(medium) {
+                font-size: $font-size-800;
+            }
+        }
+
+        p {
+            font-size: $font-size-500;
+
+            @include mq(large) {
+                font-size: $font-size-600;
+            }
+        }
+    }
+
+    &__lista {
+        @include mq(large) {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: $size-10;
+        }
+
+        &__item {
+            margin-block-end: $size-11;
+
+            &__header {
+                display: flex;
+                align-items: center;
+
+                img {
+                    width: 40px;
+                }
+
+                h3 {
+                    padding-left: $size-6;
+                    font-family: $font-family-medium;
+                    font-size: $font-size-500;
+
+                    @include mq(large) {
+                        font-size: $font-size-600;
+                    }
+                }
+            }
+
+            &__copy {
+                font-size: $font-size-500;
+                padding-left: $size-11;
+            }
+        }
+    }
+}
+
+.como-funciona {
+    @include bloque-listas(
+        $img-width: 30px,
+        $img-height: 30px,
+    );
+}
+
+.testimonio-corto {
+    @include testimonio;
+}
+
+.testimonio-one {
+    @include testimonio;
+}
+
+.confianza {
+    header {
+        padding-block-end: $size-10;
+
+        h1 {
+            font-size: $font-size-700;
+            @include mq(large) {
+                padding-block-end: $size-4;
+                padding-left: $size-8;
+            }
+        }
+    }
+
+    &__lista {
+        column-gap: $size-4;
+
+        @include mq(medium) {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            grid-template-rows: auto 1fr;
+        }
+
+        @include mq(large) {
+            padding-inline: $size-10;
+            column-gap: $size-10;
+        }
+
+        @include mq(2xlarge) {
+            padding-inline: $size-15;
+        }
+
+        &__item {
+            margin-block-end: $size-11;
+
+            @include mq(medium) {
+                display: grid;
+            }
+
+            h3 {
+                font-size: $font-size-700;
+            }
+
+            p {
+                font-size: $font-size-500;
+
+                @include mq(medium) {
+                    height: 233px;
+                }
+
+                @include mq(large) {
+                    height: 200px;
+                }
+
+                @include mq(2xlarge) {
+                    height: 89px;
+                }
+            }
+        }
+    }
+}
+
+.unica-opcion {
+    h1 {
+        font-size: $font-size-700;
+        margin-block-end: $size-4;
+
+        @include mq(medium) {
+            font-size: $font-size-800;
+        }
+    }
+
+    p {
+        font-size: $font-size-500;
+        padding-block: $size-3;
+
+        @include mq(medium) {
+            width: 60ch;
+            margin: auto;
+        }
+        @include mq(large) {
+            width: 65ch;
+        }
+    }
+}
+
+.que-incluye {
+    h1 {
+        font-size: $font-size-700;
+
+        @include mq(medium) {
+            font-size: $font-size-800;
+        }
+    }
+
+    &__lista {
+        @include mq(large) {
+            width: 70ch;
+            margin: auto;
+        }
+
+        h3 {
+            font-size: $font-size-500;
+            margin-block-end: $size-4;
+
+            @include mq(medium) {
+                font-size: $font-size-600;
+            }
+        }
+
+        &__item {
+            display: flex;
+            flex-direction: column;
+            margin-block-end: $size-11;
+
+            p {
+                font-size: $font-size-500;
+            }
+        }
+    }
+
+    &__precio {
+        font-size: $font-size-500;
+
+        @include mq(medium) {
+            font-size: $font-size-600;
+        }
+        @include mq(large) {
+            width: 70ch;
+            margin: auto;
+        }
+    }
+}
+
+.desglose-precios {
+    h1 {
+        font-size: $font-size-600;
+        text-align: center;
+        margin: auto;
+
+        @include mq(medium) {
+            font-size: $font-size-700;
+            text-align: start;
+            margin-left: 2rem;
+        }
+        @include mq(large) {
+            margin-left: 0;
+        }
+    }
+
+    &__descripcion {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+
+        p {
+            margin-block: $size-7;
+            border: 1px solid $color-contacto-300;
+            filter: drop-shadow(0px 3px 6px rgba(0, 0, 0, 0.144));
+            border-radius: $border-radius-2;
+            text-align: center;
+            padding: $size-8;
+            width: 220px;
+            font-size: $font-size-500;
+            background-color: $color-contacto-200;
+
+            span {
+                font-size: $font-size-700;
+            }
+        }
+    }
+}
+
+.plazas-cta {
+    @include seccion-cta;
+}
+
+.garantia-cta {
+    @include seccion-cta;
+}
+
+.transforma-cta {
+    @include seccion-cta;
+}
+
+.porque-yo {
+    img {
+        border-radius: $border-radius-2;
+        filter: drop-shadow(0px 3px 6px rgba(0, 0, 0, 0.264));
+    }
+
+    &__inner {
+        h1 {
+            font-size: $font-size-700;
+            text-align: center;
+            padding-block-end: $size-6;
+
+            @include mq(medium) {
+                font-size: $font-size-700;
+                text-align: start;
+            }
+        }
+
+        p {
+            font-size: $font-size-500;
+
+            @include mq(medium) {
+                font-size: $font-size-500;
+            }
+        }
+    }
+}
+
+.candidato-adecuado {
+    h1 {
+        font-size: $font-size-700;
+
+        @include mq(medium) {
+            font-size: $font-size-800;
+        }
+    }
+
+    &__lista {
+        padding-block-start: $size-10;
+
+        &__item {
+            margin-block-end: $size-10;
+
+            @include mq(medium) {
+                display: flex;
+            }
+
+            h3 {
+                font-size: $font-size-600;
+                margin-block-end: $size-4;
+
+                @include mq(medium) {
+                    flex: 1;
+                }
+            }
+        }
+
+        &__descripciones {
+            @include mq(medium) {
+                flex: 1;
+            }
+
+            p {
+                font-size: $font-size-500;
+            }
+        }
+    }
+
+    &__copy {
+        font-size: $font-size-500;
+        text-align: center;
+
+        @include mq(medium) {
+            padding-block-start: $size-10;
+            width: 60ch;
+            margin: auto;
+        }
+    }
+}

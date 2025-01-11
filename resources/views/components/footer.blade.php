@@ -16,7 +16,7 @@
                         <a href="{{ route('acerca') }}">Acerca</a>
                     </li>
                     <li>
-                        <a href="{{ route('servicios') }}">Servicios</a>
+                        <a href="{{ route('servicios.index') }}">Servicios</a>
                     </li>
                     <li>
                         <a href="{{ route('contacto') }}">Contacto</a>

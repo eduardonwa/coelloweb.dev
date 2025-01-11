@@ -140,7 +140,7 @@
                         @endforeach
 
                         <a
-                            href="{{ $item['enlaceCTA'] }}"
+                            href="{{ url('servicios/' . $item['enlaceCTA']) }}"
                             class="button"
                             data-type="acerca"
                         >

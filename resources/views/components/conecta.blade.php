@@ -13,7 +13,7 @@
                     src="/images/icon-negro-ig.svg"
                     alt=""
                 >
-                <h2>@coelloweb</h2>
+                <h2>@eduardocoelloweb</h2>
             </a>
 
             <a href="https://www.facebook.com/coelloweb">
@@ -24,16 +24,6 @@
                     alt=""
                 >
                 <h2>Eduardo Coello</h2>
-            </a>
-
-            <a href="https://linkedin.com/in/coelloweb">
-                <img
-                    width="40"
-                    height="40"
-                    src="/images/icon-negro-linkedin.svg"
-                    alt=""
-                >
-                <h2>/in/coelloweb</h2>
             </a>
         </article>
     </section>

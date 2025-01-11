@@ -22,7 +22,7 @@
                             </a>
                         </li>
                         <li>
-                            <a href="{{ route('servicios') }}" aria-label="Checa mis servicios">
+                            <a href="{{ route('servicios.index') }}" aria-label="Checa mis servicios">
                                 <span>Servicios</span>
                                 <img src="/images/navbar-servicios-icon.svg" alt="">
                             </a>
