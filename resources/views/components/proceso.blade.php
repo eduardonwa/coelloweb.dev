@@ -54,10 +54,10 @@
     </h1>
     <!-- prev, next btns -->
     <div class="proceso__nav-btns | flex-group">
-        <button aria-label="previous" @click="prev">
+        <button class="carusel-btn" aria-label="previous" @click="prev">
             <img src="images/chevron-left.svg" aria-hidden="true"/>
         </button>
-        <button aria-label="next" @click="next">
+        <button class="carusel-btn" aria-label="next" @click="next">
             <img src="images/chevron-right.svg" aria-hidden="true"/>
         </button>
     </div>

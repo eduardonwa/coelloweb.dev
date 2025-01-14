@@ -20,7 +20,7 @@
 
     &__nav-btns {
         @include mq(small) {
-            padding-block-end: $size-8;
+            padding-block: $size-8;
             margin: auto;
         }
 
@@ -29,38 +29,6 @@
             margin-left: auto;
             padding-inline-end: $size-15;
             padding-block-end: $size-10;
-        }
-
-        button {
-            border: none;
-            background-color: $color-primary-200;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            cursor: pointer;
-            border-radius: 50%;
-            aspect-ratio: 1;
-            transition: transform 0.1s ease-in-out, background-color 0.3s ease;
-
-            &:active {
-                transform: scale(0.9);
-                background-color: $color-primary-300;
-            }
-
-            &:focus {
-                outline: none;
-            }
-
-            &:hover {
-                background-color: $color-primary-400;
-            }
-
-            @include mq(small) {
-                padding: $size-4;
-            }
-            @include mq(xlarge) {
-                padding: $size-3;
-            }
         }
     }
 

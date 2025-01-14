@@ -179,16 +179,54 @@
 
     <!-- testimonios -->
     <div class="section">
-        <div class="testimonio-servicios | container even-columns">
+        <div class="testimonio-servicios | text-center container">
             <h1>Testimonios</h1>
-            <div class="flex-group">
-                @foreach ($testimonios as $item)
-                    <div class="testimonio-servicios__testimonio">
-                        <p class="fs-500">{!! $item['testimonio'] !!}</p>
-                        <span class="fs-400 italic">- {{ $item['nombreEmpresa'] }}</span>,
-                        <span class="fs-400 italic">{{ $item['representanteNombre'] }}</span>
-                    </div>
-                @endforeach
+            <div
+                x-data="{
+                    activeIndex: 0,
+                    total: {{ count($testimonios) }},
+                    next() {
+                        this.activeIndex = (this.activeIndex + 1) % this.total;
+                        this.scrollToCurrent();
+                    },
+                    prev() {
+                        this.activeIndex = (this.activeIndex - 1 + this.total) % this.total;
+                        this.scrollToCurrent();
+                    },
+                    scrollToCurrent() {
+                        const slider = this.$refs.slider;
+                        slider.scrollTo({
+                            left: this.activeIndex * slider.offsetWidth,
+                            behavior: 'smooth',
+                        });
+                    }
+                }"
+                class="testimonio-servicios__carusel-container"
+            >
+
+                <div
+                    x-ref="slider"
+                    class="testimonio-servicios__testimonio"
+                >
+                    @foreach ($testimonios as $index => $item)
+                        <div class="testimonio-servicios__testimonio__inner | flow">
+                            <div class="testimonio-servicios__testimonio__inner__logo">
+                                <img class="" src="{{ $item['logoUrl'] }}" alt="">
+                            </div>
+                            <p class="fs-600">{!! $item['testimonio'] !!}</p>
+                            <span class="fs-600 italic">{{ $item['nombreEmpresa'] }}</span>
+                        </div>
+                    @endforeach
+                </div>
+
+                <div class="testimonio-servicios__carusel-container__nav-btns">
+                    <button class="carusel-btn prev" aria-label="previous" @click="prev">
+                        <img src="images/chevron-left.svg" aria-hidden="true"/>
+                    </button>
+                    <button class="carusel-btn next" aria-label="next" @click="next">
+                        <img src="images/chevron-right.svg" aria-hidden="true"/>
+                    </button>
+                </div>
             </div>
         </div>
     </div>
