@@ -84,7 +84,7 @@
                         @foreach ($item['descripcion'] as $descripcion)
                             <p>{!! $descripcion !!}</p>
                         @endforeach
-
+                        
                         <a
                             href="{{ $item['enlaceCTA'] }}"
                             class="button margin-block-start-8"

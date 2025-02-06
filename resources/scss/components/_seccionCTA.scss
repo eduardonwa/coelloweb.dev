@@ -44,12 +44,19 @@
             &__imagen {
                 width: 300px;
                 margin: auto;
+
                 @include mq(small) {
                     padding-block-end: $size-10;
                 }
                 @include mq(medium) {
                     flex: 1;
                     padding-block-end: 0;
+                }
+
+                img {
+                    border-radius: $border-radius-2;
+                    height: 350px;
+                    margin: auto;
                 }
             }
 

@@ -132,7 +132,7 @@
     & {
         font-size: $font-size-600;
     }
-    
+
     @include mq(medium) {
         width: 45ch;
         margin: auto;
@@ -145,6 +145,17 @@
 
 .porque-esto {
     @include pad-responsivo($size-3, 0);
+
+    img {
+        margin: auto;
+        width: 80%;
+        border-radius: $border-radius-2;
+
+        @include mq(medium) {
+            width: 60%;
+        }
+    }
+
     &__copy {
         @include mq(medium) {
             display: flex;
@@ -180,6 +191,15 @@
         @include mq(large) {
             width: 65ch;
             margin: auto;
+        }
+    }
+
+    &__img-wrap {
+        height: 500px;
+        
+        img {
+            height: 100%;
+            border-radius: $border-radius-2;
         }
     }
 }

@@ -76,12 +76,14 @@
                 class="flex-group padding-inline-2"
                 role="option"
             >
-                <img
-                    src="{{ $item['imagenUrl'] }}"
-                    alt="{{ $item['encabezado'] }}"
-                    class="mx-auto"
-                    loading="lazy"
-                >
+                <div class="proceso-list-img-wrap margin-block-end-8">
+                    <img
+                        src="{{ $item['imagenUrl'] }}"
+                        alt="{{ $item['encabezado'] }}"
+                        loading="lazy"
+                    >
+                </div>
+
                 <div class="paso-a-seguir">
                     <h1 class="uppercase ff-display fs-700">{{ $item['encabezado'] }}</h1>
                     @foreach ($item['descripcion'] as $descripcion)

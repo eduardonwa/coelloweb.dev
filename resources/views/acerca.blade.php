@@ -22,7 +22,7 @@
                             <h1 class="ff-display fs-800 anim">{{ $item['encabezado'] }}</h1>
                             <div class="aha-copy | container even-columns">
                                 <img
-                                    class="m-auto lazy anim"
+                                    class="m-auto lazy anim border-radius-2"
                                     src="{{ $item['lqip'] }}"
                                     data-src="{{ $item['imagenUrl'] }}"
                                     alt="{{ $item['encabezado'] }}"

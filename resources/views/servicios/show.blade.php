@@ -67,11 +67,13 @@
                     @foreach ($secciones['introSolucion']['descripcion'] as $descripcion)
                         <p>{!! $descripcion !!}</p>
                     @endforeach
-                    <img
-                        class="mx-auto"
-                        src="{{ $secciones['introSolucion']['imagenUrl'] }}"
-                        alt="logo AJ"
-                    >
+                    <div class="intro-solucion__img-wrap">
+                        <img
+                            class="mx-auto"
+                            src="{{ $secciones['introSolucion']['imagenUrl'] }}"
+                            alt="logo AJ"
+                        >
+                    </div>
                 </div>
             </article>
         </section>
@@ -398,7 +400,7 @@
                 <img
                     class="mx-auto"
                     src="{{ $secciones['porqueYo']['imagenUrl'] }}"
-                    alt="logo AJ"
+                    alt="Foto de perfil Eduardo Coello"
                 >
                 <div class="porque-yo__inner | flow">
                     <h1 class="ff-wide">{{ $secciones['porqueYo']['titulo'] }}</h1>

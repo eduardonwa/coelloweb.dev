@@ -54,6 +54,7 @@
                 }
 
                 .intro-aha {
+                    padding-top: 1rem;
 
                     .aha-copy {
                         position: relative;
@@ -71,12 +72,18 @@
                             z-index: 1;
                             width: auto;
                             max-width: 80%;
+                            height: 350px;
 
                             @include mq(medium) {
                                 position: relative;
                                 top: auto;
                                 left: auto;
                                 transform: translateX(0);
+                            }
+
+                            @include mq(xlarge) {
+                                height: 500px;
+                                max-width: 100%;
                             }
                         }
 
@@ -104,6 +111,7 @@
                             position: absolute;
                             width: 100%;
                             top: -40px;
+                            padding-top: 1rem;
 
                             @include mq(medium) {
                                 display: flex;

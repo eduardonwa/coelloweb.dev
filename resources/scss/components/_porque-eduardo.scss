@@ -3,6 +3,10 @@
 .porque-eduardo {
     overflow: hidden;
     img {
+        height: auto;
+        width: 350px;
+        border-radius: $border-radius-2;
+
         @include mq(small) {
             margin: auto;
         }

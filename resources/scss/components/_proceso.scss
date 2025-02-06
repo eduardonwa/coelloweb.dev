@@ -70,6 +70,23 @@
                 padding-inline: $size-12;
             }
 
+            .proceso-list-img-wrap {
+                min-width: 300px;
+                max-width: 610px;
+
+                img {
+                    width: 100%;
+                    aspect-ratio: 16 / 9;
+                    border-radius: $border-radius-1;
+                    object-fit: cover;
+                    object-position: 50% 20%;;
+
+                    @include mq(xlarge) {
+                        padding: 0;
+                    }
+                }
+            }
+
             .paso-a-seguir {
                 @include mq(small) {
                     padding-inline: $size-4;
@@ -90,17 +107,7 @@
                 }
             }
 
-            img {
-                border-radius: $border-radius-1;
-                min-width: 300px;
-                max-width: 610px;
-                width: 100%;
-                aspect-ratio: 16 / 9;
-                object-fit: cover;
-                @include mq(xlarge) {
-                    padding: 0;
-                }
-            }
+
         }
 
         h1 {
