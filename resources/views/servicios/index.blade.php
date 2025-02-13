@@ -72,7 +72,7 @@
                                     class="descripcion"
                                 >
                                     @foreach ($obj['descripcion'] as $descripcion)
-                                        <p class="fs-500">{!! $descripcion !!}</p>
+                                        <p class="fs-600">{!! $descripcion !!}</p>
                                     @endforeach
                                 </div>
                             </div>
@@ -103,17 +103,17 @@
                 <h1 class="text-center margin-block-end-12 ff-display fs-700 container" data-type="narrow">
                     {{ $item['titulo'] }}
                 </h1>
-                <section class="valores">
+                <section class="valores" >
                     @foreach ($item['definicion'] as $def)
                         <article class="valores__item">
-                            <img class="padding-6 mx-auto" src="{{ $def['iconoUrl'] }}" alt="">
+                            <img class="padding-6 mx-auto" src="{{ $def['iconoUrl'] }}">
 
                             <h2 class="padding-block-end-6 text-center">
                                 {{ $def['encabezado'] }}
                             </h2>
 
                             @foreach ($def['subtitulo'] as $subtitulo)
-                                <p class="text-center fs-500 padding-inline-3">{!! $subtitulo !!}</p>
+                                <p class="text-center fs-600 padding-inline-4">{!! $subtitulo !!}</p>
                             @endforeach
                         </article>
                     @endforeach
