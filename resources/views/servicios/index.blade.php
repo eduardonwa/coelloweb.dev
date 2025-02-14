@@ -51,7 +51,7 @@
                                     <img
                                         x-show="activeIndex !== {{ $index }}"
                                         x-transition.opacity
-                                        src="images/chevron-right.svg"
+                                        src="{{ asset('/images/chevron-right.svg') }}"
                                         alt="Chevron Right"
                                         class="icon"
                                     >
@@ -59,7 +59,7 @@
                                         class="chevron-down"
                                         x-show="activeIndex === {{ $index }}"
                                         x-transition.opacity
-                                        src="images/chevron-down.svg"
+                                        src="{{ asset('/images/chevron-down.svg') }}"
                                         alt="Chevron Down"
                                         class="icon"
                                     >
