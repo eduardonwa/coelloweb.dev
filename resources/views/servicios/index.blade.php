@@ -164,7 +164,7 @@
                         @foreach ($inv['descripcion'] as $descripcion)
                             <p>{!! $descripcion !!}</p>
                         @endforeach
-                        <a href="{{ $inv['botonCTA']['enlaceCTA'] }}" class="button" data-type="contacto">
+                        <a href="{{ url($inv['botonCTA']['enlaceCTA']) }}" class="button" data-type="contacto">
                             {{ $inv['botonCTA']['textoCTA'] }}
                         </a>
                     </div>
