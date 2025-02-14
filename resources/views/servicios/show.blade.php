@@ -341,7 +341,7 @@
                     <p>{!! $subtitulo !!}</p>
                 @endforeach
                 <a
-                    href="{{ $plazasCTA['botonCTA']['enlace'] == '#'}}"
+                    href="{{ url($plazasCTA['botonCTA']['enlace']) }}"
                     class="button"
                     data-type="primary"
                 >
@@ -383,7 +383,7 @@
                     <p>{!! $subtitulo !!}</p>
                 @endforeach
                 <a
-                    href="{{ $plazasCTA['botonCTA']['enlace'] == '#'}}"
+                    href="{{ url($plazasCTA['botonCTA']['enlace']) }}"
                     class="button"
                     data-type="primary"
                 >
@@ -464,7 +464,7 @@
                     <p>{!! $subtitulo !!}</p>
                 @endforeach
                 <a
-                    href="{{ $plazasCTA['botonCTA']['enlace'] == '#'}}"
+                    href="{{ url($plazasCTA['botonCTA']['enlace']) }}"
                     class="button"
                     data-type="primary"
                 >
