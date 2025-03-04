@@ -13,13 +13,22 @@
 
     <!-- 2 resultado perfecto -->
     @if ($secciones['resultadoPerfecto'] ?? false)
-        <section class="section">
+        <section class="">
             <article class="container">
                 <div class="resultado-perfecto">
                     <h1 class="ff-medium">{{ $secciones['resultadoPerfecto']['titulo'] }}</h1>
                     @foreach ($secciones['resultadoPerfecto']['descripcion'] as $descripcion)
                         <p>{!! $descripcion !!}</p>
                     @endforeach
+                    <div class="padding-block-8">
+                        <hr
+                            width="1"
+                            size="500"
+                            style="
+                                margin: 0 auto;
+                            "
+                        />
+                    </div>
                 </div>
             </article>
         </section>
@@ -27,7 +36,7 @@
 
     <!-- 3 agitación -->
     @if ($secciones['agitacion'] ?? false)
-        <section class="section">
+        <section class="margin-block-end-15">
             <article class="container">
                 <div class="agitacion">
                     <h1>{{ $secciones['agitacion']['titulo'] }}</h1>
@@ -57,7 +66,10 @@
             </article>
         </section>
     @endif
-
+    
+    <div class="linea-1-wrap">
+        <img class="linea-1" src="{{asset('images/sales-page/linea-1.svg')}}" alt="">
+    </div>
     <!-- 5 intro solución -->
     @if ($secciones['introSolucion'] ?? false)
         <section class="section">
@@ -208,7 +220,7 @@
 
     <!-- 9 testimonio corto -->
     @if ($secciones['testimonioCorto'] ?? false)
-        <section class="section">
+        <section style="background-color: hsl(183.16, 100%, 22.35%); color: hsl(240, 6.67%, 97.06%);" class="section">
             <article class="container">
                 <div class="testimonio-corto | flow text-center">
                     <div class="testimonio-corto__texto | flow">
@@ -232,6 +244,11 @@
     <!-- 10 confianza -->
     @if($bloques['lista']['confianza'] ?? false)
         <section class="section">
+            
+            <div class="linea-2-wrap">
+                <hr class="linea-2">
+            </div>
+            
             <article class="confianza | container" data-type="full-bleed">
                 <header>
                     <h1 class="ff-medium">{{ $bloques['lista']['confianza']['titulo'] }}</h1>
@@ -268,10 +285,28 @@
     @if ($secciones['unicaOpcion'] ?? false)
         <section class="section">
             <article class="unica-opcion | container" data-type="wide">
+                <div class="padding-block-8">
+                    <hr
+                        width="1"
+                        size="100"
+                        style="
+                            margin: 0 auto;
+                        "
+                    />
+                </div>
                 <h1 class="ff-wide text-center">{{ $secciones['unicaOpcion']['titulo'] }}</h1>
                 @foreach ($secciones['unicaOpcion']['descripcion'] as $descripcion)
                     <p>{!! $descripcion !!}</p>
                 @endforeach
+                <div class="padding-block-8">
+                    <hr
+                        width="1"
+                        size="100"
+                        style="
+                            margin: 0 auto;
+                        "
+                    />
+                </div>
             </article>
         </section>
     @endif
@@ -353,7 +388,7 @@
 
     <!-- 15 testimonio one -->
     @if ($secciones['testimonioOne'] ?? false)
-        <section class="section">
+        <section style="background-color: hsl(183.16, 100%, 22.35%); color: hsl(240, 6.67%, 97.06%);" class="section">
             <article class="container">
                 <div class="testimonio-one | flow text-center">
                     <div class="testimonio-one__texto | flow">
@@ -376,7 +411,8 @@
 
     <!-- 16 garantía cta -->
     @if ($garantiaCTA = $bloquesHelper->obtenerBloque($bloques, 'seccionCTA', 'garantiaCTA'))
-        <section class="section">
+        <section class="garantia-cta-wrap | section">
+            <img class="garantia-cta-wrap__bg" src="/images/bg-problema.svg" alt="">
             <article class="garantia-cta | container text-center flow" data-type="wide">
                 <h1 class="ff-wide">{{ $garantiaCTA['encabezado'] }}</h1>
                 @foreach ($garantiaCTA['subtitulo'] as $subtitulo)
