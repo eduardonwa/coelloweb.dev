@@ -30,11 +30,11 @@
                     <x-dropdown-form>
                         <x-slot name="trigger">
                             <button type="button" class="dropdown__btn" tabindex="0" aria-haspopup="listbox" aria-expanded="isOpen">
-                                <span style="font-size: 18px;" x-text="selected || 'Seleccionar' "></span>
+                                <span class="clr-primary-500" style="font-size: 17px;" x-text="selected || 'Seleccionar' "></span>
                                 <img src="/images/icono-chev-abajo.png" alt="">
                             </button>
                         </x-slot>
-                        <ul role="listbox">
+                        <ul role="listbox" style="font-size: 17px;">
                             <li @click="selected = 'Landing Page'; isOpen = false" wire:click="$set('selectedOption', 'Landing Page')" role="option">Landing Page</li>
                             <li @click="selected = 'Web Corporativa'; isOpen = false" wire:click="$set('selectedOption', 'Web Corporativa')" role="option">Web Corporativa</li>
                             <li @click="selected = 'Ecommerce'; isOpen = false" wire:click="$set('selectedOption', 'Ecommerce')" role="option">Ecommerce</li>

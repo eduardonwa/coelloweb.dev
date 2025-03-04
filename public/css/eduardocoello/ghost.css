@@ -1236,24 +1236,32 @@ dialog[closing] {
         .alert-success {
             text-align: center;
             font-size: var(--fs-500);
-            background-color: var(--ghost-400);
             border-bottom-left-radius: .75rem;
             border-bottom-right-radius: .75rem;
             padding-block: var(--space-3);
+            padding: 1rem;
+            background-color: teal;
 
             h1 {
                 padding-bottom: var(--space-2);
+                color: white;
             }
 
             p {
+                color: white;
                 margin-inline: var(--space-2);
             }
         }
 
         .alert-redes-sociales {
             display: flex;
-            justify-content: space-around;
+            flex-direction: column;
+            align-items: center;
             padding-block: var(--space-6);
+            
+            a {
+                padding-block-start: 1rem;
+            }
         }
     }
 
@@ -1275,11 +1283,11 @@ dialog[closing] {
             h1 {
                 padding-bottom: var(--space-2);
                 color: var(--gray-950);
-                font-size: var(--fs-400);
+                font-size: var(--fs-600);
             }
 
             p {
-                font-size: var(--fs-300);
+                font-size: var(--fs-500);
                 color: var(--gray-900);
             }
         }
@@ -1320,6 +1328,10 @@ dialog[closing] {
             .alert-success {
                 background-color: transparent;
                 padding-block: 0;
+
+                h1, p {
+                    color: hsl(186.21, 100%, 11.37%);
+                }
             }
 
             .alert-redes-sociales {
@@ -1333,12 +1345,20 @@ dialog[closing] {
             padding-left: var(--space-7);
 
             .blog-post {
-                width: 100%;
+                /* width: 100%; */
                 padding: var(--space-2);
                 border: 1px solid transparent;
                 -webkit-transition: border 100ms linear;
                 -ms-transition: border 100ms linear;
                 transition: border 100ms linear;
+
+                h1 {
+                    font-size: var(--fs-500);
+                }
+
+                p {
+                    font-size: var(--fs-400);
+                }
             }
 
             .blog-post:hover {

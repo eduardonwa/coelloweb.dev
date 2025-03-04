@@ -61,7 +61,7 @@
                         font-size: $heroe-subtitle-font-size;
                     }
                     @include mq(large) {
-                        font-size: $font-size-500;
+                        font-size: 18px;
                     }
                 }
 
@@ -91,17 +91,19 @@
 
                     label {
                         @include mq(small) {
-                            font-size: 16px;
+                            font-size: 18px;
                             padding-bottom: $size-1;
                             font-weight: normal;
                             font-family: $font-family-medium;
                         }
+
                         @include mq(medium) {
                         }
                     }
 
                     input {
                         font-family: $font-family-base;
+                        font-size: 17px;
                         @include mq(small) {
                             padding: $size-2;
                         }
@@ -109,13 +111,14 @@
 
                     textarea {
                         font-family: $font-family-base;
-                        font-size: $form-textarea-font-size;
+                        font-size: 18px;
                         background-color: $color-contacto-200;
                         border: $form-input-border-default;
                         border-radius: 8px;
                         padding: $size-1;
                         resize: vertical;
                         padding: $size-2;
+                        color: $color-primary-500;
                     }
 
                     .dropdown {
