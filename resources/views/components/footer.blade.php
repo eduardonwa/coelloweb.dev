@@ -69,6 +69,7 @@
                 height="34"
                 src="/images/icon-blanco-ig.svg"
                 aria-label="Instagram de Eduardo Coello"
+                loading="lazy"
             >
         </a>
         <a href="https://www.facebook.com/coelloweb">
@@ -77,6 +78,7 @@
                 height="34"
                 src="/images/icon-blanco-fb.svg"
                 aria-label="Facebook de Eduardo Coello"
+                loading="lazy"
             >
         </a>
         <a href="https://linkedin.com/in/coelloweb">
@@ -85,6 +87,7 @@
                 height="34"
                 src="/images/icon-blanco-linkedin.svg"
                 aria-label="LinkedIn de Eduardo Coello"
+                loading="lazy"
             >
         </a>
     </section>

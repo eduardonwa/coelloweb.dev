@@ -13,7 +13,7 @@
                     </div>
 
                     <div class="ventas-heroe__img">
-                        <img src="{{ $item['imagenUrl'] }}" alt="">
+                        <img src="{{ $item['imagenUrl'] }}" alt="" loading="lazy">
                     </div>
                 @endforeach
             </div>
@@ -65,7 +65,9 @@
                 <div class="porque-esto | even-columns">
                     <img
                         src="{{ $secciones['porqueEsto']['imagenUrl'] }}"
-                        alt="">
+                        alt=""
+                        loading="lazy"
+                    >
                     <div class="porque-esto__copy | flow">
                         <h2>{{ $secciones['porqueEsto']['titulo'] }}</h2>
                         @foreach ($secciones['porqueEsto']['descripcion'] as $descripcion)
@@ -78,7 +80,7 @@
     @endif
     
     <div class="linea-1-wrap">
-        <img class="linea-1" src="{{asset('images/sales-page/linea-1.svg')}}" alt="">
+        <img class="linea-1" src="{{asset('images/sales-page/linea-1.svg')}}" alt="" loading="lazy">
     </div>
     <!-- 5 intro solución -->
     @if ($secciones['introSolucion'] ?? false)
@@ -94,6 +96,7 @@
                             class="mx-auto"
                             src="{{ $secciones['introSolucion']['imagenUrl'] }}"
                             alt="logo AJ"
+                            loading="lazy"
                         >
                     </div>
                 </div>
@@ -120,7 +123,9 @@
                             <div class="lo-que-necesitas__lista__item">
                                 @if ($item['iconoUrl'] ?? $bloques['lista']['loQueNecesitas']['iconoUrl'])
                                     <img src="{{ $item['iconoUrl'] ?? $bloques['lista']['loQueNecesitas']['iconoUrl'] }}"
-                                        alt="{{ $item['titulo'] }}">
+                                        alt="{{ $item['titulo'] }}"
+                                        loading="lazy"
+                                    >
                                 @endif
 
                                 <div class="lo-que-necesitas__lista__item__inner">
@@ -136,7 +141,7 @@
                 @endif
 
                 @if ($item['iconoUrl'])
-                    <img src="{{ $item['iconoUrl'] }}" alt="{{ $item['titulo'] }}">
+                    <img src="{{ $item['iconoUrl'] }}" alt="{{ $item['titulo'] }}" loading="lazy">
                 @endif
             </article>
         </section>
@@ -162,8 +167,11 @@
 
                                 <div class="bondades__lista__item__header">
                                     @if ($item['iconoUrl'] ?? $bloques['lista']['bondades']['iconoUrl'])
-                                        <img src="{{ $item['iconoUrl'] ?? $bloques['lista']['bondades']['iconoUrl'] }}"
-                                            alt="{{ $item['titulo'] }}">
+                                        <img
+                                            src="{{ $item['iconoUrl'] ?? $bloques['lista']['bondades']['iconoUrl'] }}"
+                                            alt="{{ $item['titulo'] }}"
+                                            loading="lazy"    
+                                        >
                                     @endif
                                     <h2>{{ $item['titulo'] }}</h2>
                                 </div>
@@ -203,8 +211,11 @@
                             <div class="como-funciona__lista__item">
 
                                 @if ($item['iconoUrl'] ?? $bloques['lista']['comoFunciona']['iconoUrl'])
-                                    <img src="{{ $item['iconoUrl'] ?? $bloques['lista']['comoFunciona']['iconoUrl'] }}"
-                                        alt="{{ $item['titulo'] }}">
+                                    <img
+                                        src="{{ $item['iconoUrl'] ?? $bloques['lista']['comoFunciona']['iconoUrl'] }}"
+                                        alt="{{ $item['titulo'] }}"
+                                        loading="lazy"
+                                    >
                                 @endif
 
                                 <div class="como-funciona__lista__item__inner">
@@ -222,7 +233,7 @@
                 @endif
 
                 @if ($item['iconoUrl'])
-                    <img src="{{ $item['iconoUrl'] }}" alt="{{ $item['titulo'] }}">
+                    <img src="{{ $item['iconoUrl'] }}" alt="{{ $item['titulo'] }}" loading="lazy">
                 @endif
             </article>
         </section>
@@ -245,6 +256,7 @@
                         height="100"
                         src="{{ $secciones['testimonioCorto']['imagenUrl'] }}"
                         alt="logo AJ"
+                        loading="lazy"
                     >
                 </div>
             </article>
@@ -285,7 +297,7 @@
                 @endif
 
                 @if ($item['iconoUrl'])
-                    <img src="{{ $item['iconoUrl'] }}" alt="{{ $item['titulo'] }}">
+                    <img src="{{ $item['iconoUrl'] }}" alt="{{ $item['titulo'] }}" loading="lazy">
                 @endif
             </article>
         </section>
@@ -348,7 +360,7 @@
                 @endif
 
                 @if ($item['iconoUrl'])
-                    <img src="{{ $item['iconoUrl'] }}" alt="{{ $item['titulo'] }}">
+                    <img src="{{ $item['iconoUrl'] }}" alt="{{ $item['titulo'] }}" loading="lazy">
                 @endif
 
                 <!-- precio -->
@@ -413,6 +425,7 @@
                         width="80"
                         src="{{ $secciones['testimonioOne']['imagenUrl'] }}"
                         alt="logo Space Caps"
+                        loading="lazy"
                     >
                 </div>
             </article>
@@ -422,7 +435,7 @@
     <!-- 16 garantía cta -->
     @if ($garantiaCTA = $bloquesHelper->obtenerBloque($bloques, 'seccionCTA', 'garantiaCTA'))
         <section class="garantia-cta-wrap | section">
-            <img class="garantia-cta-wrap__bg" src="/images/bg-problema.svg" alt="">
+            <img class="garantia-cta-wrap__bg" src="/images/bg-problema.svg" alt="" loading="lazy">
             <article class="garantia-cta | container text-center flow" data-type="wide">
                 <h2 class="ff-wide">{{ $garantiaCTA['encabezado'] }}</h2>
                 @foreach ($garantiaCTA['subtitulo'] as $subtitulo)
@@ -447,6 +460,7 @@
                     class="mx-auto"
                     src="{{ $secciones['porqueYo']['imagenUrl'] }}"
                     alt="Foto de perfil Eduardo Coello"
+                    loading="lazy"
                 >
                 <div class="porque-yo__inner | flow">
                     <h2 class="ff-wide">{{ $secciones['porqueYo']['titulo'] }}</h2>
@@ -484,7 +498,7 @@
                 @endif
 
                 @if ($item['iconoUrl'])
-                    <img src="{{ $item['iconoUrl'] }}" alt="{{ $item['titulo'] }}">
+                    <img src="{{ $item['iconoUrl'] }}" alt="{{ $item['titulo'] }}" loading="lazy">
                 @endif
                 <hr
                     width="1"
