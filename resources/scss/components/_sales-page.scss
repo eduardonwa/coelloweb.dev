@@ -114,6 +114,8 @@
     @include mq(medium) {
         flex-direction: row;
         justify-content: center;
+        padding: $size-4;
+        margin-block-end: $size-15;
     }
 
     &__copy {
