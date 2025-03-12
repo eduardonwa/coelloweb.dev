@@ -11,7 +11,7 @@
                             <article class="container flow">
                                 <h1 class="ff-display fs-800">{{ $item['encabezado'] }}</h1>
                                 @foreach ($item['subtitulo'] as $subtitulo)
-                                    <p>{!! $subtitulo !!}</p>
+                                    <h2>{!! $subtitulo !!}</h2>
                                 @endforeach
                             </article>
                         @endforeach
@@ -29,9 +29,9 @@
                                 >
                                 <article>
                                     @foreach ($item['descripcion'] as $descripcion)
-                                        <p class="aha-p">
+                                        <h2 class="aha-p">
                                             {!! $descripcion !!}
-                                        </p>
+                                        </h2>
                                     @endforeach
                                 </article>
                             </div>
@@ -43,7 +43,7 @@
                             <article class="container flow">
                                 <h1 class="ff-display fs-700 text-center anim">{{ $item['encabezado'] }}</h1>
                                 @foreach ($item['descripcion'] as $descripcion)
-                                    <p class="anim">{!! $descripcion !!}</p>
+                                    <h2>{!! $descripcion !!}</h2>
                                 @endforeach
                             </article>
                         @endforeach

@@ -6,7 +6,7 @@
             <article class="flow container">
                 <h1 class="ff-display">{{ $item['encabezado'] }}</h1>
                 @foreach ($item['subtitulo'] as $subtitulo)
-                    <p class="padding-4">{!! $subtitulo !!}</p>
+                    <h2 class="padding-4">{!! $subtitulo !!}</h2>
                 @endforeach
             </article>
         @endforeach
