@@ -12,7 +12,7 @@
     header {
         padding-block-end: $size-10;
 
-        h1 {
+        h2 {
             font-size: $font-size-700;
             @include mq(medium) {
                 font-size: $font-size-800;
@@ -43,12 +43,12 @@
             &__inner {
                 padding-left: $size-4;
 
-                h3 {
+                h2 {
                     font-family: $font-family-medium;
                     font-size: $font-size-600;
                 }
 
-                p {
+                h3 {
                     font-size: $font-size-600;
                 }
             }
@@ -63,11 +63,11 @@
             margin: auto;
         }
 
-        h1 {
+        h2 {
             font-size: $font-size-600;
         }
 
-        p {
+        h3 {
             font-size: $font-size-600;
         }
     }
@@ -80,7 +80,7 @@
 @mixin seccion-cta {
     @include pad-responsivo($size-3, 0);
 
-    h1 {
+    h2 {
         font-size: $font-size-700;
         margin-block-end: $size-8;
 
@@ -89,7 +89,7 @@
         }
     }
 
-    p {
+    h3 {
         font-size: $font-size-600;
         margin-block-end: $size-8;
 
@@ -166,12 +166,12 @@
             width: 65ch;
         }
 
-        h1 {
+        h2 {
             font-family: $font-family-medium;
             font-size: $font-size-600;
         }
 
-        p {
+        h3 {
             font-size: $font-size-600;
         }
     }
@@ -194,12 +194,12 @@
 
 .intro-solucion {
     @include pad-responsivo($size-3, 0);
-    h1 {
+    h2 {
         font-family: $font-family-medium;
         font-size: $font-size-700;
     }
 
-    p {
+    h3 {
         padding-block: $size-4;
         font-size: $font-size-600;
 
@@ -230,7 +230,7 @@
     header {
         padding-block-end: $size-12;
 
-        h1 {
+        h2 {
             font-size: $font-size-700;
 
             @include mq(medium) {
@@ -238,7 +238,7 @@
             }
         }
 
-        p {
+        h3 {
             font-size: $font-size-600;
         }
     }
@@ -265,7 +265,7 @@
                     }
                 }
 
-                h3 {
+                h2 {
                     padding-left: $size-6;
                     font-family: $font-family-medium;
                     font-size: $font-size-600;
@@ -327,7 +327,7 @@
     header {
         padding-block-end: $size-10;
 
-        h1 {
+        h2 {
             font-size: $font-size-700;
             @include mq(large) {
                 padding-block-end: $size-4;
@@ -361,11 +361,11 @@
                 display: grid;
             }
 
-            h3 {
+            h2 {
                 font-size: $font-size-700;
             }
 
-            p {
+            h3 {
                 font-size: $font-size-600;
 
                 @include mq(medium) {
@@ -387,7 +387,7 @@
 .unica-opcion {
     @include pad-responsivo($size-3, 0);
 
-    h1 {
+    h2 {
         font-size: $font-size-700;
         margin-block-end: $size-4;
 
@@ -396,7 +396,7 @@
         }
     }
 
-    p {
+    h3 {
         font-size: $font-size-600;
         padding-block: $size-3;
 
@@ -414,7 +414,7 @@
 
     @include pad-responsivo($size-3, 0);
 
-    h1 {
+    h2 {
         font-size: $font-size-700;
 
         @include mq(medium) {
@@ -428,7 +428,7 @@
             margin: auto;
         }
 
-        h3 {
+        h2 {
             font-size: $font-size-700;
             margin-block-end: $size-4;
         }
@@ -457,7 +457,7 @@
 .desglose-precios {
     @include pad-responsivo($size-3, 0);
 
-    h1 {
+    h2 {
         font-size: $font-size-700;
         text-align: center;
         margin: auto;
@@ -478,7 +478,7 @@
         align-items: center;
         flex-direction: column;
 
-        p {
+        h3 {
             margin-block: $size-7;
             border: 1px solid $color-contacto-300;
             filter: drop-shadow(0px 3px 6px rgba(0, 0, 0, 0.144));
@@ -531,9 +531,10 @@
     &__inner {
         @include mq(large) {
             width: 60ch;
+            padding-inline-start: $size-7;
         }
 
-        h1 {
+        h2 {
             font-size: $font-size-700;
             text-align: center;
             padding-block-end: $size-6;
@@ -544,7 +545,7 @@
             }
         }
 
-        p {
+        h3 {
             font-size: $font-size-600;
         }
     }
@@ -553,7 +554,7 @@
 .candidato-adecuado {
     @include pad-responsivo($size-3, 0);
 
-    h1 {
+    h2 {
         font-size: $font-size-700;
 
         @include mq(medium) {
@@ -571,12 +572,14 @@
                 display: flex;
             }
 
-            h3 {
+            h2 {
                 font-size: $font-size-600;
                 margin-block-end: $size-4;
 
                 @include mq(medium) {
                     flex: 1;
+                    font-size: 24px;
+                    border: 1px solid transparent;
                 }
             }
         }
@@ -587,7 +590,7 @@
                 flex: 1;
             }
 
-            p {
+            h3 {
                 font-size: $font-size-600;
 
                 @include mq(large) {

@@ -5,7 +5,7 @@
             @foreach ($seccionHeroe as $item)
                 <h1 class="ff-wide">{{ $item['encabezado'] }}</h1>
                 @foreach ($item['subtitulo'] as $subtitulo)
-                    <p class="padding-4">{!! $subtitulo !!}</p>
+                    <h2 class="padding-4">{!! $subtitulo !!}</h2>
                 @endforeach
             @endforeach
         </article>
@@ -16,9 +16,9 @@
         <section class="">
             <article class="container">
                 <div class="resultado-perfecto">
-                    <h1 class="ff-medium">{{ $secciones['resultadoPerfecto']['titulo'] }}</h1>
+                    <h2 class="ff-medium">{{ $secciones['resultadoPerfecto']['titulo'] }}</h2>
                     @foreach ($secciones['resultadoPerfecto']['descripcion'] as $descripcion)
-                        <p>{!! $descripcion !!}</p>
+                        <h3>{!! $descripcion !!}</h3>
                     @endforeach
                     <div class="padding-block-8">
                         <hr
@@ -39,9 +39,9 @@
         <section class="margin-block-end-15">
             <article class="container">
                 <div class="agitacion">
-                    <h1>{{ $secciones['agitacion']['titulo'] }}</h1>
+                    <h2>{{ $secciones['agitacion']['titulo'] }}</h2>
                     @foreach ($secciones['agitacion']['descripcion'] as $descripcion)
-                        <p>{!! $descripcion !!}</p>
+                        <h3>{!! $descripcion !!}</h3>
                     @endforeach
                 </div>
             </article>
@@ -57,9 +57,9 @@
                         src="{{ $secciones['porqueEsto']['imagenUrl'] }}"
                         alt="">
                     <div class="porque-esto__copy | flow">
-                        <h1>{{ $secciones['porqueEsto']['titulo'] }}</h1>
+                        <h2>{{ $secciones['porqueEsto']['titulo'] }}</h2>
                         @foreach ($secciones['porqueEsto']['descripcion'] as $descripcion)
-                            <p>{!! $descripcion !!}</p>
+                            <h3>{!! $descripcion !!}</h3>
                         @endforeach
                     </div>
                 </div>
@@ -75,9 +75,9 @@
         <section class="section">
             <article class="container">
                 <div class="intro-solucion | text-center flow">
-                    <h1>{{ $secciones['introSolucion']['titulo'] }}</h1>
+                    <h2>{{ $secciones['introSolucion']['titulo'] }}</h2>
                     @foreach ($secciones['introSolucion']['descripcion'] as $descripcion)
-                        <p>{!! $descripcion !!}</p>
+                        <h3>{!! $descripcion !!}</h3>
                     @endforeach
                     <div class="intro-solucion__img-wrap">
                         <img
@@ -96,11 +96,10 @@
         <section class="section">
             <article class="lo-que-necesitas | container">
                 <header class="text-center flow">
-                    <h1 class="ff-wide">{{ $bloques['lista']['loQueNecesitas']['titulo'] }}</h1>
-
+                    <h2 class="ff-wide">{{ $bloques['lista']['loQueNecesitas']['titulo'] }}</h2>
                     @if ($bloques['lista']['loQueNecesitas']['subtitulo'] ?? false)
                         @foreach ($bloques['lista']['loQueNecesitas']['subtitulo'] as $subtitulo)
-                            <p>{!! $subtitulo !!}</p>
+                            <h3>{!! $subtitulo !!}</h3>
                         @endforeach
                     @endif
                 </header>
@@ -115,9 +114,9 @@
                                 @endif
 
                                 <div class="lo-que-necesitas__lista__item__inner">
-                                    <h3>{{ $item['titulo'] }}</h3>
+                                    <h2>{{ $item['titulo'] }}</h2>
                                     @foreach ($item['descripcion'] as $descripcion)
-                                        <p>{!! $descripcion !!}</p>
+                                        <h3>{!! $descripcion !!}</h3>
                                     @endforeach
                                 </div>
                             </div>
@@ -138,10 +137,10 @@
         <section class="section">
             <article class="bondades | container" data-type="wide">
                 <header class="flow text-center">
-                    <h1 class="ff-wide">{{ $bloques['lista']['bondades']['titulo'] }}</h1>
+                    <h2 class="ff-wide">{{ $bloques['lista']['bondades']['titulo'] }}</h2>
                     @if ($bloques['lista']['bondades']['subtitulo'] ?? false)
                         @foreach ($bloques['lista']['bondades']['subtitulo'] as $subtitulo)
-                            <p>{!! $subtitulo !!}</p>
+                            <h3>{!! $subtitulo !!}</h3>
                         @endforeach
                     @endif
                 </header>
@@ -156,7 +155,7 @@
                                         <img src="{{ $item['iconoUrl'] ?? $bloques['lista']['bondades']['iconoUrl'] }}"
                                             alt="{{ $item['titulo'] }}">
                                     @endif
-                                    <h3>{{ $item['titulo'] }}</h3>
+                                    <h2>{{ $item['titulo'] }}</h2>
                                 </div>
 
                                 <div class="bondades__lista__item__copy">
@@ -179,10 +178,10 @@
         <section class="section">
             <article class="como-funciona | container">
                 <header class="text-center flow">
-                    <h1 class="ff-wide">{{ $bloques['lista']['comoFunciona']['titulo'] }}</h1>
+                    <h2 class="ff-wide">{{ $bloques['lista']['comoFunciona']['titulo'] }}</h2>
                     @if ($bloques['lista']['comoFunciona']['subtitulo'] ?? false)
                         @foreach ($bloques['lista']['comoFunciona']['subtitulo'] as $subtitulo)
-                            <p>{!! $subtitulo !!}</p>
+                            <h3>{!! $subtitulo !!}</h3>
                         @endforeach
                     @endif
                 </header>
@@ -198,9 +197,9 @@
                                 @endif
 
                                 <div class="como-funciona__lista__item__inner">
-                                    <h3>{{ $item['titulo'] }}</h3>
+                                    <h2>{{ $item['titulo'] }}</h2>
                                     @foreach ($item['descripcion'] as $descripcion)
-                                        <p>{!! $descripcion !!}</p>
+                                        <h3>{!! $descripcion !!}</h3>
                                     @endforeach
                                 </div>
 
@@ -224,9 +223,9 @@
             <article class="container">
                 <div class="testimonio-corto | flow text-center">
                     <div class="testimonio-corto__texto | flow">
-                        <h1 class="ff-medium">{{ $secciones['testimonioCorto']['titulo'] }}</h1>
+                        <h2 class="ff-medium">{{ $secciones['testimonioCorto']['titulo'] }}</h2>
                         @foreach ($secciones['testimonioCorto']['descripcion'] as $descripcion)
-                            <p>{!! $descripcion !!}</p>
+                            <h3>{!! $descripcion !!}</h3>
                         @endforeach
                     </div>
                     <img
@@ -251,10 +250,10 @@
             
             <article class="confianza | container" data-type="full-bleed">
                 <header>
-                    <h1 class="ff-medium">{{ $bloques['lista']['confianza']['titulo'] }}</h1>
+                    <h2 class="ff-medium">{{ $bloques['lista']['confianza']['titulo'] }}</h2>
                     @if ($bloques['lista']['confianza']['subtitulo'] ?? false)
                         @foreach ($bloques['lista']['confianza']['subtitulo'] as $subtitulo)
-                            <p>{!! $subtitulo !!}</p>
+                            <h3>{!! $subtitulo !!}</h3>
                         @endforeach
                     @endif
                 </header>
@@ -263,9 +262,9 @@
                     <div class="confianza__lista | container" data-type="full-bleed">
                         @foreach ($bloques['lista']['confianza']['items'] as $item)
                             <div class="confianza__lista__item | flow">
-                                <h3 class="ff-display">{{ $item['titulo'] }}</h3>
+                                <h2 class="ff-display">{{ $item['titulo'] }}</h2>
                                 @foreach ($item['descripcion'] as $descripcion)
-                                    <p>{!! $descripcion !!}</p>
+                                    <h3>{!! $descripcion !!}</h3>
                                 @endforeach
                             </div>
                         @endforeach
@@ -294,9 +293,9 @@
                         "
                     />
                 </div>
-                <h1 class="ff-wide text-center">{{ $secciones['unicaOpcion']['titulo'] }}</h1>
+                <h2 class="ff-wide text-center">{{ $secciones['unicaOpcion']['titulo'] }}</h2>
                 @foreach ($secciones['unicaOpcion']['descripcion'] as $descripcion)
-                    <p>{!! $descripcion !!}</p>
+                    <h3>{!! $descripcion !!}</h3>
                 @endforeach
                 <div class="padding-block-8">
                     <hr
@@ -315,7 +314,7 @@
     @if($bloques['lista']['queIncluye'] ?? false)
         <section class="section">
             <article class="que-incluye | container" data-type="wide">
-                <h1 class="ff-wide text-center">{{ $bloques['lista']['queIncluye']['titulo'] }}</h1>
+                <h2 class="ff-wide text-center">{{ $bloques['lista']['queIncluye']['titulo'] }}</h2>
 
                 @if ($bloques['lista']['queIncluye']['items'] ?? false)
                     <div class="que-incluye__lista">
@@ -325,7 +324,7 @@
                                 alt="{{ $item['titulo'] }}">
                             @endif
                         --}}
-                        <h3 class="ff-medium">{{ $item['titulo'] }}</h3>
+                        <h2 class="ff-medium">{{ $item['titulo'] }}</h2>
 
                         <div class="que-incluye__lista__item | flow">
                             @foreach ($item['descripcion'] as $descripcion)
@@ -357,10 +356,10 @@
     @if ($bloques['desglosePrecios'][0] ?? false)
         <section class="section">
             <article class="desglose-precios | container even-columns">
-                <h1 class="ff-medium">{{ $bloques['desglosePrecios'][0]['encabezado'] }}</h1>
+                <h2 class="ff-medium">{{ $bloques['desglosePrecios'][0]['encabezado'] }}</h2>
                 <div class="desglose-precios__descripcion">
                     @foreach ($bloques['desglosePrecios'][0]['descripcionPrecios'] as $descripcion)
-                        <p>{{ $descripcion['plazo'] }} plazos de <br> <span class="ff-display"> $ {{ $descripcion['cantidad'] }}</span> </p>
+                        <h3>{{ $descripcion['plazo'] }} plazos de <br> <span class="ff-display"> $ {{ $descripcion['cantidad'] }}</span> </h3>
                     @endforeach
                 </div>
             </article>
@@ -371,9 +370,9 @@
     @if ($plazasCTA = $bloquesHelper->obtenerBloque($bloques, 'seccionCTA', 'plazasCTA'))
         <section class="section">
             <article class="plazas-cta | container text-center flow">
-                <h1 class="ff-wide">{{ $plazasCTA['encabezado'] }}</h1>
+                <h2 class="ff-wide">{{ $plazasCTA['encabezado'] }}</h2>
                 @foreach ($plazasCTA['subtitulo'] as $subtitulo)
-                    <p>{!! $subtitulo !!}</p>
+                    <h3>{!! $subtitulo !!}</h3>
                 @endforeach
                 <a
                     href="{{ url($plazasCTA['botonCTA']['enlace']) }}"
@@ -392,9 +391,9 @@
             <article class="container">
                 <div class="testimonio-one | flow text-center">
                     <div class="testimonio-one__texto | flow">
-                        <h1 class="ff-medium">{{ $secciones['testimonioOne']['titulo'] }}</h1>
+                        <h2 class="ff-medium">{{ $secciones['testimonioOne']['titulo'] }}</h2>
                         @foreach ($secciones['testimonioOne']['descripcion'] as $descripcion)
-                            <p>{!! $descripcion !!}</p>
+                            <h3>{!! $descripcion !!}</h3>
                         @endforeach
                     </div>
 
@@ -414,9 +413,9 @@
         <section class="garantia-cta-wrap | section">
             <img class="garantia-cta-wrap__bg" src="/images/bg-problema.svg" alt="">
             <article class="garantia-cta | container text-center flow" data-type="wide">
-                <h1 class="ff-wide">{{ $garantiaCTA['encabezado'] }}</h1>
+                <h2 class="ff-wide">{{ $garantiaCTA['encabezado'] }}</h2>
                 @foreach ($garantiaCTA['subtitulo'] as $subtitulo)
-                    <p>{!! $subtitulo !!}</p>
+                    <h3>{!! $subtitulo !!}</h3>
                 @endforeach
                 <a
                     href="{{ url($plazasCTA['botonCTA']['enlace']) }}"
@@ -439,9 +438,9 @@
                     alt="Foto de perfil Eduardo Coello"
                 >
                 <div class="porque-yo__inner | flow">
-                    <h1 class="ff-wide">{{ $secciones['porqueYo']['titulo'] }}</h1>
+                    <h2 class="ff-wide">{{ $secciones['porqueYo']['titulo'] }}</h2>
                     @foreach ($secciones['porqueYo']['descripcion'] as $descripcion)
-                        <p>{!! $descripcion !!}</p>
+                        <h3>{!! $descripcion !!}</h3>
                     @endforeach
                 </div>
             </article>
@@ -452,17 +451,17 @@
     @if($bloques['lista']['candidatoAdecuado'] ?? false)
         <section class="section">
             <article class="candidato-adecuado | container">
-                <h1 class="ff-wide text-center">{{ $bloques['lista']['candidatoAdecuado']['titulo'] }}</h1>
+                <h2 class="ff-wide text-center">{{ $bloques['lista']['candidatoAdecuado']['titulo'] }}</h2>
                 @if ($bloques['lista']['candidatoAdecuado']['items'] ?? false)
 
                     <div class="candidato-adecuado__lista">
                         @foreach ($bloques['lista']['candidatoAdecuado']['items'] as $item)
                             <div class="candidato-adecuado__lista__item">
-                                <h3 class="ff-display">{{ $item['titulo'] }}</h3>
+                                <h2 class="ff-display">{{ $item['titulo'] }}</h2>
 
                                 <div class="candidato-adecuado__lista__descripciones">
                                     @foreach ($item['descripcion'] as $descripcion)
-                                        <p>{!! $descripcion !!}</p>
+                                        <h3>{!! $descripcion !!}</h3>
                                     @endforeach
                                 </div>
                             </div>
@@ -495,9 +494,9 @@
     @if ($transformaCTA = $bloquesHelper->obtenerBloque($bloques, 'seccionCTA', 'transformaCTA'))
         <section class="section">
             <article class="transforma-cta | container text-center flow">
-                <h1 class="ff-wide">{{ $transformaCTA['encabezado'] }}</h1>
+                <h2 class="ff-wide">{{ $transformaCTA['encabezado'] }}</h2>
                 @foreach ($transformaCTA['subtitulo'] as $subtitulo)
-                    <p>{!! $subtitulo !!}</p>
+                    <h3>{!! $subtitulo !!}</h3>
                 @endforeach
                 <a
                     href="{{ url($plazasCTA['botonCTA']['enlace']) }}"
