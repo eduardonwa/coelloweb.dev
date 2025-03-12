@@ -1,13 +1,22 @@
 <x-site-layout :meta-title="'Crea tu ' . $tituloServicio . ' | Eduardo Coello'">
     <!-- 1 sección héroe -->
-    <section class="heroe | section text-center bg-seccion">
-        <article class="flow container">
-            @foreach ($seccionHeroe as $item)
-                <h1 class="ff-wide">{{ $item['encabezado'] }}</h1>
-                @foreach ($item['subtitulo'] as $subtitulo)
-                    <h2 class="padding-4">{!! $subtitulo !!}</h2>
+    <section class="section text-center bg-seccion">
+        <article class="flow container" data-type="full-bleed">
+            <div class="ventas-heroe">
+                @foreach ($seccionHeroe as $item)
+                    
+                    <div class="ventas-heroe__copy">
+                        <h1 class="ff-wide">{{ $item['encabezado'] }}</h1>
+                        @foreach ($item['subtitulo'] as $subtitulo)
+                            <h2>{!! $subtitulo !!}</h2>
+                        @endforeach
+                    </div>
+
+                    <div class="ventas-heroe__img">
+                        <img src="{{ $item['imagenUrl'] }}" alt="">
+                    </div>
                 @endforeach
-            @endforeach
+            </div>
         </article>
     </section>
 
