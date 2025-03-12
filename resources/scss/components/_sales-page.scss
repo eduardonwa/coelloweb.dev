@@ -48,7 +48,7 @@
                     font-size: $font-size-600;
                 }
 
-                h3 {
+                p {
                     font-size: $font-size-600;
                 }
             }
@@ -67,7 +67,7 @@
             font-size: $font-size-600;
         }
 
-        h3 {
+        p {
             font-size: $font-size-600;
         }
     }
@@ -171,7 +171,7 @@
             font-size: $font-size-600;
         }
 
-        h3 {
+        p {
             font-size: $font-size-600;
         }
     }
@@ -199,7 +199,7 @@
         font-size: $font-size-700;
     }
 
-    h3 {
+    p {
         padding-block: $size-4;
         font-size: $font-size-600;
 
@@ -396,7 +396,7 @@
         }
     }
 
-    h3 {
+    p {
         font-size: $font-size-600;
         padding-block: $size-3;
 
@@ -478,7 +478,7 @@
         align-items: center;
         flex-direction: column;
 
-        h3 {
+        p {
             margin-block: $size-7;
             border: 1px solid $color-contacto-300;
             filter: drop-shadow(0px 3px 6px rgba(0, 0, 0, 0.144));
@@ -545,7 +545,7 @@
             }
         }
 
-        h3 {
+        p {
             font-size: $font-size-600;
         }
     }
@@ -590,7 +590,7 @@
                 flex: 1;
             }
 
-            h3 {
+            p {
                 font-size: $font-size-600;
                 
                 @include mq(large) {

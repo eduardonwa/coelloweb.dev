@@ -19,7 +19,7 @@
                     <h2 class="ff-medium">{{ $secciones['resultadoPerfecto']['titulo'] }}</h2>
                     <br>
                     @foreach ($secciones['resultadoPerfecto']['descripcion'] as $descripcion)
-                        <h3>{!! $descripcion !!}</h3>
+                        <p>{!! $descripcion !!}</p>
                     @endforeach
                     <div class="padding-block-8">
                         <hr
@@ -42,7 +42,7 @@
                 <div class="agitacion">
                     <h2>{{ $secciones['agitacion']['titulo'] }}</h2>
                     @foreach ($secciones['agitacion']['descripcion'] as $descripcion)
-                        <h3>{!! $descripcion !!}</h3>
+                        <p>{!! $descripcion !!}</p>
                     @endforeach
                 </div>
             </article>
@@ -60,7 +60,7 @@
                     <div class="porque-esto__copy | flow">
                         <h2>{{ $secciones['porqueEsto']['titulo'] }}</h2>
                         @foreach ($secciones['porqueEsto']['descripcion'] as $descripcion)
-                            <h3>{!! $descripcion !!}</h3>
+                            <p>{!! $descripcion !!}</p>
                         @endforeach
                     </div>
                 </div>
@@ -78,7 +78,7 @@
                 <div class="intro-solucion | text-center flow">
                     <h2>{{ $secciones['introSolucion']['titulo'] }}</h2>
                     @foreach ($secciones['introSolucion']['descripcion'] as $descripcion)
-                        <h3>{!! $descripcion !!}</h3>
+                        <p>{!! $descripcion !!}</p>
                     @endforeach
                     <div class="intro-solucion__img-wrap">
                         <img
@@ -117,7 +117,7 @@
                                 <div class="lo-que-necesitas__lista__item__inner">
                                     <h2>{{ $item['titulo'] }}</h2>
                                     @foreach ($item['descripcion'] as $descripcion)
-                                        <h3>{!! $descripcion !!}</h3>
+                                        <p>{!! $descripcion !!}</p>
                                     @endforeach
                                 </div>
                             </div>
@@ -200,7 +200,7 @@
                                 <div class="como-funciona__lista__item__inner">
                                     <h2>{{ $item['titulo'] }}</h2>
                                     @foreach ($item['descripcion'] as $descripcion)
-                                        <h3>{!! $descripcion !!}</h3>
+                                        <p>{!! $descripcion !!}</p>
                                     @endforeach
                                 </div>
 
@@ -226,7 +226,7 @@
                     <div class="testimonio-corto__texto | flow">
                         <h2 class="ff-medium">{{ $secciones['testimonioCorto']['titulo'] }}</h2>
                         @foreach ($secciones['testimonioCorto']['descripcion'] as $descripcion)
-                            <h3>{!! $descripcion !!}</h3>
+                            <p>{!! $descripcion !!}</p>
                         @endforeach
                     </div>
                     <img
@@ -296,7 +296,7 @@
                 </div>
                 <h2 class="ff-wide text-center">{{ $secciones['unicaOpcion']['titulo'] }}</h2>
                 @foreach ($secciones['unicaOpcion']['descripcion'] as $descripcion)
-                    <h3>{!! $descripcion !!}</h3>
+                    <p>{!! $descripcion !!}</p>
                 @endforeach
                 <div class="padding-block-8">
                     <hr
@@ -360,7 +360,7 @@
                 <h2 class="ff-medium">{{ $bloques['desglosePrecios'][0]['encabezado'] }}</h2>
                 <div class="desglose-precios__descripcion">
                     @foreach ($bloques['desglosePrecios'][0]['descripcionPrecios'] as $descripcion)
-                        <h3>{{ $descripcion['plazo'] }} plazos de <br> <span class="ff-display"> $ {{ $descripcion['cantidad'] }}</span> </h3>
+                        <p>{{ $descripcion['plazo'] }} plazos de <br> <span class="ff-display"> $ {{ $descripcion['cantidad'] }}</span> </p>
                     @endforeach
                 </div>
             </article>
@@ -394,7 +394,7 @@
                     <div class="testimonio-one__texto | flow">
                         <h2 class="ff-medium">{{ $secciones['testimonioOne']['titulo'] }}</h2>
                         @foreach ($secciones['testimonioOne']['descripcion'] as $descripcion)
-                            <h3>{!! $descripcion !!}</h3>
+                            <p>{!! $descripcion !!}</p>
                         @endforeach
                     </div>
 
@@ -441,7 +441,7 @@
                 <div class="porque-yo__inner | flow">
                     <h2 class="ff-wide">{{ $secciones['porqueYo']['titulo'] }}</h2>
                     @foreach ($secciones['porqueYo']['descripcion'] as $descripcion)
-                        <h3>{!! $descripcion !!}</h3>
+                        <p>{!! $descripcion !!}</p>
                     @endforeach
                 </div>
             </article>
@@ -462,7 +462,7 @@
 
                                 <div class="candidato-adecuado__lista__descripciones">
                                     @foreach ($item['descripcion'] as $descripcion)
-                                        <h3>{!! $descripcion !!}</h3>
+                                        <p>{!! $descripcion !!}</p>
                                     @endforeach
                                 </div>
                             </div>
