@@ -17,6 +17,7 @@
             <article class="container">
                 <div class="resultado-perfecto">
                     <h2 class="ff-medium">{{ $secciones['resultadoPerfecto']['titulo'] }}</h2>
+                    <br>
                     @foreach ($secciones['resultadoPerfecto']['descripcion'] as $descripcion)
                         <h3>{!! $descripcion !!}</h3>
                     @endforeach
@@ -475,11 +476,17 @@
                 @if ($item['iconoUrl'])
                     <img src="{{ $item['iconoUrl'] }}" alt="{{ $item['titulo'] }}">
                 @endif
-
+                <hr
+                    width="1"
+                    size="100"
+                    style="
+                        margin: 0 auto;
+                    "
+                />
                 @if ($bloques['lista']['candidatoAdecuado']['subtitulo'] ?? false)
                     <div class="candidato-adecuado__copy">
                         @foreach ($bloques['lista']['candidatoAdecuado']['subtitulo'] as $subtitulo)
-                            <p>{!! $subtitulo !!}</p>
+                            <h3>{!! $subtitulo !!}</h3>
                         @endforeach
                     </div>
                 @endif

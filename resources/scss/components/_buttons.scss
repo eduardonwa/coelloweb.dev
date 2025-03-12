@@ -22,6 +22,8 @@
         overflow: hidden;
         position: relative;
         filter: drop-shadow(0px 3px 6px rgba(0, 0, 0, 0.152));
+        font-size: $font-size-500;
+
         // agrega suavidad al linear-gradient
         &::after {
             content: '';
