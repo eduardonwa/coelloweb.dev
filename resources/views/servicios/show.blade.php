@@ -1,4 +1,5 @@
 <x-site-layout :meta-title="'Crea tu ' . $tituloServicio . ' | Eduardo Coello'">
+       
     <!-- 1 sección héroe -->
     <section class="section text-center bg-seccion">
         <article class="flow container" data-type="full-bleed">
@@ -539,4 +540,8 @@
             </article>
         </section>
     @endif
+    {{-- script para cargar el fondo --}}
+    <x-slot name="scripts">
+        <script src="{{ asset('ts/neat-services-hero-bg.ts') }}" defer></script>
+    </x-slot>
 </x-site-layout>

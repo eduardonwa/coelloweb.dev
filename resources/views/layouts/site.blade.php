@@ -47,6 +47,9 @@
 
         @livewireScripts
         @stack('scripts')
+        @isset($scripts)
+            {{ $scripts }}
+        @endisset
         <script src="/js/eduardocoello/site.js"></script>
         <script>
             window.addEventListener('load', () => {

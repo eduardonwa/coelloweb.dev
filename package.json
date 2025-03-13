@@ -18,9 +18,11 @@
         "vite": "^5.0"
     },
     "dependencies": {
+        "@firecms/neat": "^0.3.0",
         "@sanity/client": "^6.23.0",
         "@sanity/image-url": "^1.1.0",
         "alpinejs": "^3.14.7",
-        "gsap": "^3.12.5"
+        "gsap": "^3.12.5",
+        "three.js": "^0.77.1"
     }
 }
