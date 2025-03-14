@@ -29,7 +29,7 @@
             @include mq (medium) {
             }
 
-            h1 {
+            h2 {
                 font-family: $font-family-display;
                 @include mq(small) {
                     font-size: 32px;

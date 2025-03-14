@@ -85,7 +85,7 @@
                 </div>
 
                 <div class="paso-a-seguir">
-                    <h1 class="uppercase ff-display fs-700">{{ $item['encabezado'] }}</h1>
+                    <h2 class="uppercase ff-display fs-700">{{ $item['encabezado'] }}</h2>
                     @foreach ($item['descripcion'] as $descripcion)
                         <p>{!! $descripcion !!}</p>
                     @endforeach

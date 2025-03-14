@@ -15,7 +15,7 @@
 
     .cta-inner {
         &__copy {
-            h1 {
+            h2 {
                 font-size: 40px;
             }
 
@@ -64,6 +64,7 @@
                 @include mq(medium) {
                     flex: 2;
                 }
+                
                 .subtitulo {
                     font-family: $font-family-base;
                 }
@@ -82,7 +83,7 @@
     &[data-type="servicios"] {
         .cta-inner {
             &__copy {
-                h1 {
+                h2 {
                     margin-bottom: $size-8;
                 }
             }

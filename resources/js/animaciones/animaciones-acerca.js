@@ -22,7 +22,7 @@ acercaTl.to(".hero-acerca", {
     opacity: 0,
 });
 
-acercaTl.from(".intro-aha h1", {
+acercaTl.from(".anim-header-intro-aha", {
     yPercent: -1030,
     duration: 1,
 });
@@ -51,7 +51,7 @@ elementos.forEach((el, index) => {
     });
 });
 
-acercaTl.to(".intro-aha h1", {
+acercaTl.to(".anim-header-intro-aha", {
     yPercent: -50,
     opacity: 0,
     duration: .5,

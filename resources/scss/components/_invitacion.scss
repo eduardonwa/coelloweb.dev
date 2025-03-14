@@ -1,7 +1,7 @@
 @use "../abstracts" as *;
 
 .invitacion {
-    h1 {
+    h2 {
         font-family: $font-family-display;
 
         @include mq(small) {

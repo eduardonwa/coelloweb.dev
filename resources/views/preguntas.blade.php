@@ -1,9 +1,9 @@
 <x-site-layout>
     <section x-data="{ activeTab: 0 }" class="preguntas-wrap">
         <header>
-            <h1>
+            <h2>
                 Preguntas Frecuentes
-            </h1>
+            </h2>
             <p>
                 Porque no se trata de complicar nuestras interacciones.
                 Se trata de hacerlo de manera accesible y funcional

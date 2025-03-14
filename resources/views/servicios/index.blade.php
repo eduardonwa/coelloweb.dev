@@ -16,9 +16,9 @@
     <section
         class="objeciones | section flow">
         @foreach ($objeciones as $item)
-            <h1 class="text-center container">
+            <h2 class="text-center container">
                 {{ $item['encabezado'] }}
-            </h1>
+            </h2>
 
             <article class="objeciones__copy | container">
                 @foreach ($item['subtitulo'] as $subtitulo)
@@ -100,9 +100,9 @@
     <div class="section">
         <div class="container" data-type="wide">
             @foreach ($valores as $item)
-                <h1 class="text-center margin-block-end-12 ff-display fs-700 container" data-type="narrow">
+                <h2 class="text-center margin-block-end-12 ff-display fs-700 container" data-type="narrow">
                     {{ $item['titulo'] }}
-                </h1>
+                </h2>
                 <section class="valores" >
                     @foreach ($item['definicion'] as $def)
                         <article class="valores__item">
@@ -134,7 +134,7 @@
                     >
 
                     <div class="oferta__copy">
-                        <h1>{{ $item['titulo'] }}</h1>
+                        <h2>{{ $item['titulo'] }}</h2>
                         @foreach ($item['descripcion'] as $descripcion)
                             <p>{!! $descripcion !!}</p>
                         @endforeach
@@ -159,7 +159,7 @@
         @foreach ($objeciones as $item)
             @foreach ($item['invitacion'] as $inv)
                 <section class="invitacion | even-columns padding-inline-2">
-                    <h1>{{ $inv['encabezado'] }}</h1>
+                    <h2>{{ $inv['encabezado'] }}</h2>
                     <div>
                         @foreach ($inv['descripcion'] as $descripcion)
                             <p>{!! $descripcion !!}</p>
@@ -180,7 +180,7 @@
     <!-- testimonios -->
     <div class="section">
         <div class="testimonio-servicios | text-center container">
-            <h1>Testimonios</h1>
+            <h2>Testimonios</h2>
             <div
                 x-data="{
                     activeIndex: 0,

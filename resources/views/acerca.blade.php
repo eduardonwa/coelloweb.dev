@@ -19,7 +19,7 @@
 
                     <section class="intro-aha | flow" style="--flow-spacer: 1rem;">
                         @foreach ($introAha as $item)
-                            <h1 class="ff-display fs-800 anim">{{ $item['encabezado'] }}</h1>
+                            <h2 class="ff-display fs-800 anim-header-intro-aha">{{ $item['encabezado'] }}</h2>
                             <div class="aha-copy | container even-columns">
                                 <img
                                     class="m-auto lazy anim border-radius-2"
@@ -41,9 +41,9 @@
                     <section class="declaracion">
                         @foreach ($declaracionPoderosa as $item)
                             <article class="container flow">
-                                <h1 class="ff-display fs-700 text-center anim">{{ $item['encabezado'] }}</h1>
+                                <h2 class="ff-display text-center anim">{{ $item['encabezado'] }}</h2>
                                 @foreach ($item['descripcion'] as $descripcion)
-                                    <h2>{!! $descripcion !!}</h2>
+                                    <p>{!! $descripcion !!}</p>
                                 @endforeach
                             </article>
                         @endforeach
@@ -59,7 +59,7 @@
         <div class="container" data-type="narrow">
             @foreach($historia as $item)
                 <div class="flow">
-                    <h1 class="ff-display fs-700 text-center">{{ $item['encabezado'] }}</h1>
+                    <h2 class="ff-display fs-700 text-center">{{ $item['encabezado'] }}</h2>
                     @foreach ($item['descripcion'] as $descripcion)
                         <p class="fs-600 padding-inline-3">{!! $descripcion !!}</p>
                     @endforeach
@@ -72,9 +72,9 @@
     <div class="parte-divertida | margin-block-start-8 margin-block-end-12">
         <div class="container">
             @foreach ($parteDivertida as $item)
-                <h1 class="ff-display text-center fs-700 margin-block-end-4">
+                <h2 class="ff-display text-center fs-700 margin-block-end-4">
                     {{ $item['encabezado'] }}
-                </h1>
+                </h2>
                 @foreach ($item['estoAquello'] as $subItem)
                     <article>
                         <div class="opcion-1">
@@ -96,7 +96,6 @@
     <!-- zona cta -->
     <section class="seccion-cta | section padding-inline-5" data-type="acerca">
         <img class="seccion-cta__bg" src="/images/cta-bg.svg" loading="lazy" alt="">
-
         <article class="seccion-cta__content | text-center">
             <div class="container" data-type="narrow">
                 <x-seccionCTA

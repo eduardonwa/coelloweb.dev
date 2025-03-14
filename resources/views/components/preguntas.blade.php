@@ -1,6 +1,6 @@
 <div class="container">
     <div class="margin-block-14">
-        <h1 class="ff-display fs-700 text-center">¿Tienes Preguntas?</h1>
+        <h2 class="ff-display fs-700 text-center">¿Tienes Preguntas?</h2>
         <div
             class="preguntas | container flow"
             x-data="{ openIndex: null }"

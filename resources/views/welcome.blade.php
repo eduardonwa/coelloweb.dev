@@ -56,11 +56,11 @@
                         data-src="{{ $item['imagenUrl'] }}"
                         alt="{{ $item['encabezado'] }}"
                     >
-                    <h1 id="gp-trigger">{{ $item['encabezado'] }}</h1>
+                    <h2 id="gp-trigger">{{ $item['encabezado'] }}</h2>
                 </header>
 
                 <article class="gran-problema__content__copy">
-                    <h2>{{ $item['subtitulo'] }}</h2>
+                    <h3>{{ $item['subtitulo'] }}</h3>
                     @foreach($item['descripcion'] as $descripcion)
                         <p>{!! $descripcion !!}</p>
                     @endforeach
@@ -105,7 +105,7 @@
                 <div class="servicio-item | even-columns">
                     <article class="servicio-item__copy | flow">
                         <!-- titulo -->
-                        <h1>{{ $item['titulo'] }}</h1>
+                        <h2>{{ $item['titulo'] }}</h2>
 
                         <!-- descripción -->
                         @foreach ($item['descripcion'] as $descripcion)
@@ -174,8 +174,8 @@
     <section class="blog-welcome | margin-block-5">
         <div class="container" data-type="wide">
             <header class="blog-welcome__header | text-center">
-                <h1 class="ff-wide">Visita mi blog</h1>
-                <h2 class="fs-600">¡Comparto contenido cada semana!</h2>
+                <h2 class="ff-wide">Visita mi blog</h2>
+                <h3 class="fs-600">¡Comparto contenido cada semana!</h3>
             </header>
 
             <article class="blog-welcome__posts | padding-block-end-0 padding-inline-13">
@@ -199,8 +199,8 @@
                         </div>
 
                         <div class="post-details">
-                            <h2 class="uppercase">{{ $item->category->name }}</h2>
-                            <h1 class="ff-medium">{{ $item->title }}</h1>
+                            <h3 class="uppercase">{{ $item->category->name }}</h2>
+                            <h2 class="ff-medium">{{ $item->title }}</h1>
                         </div>
                     </a>
                 @endforeach
