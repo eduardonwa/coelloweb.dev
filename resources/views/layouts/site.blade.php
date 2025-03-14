@@ -40,8 +40,18 @@
         }
     </style>
 </head>
+
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-MPL9EF0DLQ"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+
+        gtag('config', 'G-MPL9EF0DLQ');
+    </script>
+
     <body id="content" style="opacity: 0; transition: opacity 0.3s ease;" style="background: linear-gradient(to bottom, transparent 20%, #edfffe)">
-        <x-gtag/>
+
         <x-navbar/>
 
         <div class="faded-bg">
