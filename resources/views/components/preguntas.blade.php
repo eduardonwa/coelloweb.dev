@@ -3,7 +3,6 @@
         <h1 class="ff-display fs-700 text-center">¿Tienes Preguntas?</h1>
         <div
             class="preguntas | container flow"
-            data-type=""
             x-data="{ openIndex: null }"
         >
             @foreach($preguntas as $index => $item)
