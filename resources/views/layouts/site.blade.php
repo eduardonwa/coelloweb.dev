@@ -61,7 +61,6 @@
             <x-footer/>
         </div>
 
-        @livewireScripts
         @stack('scripts')
 
         <script src="/js/eduardocoello/site.js"></script>
@@ -74,5 +73,7 @@
                 document.getElementById('content').style.opacity = 1;
             });
         </script>
+        
+        @livewireScripts
     </body>
 </html>
