@@ -30,15 +30,7 @@
     </head>
 
     <body class="antialiased" id="content" style="opacity: 0; transition: opacity 0.3s ease;">
-        <!-- Google tag (gtag.js) -->
-        <script async src="https://www.googletagmanager.com/gtag/js?id=G-MPL9EF0DLQ"></script>
-        <script>
-        window.dataLayer = window.dataLayer || [];
-        function gtag(){dataLayer.push(arguments);}
-        gtag('js', new Date());
-
-        gtag('config', 'G-MPL9EF0DLQ');
-        </script>
+        <x-gtag/>
 
         <x-navbar/>
 

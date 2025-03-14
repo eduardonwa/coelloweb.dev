@@ -36,6 +36,7 @@
     </style>
 </head>
     <body id="content" style="opacity: 0; transition: opacity 0.3s ease;" style="background: linear-gradient(to bottom, transparent 20%, #edfffe)">
+        <x-gtag/>
         <x-navbar/>
 
         <div class="faded-bg">
