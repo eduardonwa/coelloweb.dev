@@ -219,5 +219,5 @@
         </article>
     </section>
 
-    @vite('resources/js/animaciones.js')
+    @vite('resources/js/animaciones/animaciones.js')
 </x-site-layout>

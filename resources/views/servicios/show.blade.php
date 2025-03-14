@@ -541,7 +541,7 @@
         </section>
     @endif
 
-    @vite('resources/js/animaciones-sales-page.js')
+    @vite('resources/js/animaciones/animaciones-sales-page.js')
     {{-- script para cargar el fondo --}}
     {{-- <x-slot name="scripts">
         <script src="{{ asset('ts/neat-services-hero-bg.ts') }}" defer></script>

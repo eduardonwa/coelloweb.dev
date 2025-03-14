@@ -8,7 +8,7 @@ gsap.registerPlugin(ScrollTrigger);
 gsap.from(".agitacion", {
     delay: .5,
     opacity: 0,
-    duration: 1,
+    duration: 1.5,
     y: 100,
     scrollTrigger: {
         trigger: ".agitacion",
@@ -21,7 +21,7 @@ gsap.from(".agitacion", {
 gsap.from(".porque-esto-imagen", {
     delay: .5,
     opacity: 0,
-    duration: 1,
+    duration: 2,
     x: 100,
     scrollTrigger: {
         trigger: ".porque-esto-imagen",
@@ -36,7 +36,7 @@ loQueNecesitas.forEach((necesitasLista) => {
     gsap.from(necesitasLista, {
         delay: 5,
         opacity: 0,
-        duration: 1,
+        duration: 1.5,
         stagger: 0.2,
         x: () => window.innerWidth < 768 ? 0 : 100, // Ajusta el valor de x según el tamaño de la pantalla
         scrollTrigger: {
@@ -117,7 +117,7 @@ desglosePrecio.forEach((precios) => {
 gsap.from(".porque-yo", {
     delay: .5,
     opacity: 0,
-    duration: 1,
+    duration: 2,
     stagger: 0.2,
     y: () => window.innerHeight < 896 ? 0 : 200,
     scrollTrigger: {
@@ -132,7 +132,7 @@ gsap.from(".porque-yo", {
 gsap.from(".candidato-adecuado__copy", {
     delay: .5,
     opacity: 0,
-    duration: 1,
+    duration: 1.5,
     stagger: 0.2,
     y: () => window.innerHeight < 896 ? 0 : 200,
     scrollTrigger: {

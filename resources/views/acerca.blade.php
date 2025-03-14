@@ -107,5 +107,5 @@
         </article>
     </section>
 
-    @vite('resources/js/animaciones-acerca.js')
+    @vite('resources/js/animaciones/animaciones-acerca.js')
 </x-site-layout>

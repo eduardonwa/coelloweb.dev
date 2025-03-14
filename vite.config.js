@@ -6,11 +6,9 @@ export default defineConfig({
         laravel({
             input: [
                 'resources/css/app.css',
-                'resources/js/app.js',
                 'resources/css/filament/admin/theme.css',
-                'resources/js/animaciones.js',
-                'resources/js/animaciones-acerca.js',
-                'resources/js/animaciones-sales-page.js',
+                'resources/js/app.js',
+                'resources/js/animaciones/*.js',
             ],
             refresh: true,
         }),
