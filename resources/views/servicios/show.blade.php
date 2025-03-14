@@ -190,7 +190,7 @@
                 @endif
             </article>
         </section>
-        <p class="text-center">*Dependiendo de tus objetivos y de la implementación, es posible que requieras de un servidor con características avanzadas.</p>
+        <p class="text-center padding-4">*Dependiendo de tus objetivos y de la implementación, es posible que requieras de un servidor con características avanzadas.</p>
     @endif
 
     <!-- 8 como funciona -->
