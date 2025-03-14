@@ -2,5 +2,5 @@
 import './bootstrap';
 import '../scss/main.scss';
 
-//window.Alpine = Alpine;
+window.Alpine = Alpine;
 //Alpine.start();
