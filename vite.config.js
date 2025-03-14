@@ -10,6 +10,7 @@ export default defineConfig({
                 'resources/css/filament/admin/theme.css',
                 'resources/js/animaciones.js',
                 'resources/js/animaciones-acerca.js',
+                'resources/js/animaciones-sales-page.js',
             ],
             refresh: true,
         }),
