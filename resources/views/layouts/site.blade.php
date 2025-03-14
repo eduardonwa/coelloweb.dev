@@ -29,6 +29,11 @@
     <!-- scripts externos -->
     <script src="https://unpkg.com/@lottiefiles/lottie-player@1.5.7/dist/lottie-player.js" defer></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/vanilla-lazyload/17.6.1/lazyload.min.js"></script>
+    <!-- Event snippet for Enviar formulario de clientes potenciales conversion page -->
+    <script>
+        gtag('event', 'conversion', {'send_to': 'AW-11198361905/B7QVCKnO0aoaELHi5dsp'});
+    </script>
+  
     <style>
         .faded-bg {
             background-color: #EDFFFE;
