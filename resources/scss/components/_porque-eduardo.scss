@@ -2,6 +2,7 @@
 
 .porque-eduardo {
     overflow: hidden;
+
     img {
         height: auto;
         width: 350px;
@@ -10,20 +11,26 @@
         @include mq(small) {
             margin: auto;
         }
+
         @include mq(large) {
             margin: 0;
         }
     }
+
     &__copy {
         padding-block-end: .3rem;
+
         p {
             font-size: $font-size-600;
         }
+
         .pq-eduardo-custom-btn {
             padding: $size-3;
+
             @include mq(small) {
                 width: 100%;
             }
+            
             @include mq(medium) {
                 width: fit-content;
             }

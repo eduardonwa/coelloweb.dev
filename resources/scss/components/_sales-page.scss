@@ -21,10 +21,13 @@
     }
 
     &__lista {
+        clip-path: inset(0 0 0 0);
+        
         @include mq(large) {
             width: 70ch;
             margin: auto;
         }
+
         &__item {
             display: flex;
             margin-block-end: $size-11;
@@ -211,8 +214,10 @@
 
 .porque-esto {
     @include pad-responsivo($size-3, 0);
+    overflow: hidden;
 
     img {
+        overflow: hidden;
         margin: auto;
         width: 80%;
         border-radius: $border-radius-2;
@@ -454,6 +459,8 @@
     @include pad-responsivo($size-3, 0);
 
     h2 {
+        //clip-path: inset(0 0 0 0);
+        overflow: hidden;
         font-size: $font-size-700;
         margin-block-end: $size-4;
 
@@ -477,12 +484,11 @@
 }
 
 .que-incluye {
-
     @include pad-responsivo($size-3, 0);
 
     h2 {
         font-size: $font-size-700;
-
+        overflow: hidden;
         @include mq(medium) {
             font-size: $font-size-800;
         }
@@ -588,6 +594,7 @@
 
 .porque-yo {
     @include pad-responsivo($size-3, 0);
+    clip-path: inset(0 0 0 0);
 
     img {
         border-radius: $border-radius-2;

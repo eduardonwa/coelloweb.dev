@@ -50,7 +50,7 @@
         <section class="margin-block-end-15">
             <article class="container">
                 <div class="agitacion">
-                    <h2>{{ $secciones['agitacion']['titulo'] }}</h2>
+                    <h2 class="titulo-agitacion ff-display fs-700">{{ $secciones['agitacion']['titulo'] }}</h2>
                     @foreach ($secciones['agitacion']['descripcion'] as $descripcion)
                         <p>{!! $descripcion !!}</p>
                     @endforeach
@@ -68,6 +68,7 @@
                         src="{{ $secciones['porqueEsto']['imagenUrl'] }}"
                         alt=""
                         loading="lazy"
+                        class="porque-esto-imagen"
                     >
                     <div class="porque-esto__copy | flow">
                         <h2>{{ $secciones['porqueEsto']['titulo'] }}</h2>
@@ -171,7 +172,7 @@
                                         <img
                                             src="{{ $item['iconoUrl'] ?? $bloques['lista']['bondades']['iconoUrl'] }}"
                                             alt="{{ $item['titulo'] }}"
-                                            loading="lazy"    
+                                            loading="lazy"
                                         >
                                     @endif
                                     <h2>{{ $item['titulo'] }}</h2>
@@ -182,7 +183,6 @@
                                         <p>{!! $descripcion !!}</p>
                                     @endforeach
                                 </div>
-
                             </div>
                         @endforeach
                     </div>
@@ -317,7 +317,7 @@
                         "
                     />
                 </div>
-                <h2 class="ff-wide text-center">{{ $secciones['unicaOpcion']['titulo'] }}</h2>
+                <h2 class="unica-opcion-header | ff-wide text-center">{{ $secciones['unicaOpcion']['titulo'] }}</h2>
                 @foreach ($secciones['unicaOpcion']['descripcion'] as $descripcion)
                     <p>{!! $descripcion !!}</p>
                 @endforeach
@@ -338,7 +338,7 @@
     @if($bloques['lista']['queIncluye'] ?? false)
         <section class="section">
             <article class="que-incluye | container" data-type="wide">
-                <h2 class="ff-wide text-center">{{ $bloques['lista']['queIncluye']['titulo'] }}</h2>
+                <h2 class="que-incluye-header | ff-wide text-center">{{ $bloques['lista']['queIncluye']['titulo'] }}</h2>
 
                 @if ($bloques['lista']['queIncluye']['items'] ?? false)
                     <div class="que-incluye__lista">
@@ -540,8 +540,10 @@
             </article>
         </section>
     @endif
+
+    @vite('resources/js/animaciones-sales-page.js')
     {{-- script para cargar el fondo --}}
-    <x-slot name="scripts">
+    {{-- <x-slot name="scripts">
         <script src="{{ asset('ts/neat-services-hero-bg.ts') }}" defer></script>
-    </x-slot>
+    </x-slot> --}}
 </x-site-layout>
