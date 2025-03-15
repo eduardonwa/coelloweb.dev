@@ -48,4 +48,11 @@
             </div>
         </article>
     </section>
+
+    @push('scripts')
+        <!-- Event snippet for Enviar formulario de clientes potenciales conversion page -->
+        <script>
+            gtag('event', 'conversion', {'send_to': 'AW-11198361905/B7QVCKnO0aoaELHi5dsp'});
+        </script>
+    @endpush
 </x-site-layout>
