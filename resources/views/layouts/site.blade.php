@@ -1,8 +1,7 @@
 <!DOCTYPE html>
 <html lang="es-ES">
 <head>
-    <!-- Google tag (gtag.js) -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-MPL9EF0DLQ"></script> <script> window.dataLayer = window.dataLayer || []; function gtag(){dataLayer.push(arguments);} gtag('js', new Date()); gtag('config', 'G-MPL9EF0DLQ'); gtag('config', 'AW-11198361905'); </script> 
+    <x-google-tag/>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
@@ -39,6 +38,10 @@
     </style>
 </head>
     <body id="content" style="opacity: 0; transition: opacity 0.3s ease;" style="background: linear-gradient(to bottom, transparent 20%, #edfffe)">
+        <!-- Google Tag Manager (noscript) -->
+        <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-WXV2W4JS"
+        height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+        <!-- End Google Tag Manager (noscript) -->
         <x-navbar/>
 
         <div class="faded-bg">
