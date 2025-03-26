@@ -36,6 +36,16 @@
             background-color: #EDFFFE;
         }
     </style>
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=AW-11198361905">
+    </script>
+    <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'AW-11198361905');
+    </script>
 </head>
     <body id="content" style="opacity: 0; transition: opacity 0.3s ease;" style="background: linear-gradient(to bottom, transparent 20%, #edfffe)">
         <!-- Google Tag Manager (noscript) -->
