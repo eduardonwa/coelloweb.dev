@@ -15,22 +15,18 @@ class DatabaseSeeder extends Seeder
      */
     public function run(): void
     {
-        // User::factory(10)->create();
-
-        Category::factory()->create(['name' => 'Category 1']);
+        /* Category::factory()->create(['name' => 'Category 1']);
         Category::factory()->create(['name' => 'Category 2']);
         Category::factory()->create(['name' => 'Category 3']);
         Category::factory()->create(['name' => 'Category 4']);
 
         Post::factory(13)
             ->hasCategory()
-            // ->hasTags()
-            ->create();
+            ->create(); */
 
-        User::factory()->create([
-            'name' => 'eduardo',
-            'email' => 'eduardo@hotmail.com',
-            'password' => 'password'
+        $this->call([
+            RoleSeeder::class,
+            AdminUserSeeder::class
         ]);
     }
 }
