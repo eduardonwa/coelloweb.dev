@@ -17,7 +17,7 @@
     <meta name="author" content="Eduardo Coello">
     <link rel="stylesheet" href="css/eduardocoello/ghost.css">
     <script src="js/eduardocoello/ghost.js" defer></script>
-    <title>Diseñador Fantasma - Diseño Web Moderno y Profesional</title>
+    <title>Eduardo Coello - Diseño Web</title>
     @vite(['resources/js/app.js'])
     @livewireStyles
 </head>
