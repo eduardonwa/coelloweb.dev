@@ -43,18 +43,33 @@ class WelcomeController extends Controller
         $eduardoWelcomeData = $welcomeCache['eduardoWelcome'][0];
 
         $impacto = collect($eduardoWelcomeData['impacto'])->map(function ($item) {
-            $imagen = new SanityImage($item['imagen']);
+            // $imagen = new SanityImage($item['imagen']);
+            // Procesar todas las imagenes como array
+            $imagenes = collect($item['imagen'] ?? [])->map(function ($img) {
+                try {
+                    return [
+                        'url' => (new SanityImage($img))->getUrl(),
+                        'alt' => $img['alt'] ?? null,
+                        'link' => $img['url'] ?? null, // URL del proyecto
+                        'lqip' => $img['asset']['metadata']['lqip'] ?? null,
+                    ];
+                } catch (\Exception $e) {
+                    return null;
+                }
+            })->filter();
+
             // procesar el enlace del boton CTA
             $botonCTA = $item['botonCTA'];
             $enlace = $botonCTA['enlace'];
+
             return [
                 'encabezado' => $item['encabezado'],
                 'subtitulo' => SanityHelpers::processBlockText($item['subtitulo']),
                 'botonCTA' => $item['botonCTA'],
                 'enlaceCTA' => $enlace,
                 'testimonioMetrica' => SanityHelpers::processBlockText($item['testimonioMetrica']),
-                'imagenUrl' => $imagen->getUrl(),
-                'lqip' => $item['imagen']['asset']['metadata']['lqip'],
+                'imagenes' => $imagenes,
+                // 'lqip' => $item['imagen']['asset']['metadata']['lqip'],
             ];
         });
 

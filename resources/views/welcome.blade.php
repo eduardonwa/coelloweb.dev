@@ -32,12 +32,14 @@
                             src="/images/espiral-heroe.svg"
                             alt=""
                         />
-                        <img
-                            class="hero__image-wrap__impacto lazy"
-                            src="{{ $item['lqip'] }}"
-                            data-src="{{ $item['imagenUrl'] }}"
-                            alt="{{ $item['encabezado'] }}"
-                        >
+                        @foreach ($item['imagenes'] as $imagen)
+                            <img
+                                class="hero__image-wrap__impacto lazy"
+                                src="{{ $imagen['lqip'] }}"
+                                data-src="{{ $imagen['url'] }}"
+                                {{-- alt="{{ $imagen['encabezado'] }}" --}}
+                            >                            
+                        @endforeach
                     </article>
                 </article>
             </div>

@@ -35,7 +35,7 @@ class EduardoWelcome
                         "enlace": enlace[0].secciones->alias.current
                     },
                     testimonioMetrica,
-                    imagen {
+                    imagen[] {
                         asset-> {
                             url,
                             metadata {
@@ -47,7 +47,9 @@ class EduardoWelcome
                             }
                         },
                         hotspot,
-                        crop
+                        crop,
+                        url,
+                        alt,
                     }
                 },
                 porqueEduardoCoello[] {
