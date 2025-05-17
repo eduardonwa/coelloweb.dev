@@ -37,7 +37,7 @@
                                 class="hero__image-wrap__impacto lazy"
                                 src="{{ $imagen['lqip'] }}"
                                 data-src="{{ $imagen['url'] }}"
-                                {{-- alt="{{ $imagen['encabezado'] }}" --}}
+                                alt="{{ $imagen['alt'] }}"
                             >                            
                         @endforeach
                     </article>
