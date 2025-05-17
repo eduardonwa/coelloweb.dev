@@ -41,9 +41,8 @@ class WelcomeController extends Controller
     {
         $welcomeCache = $this->getCachedWelcome();
         $eduardoWelcomeData = $welcomeCache['eduardoWelcome'][0];
-
-        $impacto = collect($eduardoWelcomeData['impacto'])->map(function ($item) {
-            // $imagen = new SanityImage($item['imagen']);
+        
+        $impacto = collect($eduardoWelcomeData['impacto'] ?? [])->map(function ($item) {
             // Procesar todas las imagenes como array
             $imagenes = collect($item['imagen'] ?? [])->map(function ($img) {
                 try {
@@ -69,7 +68,6 @@ class WelcomeController extends Controller
                 'enlaceCTA' => $enlace,
                 'testimonioMetrica' => SanityHelpers::processBlockText($item['testimonioMetrica']),
                 'imagenes' => $imagenes,
-                // 'lqip' => $item['imagen']['asset']['metadata']['lqip'],
             ];
         });
 

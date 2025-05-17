@@ -33,12 +33,14 @@
                             alt=""
                         />
                         @foreach ($item['imagenes'] as $imagen)
-                            <img
-                                class="hero__image-wrap__impacto lazy"
-                                src="{{ $imagen['lqip'] }}"
-                                data-src="{{ $imagen['url'] }}"
-                                alt="{{ $imagen['alt'] }}"
-                            >                            
+                            {{-- <a href="{{ $imagen['link'] }}" target="_blank"> --}}
+                                <img
+                                    class="hero__image-wrap__impacto lazy"
+                                    src="{{ $imagen['lqip'] }}"
+                                    data-src="{{ $imagen['url'] }}"
+                                    alt="{{ $imagen['alt'] }}"
+                                >
+                            {{-- </a> --}}
                         @endforeach
                     </article>
                 </article>
