@@ -1,3 +1,5 @@
+// este es el heroe de Welcome
+
 @use "../abstracts" as *;
 
 .hero {
@@ -51,7 +53,7 @@
         height: 100%;
         width: 100%;
         margin-top: $size-8;
-
+        
         @include mq(medium) {
             margin-top: $size-4;
         }
@@ -79,6 +81,14 @@
             max-width: 80%;
             z-index: 1;
 
+            img {
+                position: absolute;
+
+                @include mq (medium) {
+                    padding-inline: 3rem;
+                }
+            }
+
             @include mq(large) {
                 align-self: center;
             }
@@ -88,6 +98,41 @@
                 height: auto;
                 padding: $size-10;
             }
+       }
+
+       &__navigation {
+        width: 100%;
+        height: 100%;
+        position: absolute;
+
+        .next, .back {
+            cursor: pointer;
+            background: $color-neutral-500;
+            z-index: 5;
+            padding: 1rem;
+            position: absolute;
+            border-radius: .3rem;
+            top: 50%;
+            transform: translateY(-50%);
+
+            &:active {
+                outline: none;
+                box-shadow: 0 0 0 2px $color-primary-300;
+            }
+        }
+
+        .next {
+            right: 0;
+        }
+
+        .back {
+            left: 0;
+        }
+
+        .next:hover,
+        .back:hover {
+            background: $color-neutral-400;
+        }
        }
     }
     &__testimonio {

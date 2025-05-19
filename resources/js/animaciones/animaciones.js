@@ -15,11 +15,10 @@ gsap.from(".hero__image-wrap__bg", {
 });
 
 gsap.from(".hero__image-wrap__impacto", {
-    delay: 1,
+    delay: .5,
     opacity: 0,
-    duration: 1.5,
+    duration: 1,
     y: 100,
-    filter: "blur(3px)",
 });
 
 // gran problema

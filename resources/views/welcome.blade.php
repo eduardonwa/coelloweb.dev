@@ -32,16 +32,47 @@
                             src="/images/espiral-heroe.svg"
                             alt=""
                         />
-                        @foreach ($item['imagenes'] as $imagen)
-                            {{-- <a href="{{ $imagen['link'] }}" target="_blank"> --}}
-                                <img
-                                    class="hero__image-wrap__impacto lazy"
-                                    src="{{ $imagen['lqip'] }}"
-                                    data-src="{{ $imagen['url'] }}"
-                                    alt="{{ $imagen['alt'] }}"
+                        <div
+                            class="hero__image-wrap__navigation"
+                            x-data="{ currentIndex: 0, images: {{  json_encode($item['imagenes']) }}}"
+                        >
+                            @if(count($item['imagenes']) > 1)
+                                <span
+                                    class="back"
+                                    x-on:click="currentIndex = (currentIndex - 1 + images.length) % images.length"
                                 >
-                            {{-- </a> --}}
-                        @endforeach
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="8.908" height="17.961" viewBox="0 0 8.908 17.961">
+                                        <path id="Vector" d="M7.1,15.84.577,9.32a1.986,1.986,0,0,1,0-2.8L7.1,0" transform="translate(0.75 1.061)" fill="none" stroke="#FFFFFF" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"/>
+                                    </svg>
+                                </span>
+
+                                <span
+                                    class="next"
+                                    x-on:click="currentIndex = (currentIndex + 1) % images.length"
+                                >
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="8.908" height="17.961" viewBox="0 0 8.908 17.961">
+                                        <path id="Vector" d="M0,15.84,6.52,9.32a1.986,1.986,0,0,0,0-2.8L0,0" transform="translate(1.061 1.061)" fill="none" stroke="#FFFFFF" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"/>
+                                    </svg>
+                                </span>
+                            @endif
+
+                            @foreach ($item['imagenes'] as $index => $imagen)
+                                <a
+                                    class="hero__image-wrap__impacto"
+                                    href="{{ $imagen['link'] }}"
+                                    target="_blank"
+                                    x-show="currentIndex === {{ $index }}"
+                                    x-transition.duration.500ms
+                                >
+                                    <img
+                                        class="lazy"
+                                        src="{{ $imagen['lqip'] }}"
+                                        data-src="{{ $imagen['url'] }}"
+                                        alt="{{ $imagen['alt'] }}"
+                                    >
+                                </a>
+                            @endforeach
+                        </div>
                     </article>
                 </article>
             </div>
