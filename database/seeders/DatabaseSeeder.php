@@ -15,14 +15,14 @@ class DatabaseSeeder extends Seeder
      */
     public function run(): void
     {
-        /* Category::factory()->create(['name' => 'Category 1']);
+        Category::factory()->create(['name' => 'Category 1']);
         Category::factory()->create(['name' => 'Category 2']);
         Category::factory()->create(['name' => 'Category 3']);
         Category::factory()->create(['name' => 'Category 4']);
 
-        Post::factory(13)
+        Post::factory(1)
             ->hasCategory()
-            ->create(); */
+            ->create();
 
         $this->call([
             RoleSeeder::class,

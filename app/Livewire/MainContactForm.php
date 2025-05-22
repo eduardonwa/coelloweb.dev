@@ -49,7 +49,7 @@ class MainContactForm extends Component
 
         session()->flash('message', '¡Gracias por tu interés!');
 
-        return redirect()->to('/gracias');
+        return redirect()->route('gracias');
 
         $this->reset();
     }

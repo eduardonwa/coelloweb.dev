@@ -11,6 +11,33 @@
                 <a href="https://www.facebook.com/coelloweb"> Facebook </a>
                 <a href="https://www.instagram.com/eduardocoelloweb"> Instagram </a>
             </div>
+
+            <div class="gracias__posts">
+                @foreach($posts as $post)
+                    <a
+                        class="gracias__posts__wrapper"
+                        href="{{ route('posts.show', $post->slug) }}"
+                    >
+                        <h2>{{ $post->title }}</h2>
+                        <div class="post-img-wrapper">
+                            <img
+                                width="640"
+                                height="640"
+                                src="{{ $post->getFirstMediaUrl('thumbnails', 'medium') }}"  {{-- La imagen de tamaño medio como fallback --}}
+                                srcset="
+                                    {{ $post->getFirstMedia('thumbnails')->getUrl('small') }} 320w,
+                                    {{ $post->getFirstMedia('thumbnails')->getUrl('medium') }} 640w,
+                                    {{ $post->getFirstMedia('thumbnails')->getUrl('large') }} 1024w,
+                                    {{ $post->getFirstMedia('thumbnails')->getUrl('extra-large') }} 1920w
+                                "
+                                alt="{{ $post->title }}"
+                                class="border-radius-1 lazy"
+                                loading="lazy"
+                            >
+                        </div>
+                    </a>
+                @endforeach
+            </div>
         </article>
     </section>
 </x-site-layout>

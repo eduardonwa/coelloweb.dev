@@ -9,6 +9,7 @@ use App\Http\Controllers\AcercaController;
 use App\Http\Controllers\WelcomeController;
 use App\Http\Controllers\CategoryController;
 use App\Http\Controllers\ContactoController;
+use App\Http\Controllers\GraciasController;
 use App\Http\Controllers\Servicios\EcommerceController;
 use App\Http\Controllers\Servicios\ServiciosController;
 use App\Http\Controllers\Servicios\CorporativaController;
@@ -23,7 +24,7 @@ Route::get('acerca', [AcercaController::class, 'show'])->name('acerca');
 Route::get('contacto', [ContactoController::class, 'show'])->name('contacto');
 Route::get('contactoForm', MainContactForm::class)->name('contactoForm');
 // Route::get('gracias', [GhostController::class, 'gracias'])->name('gracias');
-Route::view('/gracias', 'gracias');
+Route::get('/gracias', [GraciasController::class, 'index'])->name('gracias');
 
 Route::prefix('servicios')->group(function () {
     Route::get('/', [ServiciosController::class, 'index'])->name('servicios.index');
