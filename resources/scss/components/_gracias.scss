@@ -1,77 +1,30 @@
 @use '../abstracts/' as *;
 
-.gracias-dialog {
-    display: flex;
-    align-items: flex-start;
-    justify-content: center;
-    text-align: center;
-    background-color: rgba(255, 255, 255, 0.95);    
-    border-radius: 5px;
-    border: none;
-    position: absolute;
-    top: -15px;
-    left: 0;
+.gracias {
     height: 100vh;
-    width: 100%;
-    z-index: 10000;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
 
-    @include mq(medium) {
-        padding-block-start: $size-8;
-    }
-
-    &__wrapper {
-
-        .gracias-modal-close {
-            background: $color-primary-100;
-            
-            @include mq(xlarge) {
-                position: absolute;
-                right: 30px;
-            }
-
-            &:hover {
-                background: $color-primary-200;
-            }
-        }
-
-        @include mq(xlarge) {
-            width: 100%;
-        }
-
-        &__msg {
-            padding: $size-4;
-            padding-block: $size-10;
-
-            p {
-                color: $color-neutral-400;
-                margin-block-start: $size-5;
-                font-size: $font-size-500;
-            }
-        }
-    
-        &__redes {
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            gap: $size-5;
-            color: $color-neutral-400;
-
-            a {
-                color: $color-primary-500;
-                text-align: center;
-            }
+    &__msg {
+        p {
+            margin-block: $size-6;
+            font-size: $font-size-600;
         }
     }
 
-}
+    &__redes {
+        h2 {
+            padding-block-end: $size-4;
+        }
+        
+        a {
+            color: $color-primary-500;
+            padding-inline: $size-4;
+            font-size: $font-size-400;
+        }
 
-@supports (-webkit-backdrop-filter: none) or (backdrop-filter: none) {
-  .gracias-dialog {
-    -webkit-backdrop-filter: blur(10px);
-    backdrop-filter: blur(10px);
-    background-color: rgba(255, 255, 255, .9);  
-  }
-  .warning {
-    display: none;
-  }
+    }
 }

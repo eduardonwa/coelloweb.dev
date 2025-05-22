@@ -23,7 +23,7 @@ Route::get('acerca', [AcercaController::class, 'show'])->name('acerca');
 Route::get('contacto', [ContactoController::class, 'show'])->name('contacto');
 Route::get('contactoForm', MainContactForm::class)->name('contactoForm');
 // Route::get('gracias', [GhostController::class, 'gracias'])->name('gracias');
-Route::view('/gracias', 'ghost.gracias');
+Route::view('/gracias', 'gracias');
 
 Route::prefix('servicios')->group(function () {
     Route::get('/', [ServiciosController::class, 'index'])->name('servicios.index');

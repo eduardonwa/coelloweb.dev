@@ -46,13 +46,12 @@ class MainContactForm extends Component
 
         // Send the email using the Mailable class
         Mail::to('coelloweb@aol.com')->send(new MainContactMailable($validatedData));
-        
+
+        session()->flash('message', '¡Gracias por tu interés!');
+
+        return redirect()->to('/gracias');
+
         $this->reset();
-
-        $this->dispatch('openGraciasModal');
-
-        // session()->flash('message', '¡Gracias por tu interés!');
-
     }
 
     public function render()

@@ -70,14 +70,12 @@
     gtag('config', 'AW-11198361905');
     </script>
 </head>
-    <body id="content" class="relative" style="opacity: 0; transition: opacity 0.3s ease;" style="background: linear-gradient(to bottom, transparent 20%, #edfffe)">
+    <body id="content" style="opacity: 0; transition: opacity 0.3s ease;" style="background: linear-gradient(to bottom, transparent 20%, #edfffe)">
         <!-- Google Tag Manager (noscript) -->
         <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-WXV2W4JS"
         height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
         <!-- End Google Tag Manager (noscript) -->
         <x-navbar/>
-
-        @livewire('gracias-modal')
 
         <div class="faded-bg">
             <main>
