@@ -202,4 +202,9 @@
                 text-decoration: underline;
             }
     }
+
+    &[data-type="close"] {
+        background: transparent;
+        border: none;
+    }
 }

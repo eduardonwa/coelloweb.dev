@@ -1,7 +1,7 @@
 <!-- incluir google script, meta title, meta description-->
 <x-site-layout :metaTitle="'Eduardo Coello | Contáctame'">
     <section class="heroe-contacto | bg-seccion padding-inline-5">
-        <div class="container">
+        <div class="container relative">
             <div class="contenedor">
                 <!-- info contacto -->
                 <article class="info-contacto">

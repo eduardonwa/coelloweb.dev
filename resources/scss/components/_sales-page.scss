@@ -214,7 +214,9 @@
 
 .porque-esto {
     @include pad-responsivo($size-3, 0);
-    overflow: hidden;
+    & {
+        overflow: hidden;
+    }
 
     img {
         overflow: hidden;
@@ -583,8 +585,10 @@
 
     .garantia-cta {
         @include seccion-cta;
-        grid-area: stack;
-        align-self: center;
+        & {
+            grid-area: stack;
+            align-self: center;
+        }
     }
 }
 
@@ -594,7 +598,9 @@
 
 .porque-yo {
     @include pad-responsivo($size-3, 0);
-    clip-path: inset(0 0 0 0);
+    & {
+        clip-path: inset(0 0 0 0);
+    }
 
     img {
         border-radius: $border-radius-2;

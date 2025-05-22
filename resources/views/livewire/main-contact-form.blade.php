@@ -79,4 +79,8 @@
             <img src="/images/icono-flecha-diagonal.png" alt="icono flecha diagonal">
         </button>
     </form>
+
+    {{-- <div class="gracias-msg-wrap" wire:ignore>
+        @livewire('gracias-modal')
+    </div> --}}
 </div>
