@@ -12,6 +12,7 @@ class MainContactForm extends Component
     #[Validate]
     public $nombre;
     public $email;
+    public $phone;
     public $detalles;
     public $selectedOption = '';
     public $referencia;
@@ -19,9 +20,10 @@ class MainContactForm extends Component
     protected $rules = [
         'nombre' => 'required|min:3',
         'email' => 'required|email',
-        'detalles' => 'required|min:10',
-        'referencia' => 'min:3',
         'selectedOption' => 'required',
+        'phone' => 'required|digits:10',
+        'detalles' => 'min:10',
+        'referencia' => 'min:3',
     ];
 
     public function updated($rules)
@@ -32,11 +34,17 @@ class MainContactForm extends Component
     protected function messages()
     {
         return [
-            'nombre.required' => 'Tu nombre es muy corto, el campo debe contener al menos 3 caracteres.',
-            'email.required' => 'Este campo es obligatorio.',
-            'detalles.required' => 'Este campo debe contener al menos 10 caracteres.',
-            'referencia.min' => 'Este campo debe contener al menos 3 caracteres.',
-            'selectedOption.required' => 'Por favor, seleccione una opción.',
+            // Mensajes genéricos para reglas comunes
+            'required' => 'Este campo es obligatorio.',
+            'min' => 'Este campo debe contener al menos :min caracteres.',
+            
+            // Mensajes específicos que sobrescriben los genéricos
+            'email.email' => 'Ingresa un correo electrónico válido',
+            'phone.digits' => 'El teléfono debe tener 10 dígitos numéricos.',
+            'selectedOption.required' => 'Por favor, selecciona una opción.',
+
+            // Mensajes personalizados para campos específicos
+            'nombre.min' => 'Tu nombre es muy corto, debe contener al menos 3 caracteres.',
         ];
     }
 

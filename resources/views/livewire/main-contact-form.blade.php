@@ -44,6 +44,14 @@
                         @error('selectedOption') <span class="error">{{ $message }}</span> @enderror
                     </div>
                 </div>
+
+                <div class="form-group padding-block-2">
+                    <label for="phone">Teléfono <span aria-label="required">*</span></label>
+                    <input wire:model="phone" id="phone" type="tel" name="phone" title="10 dígitos (ej: 4421234567)" placeholder="10 dígitos (ej: 4421234567)"/>
+                    <div>
+                        @error('phone') <span class="error">{{ $message }}</span> @enderror
+                    </div>
+                </div>
             </div>
         </fieldset>
 
