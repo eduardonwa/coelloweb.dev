@@ -56,34 +56,9 @@
         </fieldset>
 
         <hr>
-
-        <!-- como supiste de mi -->
-        <fieldset class="contact-form">
-            <div class="form-group padding-block-4">
-                <label for="referencias" type="text" name="referencias">
-                    ¿Cómo supiste de mi?
-                </label>
-                <input wire:model="referencia" id="referencia" type="text" name="referencia">
-            </div>
-        </fieldset>
-
-        <hr>
-
-        <!-- detalles proyecto -->
-        <fieldset class="contact-form">
-            <div class="form-group padding-block-4">
-                <label for="detalles">
-                    Cuéntame más sobre los detalles de tu proyecto
-                </label>
-                <textarea wire:model="detalles" name="detalles" id="detalles"></textarea>
-                <div>
-                    @error('detalles') <span class="error">{{ $message }}</span> @enderror
-                </div>
-            </div>
-        </fieldset>
-
+        
         <button type="submit" class="button" data-type="enviar-btn">
-            Enviar Mensaje
+            Enviar
             <img src="/images/icono-flecha-diagonal.png" alt="icono flecha diagonal">
         </button>
     </form>

@@ -22,8 +22,6 @@ class MainContactForm extends Component
         'email' => 'required|email',
         'selectedOption' => 'required',
         'phone' => 'required|digits:10',
-        'detalles' => 'min:10',
-        'referencia' => 'min:3',
     ];
 
     public function updated($rules)
@@ -52,7 +50,6 @@ class MainContactForm extends Component
     {
         $validatedData = $this->validate();
 
-        // Send the email using the Mailable class
         Mail::to('coelloweb@aol.com')->send(new MainContactMailable($validatedData));
 
         session()->flash('message', '¡Gracias por tu interés!');
