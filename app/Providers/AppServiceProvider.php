@@ -23,6 +23,8 @@ class AppServiceProvider extends ServiceProvider
      */
     public function boot(): void
     {
-        //
+        Route::domain('links.' . env('APP_URL'))
+            ->middleware('web')
+            ->group(base_path('routes/links.php'));
     }
 }
