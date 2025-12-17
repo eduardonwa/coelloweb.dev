@@ -4,7 +4,6 @@ use App\Livewire\MainContactForm;
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\BlogController;
 use App\Http\Controllers\PostController;
-use App\Http\Controllers\GhostController;
 use App\Http\Controllers\AcercaController;
 use App\Http\Controllers\WelcomeController;
 use App\Http\Controllers\CategoryController;
@@ -23,7 +22,6 @@ Route::get('/', [WelcomeController::class, 'show'])->name('welcome');
 Route::get('acerca', [AcercaController::class, 'show'])->name('acerca');
 Route::get('contacto', [ContactoController::class, 'show'])->name('contacto');
 Route::get('contactoForm', MainContactForm::class)->name('contactoForm');
-// Route::get('gracias', [GhostController::class, 'gracias'])->name('gracias');
 Route::get('/gracias', [GraciasController::class, 'index'])->name('gracias');
 
 Route::prefix('servicios')->group(function () {

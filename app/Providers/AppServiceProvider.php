@@ -23,8 +23,6 @@ class AppServiceProvider extends ServiceProvider
      */
     public function boot(): void
     {
-        Route::domain('ghost.' . env('APP_URL'))
-            ->middleware('web')
-            ->group(base_path('routes/ghost.php'));
+        //
     }
 }
