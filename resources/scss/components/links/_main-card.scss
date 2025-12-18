@@ -1,0 +1,42 @@
+@use "../../abstracts/" as *;
+
+.main-card {
+    background: $color-primary-400;
+
+    &__shell {
+        margin: $size-5;
+
+        .heading-2 {
+           color: $color-neutral-100;
+           padding-block: $size-7;
+        }
+
+        .descripcion {
+            color: $color-neutral-100;
+            font-size: $font-size-500;
+            padding-block-end: $size-8;
+            text-align: center;
+        }
+
+        .buttons-shell {
+            display: flex;
+            flex-direction: column;
+            gap: $size-6;
+            margin: auto;
+
+            @include mq(medium) {
+                align-items: center;
+            }
+
+            .button {
+                display: flex;
+                align-items: center;
+                gap: $size-4;
+
+                @include mq(medium) {
+                    width: 377px;
+                }
+            }
+        }
+    }
+}

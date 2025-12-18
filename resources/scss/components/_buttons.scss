@@ -154,6 +154,7 @@
             @include mq(small) {
                 width: 100%;
             }
+            
             @include mq(medium) {
                 width: fit-content;
                 font-size: 16px;
@@ -165,9 +166,10 @@
                 background-color: $color-neutral-200;
                 transition: transform 0.2s ease-in-out, bottom 0.2s ease-in-out;
             }
-        img {
-            padding-left: 12px;
-        }
+
+            img {
+                padding-left: 12px;
+            }
     }
 
     &[data-type="preguntas"] {
@@ -184,9 +186,11 @@
             img {
                 margin-left: $size-3;
             }
+
             @include mq(small) {
                 width: 100%;
             }
+
             @include mq(medium) {
                 margin: $size-5 0;
                 flex: 1 1 50%;
@@ -194,6 +198,7 @@
                 font-size: 16px;
                 padding: $size-3;
             }
+
             @include mq(xlarge) {
                 font-size: 16px;
             }
@@ -206,5 +211,38 @@
     &[data-type="close"] {
         background: transparent;
         border: none;
+    }
+
+    &[data-type="links"] {
+        color: $color-neutral-100;
+        background: $color-neutral-500;
+        border: 1px solid transparent;
+
+        &:hover {
+            color: $color-neutral-200;
+            background: transparent;
+            border-color: $color-primary-100;
+        }
+
+        img {
+            height: 28px;
+            width: 28px;
+        }
+
+        &[data-variant="primary"] {
+            background: transparent;
+            border-color: $color-primary-100;
+
+            &:hover {
+                color: $color-neutral-100;
+                background: $color-contacto-400;
+                border-color: transparent;
+            }
+        }
+
+        &[data-variant="secondary"] {
+            background: $color-neutral-500;
+            border-color: transparent;
+        }
     }
 }

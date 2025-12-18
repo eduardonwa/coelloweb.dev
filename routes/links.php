@@ -1,7 +1,6 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\Links\LinksController;
 
-Route::get('/', function () {
-    return view('links.index');
-});
+Route::get('/', [LinksController::class, 'show']);
