@@ -39,6 +39,12 @@
                                 <img src="/images/navbar-contacto-icon.svg" alt="">
                             </a>
                         </li>
+                        <li>
+                            <a href="{{ route('tienda') }}" aria-label="¿Listo? Contáctame para crear tu web">
+                                <span>Tienda</span>
+                                <img src="/images/navbar-contacto-icon.svg" alt="">
+                            </a>
+                        </li>
                     </ul>
                 </nav>
             </div>

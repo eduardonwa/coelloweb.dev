@@ -1,18 +1,19 @@
 <?php
 
-use App\Livewire\MainContactForm;
-use Illuminate\Support\Facades\Route;
-use App\Http\Controllers\BlogController;
-use App\Http\Controllers\PostController;
 use App\Http\Controllers\AcercaController;
-use App\Http\Controllers\WelcomeController;
+use App\Http\Controllers\BlogController;
 use App\Http\Controllers\CategoryController;
 use App\Http\Controllers\ContactoController;
 use App\Http\Controllers\GraciasController;
-use App\Http\Controllers\Servicios\EcommerceController;
-use App\Http\Controllers\Servicios\ServiciosController;
+use App\Http\Controllers\PostController;
 use App\Http\Controllers\Servicios\CorporativaController;
+use App\Http\Controllers\Servicios\EcommerceController;
 use App\Http\Controllers\Servicios\LandingPageController;
+use App\Http\Controllers\Servicios\ServiciosController;
+use App\Http\Controllers\TiendaController;
+use App\Http\Controllers\WelcomeController;
+use App\Livewire\MainContactForm;
+use Illuminate\Support\Facades\Route;
 
 Route::view('privacidad', 'privacidad')->name('privacidad');
 Route::view('terminos', 'terminos')->name('terminos');
@@ -21,6 +22,7 @@ Route::view('preguntas', 'preguntas')->name('preguntas');
 Route::get('/', [WelcomeController::class, 'show'])->name('welcome');
 Route::get('acerca', [AcercaController::class, 'show'])->name('acerca');
 Route::get('contacto', [ContactoController::class, 'show'])->name('contacto');
+Route::get('tienda', [TiendaController::class, 'index'])->name('tienda');
 Route::get('contactoForm', MainContactForm::class)->name('contactoForm');
 Route::get('/gracias', [GraciasController::class, 'index'])->name('gracias');
 

@@ -78,13 +78,16 @@
         <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-WXV2W4JS"
         height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
         <!-- End Google Tag Manager (noscript) -->
-        <x-navbar/>
-
-        <div class="faded-bg">
-            <main>
-                {{ $slot }}
-            </main>
-            <x-footer/>
+        
+        <div class="main-layout">
+            <x-navbar/>
+    
+            <div class="faded-bg">
+                <main>
+                    {{ $slot }}
+                </main>
+                <x-footer/>
+            </div>
         </div>
 
         @stack('scripts')

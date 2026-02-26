@@ -16,3 +16,19 @@ a {
 a:is(:hover, :focus) {
   color: $link-color-hover;
 }
+
+.main-layout {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+
+  .faded-bg {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+  }
+
+  main {
+    flex: 1;
+  }
+}
