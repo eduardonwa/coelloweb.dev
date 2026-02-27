@@ -4,6 +4,7 @@ namespace App\Services;
 
 use Sanity\Client;
 use function SanityImageUrl\urlBuilder;
+use Illuminate\Support\Facades\Http;
 
 class SanityClient
 {
@@ -17,7 +18,7 @@ class SanityClient
             'projectId' => config('services.sanity.projectId'),
             'dataset' => config('services.sanity.dataset'),
             'token' => config('services.sanity.token'),
-            'apiVersion' => '2023-10-01',
+            'apiVersion' => config('services.sanity.version'),
             'useCdn' => false,
         ]);
 
@@ -38,5 +39,37 @@ class SanityClient
     public function urlFor($source)
     {
         return $this->builder->image($source);
+    }
+
+    public function mutate(array $mutations): array
+    {
+        $projectId = config('services.sanity.projectId');
+        $dataset = config('services.sanity.dataset');
+        $version = config('services.sanity.version');
+        $token = config('services.sanity.write_token');
+
+        $url = "https://{$projectId}.api.sanity.io/v{$version}/data/mutate/{$dataset}";
+
+        $res = Http::withToken($token)
+            ->acceptJson()
+            ->post($url, ['mutations' => $mutations]);
+        
+        if (!$res->ok()) {
+            throw new \RuntimeException("Sanity mutate error: ".$res->body());
+        }
+
+        return $res->json();
+    }
+
+    public function patchSet(string $docId, array $set): array
+    {
+        return $this->mutate([
+            [
+                'patch' => [
+                    'id' => $docId,
+                    'set' => $set
+                ],
+            ],
+        ]);
     }
 }

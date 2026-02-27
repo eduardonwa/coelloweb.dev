@@ -34,5 +34,12 @@ return [
     'sanity' => [
         'projectId' => env('SANITY_PROJECT_ID'),
         'dataset' => env('SANITY_DATASET'),
+        'token' => env('SANITY_API_TOKEN'),
+        'write_token' => env('SANITY_WRITE_TOKEN'),
+        'version' => env('SANITY_VERSION')
     ],
+    
+    'stripe' => [
+        'secret' => env('STRIPE_SECRET')
+    ]
 ];
