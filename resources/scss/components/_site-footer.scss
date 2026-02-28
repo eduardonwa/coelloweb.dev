@@ -1,13 +1,12 @@
 @use "../abstracts/" as *;
 
 .site-footer {
-  background-color: $footer-background-color;
-  color: $footer-text-color;
-
-    @include mq(small) {
-        margin-block-end: $size-15;
-        font-size: $size-5;
-    }
+    background-color: $footer-background-color;
+    color: $footer-text-color;
+    margin-block-end: $size-15;
+    font-size: $size-5;
+    padding-block: $size-9 0;
+    padding-inline: $size-6;
 
     @include mq(medium) {
         margin-block-end: $size-3;
@@ -15,34 +14,37 @@
     }
 
   &__content {
-    @include mq(small) {
-        padding: $size-9;
+    display: flex;
+    flex-direction: column;
+
+    @include mq(medium) {
+        flex-direction: row;
+        justify-content: space-between;
     }
-    @include mq(large) {
-        padding-inline: $size-12;
+    
+    .logo-wrapper {
+        .logo { margin-block-end: $size-8; }
     }
 
     .listas {
+        margin-block-end: $size-4;
 
         &__item {
             h2 {
                 color: $color-neutral-300;
                 font-size: $font-size-600;
+                font-weight: normal;
             }
 
             ul {
-                @include mq(large) {
-                    padding-block-start: $size-5;
-                }
+                @include mq(large) { padding-block-start: $size-5; }
 
                 li {
                     line-height: 2;
                     list-style: none;
                     font-size: $font-size-500;
 
-                    @include mq(large) {
-                        padding-block-end: $size-2;
-                    }
+                    @include mq(large) { padding-block-end: $size-2; }
                 }
             }
         }
@@ -51,17 +53,13 @@
 
   &__redes {
     display: flex;
-    @include mq(small) {
-        gap: $size-12;
-        justify-content: center;
-        align-items: center;
-        margin: auto;
-        padding-block: $size-9;
-    }
+    justify-content: space-around;
+    align-items: center;
+    padding-block: $size-7;
+
     @include mq(medium) {
         gap: $size-7;
         justify-content: flex-start;
-        padding-inline: $size-12;
     }
   }
 
@@ -76,8 +74,5 @@
     }
   }
 
-  hr {
-    color: $horizontal-line-color;
-    width: 90%;
-  }
+  hr { color: $horizontal-line-color; }
 }

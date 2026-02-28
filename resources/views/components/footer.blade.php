@@ -2,9 +2,9 @@
     class="site-footer | container border-radius-1"
     data-type="full-bleed"
 >
-    <section class="site-footer__content even-columns">
-        <a href="{{ route('welcome') }}">
-            <img src="/images/ecoello-logo-footer.svg" alt="Inicio" loading="lazy">
+    <section class="site-footer__content">
+        <a class="logo-wrapper" href="{{ route('welcome') }}">
+            <img class="logo" src="/images/ecoello-logo-footer.svg" alt="Inicio" loading="lazy">
         </a>
 
         <div class="listas | even-columns">
