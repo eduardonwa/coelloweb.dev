@@ -14,7 +14,7 @@ class SanityClient
     private function clientFor(string $dataset): Client
     {
         // Inicializa el cliente de Sanity
-        $this->client = new Client([
+        return new Client([
             'projectId'  => config('services.sanity.projectId'),
             'dataset'    => $dataset,
             'token'      => config('services.sanity.token'),
