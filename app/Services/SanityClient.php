@@ -11,42 +11,47 @@ class SanityClient
     protected $client;
     protected $builder;
 
-    public function __construct()
+    private function clientFor(string $dataset): Client
     {
         // Inicializa el cliente de Sanity
         $this->client = new Client([
-            'projectId' => config('services.sanity.projectId'),
-            'dataset' => config('services.sanity.dataset'),
-            'token' => config('services.sanity.token'),
+            'projectId'  => config('services.sanity.projectId'),
+            'dataset'    => $dataset,
+            'token'      => config('services.sanity.token'),
             'apiVersion' => config('services.sanity.version'),
-            'useCdn' => false,
+            'useCdn'     => false,
         ]);
+    }
 
+    private function builderFor(string $dataset)
+    {
         // Inicializa el builder para crear URLs de las imágenes
-        $this->builder = urlBuilder([
+        return urlBuilder([
             'projectId' => config('services.sanity.projectId'),
-            'dataset' => config('services.sanity.dataset'),
+            'dataset'   => $dataset,
         ]);
     }
 
 
     // Método para hacer fetch de datos desde Sanity
-    public function fetch($query, $params = [])
+    public function fetch($query, $params = [], ?string $dataset = null)
     {
-        return $this->client->fetch($query, $params);
+        $dataset = $dataset ?: config('services.sanity.dataset');
+        return $this->clientFor($dataset)->fetch($query, $params);
     }
 
-    public function urlFor($source)
+    public function urlFor($source, ?string $dataset = null)
     {
-        return $this->builder->image($source);
+        $dataset = $dataset ?: config('services.sanity.dataset');
+        return $this->builderFor($dataset)->image($source);
     }
 
-    public function mutate(array $mutations): array
+    public function mutate(array $mutations, ?string $dataset = null): array
     {
+        $dataset   = $dataset ?: config('services.sanity.dataset');
         $projectId = config('services.sanity.projectId');
-        $dataset = config('services.sanity.dataset');
-        $version = config('services.sanity.version');
-        $token = config('services.sanity.write_token');
+        $version   = config('services.sanity.version');
+        $token     = config('services.sanity.write_token');
 
         $url = "https://{$projectId}.api.sanity.io/v{$version}/data/mutate/{$dataset}";
 
@@ -61,7 +66,7 @@ class SanityClient
         return $res->json();
     }
 
-    public function patchSet(string $docId, array $set): array
+    public function patchSet(string $docId, array $set, ?string $dataset = null): array
     {
         return $this->mutate([
             [
@@ -70,6 +75,6 @@ class SanityClient
                     'set' => $set
                 ],
             ],
-        ]);
+        ], $dataset);
     }
 }

@@ -12,38 +12,38 @@ class StripeSyncService
         private SanityClient $sanity,
     ) {}
 
-    public function syncVariant(string $variantId): array
+    public function syncVariant(string $variantId, ?string $dataset = null): array
     {
-        $doc = $this->fetchVariantById($variantId);
+        $doc = $this->fetchVariantById($variantId, $dataset);
 
         if (!$doc) {
             throw new \RuntimeException("Variante no encontrada en Sanity.");
         }
 
-        return $this->syncVariantDocument($doc);
+        return $this->syncVariantDocument($doc, $dataset);
     }
 
-    public function syncByDocument(string $docId, ?string $docType = null): array
+    public function syncByDocument(string $docId, ?string $docType = null, ?string $dataset = null): array
     {
-        $resolvedType = $docType ?: $this->resolveDocumentType($docId);
+        $resolvedType = $docType ?: $this->resolveDocumentType($docId, $dataset);
 
         if ($resolvedType === 'variante') {
-            return $this->syncVariant($docId);
+            return $this->syncVariant($docId, $dataset);
         }
 
         if ($resolvedType === 'producto') {
-            $variant = $this->fetchFirstVariantByProductId($docId);
+            $variant = $this->fetchFirstVariantByProductId($docId, $dataset);
             if (!$variant) {
                 throw new \RuntimeException("Producto sin variantes publicadas para sincronizar.");
             }
 
-            return $this->syncVariantDocument($variant);
+            return $this->syncVariantDocument($variant, $dataset);
         }
 
         throw new \RuntimeException("Tipo de documento no soportado para sync: {$resolvedType}.");
     }
 
-    private function syncVariantDocument(array $doc): array
+    private function syncVariantDocument(array $doc, ?string $dataset = null): array
     {
         $variantId = $doc['_id'] ?? null;
         if (!$variantId) {
@@ -122,7 +122,7 @@ class StripeSyncService
                 'stripeProductId' => $spid,
                 'stripePriceId' => $priceId,
                 'stripePriceActive' => $active,
-            ]);
+            ], $dataset);
         }
 
         return [
@@ -136,7 +136,7 @@ class StripeSyncService
         ];
     }
 
-    private function fetchVariantById(string $variantId): ?array
+    private function fetchVariantById(string $variantId, ?string $dataset = null): ?array
     {
         return $this->sanity->fetch(
             '*[_type=="variante" && _id==$id][0]{
@@ -148,11 +148,11 @@ class StripeSyncService
                 stripePriceActive,
                 producto->{ _id, titulo }
             }',
-            ['id' => $variantId]
+            ['id' => $variantId], $dataset
         );
     }
 
-    private function fetchFirstVariantByProductId(string $productId): ?array
+    private function fetchFirstVariantByProductId(string $productId, ?string $dataset = null): ?array
     {
         return $this->sanity->fetch(
             '*[_type=="variante" && producto._ref==$productId][0]{
@@ -164,13 +164,13 @@ class StripeSyncService
                 stripePriceActive,
                 producto->{ _id, titulo }
             }',
-            ['productId' => $productId]
+            ['productId' => $productId], $dataset
         );
     }
 
-    private function resolveDocumentType(string $docId): ?string
+    private function resolveDocumentType(string $docId, ?string $dataset = null): ?string
     {
-        $doc = $this->sanity->fetch('*[_id==$id][0]{_type}', ['id' => $docId]);
+        $doc = $this->sanity->fetch('*[_id==$id][0]{_type}', ['id' => $docId], $dataset);
         return $doc['_type'] ?? null;
     }
 

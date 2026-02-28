@@ -37,8 +37,16 @@ class SanityWebhookController extends Controller
             'type' => $request->input('_type'),
         ]);
 
+        $dataset = (string) $request->header('sanity-dataset', config('services.sanity.dataset'));
+
+        $allowed = ['production', 'coellolocal'];
+        if (!in_array($dataset, $allowed, true)) {
+            Log::warning('Sanity webhook rejected: dataset not allowed', ['dataset' => $dataset]);
+            return response()->json(['ok' => false, 'error' => 'Dataset not allowed'], 400);
+        }
+
         try {
-            $result = $sync->syncByDocument($id, $request->input('_type'));
+            $result = $sync->syncByDocument($id, $request->input('_type'), $dataset);
         } catch (\Throwable $e) {
             Log::error('Sanity -> Stripe sync failed', [
                 'id' => $id,
