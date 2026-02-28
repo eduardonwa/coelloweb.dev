@@ -36,7 +36,8 @@ return [
         'dataset' => env('SANITY_DATASET'),
         'token' => env('SANITY_API_TOKEN'),
         'write_token' => env('SANITY_WRITE_TOKEN'),
-        'version' => env('SANITY_VERSION')
+        'version' => env('SANITY_VERSION'),
+        'webhook_secret' => env('SANITY_WEBHOOK_SECRET'),
     ],
     
     'stripe' => [
