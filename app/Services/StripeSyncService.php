@@ -2,6 +2,7 @@
 
 namespace App\Services;
 
+use Illuminate\Support\Arr;
 use Stripe\StripeClient;
 
 class StripeSyncService
@@ -13,25 +14,43 @@ class StripeSyncService
 
     public function syncVariant(string $variantId): array
     {
-        // 1) Leer variante + producto (referenciado)
-        $doc = $this->sanity->fetch(
-            '*[_type=="variante" && _id==$id][0]{
-                _id,
-                precio,
-                moneda,
-                stripeProductId,
-                stripePriceId,
-                stripePriceActive,
-                producto->{ _id, titulo }
-            }',
-            ['id' => $variantId]
-        );
+        $doc = $this->fetchVariantById($variantId);
 
         if (!$doc) {
             throw new \RuntimeException("Variante no encontrada en Sanity.");
         }
 
-        $title   = $doc['producto']['titulo'] ?? null;
+        return $this->syncVariantDocument($doc);
+    }
+
+    public function syncByDocument(string $docId, ?string $docType = null): array
+    {
+        $resolvedType = $docType ?: $this->resolveDocumentType($docId);
+
+        if ($resolvedType === 'variante') {
+            return $this->syncVariant($docId);
+        }
+
+        if ($resolvedType === 'producto') {
+            $variant = $this->fetchFirstVariantByProductId($docId);
+            if (!$variant) {
+                throw new \RuntimeException("Producto sin variantes publicadas para sincronizar.");
+            }
+
+            return $this->syncVariantDocument($variant);
+        }
+
+        throw new \RuntimeException("Tipo de documento no soportado para sync: {$resolvedType}.");
+    }
+
+    private function syncVariantDocument(array $doc): array
+    {
+        $variantId = $doc['_id'] ?? null;
+        if (!$variantId) {
+            throw new \RuntimeException('La variante no tiene _id.');
+        }
+
+        $title   = Arr::get($doc, 'producto.titulo');
         $precio  = $doc['precio'] ?? null;
         $moneda  = strtolower($doc['moneda'] ?? 'mxn');
 
@@ -39,23 +58,27 @@ class StripeSyncService
         $priceId = $doc['stripePriceId'] ?? null;
         $activeInSanity = $doc['stripePriceActive'] ?? null;
 
-        if (!$title) throw new \RuntimeException("Falta producto.titulo (revisa referencia producto).");
-        if ($precio === null) throw new \RuntimeException("Falta precio en variante.");
+        if (!$title) {
+            throw new \RuntimeException("Falta producto.titulo (revisa referencia producto).");
+        }
 
-        // 2) Stripe Product (create/update)
+        if ($precio === null) {
+            throw new \RuntimeException("Falta precio en variante.");
+        }
+
         if ($spid) {
             $this->stripe->products->update($spid, ['name' => $title]);
         } else {
             $p = $this->stripe->products->create([
                 'name' => $title,
                 'metadata' => [
-                    'sanity_product_id' => $doc['producto']['_id'] ?? '',
+                    'sanity_product_id' => Arr::get($doc, 'producto._id', ''),
+                    'sanity_variant_id' => $variantId,
                 ],
             ]);
             $spid = $p->id;
         }
 
-        // 3) Stripe Price (si cambió, crear nuevo)
         $unitAmount = $this->toUnitAmount($precio);
 
         $needNewPrice = true;
@@ -89,14 +112,12 @@ class StripeSyncService
             $active  = (bool) $newPrice->active;
         }
 
-        // 4) Anti-loop: solo patch si cambió algo
         $alreadySame =
             ($doc['stripeProductId'] ?? null) === $spid &&
             ($doc['stripePriceId'] ?? null) === $priceId &&
             ($activeInSanity === $active);
 
         if (!$alreadySame) {
-            // Patch a la VARIANTE (campos planos)
             $this->sanity->patchSet($variantId, [
                 'stripeProductId' => $spid,
                 'stripePriceId' => $priceId,
@@ -105,12 +126,52 @@ class StripeSyncService
         }
 
         return [
+            'documentType' => 'variante',
+            'variantId' => $variantId,
             'stripeProductId' => $spid,
             'stripePriceId' => $priceId,
             'stripePriceActive' => $active,
             'patchedSanity' => !$alreadySame,
             'createdNewPrice' => $needNewPrice,
         ];
+    }
+
+    private function fetchVariantById(string $variantId): ?array
+    {
+        return $this->sanity->fetch(
+            '*[_type=="variante" && _id==$id][0]{
+                _id,
+                precio,
+                moneda,
+                stripeProductId,
+                stripePriceId,
+                stripePriceActive,
+                producto->{ _id, titulo }
+            }',
+            ['id' => $variantId]
+        );
+    }
+
+    private function fetchFirstVariantByProductId(string $productId): ?array
+    {
+        return $this->sanity->fetch(
+            '*[_type=="variante" && producto._ref==$productId][0]{
+                _id,
+                precio,
+                moneda,
+                stripeProductId,
+                stripePriceId,
+                stripePriceActive,
+                producto->{ _id, titulo }
+            }',
+            ['productId' => $productId]
+        );
+    }
+
+    private function resolveDocumentType(string $docId): ?string
+    {
+        $doc = $this->sanity->fetch('*[_id==$id][0]{_type}', ['id' => $docId]);
+        return $doc['_type'] ?? null;
     }
 
     private function toUnitAmount($precio): int
