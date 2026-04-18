@@ -245,4 +245,19 @@
             border-color: transparent;
         }
     }
+
+    &[data-type="icon"] {
+        padding-inline: $size-2;
+        display: flex;
+        align-items: center;
+        gap: $size-4;
+        width: 340px;
+        background: transparent;
+        color: $color-neutral-100;
+
+        svg {
+            width: 18px;
+            height: 18px;
+        }
+    }
 }
