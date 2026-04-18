@@ -11,7 +11,7 @@
                 </a>
 
                 <nav class="nav"
-                    aria-label="primary navigation"           
+                    aria-label="primary navigation"
                     x-data="{
                         openMenu: false,
                         isDesktop: window.innerWidth >= 1280
@@ -78,7 +78,7 @@
                             <span x-show="openMenu">
                                 <x-icons.chevron-down />
                             </span>
-                            <span x-text="openMenu ? 'Cerrar menú' : 'Abrir menú'"></span>
+                            <span x-text="openMenu ? 'Cerrar' : 'Menú'"></span>
                         </button>
                     </div>
                 </nav>
