@@ -2,7 +2,15 @@
     <div class="site-header">
         <div class="container" data-type="full-bleed">
             <div class="site-header__inner"
-                x-data="{ openMenu: false }"
+                x-data="{
+                    openMenu: false,
+                    isDesktop: window.innerWidth >= 1280
+                }"
+                x-init="
+                    window.addEventListener('resize', () => {
+                        isDesktop = window.innerWidth >= 1280
+                    })
+                "
                 @click.outside="openMenu = false"
                 @keydown.escape.window="openMenu = false"
             >
@@ -12,15 +20,6 @@
 
                 <nav class="nav"
                     aria-label="primary navigation"
-                    x-data="{
-                        openMenu: false,
-                        isDesktop: window.innerWidth >= 1280
-                    }"
-                    x-init="
-                        window.addEventListener('resize', () => {
-                            isDesktop = window.innerWidth >= 1280
-                        })
-                    "
                 >
                     <ul class="nav__menu"
                         x-show="openMenu || isDesktop"
